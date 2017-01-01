@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ProfileEditComponent } from './profile-edit.component';
 import { ProfileComponent } from './profile.component';
-import { AuthHttp, AuthConfig, AUTH_PROVIDERS, provideAuth } from 'angular2-jwt';
+import { AuthConfig, AUTH_PROVIDERS, provideAuth } from 'angular2-jwt';
 
 @NgModule({
   imports: [

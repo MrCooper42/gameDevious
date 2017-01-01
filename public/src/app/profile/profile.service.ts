@@ -2,7 +2,7 @@ import { Http, Response, Headers, RequestOptions } from "@angular/http";
 import { Injectable, EventEmitter } from "@angular/core";
 import 'rxjs/Rx';
 import { Observable } from "rxjs";
-import { AuthHttp } from 'angular2-jwt';
+// import { AuthHttp } from 'angular2-jwt';
 import { JwtHelper } from 'angular2-jwt/angular2-jwt';
 
 import { Skill } from "./skill.model";
@@ -16,7 +16,8 @@ export class ProfileService {
   jwtHelper: JwtHelper = new JwtHelper();
 
 
-  constructor(private http: Http, private errorService: ErrorService, public authHttp: AuthHttp) { }
+  constructor(private http: Http, private errorService: ErrorService) { }
+    // public authHttp: AuthHttp
 
   useJwtHelper() {
     var token = localStorage.getItem('token');
@@ -66,7 +67,7 @@ export class ProfileService {
     headers.append('user_id', userId)
     let options = new RequestOptions({ headers: headers })
     console.log(options, "options")
-    return this.authHttp.get(`/facebook/${userId}`, options)
+    return this.http.get(`/facebook/${userId}`, options)
     .map((res: Response) => {
       console.log(res.url, "server response")
       return res.url
@@ -75,7 +76,7 @@ export class ProfileService {
   }
 
   linkedin(userId) {
-    return this.authHttp.get(`/linkedin/${userId}`)
+    return this.http.get(`/linkedin/${userId}`)
     .map((res: Response) => {
       console.log(res.url, "server response")
       return res.url
@@ -90,7 +91,7 @@ export class ProfileService {
     headers.append('user_id', userId)
     let options = new RequestOptions({ headers: headers })
     console.log(options, "options")
-    return this.authHttp.get(`/github/${userId}`, options)
+    return this.http.get(`/github/${userId}`, options)
     .map((res: Response) => {
       console.log(res.url, "server response")
       return res.url
