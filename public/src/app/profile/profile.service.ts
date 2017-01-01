@@ -33,7 +33,7 @@ export class ProfileService {
       'Content-Type': 'application/json'
     });
     const token = localStorage.getItem('token') ? `?tokens=${localStorage.getItem('token')}` : '';
-    return this.http.post(`http://localhost:3000/profile/skills/${token}`, body, { headers: headers })
+    return this.http.post(`/profile/skills/${token}`, body, { headers: headers })
       .map((response: Response) => {
         const result = response.json();
         const skill = new Skill(
@@ -55,7 +55,7 @@ export class ProfileService {
   // profileEdit() {
   //   const token = localStorage.getItem('token')
   //
-  //   return this.http.get(`http://localhost:3000/profile/user/${token}`)
+  //   return this.http.get(`/profile/user/${token}`)
   // } angular2-jwt
 
   facebook(userId) {
@@ -66,7 +66,7 @@ export class ProfileService {
     headers.append('user_id', userId)
     let options = new RequestOptions({ headers: headers })
     console.log(options, "options")
-    return this.authHttp.get(`http://localhost:3000/facebook/${userId}`, options)
+    return this.authHttp.get(`/facebook/${userId}`, options)
     .map((res: Response) => {
       console.log(res.url, "server response")
       return res.url
@@ -86,7 +86,7 @@ export class ProfileService {
   github(userId) {
     let headers = new Headers()
     headers.append('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Accept, Content-Type')
-    headers.append('Access-Control-Allow-Origin', 'http://localhost:3000')
+    headers.append('Access-Control-Allow-Origin', '')
     headers.append('user_id', userId)
     let options = new RequestOptions({ headers: headers })
     console.log(options, "options")
