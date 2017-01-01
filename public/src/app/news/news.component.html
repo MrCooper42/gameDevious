@@ -1,0 +1,19 @@
+<!-- <h1>Data</h1>
+<div *ngFor = "let new of news">
+  <p>
+    {{new.title}}
+  </p>
+  <p>
+    {{new.image}}
+  </p>
+</div>
+<p>{{news}}</p> -->
+<ngb-carousel>
+  <template ngbSlide *ngFor = "let new of news">
+    <img src={{new.image}}>
+    <div class="carousel-caption">
+      <h3>{{new.title}}</h3>
+      <p>{{new.author}}</p>
+    </div>
+  </template>
+</ngb-carousel>

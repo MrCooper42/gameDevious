@@ -1,0 +1,36 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "module": "es2015",
+    "target": "es6",
+    "lib": [
+      "es2015",
+      "dom"
+    ],
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "removeComments": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "outDir": "./public/js/app",
+    "typeRoots": [
+      "./node_modules/@types/"
+    ],
+    "types": [
+      "jasmine",
+      "node"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "public/src/polyfills.ts"
+  ],
+  "angularCompilerOptions": {
+    "skipMetadataEmit": true
+  },
+  "atom": {
+    "rewriteTsconfig": false
+  }
+}

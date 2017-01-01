@@ -1,0 +1,32 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "lib": [
+      "es6",
+      "es2015",
+      "dom"
+    ],
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": false,
+    "sourceMap": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "typeRoots": [
+      "./node_modules/@types/"
+    ],
+    "types": [
+      "jasmine",
+      "node"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "public/js/app"
+  ],
+  "atom": {
+    "rewriteTsconfig": false
+  }
+}
