@@ -12,7 +12,7 @@ const APP_ROUTES: Routes = [
     { path: 'profile', component: ProfileEditComponent },
     { path: 'games', component: GamesComponent },
     { path: 'upload', component: UploadComponent },
-    { path: 'auth', component: AuthenticationComponent, loadChildren: './auth/auth.module#AuthModule' }
+    { path: 'login', component: AuthenticationComponent, loadChildren: './auth/auth.module#AuthModule' }
 ];
 
 export const routing = RouterModule.forRoot(APP_ROUTES);

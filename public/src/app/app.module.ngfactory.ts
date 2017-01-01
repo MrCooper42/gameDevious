@@ -480,7 +480,7 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
         }
         ,
         {
-          path: 'auth',
+          path: 'login',
           component: import99.AuthenticationComponent,
           loadChildren: './auth/auth.module#AuthModule'
         }

@@ -34,7 +34,7 @@ export class ProfileService {
       'Content-Type': 'application/json'
     });
     const token = localStorage.getItem('token') ? `?tokens=${localStorage.getItem('token')}` : '';
-    return this.http.post(`https://gamedevious.herokuapp.com/profile/skills/${token}`, body, { headers: headers })
+    return this.http.post(`/profile/skills/${token}`, body, { headers: headers })
       .map((response: Response) => {
         const result = response.json();
         const skill = new Skill(
@@ -56,7 +56,7 @@ export class ProfileService {
   // profileEdit() {
   //   const token = localStorage.getItem('token')
   //
-  //   return this.http.get(`https://gamedevious.herokuapp.com/profile/user/${token}`)
+  //   return this.http.get(`/profile/user/${token}`)
   // } angular2-jwt
 
   facebook(userId) {
@@ -67,7 +67,7 @@ export class ProfileService {
     headers.append('user_id', userId)
     let options = new RequestOptions({ headers: headers })
     console.log(options, "options")
-    return this.http.get(`https://gamedevious.herokuapp.com/facebook/${userId}`, options)
+    return this.http.get(`/facebook/${userId}`, options)
     .map((res: Response) => {
       console.log(res.url, "server response")
       return res.url
@@ -76,7 +76,7 @@ export class ProfileService {
   }
 
   linkedin(userId) {
-    return this.http.get(`https://gamedevious.herokuapp.com/linkedin/${userId}`)
+    return this.http.get(`/linkedin/${userId}`)
     .map((res: Response) => {
       console.log(res.url, "server response")
       return res.url
@@ -91,7 +91,7 @@ export class ProfileService {
     headers.append('user_id', userId)
     let options = new RequestOptions({ headers: headers })
     console.log(options, "options")
-    return this.http.get(`https://gamedevious.herokuapp.com/github/${userId}`, options)
+    return this.http.get(`/github/${userId}`, options)
     .map((res: Response) => {
       console.log(res.url, "server response")
       return res.url
