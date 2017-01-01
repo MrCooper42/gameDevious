@@ -9,24 +9,18 @@ import * as import0 from '@angular/core/src/linker/ng_module_factory';
 import * as import1 from './profile.module';
 import * as import2 from '@angular/common/src/common_module';
 import * as import3 from '@angular/common/src/localization';
-import * as import4 from 'angular2-jwt/angular2-jwt';
-import * as import5 from '@angular/core/src/di/injector';
-import * as import6 from '@angular/core/src/i18n/tokens';
+import * as import4 from '@angular/core/src/di/injector';
+import * as import5 from '@angular/core/src/i18n/tokens';
 class ProfileModuleInjector extends import0.NgModuleInjector<import1.ProfileModule> {
   _CommonModule_0:import2.CommonModule;
   _ProfileModule_1:import1.ProfileModule;
   __NgLocalization_2:import3.NgLocaleLocalization;
-  __AuthHttp_3:import4.AuthHttp;
-  constructor(parent:import5.Injector) {
+  constructor(parent:import4.Injector) {
     super(parent,([] as any[]),([] as any[]));
   }
   get _NgLocalization_2():import3.NgLocaleLocalization {
-    if ((this.__NgLocalization_2 == null)) { (this.__NgLocalization_2 = new import3.NgLocaleLocalization(this.parent.get(import6.LOCALE_ID))); }
+    if ((this.__NgLocalization_2 == null)) { (this.__NgLocalization_2 = new import3.NgLocaleLocalization(this.parent.get(import5.LOCALE_ID))); }
     return this.__NgLocalization_2;
-  }
-  get _AuthHttp_3():import4.AuthHttp {
-    if ((this.__AuthHttp_3 == null)) { (this.__AuthHttp_3 = new import4.AuthHttp()); }
-    return this.__AuthHttp_3;
   }
   createInternal():import1.ProfileModule {
     this._CommonModule_0 = new import2.CommonModule();
@@ -37,7 +31,6 @@ class ProfileModuleInjector extends import0.NgModuleInjector<import1.ProfileModu
     if ((token === import2.CommonModule)) { return this._CommonModule_0; }
     if ((token === import1.ProfileModule)) { return this._ProfileModule_1; }
     if ((token === import3.NgLocalization)) { return this._NgLocalization_2; }
-    if ((token === import4.AuthHttp)) { return this._AuthHttp_3; }
     return notFoundResult;
   }
   destroyInternal():void {

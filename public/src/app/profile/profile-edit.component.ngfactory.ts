@@ -150,11 +150,21 @@ export class View_ProfileEditComponent0 extends import1.AppView<import0.ProfileE
   _el_67:any;
   _text_68:any;
   _text_69:any;
-  _text_70:any;
-  /*private*/ _expr_71:any;
+  _el_70:any;
+  _text_71:any;
+  _el_72:any;
+  _text_73:any;
+  _text_74:any;
+  _el_75:any;
+  _text_76:any;
+  _el_77:any;
+  _text_78:any;
+  _text_79:any;
+  _text_80:any;
+  /*private*/ _expr_81:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any) {
     super(View_ProfileEditComponent0,renderType_ProfileEditComponent,import5.ViewType.COMPONENT,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways);
-    this._expr_71 = import6.UNINITIALIZED;
+    this._expr_81 = import6.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
     const parentRenderNode:any = this.renderer.createViewRoot(this.parentElement);
@@ -228,9 +238,21 @@ export class View_ProfileEditComponent0 extends import1.AppView<import0.ProfileE
     this._el_67 = import3.createRenderElement(this.renderer,this._el_0,'button',new import3.InlineArray2(2,'class','btn btn-lg btn-outline-primary'),(null as any));
     this._text_68 = this.renderer.createText(this._el_67,'Link Facebook',(null as any));
     this._text_69 = this.renderer.createText(this._el_0,'\n',(null as any));
-    this._text_70 = this.renderer.createText(this._el_0,'\n',(null as any));
+    this._el_70 = import3.createRenderElement(this.renderer,this._el_0,'br',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_71 = this.renderer.createText(this._el_0,'\n',(null as any));
+    this._el_72 = import3.createRenderElement(this.renderer,this._el_0,'button',new import3.InlineArray2(2,'class','btn btn-lg btn-outline-primary'),(null as any));
+    this._text_73 = this.renderer.createText(this._el_72,'Link Github',(null as any));
+    this._text_74 = this.renderer.createText(this._el_0,'\n',(null as any));
+    this._el_75 = import3.createRenderElement(this.renderer,this._el_0,'br',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_76 = this.renderer.createText(this._el_0,'\n',(null as any));
+    this._el_77 = import3.createRenderElement(this.renderer,this._el_0,'button',new import3.InlineArray2(2,'class','btn btn-lg btn-outline-primary'),(null as any));
+    this._text_78 = this.renderer.createText(this._el_77,'Link LinkedIn',(null as any));
+    this._text_79 = this.renderer.createText(this._el_0,'\n',(null as any));
+    this._text_80 = this.renderer.createText(this._el_0,'\n',(null as any));
     var disposable_0:Function = import3.subscribeToRenderElement(this,this._el_52,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_52));
     var disposable_1:Function = import3.subscribeToRenderElement(this,this._el_67,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_67));
+    var disposable_2:Function = import3.subscribeToRenderElement(this,this._el_72,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_72));
+    var disposable_3:Function = import3.subscribeToRenderElement(this,this._el_77,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_77));
     this.init((null as any),((<any>this.renderer).directRenderer? (null as any): [
       this._el_0,
       this._text_1,
@@ -302,27 +324,39 @@ export class View_ProfileEditComponent0 extends import1.AppView<import0.ProfileE
       this._el_67,
       this._text_68,
       this._text_69,
-      this._text_70
+      this._el_70,
+      this._text_71,
+      this._el_72,
+      this._text_73,
+      this._text_74,
+      this._el_75,
+      this._text_76,
+      this._el_77,
+      this._text_78,
+      this._text_79,
+      this._text_80
     ]
     ),[
       disposable_0,
-      disposable_1
+      disposable_1,
+      disposable_2,
+      disposable_3
     ]
     );
     return (null as any);
   }
   detectChangesInternal(throwOnChange:boolean):void {
-    const currVal_71:any = import3.inlineInterpolate(1,'Snippit\'s of ',this.context.user,'');
-    if (import3.checkBinding(throwOnChange,this._expr_71,currVal_71)) {
-      this.renderer.setText(this._text_25,currVal_71);
-      this._expr_71 = currVal_71;
+    const currVal_81:any = import3.inlineInterpolate(1,'Snippit\'s of ',this.context.user,'');
+    if (import3.checkBinding(throwOnChange,this._expr_81,currVal_81)) {
+      this.renderer.setText(this._text_25,currVal_81);
+      this._expr_81 = currVal_81;
     }
   }
   handleEvent_52(eventName:string,$event:any):boolean {
     this.markPathToRootAsCheckOnce();
     var result:boolean = true;
     if ((eventName == 'click')) {
-      const pd_sub_0:any = ((<any>this.context.editInfo()) !== false);
+      const pd_sub_0:any = ((<any>this.context.useJwtHelper()) !== false);
       result = (pd_sub_0 && result);
     }
     return result;
@@ -332,6 +366,24 @@ export class View_ProfileEditComponent0 extends import1.AppView<import0.ProfileE
     var result:boolean = true;
     if ((eventName == 'click')) {
       const pd_sub_0:any = ((<any>this.context.linkFacebook()) !== false);
+      result = (pd_sub_0 && result);
+    }
+    return result;
+  }
+  handleEvent_72(eventName:string,$event:any):boolean {
+    this.markPathToRootAsCheckOnce();
+    var result:boolean = true;
+    if ((eventName == 'click')) {
+      const pd_sub_0:any = ((<any>this.context.linkGithub()) !== false);
+      result = (pd_sub_0 && result);
+    }
+    return result;
+  }
+  handleEvent_77(eventName:string,$event:any):boolean {
+    this.markPathToRootAsCheckOnce();
+    var result:boolean = true;
+    if ((eventName == 'click')) {
+      const pd_sub_0:any = ((<any>this.context.linkLinkedin()) !== false);
       result = (pd_sub_0 && result);
     }
     return result;

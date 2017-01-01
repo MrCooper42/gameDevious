@@ -14,6 +14,8 @@ const TOKEN = localStorage.getItem('token');
 })
 export class ProfileEditComponent implements OnInit {
 
+  user: string;
+
   closeResult: string;
 
   facebookRes: string;
@@ -28,6 +30,7 @@ export class ProfileEditComponent implements OnInit {
     if (token == null) {
       return false;
     }
+    this.user = this.jwtHelper.decodeToken(token).user
     return this.jwtHelper.decodeToken(token).user
   }
 

@@ -9,6 +9,8 @@ import { Router } from '@angular/router';
 })
 export class ProfileComponent implements OnInit {
 
+  user: string;
+
   constructor(private profileService: ProfileService, private router: Router) { }
 
   loggedIn() {

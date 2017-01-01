@@ -14,14 +14,14 @@ import { AuthHttp, AuthConfig, AUTH_PROVIDERS, provideAuth } from 'angular2-jwt'
     ProfileEditComponent
   ],
   providers: [
-    AuthHttp,
-    provideAuth({
-            headerName: 'Authorization',
-            tokenName: 'token',
-            tokenGetter: (() => localStorage.getItem('token')),
-            globalHeaders: [{ 'Content-Type': 'application/json' }],
-            noJwtError: true
-        })
+    // AuthHttp,
+    // provideAuth({
+    //         headerName: 'Authorization',
+    //         tokenName: 'token',
+    //         tokenGetter: (() => localStorage.getItem('token')),
+    //         globalHeaders: [{ 'Content-Type': 'application/json' }],
+    //         noJwtError: true
+    //     })
   ]
 })
 export class ProfileModule { }
