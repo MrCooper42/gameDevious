@@ -1,9 +1,8 @@
-<div class="container">
-<!-- *ngIf="loggedIn()"> -->
+<div class="container" *ngIf="user">
   <div class="row">
     <div class="col-lg-12">
       <h1 class="page-header">{{user.firstName}} {{user.lastName}}
-        <small>TITLE HERE</small>
+        <small>{{user.profile.title || 'fill me in'}}</small>
       </h1>
     </div>
   </div>
@@ -26,21 +25,9 @@
     <div class="col-lg-12">
       <h3 class="page-header">{{user.firstName}}'s Games</h3>
     </div>
-    <!-- <div class="col-sm-3 col-xs-6">
-      <a href="#">
-        <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
-      </a>
-    </div>
-
-    <div class="col-sm-3 col-xs-6">
-      <a href="#">
-        <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
-      </a>
-    </div> -->
-
     <div class="col-sm-3 col-xs-6">
       <a (click)="useJwtHelper()">
-        <img class="img-responsive portfolio-item" src="../../../../server/uploads/58644b81f9eb5a5379261534/file-1483058698060.jpg" alt="">
+        <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
         <!-- portfolio.works.image ngrepeat -->
       </a>
     </div>
@@ -53,29 +40,12 @@
   <a (click)="linkLinkedIn">LinkedIn</a>
   <a (click)="linkGoogle">Google</a>
   <a (click)="linkTwitter">Twitter</a> -->
- <!-- <template #facebook let-c="close" let-d="dismiss">
-  <div class="modal-header">
-    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
-      <span aria-hidden="true">&times;</span>
-    </button>
-    <h4 class="modal-title">Facebook Login</h4>
-  </div>
-  <div class="modal-body" [innerHTML]="responseBody">
-    {{responseBody}}
-  </div>
-  <div class="modal-footer">
-    <button type="button" class="btn btn-secondary" (click)="c('Close click')">Close</button>
-  </div>
-</template> -->
+<div class="facebook-profile-edit">
+<a class="btn btn-sm btn-outline-primary" href="/facebook/{{user._id}}">{{user.facebook}}Link Facebook</a>
+</div>
 
-<a class="btn btn-lg btn-outline-primary" href="/facebook/{{user._id}}">Link w/o ng Facebook</a>
-<button class="btn btn-lg btn-outline-primary" (click)="linkFacebook()">Link Facebook</button>
+<div>
+  <a class="btn btn-sm btn-outline-primary" href="/github/{{user._id}}" *ngIf="!user.github">Link Github</a><h5 *ngIf="user.github">Github </h5><a *ngIf="user.github">{{user.github.url}}</a><p>followers: {{user.github.followers}}</p><p>repo #:{{user.github.repoNum}}</p>
+</div>
 <br>
-<a class="btn btn-lg btn-outline-primary" href="/github/{{user._id}}" *ngIf="!user.github.id">Link w/o ng Github</a><a *ngIf="user.github.id">{{user.github.url}}</a><p>followers: {{user.github.followers}}</p><p>repo #:{{user.github.repoNum}}</p>
-<button class="btn btn-lg btn-outline-primary" (click)="linkGithub()">Link Github</button>
-<br>
-<button class="btn btn-lg btn-outline-primary" (click)="linkLinkedin()">Link LinkedIn</button>
-<!--
-<hr>
-
-<pre>{{closeResult}}</pre> -->
+<button class="btn btn-sm btn-outline-primary" (click)="linkLinkedin()">Link LinkedIn</button>

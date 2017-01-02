@@ -6,6 +6,7 @@ import { Observable } from "rxjs";
 import { JwtHelper } from 'angular2-jwt/angular2-jwt';
 import { UploadModule } from '../upload/upload.module';
 
+import { User } from "./user.model";
 import { Skill } from "./skill.model";
 import { ErrorService } from "../errors/error.service";
 
@@ -54,9 +55,10 @@ export class ProfileService {
     return localStorage.getItem('token') !== null;
   }
 
+// : Observable<User>
   getUser(userId) {
     return this.http.get(`/user/${userId}`)
-    .map(res => res.json())
+    .map((res: Response) => res.json())
     .catch(error => Observable.throw(error.json().error || console.log(error, "error")))
   }
 

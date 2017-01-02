@@ -74,7 +74,7 @@ const schema = new Schema({
     followers: Number,
     repoNum: Number
   },
-  portfolio: {
+  profile: {
     type: Schema.Types.ObjectId,
     ref: 'Profile'
   }
