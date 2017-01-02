@@ -4,6 +4,7 @@ import 'rxjs/Rx';
 import { Observable } from "rxjs";
 // import { AuthHttp } from 'angular2-jwt';
 import { JwtHelper } from 'angular2-jwt/angular2-jwt';
+import { UploadModule } from '../upload/upload.module';
 
 import { Skill } from "./skill.model";
 import { ErrorService } from "../errors/error.service";
@@ -53,11 +54,11 @@ export class ProfileService {
     return localStorage.getItem('token') !== null;
   }
 
-  // profileEdit() {
-  //   const token = localStorage.getItem('token')
-  //
-  //   return this.http.get(`/profile/user/${token}`)
-  // } angular2-jwt
+  getUser(userId) {
+    return this.http.get(`/user/${userId}`)
+    .map(res => res.json())
+    .catch(error => Observable.throw(error.json().error || console.log(error, "error")))
+  }
 
   facebook(userId) {
     console.log(userId, "userId")
@@ -66,8 +67,8 @@ export class ProfileService {
     headers.append('Access-Control-Allow-Origin', '*')
     headers.append('user_id', userId)
     let options = new RequestOptions({ headers: headers })
-    console.log(options, "options")
-    return this.http.get(`/facebook/${userId}`, options)
+    // ${userId}`, options
+    return this.http.get(`http://localhost:3000/facebook/${userId}`, options)
     .map((res: Response) => {
       console.log(res.url, "server response")
       return res.url
@@ -87,7 +88,7 @@ export class ProfileService {
   github(userId) {
     let headers = new Headers()
     headers.append('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Accept, Content-Type')
-    headers.append('Access-Control-Allow-Origin', '')
+    headers.append('Access-Control-Allow-Origin', 'http://localhost:3000')
     headers.append('user_id', userId)
     let options = new RequestOptions({ headers: headers })
     console.log(options, "options")

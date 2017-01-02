@@ -1,10 +1,11 @@
 'use strict'
 
 const express = require('express');
-// const passport = require('passport');
+const cors = require('cors');
 const User = require('../models/user');
-// const bcrypt = require('bcryptjs');
+const ejwt = require('express-jwt');
 const jwt = require('jsonwebtoken');
+const session = require('express-session')
 const router = express.Router();
 
 const isLoggedIn = (req, res, next) => {;
@@ -13,17 +14,17 @@ const isLoggedIn = (req, res, next) => {;
   }
   res.redirect('/')
 }
-// let req;
-// const reqUser = User.findOne({_id: req.params}, (err, user) => {
-//   req.user = user;
-// })
 
 module.exports = function(app, passport) {
 
-  // router.get('/logout', (req, res) => {
-  //   req.logout();
-  //   res.redirect('/');
-  // });
+  app.use(session({
+    secret: 'superSecret',
+    cookie: {
+      maxAge: 60000
+    }
+  }))
+
+  app.use(cors())
 
   router.get('/ping', function(req, res) {
     res.status(200).send("pong!");
@@ -38,15 +39,36 @@ module.exports = function(app, passport) {
     failureRedirect: '/auth'
   }));
 
-  app.get('/github/:id',
-    passport.authenticate('github', { scope: [ 'user:email' ] }));
+  app.get('/github/:id', (req, res, next) => {
+    passport.authenticate('github', {
+      callbackURL: '/github/callback/' + req.params.id
+    })(req, res, next);
+  });
 
-  app.get('/github/callback',
-    passport.authenticate('github', { failureRedirect: '/auth' }),
-    function(req, res) {
-      // Successful authentication, redirect home.
-      res.redirect('/profile');
-    });
+  app.get('/github/callback/:id', (req, res, next) => {
+    passport.authenticate('github', {
+      callbackURL: '/github/callback/' + req.params.id,
+      successRedirect: '/profile',
+      failureRedirect: '/login'
+    })(req, res, next);
+  });
+
+  app.get('/login', function(req, res, next) {
+    passport.authenticate('local', function(err, user, info) {
+      if (err) {
+        return next(err);
+      }
+      if (!user) {
+        return res.redirect('/login');
+      }
+      req.logIn(user, function(err) {
+        if (err) {
+          return next(err);
+        }
+        return res.redirect('/users/' + user.username);
+      });
+    })(req, res, next);
+  });
 
   //end social accounts
   return router

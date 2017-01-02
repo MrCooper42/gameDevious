@@ -2,8 +2,8 @@
 <!-- *ngIf="loggedIn()"> -->
   <div class="row">
     <div class="col-lg-12">
-      <h1 class="page-header">Edit your Portfolio Page
-        <small>NAMEHERE</small>
+      <h1 class="page-header">{{user.firstName}} {{user.lastName}}
+        <small>TITLE HERE</small>
       </h1>
     </div>
   </div>
@@ -12,9 +12,10 @@
       <img class="img-responsive" src="http://placehold.it/750x500" alt="">
     </div>
     <div class="col-md-4">
-      <h3>Snippit's of {{user}}</h3>
+      <h3>About {{user.firstName}}</h3>
       glyphicon glyphicon-pencil
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.
+      PROFILE FILL</p>
       <h3>Skills</h3>
       <ul>
         <li>List Skills here as tags</li>
@@ -23,7 +24,7 @@
   </div>
   <div class="row">
     <div class="col-lg-12">
-      <h3 class="page-header">NAMEHERE 's Games</h3>
+      <h3 class="page-header">{{user.firstName}}'s Games</h3>
     </div>
     <!-- <div class="col-sm-3 col-xs-6">
       <a href="#">
@@ -39,15 +40,10 @@
 
     <div class="col-sm-3 col-xs-6">
       <a (click)="useJwtHelper()">
-        <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+        <img class="img-responsive portfolio-item" src="../../../../server/uploads/58644b81f9eb5a5379261534/file-1483058698060.jpg" alt="">
+        <!-- portfolio.works.image ngrepeat -->
       </a>
     </div>
-
-    <!-- <div class="col-sm-3 col-xs-6">
-      <a href="#">
-        <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
-      </a>
-    </div> -->
   </div>
   <hr>
   <h3>Link your social accounts!</h3>
@@ -72,8 +68,10 @@
   </div>
 </template> -->
 
+<a class="btn btn-lg btn-outline-primary" href="/facebook/{{user._id}}">Link w/o ng Facebook</a>
 <button class="btn btn-lg btn-outline-primary" (click)="linkFacebook()">Link Facebook</button>
 <br>
+<a class="btn btn-lg btn-outline-primary" href="/github/{{user._id}}" *ngIf="!user.github.id">Link w/o ng Github</a><a *ngIf="user.github.id">{{user.github.url}}</a><p>followers: {{user.github.followers}}</p><p>repo #:{{user.github.repoNum}}</p>
 <button class="btn btn-lg btn-outline-primary" (click)="linkGithub()">Link Github</button>
 <br>
 <button class="btn btn-lg btn-outline-primary" (click)="linkLinkedin()">Link LinkedIn</button>

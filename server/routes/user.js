@@ -44,6 +44,20 @@ router.post('/', (req, res, next) => {
 
 module.exports = router;
 
+router.get('/:id', (req, res, next) => {
+  console.log("here");
+  User.findById(req.params.id).populate("portfolio").exec((err, user) => {
+    if (err) {
+      return res.status(500).json({
+          title: 'Bad things happened',
+          error: err
+      });
+    }
+    console.log(user, "user here");
+    return res.send(user)
+  })
+})
+
 router.post('/signin', (req, res, next) => {
     User.findOne({
         email: req.body.email

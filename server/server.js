@@ -15,7 +15,7 @@ const flash = require('connect-flash');
 const expressSanitizer = require('express-sanitizer');
 const methodOverride = require('method-override');
 const cors = require('cors');
-const jwt = require('express-jwt');
+const ejwt = require('express-jwt');
 const passport = require('passport');
 require('../config/passport')(passport);
 const mongoose = require('mongoose');
@@ -25,7 +25,6 @@ const app = express();
 mongoose.connect(process.env.MONGOURI);
 
 const appRoutes = require('./routes/app');
-const authRoutes = require('./routes/auth')(app, passport);
 
 const originsWhitelist = [
   'http://localhost:3000',      //this is my front-end url for development
@@ -48,7 +47,7 @@ app.set('view engine', 'hbs');
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
-	extended: false
+	extended: true
 }));
 app.use(cookieParser());
 
@@ -60,16 +59,16 @@ app.use(session({
 }));
 app.use(express.static(path.join(__dirname, '../public')));
 
-app.use(cors());
+// app.use(cors());
 
 // CORS
-// app.use((req, res, next) => {
-// 	res.header('Access-Control-Allow-Origin', '*');
-// 	res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-// 	res.header('Access-Control-Allow-Methods', 'POST, GET, PATCH, DELETE, OPTIONS');
-//   res.header('Access-Control-Allow-Credentials', true);
-// 	next();
-// });
+app.use((req, res, next) => {
+	res.setHeader('Access-Control-Allow-Origin', '*');
+	res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+	res.setHeader('Access-Control-Allow-Methods', 'POST, GET, PATCH, DELETE, OPTIONS');
+  res.setHeader('Access-Control-Allow-Credentials', true);
+	next();
+});
 
 app.use(expressSanitizer());
 app.use(methodOverride("_method"));
@@ -77,15 +76,10 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
 
-//pass local user variable
-// app.use(function(req, res, next){
-//   res.locals.currentUser = req.user;
-//   next();
-// });
-
+const authRoutes = require('./routes/auth')(app, passport);
 
 app.use('/', appRoutes);
-app.use('/auth', authRoutes);
+app.use('/auth', ejwt({secret: 'secret'}), authRoutes);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => res.render('index'));

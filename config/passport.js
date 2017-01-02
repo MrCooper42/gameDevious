@@ -14,8 +14,6 @@ const User = require('../server/models/user');
 const configAuth = require('./auth');
 
 module.exports = function(passport) {
-  //
-  // function init() {
 
   passport.serializeUser((user, done) => {
     delete user.password; // still passed in
@@ -33,65 +31,6 @@ module.exports = function(passport) {
     });
   });
 
-  // passport.use('local-signup', new LocalStrategy({
-  //   usernameField: 'email',
-  //   passwordField: 'password',
-  //   passReqToCallback: true
-  // }, (req, email, password, done) => {
-  //   process.nextTick(() => {
-  //     User.findOne({
-  //       'local.email': email
-  //     }, (err, user) => {
-  //       if (err) {
-  //         console.log("error in signup: " + err);
-  //         return done(err)
-  //       }
-  //       if (user) {
-  //         console.log("User exists");
-  //         return done(null, false);
-  //       } else {
-  //         console.log(req.body, "body");
-  //         console.log(req.param, "param");
-  //         let newUser = new User();
-  //         newUser.local.firstName = req.body.firstName
-  //         newUser.local.lastName = req.body.lastName
-  //         newUser.local.email = email;
-  //         newUser.local.password = newUser.generateHash(password);
-  //
-  //         newUser.save((err) => {
-  //           if (err) {
-  //             throw err;
-  //           }
-  //           return done(null, newUser);
-  //         });
-  //       }
-  //     });
-  //   });
-  // }));
-  //
-  // passport.use('local-login', new LocalStrategy({
-  //   usernameField: 'email',
-  //   passwordField: 'password',
-  //   passReqToCallback: true
-  // }, (req, email, password, done) => {
-  //   console.log(email, "here in passport");
-  //   User.findOne({
-  //     'local.email': email
-  //   }, (err, user) => {
-  //     if (err) {
-  //       return done(err);
-  //     }
-  //     if (!user) {
-  //       return done(null, false);
-  //     }
-  //     if (!user.validatePassword(password)) {
-  //       return done(null, false);
-  //     } else {
-  //       return done(null, user);
-  //     }
-  //   });
-  // }));
-
   //social logins
 
   // FACEBOOK =========================================================================
@@ -102,12 +41,16 @@ module.exports = function(passport) {
     callbackURL: configAuth.facebookAuth.callbackURL,
     passReqToCallback: true
   }, function(req, token, refreshToken, profile, done) {
-    console.log(req.headers.user_id, "headers");
-    User.findById(req.headers.user_id, (err, reqUser) => {
+    console.log('I am here')
+    console.log(req.params, "req params");
+    // console.log(req.headers, "headers");
+    User.findById(req.headers, (err, reqUser) => {
       if (err) {
         console.log(err, "erroz had");
       } else {
         console.log(reqUser, "reqUser in passport");
+        console.log(token, "token in passport");
+        console.log(profile, "profile in passport");
         // async
         process.nextTick(function() {
           // already logged in
@@ -325,13 +268,78 @@ module.exports = function(passport) {
   passport.use(new GithubStrategy({
     clientID: configAuth.githubAuth.clientID,
     clientSecret: configAuth.githubAuth.clientSecret,
-    callbackURL: configAuth.githubAuth.callbackURL
+    callbackURL: configAuth.githubAuth.callbackURL,
+    passReqToCallback: true
   }, function(req, accessToken, refreshToken, profile, done) {
-    console.log(req.params, "req in passport");
-    User.findOrCreate({
-      githubId: profile.id
-    }, function(err, user) {
-      return done(err, user);
-    });
+    console.log('I am here')
+    console.log(req.params.id, "session passport");
+    User.findById(req.params.id, (err, user) => {
+      if (err) {
+        console.log(err, "erroz had");
+      } else {
+        // async
+        process.nextTick(function() {
+          // already logged in
+          console.log(user, "user before");
+          if (!user) {
+            console.log(user, "asdfasdf user?");
+            User.findOne({
+              'github.id': profile.id
+            }, function(err, user) {
+              console.log(user, "no github id");
+              if (err) {
+                return done(err);
+              }
+              if (user) {
+                //user but no token
+                if (!user.github.token) {
+                  user.github.token = accessToken;
+                  user.github.url = profile.html_url;
+                  user.github.followers = profile.followers;
+                  user.github.repoNum = profile.public_repos;
+
+                  user.save(function(err) {
+                    if (err)
+                      throw err;
+                    return done(null, user);
+                  });
+                }
+                return done(null, user);
+              } else {
+                console.log("woulda coulda shoulda");
+                // // if there is no user create // delete this bit
+                // var newUser = new User();
+                //
+                // newUser.github.id = profile.id;
+                // newUser.github.token = token;
+                // newUser.github.name = `${profile.name.givenName} ${profile.name.familyName}`;
+                // newUser.github.email = profile.emails[0].value;
+                //
+                // newUser.save(function(err) {
+                //   if (err)
+                //     throw err;
+                //   return done(null, newUser);
+                // });
+                // console.log("no user send error here");
+              }
+            });
+          } else {
+            console.log(profile, "profile???");
+            user.github.token = accessToken;
+            user.github.id = profile.id
+            user.github.url = profile.profileUrl;
+            user.github.followers = profile._json.followers;
+            user.github.repoNum = profile._json.public_repos;
+
+            user.save(function(err) {
+              if (err)
+                throw err;
+              return done(null, user);
+            });
+
+          }
+        });
+      }
+    })
   }));
 };

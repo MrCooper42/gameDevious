@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable }           from 'rxjs/Observable';
 import { ProfileService } from './profile.service';
 import { Router } from '@angular/router';
 import { JwtHelper } from 'angular2-jwt/angular2-jwt';
@@ -34,31 +35,21 @@ export class ProfileEditComponent implements OnInit {
     return this.jwtHelper.decodeToken(token).user
   }
 
+  returnUser() {
+    let id = this.useJwtHelper()._id
+
+    this.profileService.getUser(id)
+    .subscribe(res => {
+      this.user = res;
+    })
+  }
 
   loggedIn() {
     if (this.profileService.isLoggedIn() === false) {
-      this.router.navigate(['/auth']);
+      this.router.navigate(['/login']);
     } else {
       console.log(this.profileService.isLoggedIn());
       return true;
-    }
-  }
-
-  open(content) {
-    this.modalService.open(content).result.then((result) => {
-      this.closeResult = `Closed with: ${result}`;
-    }, (reason) => {
-      this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
-    });
-  }
-
-  private getDismissReason(reason: any): string {
-    if (reason === ModalDismissReasons.ESC) {
-      return 'by pressing ESC';
-    } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
-      return 'by clicking on a backdrop';
-    } else {
-      return `with: ${reason}`;
     }
   }
 
@@ -67,7 +58,9 @@ export class ProfileEditComponent implements OnInit {
       .subscribe(
       res => {
         console.log(res, "response in controller")
-        this.router.navigate(["/"]).then(result=>{window.location.href = res;});
+        this.router.navigate(["/"]).then(result => {
+          window.location.href = res;
+        });
       },
       error => console.log(error)
       )
@@ -95,6 +88,10 @@ export class ProfileEditComponent implements OnInit {
       )
   }
 
-  ngOnInit() { }
+  ngOnInit() {
+    // this.useJwtHelper();
+    this.returnUser();
+    console.log(this.user, "this user")
+  }
 
 }
