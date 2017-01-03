@@ -104,245 +104,204 @@ export class View_UploadComponent0 extends import1.AppView<import0.UploadCompone
   _el_6:any;
   _text_7:any;
   _text_8:any;
-  _text_9:any;
+  _el_9:any;
+  _NgClass_9_3:import9.Wrapper_NgClass;
+  _FileDropDirective_9_4:import10.Wrapper_FileDropDirective;
   _text_10:any;
-  _el_11:any;
+  _text_11:any;
   _text_12:any;
   _el_13:any;
+  _FileSelectDirective_13_3:import11.Wrapper_FileSelectDirective;
   _text_14:any;
-  _el_15:any;
-  _text_16:any;
+  _text_15:any;
+  _el_16:any;
   _text_17:any;
   _el_18:any;
-  _NgClass_18_3:import9.Wrapper_NgClass;
-  _FileDropDirective_18_4:import10.Wrapper_FileDropDirective;
   _text_19:any;
   _text_20:any;
   _el_21:any;
-  _NgClass_21_3:import9.Wrapper_NgClass;
-  _FileDropDirective_21_4:import10.Wrapper_FileDropDirective;
   _text_22:any;
   _text_23:any;
   _el_24:any;
-  _FileSelectDirective_24_3:import11.Wrapper_FileSelectDirective;
-  _el_25:any;
-  _text_26:any;
-  _el_27:any;
-  _FileSelectDirective_27_3:import11.Wrapper_FileSelectDirective;
-  _text_28:any;
+  _text_25:any;
+  _el_26:any;
+  _text_27:any;
+  _el_28:any;
   _text_29:any;
   _el_30:any;
   _text_31:any;
-  _el_32:any;
-  _text_33:any;
+  _text_32:any;
+  _el_33:any;
   _text_34:any;
-  _el_35:any;
-  _text_36:any;
+  _text_35:any;
+  _el_36:any;
   _text_37:any;
-  _el_38:any;
-  _text_39:any;
-  _el_40:any;
+  _text_38:any;
+  _el_39:any;
+  _text_40:any;
   _text_41:any;
   _el_42:any;
   _text_43:any;
-  _el_44:any;
+  _text_44:any;
   _text_45:any;
   _text_46:any;
   _el_47:any;
   _text_48:any;
-  _text_49:any;
-  _el_50:any;
+  _anchor_49:any;
+  /*private*/ _vc_49:import12.ViewContainer;
+  _TemplateRef_49_5:any;
+  _NgFor_49_6:import13.Wrapper_NgFor;
+  _text_50:any;
   _text_51:any;
   _text_52:any;
   _el_53:any;
   _text_54:any;
-  _text_55:any;
-  _el_56:any;
-  _text_57:any;
+  _el_55:any;
+  _text_56:any;
+  _el_57:any;
   _text_58:any;
-  _text_59:any;
+  _el_59:any;
+  _NgStyle_59_3:import14.Wrapper_NgStyle;
   _text_60:any;
-  _el_61:any;
+  _text_61:any;
   _text_62:any;
-  _anchor_63:any;
-  /*private*/ _vc_63:import12.ViewContainer;
-  _TemplateRef_63_5:any;
-  _NgFor_63_6:import13.Wrapper_NgFor;
+  _el_63:any;
   _text_64:any;
-  _text_65:any;
+  _el_65:any;
   _text_66:any;
-  _el_67:any;
-  _text_68:any;
-  _el_69:any;
-  _text_70:any;
-  _el_71:any;
+  _text_67:any;
+  _el_68:any;
+  _text_69:any;
+  _el_70:any;
+  _text_71:any;
   _text_72:any;
   _el_73:any;
-  _NgStyle_73_3:import14.Wrapper_NgStyle;
   _text_74:any;
-  _text_75:any;
+  _el_75:any;
   _text_76:any;
-  _el_77:any;
+  _text_77:any;
   _text_78:any;
-  _el_79:any;
+  _text_79:any;
   _text_80:any;
   _text_81:any;
-  _el_82:any;
-  _text_83:any;
-  _el_84:any;
-  _text_85:any;
-  _text_86:any;
-  _el_87:any;
-  _text_88:any;
-  _el_89:any;
-  _text_90:any;
-  _text_91:any;
-  _text_92:any;
-  _text_93:any;
-  _text_94:any;
-  _text_95:any;
-  _map_106:any;
-  _map_107:any;
-  /*private*/ _expr_108:any;
+  _map_89:any;
+  /*private*/ _expr_90:any;
   _pipe_number_0:import15.DecimalPipe;
-  _map_110:any;
-  /*private*/ _expr_111:any;
-  /*private*/ _expr_112:any;
-  /*private*/ _expr_113:any;
+  _map_92:any;
+  /*private*/ _expr_93:any;
+  /*private*/ _expr_94:any;
+  /*private*/ _expr_95:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any) {
     super(View_UploadComponent0,renderType_UploadComponent,import5.ViewType.COMPONENT,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways);
-    this._map_106 = import3.pureProxy1((p0:any):{[key: string]:any} => {
+    this._map_89 = import3.pureProxy1((p0:any):{[key: string]:any} => {
       return {'nv-file-over': p0};
     });
-    this._map_107 = import3.pureProxy1((p0:any):{[key: string]:any} => {
-      return {'another-file-over-class': p0};
-    });
-    this._expr_108 = import6.UNINITIALIZED;
-    this._map_110 = import3.pureProxy1((p0:any):{[key: string]:any} => {
+    this._expr_90 = import6.UNINITIALIZED;
+    this._map_92 = import3.pureProxy1((p0:any):{[key: string]:any} => {
       return {width: p0};
     });
-    this._expr_111 = import6.UNINITIALIZED;
-    this._expr_112 = import6.UNINITIALIZED;
-    this._expr_113 = import6.UNINITIALIZED;
+    this._expr_93 = import6.UNINITIALIZED;
+    this._expr_94 = import6.UNINITIALIZED;
+    this._expr_95 = import6.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
     const parentRenderNode:any = this.renderer.createViewRoot(this.parentElement);
-    this._el_0 = import3.createRenderElement(this.renderer,parentRenderNode,'div',new import3.InlineArray2(2,'class','container'),(null as any));
+    this._el_0 = import3.createRenderElement(this.renderer,parentRenderNode,'div',new import3.InlineArray4(4,'class','container','ngbModalContainer',''),(null as any));
     this._text_1 = this.renderer.createText(this._el_0,'\n\n  ',(null as any));
-    this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'div',new import3.InlineArray2(2,'class','navbar navbar-default'),(null as any));
-    this._text_3 = this.renderer.createText(this._el_2,'\n    ',(null as any));
-    this._el_4 = import3.createRenderElement(this.renderer,this._el_2,'div',new import3.InlineArray2(2,'class','navbar-header'),(null as any));
-    this._text_5 = this.renderer.createText(this._el_4,'\n      ',(null as any));
-    this._el_6 = import3.createRenderElement(this.renderer,this._el_4,'a',new import3.InlineArray4(4,'class','navbar-brand','href',''),(null as any));
-    this._text_7 = this.renderer.createText(this._el_6,'Angular2 File Upload',(null as any));
-    this._text_8 = this.renderer.createText(this._el_4,'\n    ',(null as any));
-    this._text_9 = this.renderer.createText(this._el_2,'\n  ',(null as any));
-    this._text_10 = this.renderer.createText(this._el_0,'\n\n  ',(null as any));
-    this._el_11 = import3.createRenderElement(this.renderer,this._el_0,'div',new import3.InlineArray2(2,'class','row'),(null as any));
-    this._text_12 = this.renderer.createText(this._el_11,'\n\n    ',(null as any));
-    this._el_13 = import3.createRenderElement(this.renderer,this._el_11,'div',new import3.InlineArray2(2,'class','col-md-3'),(null as any));
-    this._text_14 = this.renderer.createText(this._el_13,'\n\n      ',(null as any));
-    this._el_15 = import3.createRenderElement(this.renderer,this._el_13,'h3',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_16 = this.renderer.createText(this._el_15,'Select files',(null as any));
-    this._text_17 = this.renderer.createText(this._el_13,'\n\n      ',(null as any));
-    this._el_18 = import3.createRenderElement(this.renderer,this._el_13,'div',new import3.InlineArray4(4,'class','well my-drop-zone','ng2FileDrop',''),(null as any));
-    this._NgClass_18_3 = new import9.Wrapper_NgClass(this.parentView.injectorGet(import16.IterableDiffers,this.parentIndex),this.parentView.injectorGet(import17.KeyValueDiffers,this.parentIndex),new import18.ElementRef(this._el_18),this.renderer);
-    this._FileDropDirective_18_4 = new import10.Wrapper_FileDropDirective(new import18.ElementRef(this._el_18));
-    this._text_19 = this.renderer.createText(this._el_18,'\n        Base drop zone\n      ',(null as any));
-    this._text_20 = this.renderer.createText(this._el_13,'\n\n      ',(null as any));
-    this._el_21 = import3.createRenderElement(this.renderer,this._el_13,'div',new import3.InlineArray4(4,'class','well my-drop-zone','ng2FileDrop',''),(null as any));
-    this._NgClass_21_3 = new import9.Wrapper_NgClass(this.parentView.injectorGet(import16.IterableDiffers,this.parentIndex),this.parentView.injectorGet(import17.KeyValueDiffers,this.parentIndex),new import18.ElementRef(this._el_21),this.renderer);
-    this._FileDropDirective_21_4 = new import10.Wrapper_FileDropDirective(new import18.ElementRef(this._el_21));
-    this._text_22 = this.renderer.createText(this._el_21,'\n        Another drop zone\n      ',(null as any));
-    this._text_23 = this.renderer.createText(this._el_13,'\n\n      Multiple\n      ',(null as any));
-    this._el_24 = import3.createRenderElement(this.renderer,this._el_13,'input',new import3.InlineArray8(6,'multiple','','ng2FileSelect','','type','file'),(null as any));
-    this._FileSelectDirective_24_3 = new import11.Wrapper_FileSelectDirective(new import18.ElementRef(this._el_24));
-    this._el_25 = import3.createRenderElement(this.renderer,this._el_13,'br',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_26 = this.renderer.createText(this._el_13,'\n\n      Single\n      ',(null as any));
-    this._el_27 = import3.createRenderElement(this.renderer,this._el_13,'input',new import3.InlineArray4(4,'ng2FileSelect','','type','file'),(null as any));
-    this._FileSelectDirective_27_3 = new import11.Wrapper_FileSelectDirective(new import18.ElementRef(this._el_27));
-    this._text_28 = this.renderer.createText(this._el_13,'\n    ',(null as any));
-    this._text_29 = this.renderer.createText(this._el_11,'\n\n    ',(null as any));
-    this._el_30 = import3.createRenderElement(this.renderer,this._el_11,'div',new import3.InlineArray4(4,'class','col-md-9','style','margin-bottom: 40px'),(null as any));
-    this._text_31 = this.renderer.createText(this._el_30,'\n\n      ',(null as any));
-    this._el_32 = import3.createRenderElement(this.renderer,this._el_30,'h3',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_33 = this.renderer.createText(this._el_32,'Upload queue',(null as any));
-    this._text_34 = this.renderer.createText(this._el_30,'\n      ',(null as any));
-    this._el_35 = import3.createRenderElement(this.renderer,this._el_30,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_36 = this.renderer.createText(this._el_35,'',(null as any));
-    this._text_37 = this.renderer.createText(this._el_30,'\n\n      ',(null as any));
-    this._el_38 = import3.createRenderElement(this.renderer,this._el_30,'table',new import3.InlineArray2(2,'class','table'),(null as any));
-    this._text_39 = this.renderer.createText(this._el_38,'\n        ',(null as any));
-    this._el_40 = import3.createRenderElement(this.renderer,this._el_38,'thead',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_41 = this.renderer.createText(this._el_40,'\n          ',(null as any));
-    this._el_42 = import3.createRenderElement(this.renderer,this._el_40,'tr',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_43 = this.renderer.createText(this._el_42,'\n            ',(null as any));
-    this._el_44 = import3.createRenderElement(this.renderer,this._el_42,'th',new import3.InlineArray2(2,'width','50%'),(null as any));
-    this._text_45 = this.renderer.createText(this._el_44,'Name',(null as any));
-    this._text_46 = this.renderer.createText(this._el_42,'\n            ',(null as any));
-    this._el_47 = import3.createRenderElement(this.renderer,this._el_42,'th',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_48 = this.renderer.createText(this._el_47,'Size',(null as any));
-    this._text_49 = this.renderer.createText(this._el_42,'\n            ',(null as any));
-    this._el_50 = import3.createRenderElement(this.renderer,this._el_42,'th',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_51 = this.renderer.createText(this._el_50,'Progress',(null as any));
-    this._text_52 = this.renderer.createText(this._el_42,'\n            ',(null as any));
-    this._el_53 = import3.createRenderElement(this.renderer,this._el_42,'th',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_54 = this.renderer.createText(this._el_53,'Status',(null as any));
-    this._text_55 = this.renderer.createText(this._el_42,'\n            ',(null as any));
-    this._el_56 = import3.createRenderElement(this.renderer,this._el_42,'th',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_57 = this.renderer.createText(this._el_56,'Actions',(null as any));
-    this._text_58 = this.renderer.createText(this._el_42,'\n          ',(null as any));
-    this._text_59 = this.renderer.createText(this._el_40,'\n        ',(null as any));
-    this._text_60 = this.renderer.createText(this._el_38,'\n        ',(null as any));
-    this._el_61 = import3.createRenderElement(this.renderer,this._el_38,'tbody',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_62 = this.renderer.createText(this._el_61,'\n          ',(null as any));
-    this._anchor_63 = this.renderer.createTemplateAnchor(this._el_61,(null as any));
-    this._vc_63 = new import12.ViewContainer(63,61,this,this._anchor_63);
-    this._TemplateRef_63_5 = new import19.TemplateRef_(this,63,this._anchor_63);
-    this._NgFor_63_6 = new import13.Wrapper_NgFor(this._vc_63.vcRef,this._TemplateRef_63_5,this.parentView.injectorGet(import16.IterableDiffers,this.parentIndex),this.ref);
-    this._text_64 = this.renderer.createText(this._el_61,'\n        ',(null as any));
-    this._text_65 = this.renderer.createText(this._el_38,'\n      ',(null as any));
-    this._text_66 = this.renderer.createText(this._el_30,'\n\n      ',(null as any));
-    this._el_67 = import3.createRenderElement(this.renderer,this._el_30,'div',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_68 = this.renderer.createText(this._el_67,'\n        ',(null as any));
-    this._el_69 = import3.createRenderElement(this.renderer,this._el_67,'div',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_70 = this.renderer.createText(this._el_69,'\n          Queue progress:\n          ',(null as any));
-    this._el_71 = import3.createRenderElement(this.renderer,this._el_69,'div',new import3.InlineArray4(4,'class','progress','style',''),(null as any));
-    this._text_72 = this.renderer.createText(this._el_71,'\n            ',(null as any));
-    this._el_73 = import3.createRenderElement(this.renderer,this._el_71,'div',new import3.InlineArray4(4,'class','progress-bar','role','progressbar'),(null as any));
-    this._NgStyle_73_3 = new import14.Wrapper_NgStyle(this.parentView.injectorGet(import17.KeyValueDiffers,this.parentIndex),new import18.ElementRef(this._el_73),this.renderer);
-    this._text_74 = this.renderer.createText(this._el_71,'\n          ',(null as any));
-    this._text_75 = this.renderer.createText(this._el_69,'\n        ',(null as any));
-    this._text_76 = this.renderer.createText(this._el_67,'\n        ',(null as any));
-    this._el_77 = import3.createRenderElement(this.renderer,this._el_67,'button',new import3.InlineArray4(4,'class','btn btn-success btn-s','type','button'),(null as any));
-    this._text_78 = this.renderer.createText(this._el_77,'\n          ',(null as any));
-    this._el_79 = import3.createRenderElement(this.renderer,this._el_77,'span',new import3.InlineArray2(2,'class','glyphicon glyphicon-upload'),(null as any));
-    this._text_80 = this.renderer.createText(this._el_77,'\n          Upload all\n        ',(null as any));
-    this._text_81 = this.renderer.createText(this._el_67,'\n        ',(null as any));
-    this._el_82 = import3.createRenderElement(this.renderer,this._el_67,'button',new import3.InlineArray4(4,'class','btn btn-warning btn-s','type','button'),(null as any));
-    this._text_83 = this.renderer.createText(this._el_82,'\n          ',(null as any));
-    this._el_84 = import3.createRenderElement(this.renderer,this._el_82,'span',new import3.InlineArray2(2,'class','glyphicon glyphicon-ban-circle'),(null as any));
-    this._text_85 = this.renderer.createText(this._el_82,'\n          Cancel all\n        ',(null as any));
-    this._text_86 = this.renderer.createText(this._el_67,'\n        ',(null as any));
-    this._el_87 = import3.createRenderElement(this.renderer,this._el_67,'button',new import3.InlineArray4(4,'class','btn btn-danger btn-s','type','button'),(null as any));
-    this._text_88 = this.renderer.createText(this._el_87,'\n          ',(null as any));
-    this._el_89 = import3.createRenderElement(this.renderer,this._el_87,'span',new import3.InlineArray2(2,'class','glyphicon glyphicon-trash'),(null as any));
-    this._text_90 = this.renderer.createText(this._el_87,'\n          Remove all\n        ',(null as any));
-    this._text_91 = this.renderer.createText(this._el_67,'\n      ',(null as any));
-    this._text_92 = this.renderer.createText(this._el_30,'\n\n    ',(null as any));
-    this._text_93 = this.renderer.createText(this._el_11,'\n\n  ',(null as any));
-    this._text_94 = this.renderer.createText(this._el_0,'\n\n',(null as any));
-    this._text_95 = this.renderer.createText(parentRenderNode,'\n',(null as any));
-    var disposable_0:Function = import3.subscribeToRenderElement(this,this._el_18,new import3.InlineArray8(8,'fileOver',(null as any),'drop',(null as any),'dragover',(null as any),'dragleave',(null as any)),this.eventHandler(this.handleEvent_18));
-    this._FileDropDirective_18_4.subscribe(this,this.eventHandler(this.handleEvent_18),true,false);
-    var disposable_1:Function = import3.subscribeToRenderElement(this,this._el_21,new import3.InlineArray8(8,'fileOver',(null as any),'drop',(null as any),'dragover',(null as any),'dragleave',(null as any)),this.eventHandler(this.handleEvent_21));
-    this._FileDropDirective_21_4.subscribe(this,this.eventHandler(this.handleEvent_21),true,false);
-    var disposable_2:Function = import3.subscribeToRenderElement(this,this._el_24,new import3.InlineArray2(2,'change',(null as any)),this.eventHandler(this.handleEvent_24));
-    var disposable_3:Function = import3.subscribeToRenderElement(this,this._el_27,new import3.InlineArray2(2,'change',(null as any)),this.eventHandler(this.handleEvent_27));
+    this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'div',new import3.InlineArray2(2,'class','row modal-size'),(null as any));
+    this._text_3 = this.renderer.createText(this._el_2,'\n\n    ',(null as any));
+    this._el_4 = import3.createRenderElement(this.renderer,this._el_2,'div',new import3.InlineArray2(2,'class','col-md-3'),(null as any));
+    this._text_5 = this.renderer.createText(this._el_4,'\n\n      ',(null as any));
+    this._el_6 = import3.createRenderElement(this.renderer,this._el_4,'h3',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_7 = this.renderer.createText(this._el_6,'Select game zip file',(null as any));
+    this._text_8 = this.renderer.createText(this._el_4,'\n\n      ',(null as any));
+    this._el_9 = import3.createRenderElement(this.renderer,this._el_4,'div',new import3.InlineArray4(4,'class','well my-drop-zone','ng2FileDrop',''),(null as any));
+    this._NgClass_9_3 = new import9.Wrapper_NgClass(this.parentView.injectorGet(import16.IterableDiffers,this.parentIndex),this.parentView.injectorGet(import17.KeyValueDiffers,this.parentIndex),new import18.ElementRef(this._el_9),this.renderer);
+    this._FileDropDirective_9_4 = new import10.Wrapper_FileDropDirective(new import18.ElementRef(this._el_9));
+    this._text_10 = this.renderer.createText(this._el_9,'\n        drop zone\n      ',(null as any));
+    this._text_11 = this.renderer.createText(this._el_4,'\n\n      ',(null as any));
+    this._text_12 = this.renderer.createText(this._el_4,'\n\n      Single File\n      ',(null as any));
+    this._el_13 = import3.createRenderElement(this.renderer,this._el_4,'input',new import3.InlineArray4(4,'ng2FileSelect','','type','file'),(null as any));
+    this._FileSelectDirective_13_3 = new import11.Wrapper_FileSelectDirective(new import18.ElementRef(this._el_13));
+    this._text_14 = this.renderer.createText(this._el_4,'\n    ',(null as any));
+    this._text_15 = this.renderer.createText(this._el_2,'\n\n    ',(null as any));
+    this._el_16 = import3.createRenderElement(this.renderer,this._el_2,'div',new import3.InlineArray4(4,'class','col-md-9','style','margin-bottom: 40px'),(null as any));
+    this._text_17 = this.renderer.createText(this._el_16,'\n\n      ',(null as any));
+    this._el_18 = import3.createRenderElement(this.renderer,this._el_16,'h3',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_19 = this.renderer.createText(this._el_18,'Upload queue',(null as any));
+    this._text_20 = this.renderer.createText(this._el_16,'\n      ',(null as any));
+    this._el_21 = import3.createRenderElement(this.renderer,this._el_16,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_22 = this.renderer.createText(this._el_21,'',(null as any));
+    this._text_23 = this.renderer.createText(this._el_16,'\n\n      ',(null as any));
+    this._el_24 = import3.createRenderElement(this.renderer,this._el_16,'table',new import3.InlineArray2(2,'class','table'),(null as any));
+    this._text_25 = this.renderer.createText(this._el_24,'\n        ',(null as any));
+    this._el_26 = import3.createRenderElement(this.renderer,this._el_24,'thead',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_27 = this.renderer.createText(this._el_26,'\n          ',(null as any));
+    this._el_28 = import3.createRenderElement(this.renderer,this._el_26,'tr',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_29 = this.renderer.createText(this._el_28,'\n            ',(null as any));
+    this._el_30 = import3.createRenderElement(this.renderer,this._el_28,'th',new import3.InlineArray2(2,'width','50%'),(null as any));
+    this._text_31 = this.renderer.createText(this._el_30,'Name',(null as any));
+    this._text_32 = this.renderer.createText(this._el_28,'\n            ',(null as any));
+    this._el_33 = import3.createRenderElement(this.renderer,this._el_28,'th',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_34 = this.renderer.createText(this._el_33,'Size',(null as any));
+    this._text_35 = this.renderer.createText(this._el_28,'\n            ',(null as any));
+    this._el_36 = import3.createRenderElement(this.renderer,this._el_28,'th',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_37 = this.renderer.createText(this._el_36,'Progress',(null as any));
+    this._text_38 = this.renderer.createText(this._el_28,'\n            ',(null as any));
+    this._el_39 = import3.createRenderElement(this.renderer,this._el_28,'th',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_40 = this.renderer.createText(this._el_39,'Status',(null as any));
+    this._text_41 = this.renderer.createText(this._el_28,'\n            ',(null as any));
+    this._el_42 = import3.createRenderElement(this.renderer,this._el_28,'th',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_43 = this.renderer.createText(this._el_42,'Actions',(null as any));
+    this._text_44 = this.renderer.createText(this._el_28,'\n          ',(null as any));
+    this._text_45 = this.renderer.createText(this._el_26,'\n        ',(null as any));
+    this._text_46 = this.renderer.createText(this._el_24,'\n        ',(null as any));
+    this._el_47 = import3.createRenderElement(this.renderer,this._el_24,'tbody',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_48 = this.renderer.createText(this._el_47,'\n          ',(null as any));
+    this._anchor_49 = this.renderer.createTemplateAnchor(this._el_47,(null as any));
+    this._vc_49 = new import12.ViewContainer(49,47,this,this._anchor_49);
+    this._TemplateRef_49_5 = new import19.TemplateRef_(this,49,this._anchor_49);
+    this._NgFor_49_6 = new import13.Wrapper_NgFor(this._vc_49.vcRef,this._TemplateRef_49_5,this.parentView.injectorGet(import16.IterableDiffers,this.parentIndex),this.ref);
+    this._text_50 = this.renderer.createText(this._el_47,'\n        ',(null as any));
+    this._text_51 = this.renderer.createText(this._el_24,'\n      ',(null as any));
+    this._text_52 = this.renderer.createText(this._el_16,'\n\n      ',(null as any));
+    this._el_53 = import3.createRenderElement(this.renderer,this._el_16,'div',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_54 = this.renderer.createText(this._el_53,'\n        ',(null as any));
+    this._el_55 = import3.createRenderElement(this.renderer,this._el_53,'div',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_56 = this.renderer.createText(this._el_55,'\n          Queue progress:\n          ',(null as any));
+    this._el_57 = import3.createRenderElement(this.renderer,this._el_55,'div',new import3.InlineArray4(4,'class','progress','style',''),(null as any));
+    this._text_58 = this.renderer.createText(this._el_57,'\n            ',(null as any));
+    this._el_59 = import3.createRenderElement(this.renderer,this._el_57,'div',new import3.InlineArray4(4,'class','progress-bar','role','progressbar'),(null as any));
+    this._NgStyle_59_3 = new import14.Wrapper_NgStyle(this.parentView.injectorGet(import17.KeyValueDiffers,this.parentIndex),new import18.ElementRef(this._el_59),this.renderer);
+    this._text_60 = this.renderer.createText(this._el_57,'\n          ',(null as any));
+    this._text_61 = this.renderer.createText(this._el_55,'\n        ',(null as any));
+    this._text_62 = this.renderer.createText(this._el_53,'\n\n        ',(null as any));
+    this._el_63 = import3.createRenderElement(this.renderer,this._el_53,'button',new import3.InlineArray4(4,'class','btn btn-success btn-s','type','button'),(null as any));
+    this._text_64 = this.renderer.createText(this._el_63,'\n          ',(null as any));
+    this._el_65 = import3.createRenderElement(this.renderer,this._el_63,'span',new import3.InlineArray2(2,'class','glyphicon glyphicon-upload'),(null as any));
+    this._text_66 = this.renderer.createText(this._el_63,'\n          Upload all\n        ',(null as any));
+    this._text_67 = this.renderer.createText(this._el_53,'\n\n        ',(null as any));
+    this._el_68 = import3.createRenderElement(this.renderer,this._el_53,'button',new import3.InlineArray4(4,'class','btn btn-warning btn-s','type','button'),(null as any));
+    this._text_69 = this.renderer.createText(this._el_68,'\n          ',(null as any));
+    this._el_70 = import3.createRenderElement(this.renderer,this._el_68,'span',new import3.InlineArray2(2,'class','glyphicon glyphicon-ban-circle'),(null as any));
+    this._text_71 = this.renderer.createText(this._el_68,'\n          Cancel all\n        ',(null as any));
+    this._text_72 = this.renderer.createText(this._el_53,'\n        ',(null as any));
+    this._el_73 = import3.createRenderElement(this.renderer,this._el_53,'button',new import3.InlineArray4(4,'class','btn btn-danger btn-s','type','button'),(null as any));
+    this._text_74 = this.renderer.createText(this._el_73,'\n          ',(null as any));
+    this._el_75 = import3.createRenderElement(this.renderer,this._el_73,'span',new import3.InlineArray2(2,'class','glyphicon glyphicon-trash'),(null as any));
+    this._text_76 = this.renderer.createText(this._el_73,'\n          Remove all\n        ',(null as any));
+    this._text_77 = this.renderer.createText(this._el_53,'\n      ',(null as any));
+    this._text_78 = this.renderer.createText(this._el_16,'\n\n    ',(null as any));
+    this._text_79 = this.renderer.createText(this._el_2,'\n\n  ',(null as any));
+    this._text_80 = this.renderer.createText(this._el_0,'\n\n',(null as any));
+    this._text_81 = this.renderer.createText(parentRenderNode,'\n',(null as any));
+    var disposable_0:Function = import3.subscribeToRenderElement(this,this._el_9,new import3.InlineArray8(8,'fileOver',(null as any),'drop',(null as any),'dragover',(null as any),'dragleave',(null as any)),this.eventHandler(this.handleEvent_9));
+    this._FileDropDirective_9_4.subscribe(this,this.eventHandler(this.handleEvent_9),true,false);
+    var disposable_1:Function = import3.subscribeToRenderElement(this,this._el_13,new import3.InlineArray2(2,'change',(null as any)),this.eventHandler(this.handleEvent_13));
     this._pipe_number_0 = new import15.DecimalPipe(this.parentView.injectorGet(import20.LOCALE_ID,this.parentIndex));
-    var disposable_4:Function = import3.subscribeToRenderElement(this,this._el_77,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_77));
-    var disposable_5:Function = import3.subscribeToRenderElement(this,this._el_82,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_82));
-    var disposable_6:Function = import3.subscribeToRenderElement(this,this._el_87,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_87));
+    var disposable_2:Function = import3.subscribeToRenderElement(this,this._el_63,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_63));
+    var disposable_3:Function = import3.subscribeToRenderElement(this,this._el_68,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_68));
+    var disposable_4:Function = import3.subscribeToRenderElement(this,this._el_73,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_73));
     this.init((null as any),((<any>this.renderer).directRenderer? (null as any): [
       this._el_0,
       this._text_1,
@@ -353,14 +312,14 @@ export class View_UploadComponent0 extends import1.AppView<import0.UploadCompone
       this._el_6,
       this._text_7,
       this._text_8,
-      this._text_9,
+      this._el_9,
       this._text_10,
-      this._el_11,
+      this._text_11,
       this._text_12,
       this._el_13,
       this._text_14,
-      this._el_15,
-      this._text_16,
+      this._text_15,
+      this._el_16,
       this._text_17,
       this._el_18,
       this._text_19,
@@ -369,195 +328,148 @@ export class View_UploadComponent0 extends import1.AppView<import0.UploadCompone
       this._text_22,
       this._text_23,
       this._el_24,
-      this._el_25,
-      this._text_26,
-      this._el_27,
-      this._text_28,
+      this._text_25,
+      this._el_26,
+      this._text_27,
+      this._el_28,
       this._text_29,
       this._el_30,
       this._text_31,
-      this._el_32,
-      this._text_33,
+      this._text_32,
+      this._el_33,
       this._text_34,
-      this._el_35,
-      this._text_36,
+      this._text_35,
+      this._el_36,
       this._text_37,
-      this._el_38,
-      this._text_39,
-      this._el_40,
+      this._text_38,
+      this._el_39,
+      this._text_40,
       this._text_41,
       this._el_42,
       this._text_43,
-      this._el_44,
+      this._text_44,
       this._text_45,
       this._text_46,
       this._el_47,
       this._text_48,
-      this._text_49,
-      this._el_50,
+      this._anchor_49,
+      this._text_50,
       this._text_51,
       this._text_52,
       this._el_53,
       this._text_54,
-      this._text_55,
-      this._el_56,
-      this._text_57,
+      this._el_55,
+      this._text_56,
+      this._el_57,
       this._text_58,
-      this._text_59,
+      this._el_59,
       this._text_60,
-      this._el_61,
+      this._text_61,
       this._text_62,
-      this._anchor_63,
+      this._el_63,
       this._text_64,
-      this._text_65,
+      this._el_65,
       this._text_66,
-      this._el_67,
-      this._text_68,
-      this._el_69,
-      this._text_70,
-      this._el_71,
+      this._text_67,
+      this._el_68,
+      this._text_69,
+      this._el_70,
+      this._text_71,
       this._text_72,
       this._el_73,
       this._text_74,
-      this._text_75,
+      this._el_75,
       this._text_76,
-      this._el_77,
+      this._text_77,
       this._text_78,
-      this._el_79,
+      this._text_79,
       this._text_80,
-      this._text_81,
-      this._el_82,
-      this._text_83,
-      this._el_84,
-      this._text_85,
-      this._text_86,
-      this._el_87,
-      this._text_88,
-      this._el_89,
-      this._text_90,
-      this._text_91,
-      this._text_92,
-      this._text_93,
-      this._text_94,
-      this._text_95
+      this._text_81
     ]
     ),[
       disposable_0,
       disposable_1,
       disposable_2,
       disposable_3,
-      disposable_4,
-      disposable_5,
-      disposable_6
+      disposable_4
     ]
     );
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import21.NgClass) && ((18 <= requestNodeIndex) && (requestNodeIndex <= 19)))) { return this._NgClass_18_3.context; }
-    if (((token === import22.FileDropDirective) && ((18 <= requestNodeIndex) && (requestNodeIndex <= 19)))) { return this._FileDropDirective_18_4.context; }
-    if (((token === import21.NgClass) && ((21 <= requestNodeIndex) && (requestNodeIndex <= 22)))) { return this._NgClass_21_3.context; }
-    if (((token === import22.FileDropDirective) && ((21 <= requestNodeIndex) && (requestNodeIndex <= 22)))) { return this._FileDropDirective_21_4.context; }
-    if (((token === import23.FileSelectDirective) && (24 === requestNodeIndex))) { return this._FileSelectDirective_24_3.context; }
-    if (((token === import23.FileSelectDirective) && (27 === requestNodeIndex))) { return this._FileSelectDirective_27_3.context; }
-    if (((token === import19.TemplateRef) && (63 === requestNodeIndex))) { return this._TemplateRef_63_5; }
-    if (((token === import24.NgFor) && (63 === requestNodeIndex))) { return this._NgFor_63_6.context; }
-    if (((token === import25.NgStyle) && (73 === requestNodeIndex))) { return this._NgStyle_73_3.context; }
+    if (((token === import21.NgClass) && ((9 <= requestNodeIndex) && (requestNodeIndex <= 10)))) { return this._NgClass_9_3.context; }
+    if (((token === import22.FileDropDirective) && ((9 <= requestNodeIndex) && (requestNodeIndex <= 10)))) { return this._FileDropDirective_9_4.context; }
+    if (((token === import23.FileSelectDirective) && (13 === requestNodeIndex))) { return this._FileSelectDirective_13_3.context; }
+    if (((token === import19.TemplateRef) && (49 === requestNodeIndex))) { return this._TemplateRef_49_5; }
+    if (((token === import24.NgFor) && (49 === requestNodeIndex))) { return this._NgFor_49_6.context; }
+    if (((token === import25.NgStyle) && (59 === requestNodeIndex))) { return this._NgStyle_59_3.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
-    const currVal_18_0_0:any = 'well my-drop-zone';
-    this._NgClass_18_3.check_klass(currVal_18_0_0,throwOnChange,false);
-    const currVal_18_0_1:any = this._map_106(this.context.hasBaseDropZoneOver);
-    this._NgClass_18_3.check_ngClass(currVal_18_0_1,throwOnChange,false);
-    this._NgClass_18_3.ngDoCheck(this,this._el_18,throwOnChange);
-    const currVal_18_1_0:any = this.context.uploader;
-    this._FileDropDirective_18_4.check_uploader(currVal_18_1_0,throwOnChange,false);
-    this._FileDropDirective_18_4.ngDoCheck(this,this._el_18,throwOnChange);
-    const currVal_21_0_0:any = 'well my-drop-zone';
-    this._NgClass_21_3.check_klass(currVal_21_0_0,throwOnChange,false);
-    const currVal_21_0_1:any = this._map_107(this.context.hasAnotherDropZoneOver);
-    this._NgClass_21_3.check_ngClass(currVal_21_0_1,throwOnChange,false);
-    this._NgClass_21_3.ngDoCheck(this,this._el_21,throwOnChange);
-    const currVal_21_1_0:any = this.context.uploader;
-    this._FileDropDirective_21_4.check_uploader(currVal_21_1_0,throwOnChange,false);
-    this._FileDropDirective_21_4.ngDoCheck(this,this._el_21,throwOnChange);
-    const currVal_24_0_0:any = this.context.uploader;
-    this._FileSelectDirective_24_3.check_uploader(currVal_24_0_0,throwOnChange,false);
-    this._FileSelectDirective_24_3.ngDoCheck(this,this._el_24,throwOnChange);
-    const currVal_27_0_0:any = this.context.uploader;
-    this._FileSelectDirective_27_3.check_uploader(currVal_27_0_0,throwOnChange,false);
-    this._FileSelectDirective_27_3.ngDoCheck(this,this._el_27,throwOnChange);
-    const currVal_63_0_0:any = this.context.uploader.queue;
-    this._NgFor_63_6.check_ngForOf(currVal_63_0_0,throwOnChange,false);
-    this._NgFor_63_6.ngDoCheck(this,this._anchor_63,throwOnChange);
-    const currVal_73_0_0:any = this._map_110((this.context.uploader.progress + '%'));
-    this._NgStyle_73_3.check_ngStyle(currVal_73_0_0,throwOnChange,false);
-    this._NgStyle_73_3.ngDoCheck(this,this._el_73,throwOnChange);
-    this._vc_63.detectChangesInNestedViews(throwOnChange);
-    const currVal_108:any = import3.inlineInterpolate(1,'Queue length:\n        ',((this.context.uploader == null)? (null as any): ((this.context.uploader.queue == null)? (null as any): this.context.uploader.queue.length)),'');
-    if (import3.checkBinding(throwOnChange,this._expr_108,currVal_108)) {
-      this.renderer.setText(this._text_36,currVal_108);
-      this._expr_108 = currVal_108;
+    const currVal_9_0_0:any = 'well my-drop-zone';
+    this._NgClass_9_3.check_klass(currVal_9_0_0,throwOnChange,false);
+    const currVal_9_0_1:any = this._map_89(this.context.hasBaseDropZoneOver);
+    this._NgClass_9_3.check_ngClass(currVal_9_0_1,throwOnChange,false);
+    this._NgClass_9_3.ngDoCheck(this,this._el_9,throwOnChange);
+    const currVal_9_1_0:any = this.context.uploader;
+    this._FileDropDirective_9_4.check_uploader(currVal_9_1_0,throwOnChange,false);
+    this._FileDropDirective_9_4.ngDoCheck(this,this._el_9,throwOnChange);
+    const currVal_13_0_0:any = this.context.uploader;
+    this._FileSelectDirective_13_3.check_uploader(currVal_13_0_0,throwOnChange,false);
+    this._FileSelectDirective_13_3.ngDoCheck(this,this._el_13,throwOnChange);
+    const currVal_49_0_0:any = this.context.uploader.queue;
+    this._NgFor_49_6.check_ngForOf(currVal_49_0_0,throwOnChange,false);
+    this._NgFor_49_6.ngDoCheck(this,this._anchor_49,throwOnChange);
+    const currVal_59_0_0:any = this._map_92((this.context.uploader.progress + '%'));
+    this._NgStyle_59_3.check_ngStyle(currVal_59_0_0,throwOnChange,false);
+    this._NgStyle_59_3.ngDoCheck(this,this._el_59,throwOnChange);
+    this._vc_49.detectChangesInNestedViews(throwOnChange);
+    const currVal_90:any = import3.inlineInterpolate(1,'Queue length:\n        ',((this.context.uploader == null)? (null as any): ((this.context.uploader.queue == null)? (null as any): this.context.uploader.queue.length)),'');
+    if (import3.checkBinding(throwOnChange,this._expr_90,currVal_90)) {
+      this.renderer.setText(this._text_22,currVal_90);
+      this._expr_90 = currVal_90;
     }
-    const currVal_111:boolean = !this.context.uploader.getNotUploadedItems().length;
-    if (import3.checkBinding(throwOnChange,this._expr_111,currVal_111)) {
-      this.renderer.setElementProperty(this._el_77,'disabled',currVal_111);
-      this._expr_111 = currVal_111;
+    const currVal_93:any = true;
+    if (import3.checkBinding(throwOnChange,this._expr_93,currVal_93)) {
+      this.renderer.setElementProperty(this._el_63,'disabled',currVal_93);
+      this._expr_93 = currVal_93;
     }
-    const currVal_112:boolean = !this.context.uploader.isUploading;
-    if (import3.checkBinding(throwOnChange,this._expr_112,currVal_112)) {
-      this.renderer.setElementProperty(this._el_82,'disabled',currVal_112);
-      this._expr_112 = currVal_112;
+    const currVal_94:boolean = !this.context.uploader.isUploading;
+    if (import3.checkBinding(throwOnChange,this._expr_94,currVal_94)) {
+      this.renderer.setElementProperty(this._el_68,'disabled',currVal_94);
+      this._expr_94 = currVal_94;
     }
-    const currVal_113:boolean = !this.context.uploader.queue.length;
-    if (import3.checkBinding(throwOnChange,this._expr_113,currVal_113)) {
-      this.renderer.setElementProperty(this._el_87,'disabled',currVal_113);
-      this._expr_113 = currVal_113;
+    const currVal_95:boolean = !this.context.uploader.queue.length;
+    if (import3.checkBinding(throwOnChange,this._expr_95,currVal_95)) {
+      this.renderer.setElementProperty(this._el_73,'disabled',currVal_95);
+      this._expr_95 = currVal_95;
     }
   }
   destroyInternal():void {
-    this._vc_63.destroyNestedViews();
-    this._FileDropDirective_18_4.ngOnDestroy();
-    this._FileDropDirective_21_4.ngOnDestroy();
+    this._vc_49.destroyNestedViews();
+    this._FileDropDirective_9_4.ngOnDestroy();
   }
   createEmbeddedViewInternal(nodeIndex:number):import1.AppView<any> {
-    if ((nodeIndex == 63)) { return new View_UploadComponent1(this.viewUtils,this,63,this._anchor_63,this._vc_63); }
+    if ((nodeIndex == 49)) { return new View_UploadComponent1(this.viewUtils,this,49,this._anchor_49,this._vc_49); }
     return (null as any);
   }
-  handleEvent_18(eventName:string,$event:any):boolean {
+  handleEvent_9(eventName:string,$event:any):boolean {
     this.markPathToRootAsCheckOnce();
     var result:boolean = true;
-    result = (this._FileDropDirective_18_4.handleEvent(eventName,$event) && result);
+    result = (this._FileDropDirective_9_4.handleEvent(eventName,$event) && result);
     if ((eventName == 'fileOver')) {
       const pd_sub_0:any = ((<any>this.context.fileOverBase($event)) !== false);
       result = (pd_sub_0 && result);
     }
     return result;
   }
-  handleEvent_21(eventName:string,$event:any):boolean {
+  handleEvent_13(eventName:string,$event:any):boolean {
     this.markPathToRootAsCheckOnce();
     var result:boolean = true;
-    result = (this._FileDropDirective_21_4.handleEvent(eventName,$event) && result);
-    if ((eventName == 'fileOver')) {
-      const pd_sub_0:any = ((<any>this.context.fileOverAnother($event)) !== false);
-      result = (pd_sub_0 && result);
-    }
+    result = (this._FileSelectDirective_13_3.handleEvent(eventName,$event) && result);
     return result;
   }
-  handleEvent_24(eventName:string,$event:any):boolean {
-    this.markPathToRootAsCheckOnce();
-    var result:boolean = true;
-    result = (this._FileSelectDirective_24_3.handleEvent(eventName,$event) && result);
-    return result;
-  }
-  handleEvent_27(eventName:string,$event:any):boolean {
-    this.markPathToRootAsCheckOnce();
-    var result:boolean = true;
-    result = (this._FileSelectDirective_27_3.handleEvent(eventName,$event) && result);
-    return result;
-  }
-  handleEvent_77(eventName:string,$event:any):boolean {
+  handleEvent_63(eventName:string,$event:any):boolean {
     this.markPathToRootAsCheckOnce();
     var result:boolean = true;
     if ((eventName == 'click')) {
@@ -566,7 +478,7 @@ export class View_UploadComponent0 extends import1.AppView<import0.UploadCompone
     }
     return result;
   }
-  handleEvent_82(eventName:string,$event:any):boolean {
+  handleEvent_68(eventName:string,$event:any):boolean {
     this.markPathToRootAsCheckOnce();
     var result:boolean = true;
     if ((eventName == 'click')) {
@@ -575,7 +487,7 @@ export class View_UploadComponent0 extends import1.AppView<import0.UploadCompone
     }
     return result;
   }
-  handleEvent_87(eventName:string,$event:any):boolean {
+  handleEvent_73(eventName:string,$event:any):boolean {
     this.markPathToRootAsCheckOnce();
     var result:boolean = true;
     if ((eventName == 'click')) {
