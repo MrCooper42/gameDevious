@@ -10,7 +10,7 @@
 <p>{{news}}</p> -->
 <ngb-carousel>
   <template ngbSlide *ngFor = "let new of news">
-    <img src={{new.image}}>
+    <img src={{new.image}} class="img-responsive center-block">
     <div class="carousel-caption">
       <h3>{{new.title}}</h3>
       <p>{{new.author}}</p>

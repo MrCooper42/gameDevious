@@ -3,6 +3,7 @@ import { Observable }           from 'rxjs/Observable';
 import { ProfileService } from './profile.service';
 import { Router } from '@angular/router';
 import { JwtHelper } from 'angular2-jwt/angular2-jwt';
+import { FormGroup, FormControl, FormBuilder,Validators } from '@angular/forms';
 import { NgbModal, NgbActiveModal, NgbModalOptions } from '@ng-bootstrap/ng-bootstrap';
 
 import { UploadComponent } from '../upload/upload.component';
@@ -17,7 +18,7 @@ const TOKEN = localStorage.getItem('token');
 })
 export class ProfileEditComponent implements OnInit {
 
-  closeResult: string;
+  titleForm: FormGroup;
 
   user: any;
 
@@ -25,8 +26,19 @@ export class ProfileEditComponent implements OnInit {
 
   jwtHelper: JwtHelper = new JwtHelper();
 
+  submitTitle() {
+      let title = this.titleForm.value.title
+      this.profileService.titleUpdate(this.useJwtHelper()._id, title)
+          .subscribe(
+          data => {
+              this.user.profile.title = data.title
+              this.router.navigateByUrl('/profile');
+          },
+          error => console.error(error));
+      this.titleForm.reset();
+  }
+
   getAvatar() {
-    console.log(this.user.profile.avatar, "user profile here")
     return this.user.profile.avatar
   }
 
@@ -36,18 +48,7 @@ export class ProfileEditComponent implements OnInit {
     };
     const modalRef = this.modalService.open(UploadComponent, options);
     modalRef.componentInstance.name = 'World';
-  }
-  //
-  // private getDismissReason(reason: any): string {
-  //   if (reason === ModalDismissReasons.ESC) {
-  //     return 'by pressing ESC';
-  //   } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
-  //     return 'by clicking on a backdrop';
-  //   } else {
-  //     return  `with: ${reason}`;
-  //   }
-  // }
-
+}
   useJwtHelper() {
     var token = localStorage.getItem('token');
 
@@ -120,6 +121,11 @@ export class ProfileEditComponent implements OnInit {
 
   ngOnInit() {
     console.log(this.user, "user before")
+    this.titleForm = new FormGroup({
+        title: new FormControl(null, [
+            Validators.required,
+        ]),
+    });
     this.returnUser().subscribe(_ => {
       console.log(this.user, 'ngoninit after getuser()' + this.user.github)
     });

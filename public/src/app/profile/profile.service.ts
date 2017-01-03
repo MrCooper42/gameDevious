@@ -19,7 +19,7 @@ export class ProfileService {
 
 
   constructor(private http: Http, private errorService: ErrorService) { }
-    // public authHttp: AuthHttp
+  // public authHttp: AuthHttp
 
   useJwtHelper() {
     var token = localStorage.getItem('token');
@@ -55,11 +55,28 @@ export class ProfileService {
     return localStorage.getItem('token') !== null;
   }
 
-// : Observable<User>
+  // : Observable<User>
   getUser(userId) {
     return this.http.get(`/user/${userId}`)
+      .map((res: Response) => res.json())
+      .catch(error => Observable.throw(error.json().error || console.log(error, "error")))
+  }
+
+  titleUpdate(userId, body) {
+    let token = localStorage.getItem('token');
+    let reqBody = JSON.stringify({'body': body});
+    let headers = new Headers();
+    headers.append('Content-Type', 'application/json')
+    headers.append('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Accept, Content-Type')
+    headers.append('Access-Control-Allow-Origin', '*')
+    headers.append('Access-Control-Allow-Methods', 'POST, GET, PATCH, DELETE, OPTIONS')
+    headers.append('token', token);
+    let options = new RequestOptions({ headers: headers });
+    console.log(options, "options")
+    console.log(body, "body in service")
+    console.log(reqBody, "req body in service")
+    return this.http.post(`/profile/${userId}/title`, reqBody, options)
     .map((res: Response) => res.json())
-    .catch(error => Observable.throw(error.json().error || console.log(error, "error")))
   }
 
   facebook(userId) {
@@ -71,20 +88,20 @@ export class ProfileService {
     let options = new RequestOptions({ headers: headers })
     // ${userId}`, options
     return this.http.get(`/facebook/${userId}`, options)
-    .map((res: Response) => {
-      console.log(res.url, "server response")
-      return res.url
-    })
-    .catch((error: any) => Observable.throw(error.json().error || console.log(error, "error")))
+      .map((res: Response) => {
+        console.log(res.url, "server response")
+        return res.url
+      })
+      .catch((error: any) => Observable.throw(error.json().error || console.log(error, "error")))
   }
 
   linkedin(userId) {
     return this.http.get(`/linkedin/${userId}`)
-    .map((res: Response) => {
-      console.log(res.url, "server response")
-      return res.url
-    })
-    .catch((error: any) => Observable.throw(error.json().error || console.log(error, "error")))
+      .map((res: Response) => {
+        console.log(res.url, "server response")
+        return res.url
+      })
+      .catch((error: any) => Observable.throw(error.json().error || console.log(error, "error")))
   }
 
   github(userId) {
@@ -95,10 +112,10 @@ export class ProfileService {
     let options = new RequestOptions({ headers: headers })
     console.log(options, "options")
     return this.http.get(`/github/${userId}`, options)
-    .map((res: Response) => {
-      console.log(res.url, "server response")
-      return res.url
-    })
-    .catch((error: any) => Observable.throw(error.json().error || console.log(error, "error")))
+      .map((res: Response) => {
+        console.log(res.url, "server response")
+        return res.url
+      })
+      .catch((error: any) => Observable.throw(error.json().error || console.log(error, "error")))
   }
 }
