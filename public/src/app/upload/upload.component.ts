@@ -3,7 +3,7 @@ import { FileUploader } from 'ng2-file-upload/ng2-file-upload';
   //  FileSelectDirective, FileDropDirective,
 
 const TOKEN = localStorage.getItem('token');
-const URL = '/upload/';
+const URL = '/upload/avatar';
 
 @Component({
   selector: 'app-upload',
@@ -26,3 +26,5 @@ export class UploadComponent {
     this.hasAnotherDropZoneOver = e;
   }
 }
+
+// !uploader.getNotUploadedItems().length for html upload all

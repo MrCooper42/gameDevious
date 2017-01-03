@@ -3,8 +3,9 @@ import { Observable }           from 'rxjs/Observable';
 import { ProfileService } from './profile.service';
 import { Router } from '@angular/router';
 import { JwtHelper } from 'angular2-jwt/angular2-jwt';
-import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModal, NgbActiveModal, NgbModalOptions } from '@ng-bootstrap/ng-bootstrap';
 
+import { UploadComponent } from '../upload/upload.component';
 import { User } from './user.model';
 
 const TOKEN = localStorage.getItem('token');
@@ -16,17 +17,42 @@ const TOKEN = localStorage.getItem('token');
 })
 export class ProfileEditComponent implements OnInit {
 
+  closeResult: string;
+
   user: any;
 
-  constructor(private profileService: ProfileService, private router: Router, private modalService: NgbModal) {
-  }
+  constructor(private profileService: ProfileService, private router: Router, private modalService: NgbModal) { }
 
   jwtHelper: JwtHelper = new JwtHelper();
+
+  getAvatar() {
+    console.log(this.user.profile.avatar, "user profile here")
+    return this.user.profile.avatar
+  }
+
+  open() {
+    let options: NgbModalOptions = {
+      size: 'lg'
+    };
+    const modalRef = this.modalService.open(UploadComponent, options);
+    modalRef.componentInstance.name = 'World';
+  }
+  //
+  // private getDismissReason(reason: any): string {
+  //   if (reason === ModalDismissReasons.ESC) {
+  //     return 'by pressing ESC';
+  //   } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
+  //     return 'by clicking on a backdrop';
+  //   } else {
+  //     return  `with: ${reason}`;
+  //   }
+  // }
 
   useJwtHelper() {
     var token = localStorage.getItem('token');
 
     if (token == null) {
+      this.router.navigate(['/login'])
       return false;
     }
     // this.user = this.jwtHelper.decodeToken(token).user
