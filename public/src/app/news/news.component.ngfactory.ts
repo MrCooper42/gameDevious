@@ -233,7 +233,7 @@ class View_NewsComponent2 extends import1.AppView<any> {
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
     this._text_0 = this.renderer.createText((null as any),'\n    ',(null as any));
-    this._el_1 = import3.createRenderElement(this.renderer,(null as any),'img',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._el_1 = import3.createRenderElement(this.renderer,(null as any),'img',new import3.InlineArray2(2,'class','img-responsive center-block'),(null as any));
     this._text_2 = this.renderer.createText((null as any),'\n    ',(null as any));
     this._el_3 = import3.createRenderElement(this.renderer,(null as any),'div',new import3.InlineArray2(2,'class','carousel-caption'),(null as any));
     this._text_4 = this.renderer.createText(this._el_3,'\n      ',(null as any));
