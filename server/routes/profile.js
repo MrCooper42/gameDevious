@@ -7,8 +7,7 @@ const User = require('../models/user');
 const jwt = require('jsonwebtoken');
 
 router.use('/:id', (req, res, next) => {
-  console.log(req.headers.token, "headers");
-  jwt.verify(req.headers.token, 'secret', (err, decoded) => err ? res.status(401).json({
+  jwt.verify(req.headers.token, 'secret', this.ignoreExpiration = true,(err, decoded) => err ? res.status(401).json({
     title: 'Not Authenticated ya here',
     error: err
 }) : next())});
@@ -55,7 +54,74 @@ router.post("/:id/title", (req, res) => {
               error: err
             });
           }
-          console.log(result, "user profile update result");
+          res.send(result)
+        })
+      });
+    }
+  })
+})
+
+router.post("/:id/about", (req, res) => {
+  let token = req.headers.token
+  jwt.verify(token, 'secret', this.ignoreExpiration = true, (err, decoded) => {
+    if (err) {
+      res.status(401).json({
+        title: 'Not Authenticated ya here',
+        error: err
+      })
+    } else {
+      Profile.findOne({
+        user: decoded.user._id
+      }, (err, profile) => {
+        if (err) {
+          return res.status(500).json({
+            title: 'Bad things happened',
+            error: err
+          });
+        }
+        profile.summary = req.body.body
+        console.log(profile.summary, "summary");
+        profile.save((err, result) => {
+          if (err) {
+            return res.status(500).json({
+              title: 'Bad things happened',
+              error: err
+            });
+          }
+          res.send(result)
+        })
+      });
+    }
+  })
+})
+
+router.post("/:id/skills", (req, res) => {
+  let token = req.headers.token
+  jwt.verify(token, 'secret', this.ignoreExpiration = true, (err, decoded) => {
+    if (err) {
+      res.status(401).json({
+        title: 'Not Authenticated ya here',
+        error: err
+      })
+    } else {
+      Profile.findOne({
+        user: decoded.user._id
+      }, (err, profile) => {
+        if (err) {
+          return res.status(500).json({
+            title: 'Bad things happened',
+            error: err
+          });
+        }
+        profile.skills.push(req.body.body)
+        console.log(profile.skills, "summary");
+        profile.save((err, result) => {
+          if (err) {
+            return res.status(500).json({
+              title: 'Bad things happened',
+              error: err
+            });
+          }
           res.send(result)
         })
       });

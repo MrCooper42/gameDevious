@@ -3,7 +3,6 @@ import { Injectable } from "@angular/core";
 import 'rxjs/Rx';
 import { Observable } from "rxjs";
 import { JwtHelper } from 'angular2-jwt/angular2-jwt';
-import { Skill } from "./skill.model";
 import { ErrorService } from "../errors/error.service";
 export class ProfileService {
     constructor(http, errorService) {
@@ -20,24 +19,26 @@ export class ProfileService {
         }
         return this.jwtHelper.decodeToken(token).user;
     }
-    addSkill(skill) {
-        const body = JSON.stringify(skill);
-        const headers = new Headers({
-            'Content-Type': 'application/json'
-        });
-        const token = localStorage.getItem('token') ? `?tokens=${localStorage.getItem('token')}` : '';
-        return this.http.post(`/profile/skills/${token}`, body, { headers: headers })
-            .map((response) => {
-            const result = response.json();
-            const skill = new Skill(result.obj.skill, result.obj.user._id);
-            this.skills.push(skill);
-            return skill;
-        })
-            .catch((error) => {
-            this.errorService.handleError(error.json());
-            return Observable.throw(error.json());
-        });
-    }
+    // addSkill(skill: String) {
+    //   const body = JSON.stringify(skill);
+    //   const headers = new Headers({
+    //     'Content-Type': 'application/json'
+    //   });
+    //   const token = localStorage.getItem('token') ? `?tokens=${localStorage.getItem('token')}` : '';
+    //   return this.http.post(`/profile/skills/${token}`, body, { headers: headers })
+    //     .map((response: Response) => {
+    //       const result = response.json();
+    //       const skill = new Skill(
+    //         result.obj.skill,
+    //         result.obj.user._id);
+    //       this.skills.push(skill);
+    //       return skill;
+    //     })
+    //     .catch((error: Response) => {
+    //       this.errorService.handleError(error.json());
+    //       return Observable.throw(error.json())
+    //     });
+    // }
     isLoggedIn() {
         return localStorage.getItem('token') !== null;
     }
@@ -47,20 +48,34 @@ export class ProfileService {
             .map((res) => res.json())
             .catch(error => Observable.throw(error.json().error || console.log(error, "error")));
     }
+    aboutUpdate(userId, body) {
+        let token = localStorage.getItem('token');
+        let reqBody = JSON.stringify({ 'body': body });
+        let headers = new Headers();
+        headers.append('Content-Type', 'application/json');
+        headers.append('token', token);
+        let options = new RequestOptions({ headers: headers });
+        return this.http.post(`/profile/${userId}/about`, reqBody, options)
+            .map((res) => res.json());
+    }
     titleUpdate(userId, body) {
         let token = localStorage.getItem('token');
         let reqBody = JSON.stringify({ 'body': body });
         let headers = new Headers();
         headers.append('Content-Type', 'application/json');
-        headers.append('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Accept, Content-Type');
-        headers.append('Access-Control-Allow-Origin', '*');
-        headers.append('Access-Control-Allow-Methods', 'POST, GET, PATCH, DELETE, OPTIONS');
         headers.append('token', token);
         let options = new RequestOptions({ headers: headers });
-        console.log(options, "options");
-        console.log(body, "body in service");
-        console.log(reqBody, "req body in service");
         return this.http.post(`/profile/${userId}/title`, reqBody, options)
+            .map((res) => res.json());
+    }
+    skillUpdate(userId, body) {
+        let token = localStorage.getItem('token');
+        let reqBody = JSON.stringify({ 'body': body });
+        let headers = new Headers();
+        headers.append('Content-Type', 'application/json');
+        headers.append('token', token);
+        let options = new RequestOptions({ headers: headers });
+        return this.http.post(`/profile/${userId}/skills`, reqBody, options)
             .map((res) => res.json());
     }
     facebook(userId) {

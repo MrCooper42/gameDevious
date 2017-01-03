@@ -13,11 +13,32 @@ export class ProfileEditComponent {
         this.modalService = modalService;
         this.jwtHelper = new JwtHelper();
     }
+    hasSkill() {
+        return this.user.profile.skills;
+    }
     submitTitle() {
         let title = this.titleForm.value.title;
         this.profileService.titleUpdate(this.useJwtHelper()._id, title)
             .subscribe(data => {
             this.user.profile.title = data.title;
+            this.router.navigateByUrl('/profile');
+        }, error => console.error(error));
+        this.titleForm.reset();
+    }
+    submitAbout() {
+        let about = this.aboutForm.value.about;
+        this.profileService.aboutUpdate(this.useJwtHelper()._id, about)
+            .subscribe(data => {
+            this.user.profile.summary = data.summary;
+            // this.router.navigateByUrl('/profile');
+        }, error => console.error(error));
+        this.titleForm.reset();
+    }
+    submitSkill() {
+        let skill = this.aboutForm.value.skill;
+        this.profileService.aboutUpdate(this.useJwtHelper()._id, skill)
+            .subscribe(data => {
+            this.user.profile.summary = data.skills;
             this.router.navigateByUrl('/profile');
         }, error => console.error(error));
         this.titleForm.reset();
@@ -93,9 +114,17 @@ export class ProfileEditComponent {
                 Validators.required,
             ]),
         });
-        this.returnUser().subscribe(_ => {
-            console.log(this.user, 'ngoninit after getuser()' + this.user.github);
+        this.skillsForm = new FormGroup({
+            skills: new FormControl(null, [
+                Validators.required,
+            ]),
         });
+        this.aboutForm = new FormGroup({
+            about: new FormControl(null, [
+                Validators.required,
+            ]),
+        });
+        this.returnUser().subscribe(res => this.user = res);
     }
 }
 ProfileEditComponent.decorators = [

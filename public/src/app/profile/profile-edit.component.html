@@ -30,12 +30,43 @@
     <div class="col-md-8">
       <h3>About
         {{user.firstName}}</h3>
-      glyphicon glyphicon-pencil
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.
-        PROFILE FILL</p>
+      <p>{{user.profile.summary || "Tell a bit about yourself"}}</p>
+      <form [formGroup]="aboutForm" (ngSubmit)="submitAbout()">
+          <div class="form-group">
+              <label for="email">About</label>
+              <input
+                      type="text"
+                      id="about"
+                      class="form-control"
+                      placeholder="about you here"
+                      formControlName="about">
+          <button
+                  class="btn btn-primary"
+                  type="submit"
+                  [disabled]="!aboutForm.valid">Submit</button>
+          </div>
+      </form>
       <h3>Skills</h3>
-      <ul>
-        <li>List Skills here as tags</li>
+      <form [formGroup]="skillsForm" (ngSubmit)="submitSkill()">
+          <div class="form-group">
+              <label for="email">Add Skill</label>
+              <input
+                      type="text"
+                      id="skills"
+                      class="form-control"
+                      placeholder="add new skill here"
+                      formControlName="skills">
+          <button
+                  class="btn btn-primary"
+                  type="submit"
+                  [disabled]="!skillsForm.valid">Submit</button>
+          </div>
+      </form>
+      <ul *ngIf="hasSkill().length > 0">
+        <li *ngFor="let skill of this.user.profile.skills">{{skill}}</li>
+      </ul>
+      <ul *ngIf="hasSkill().length < 1">
+        <li>add your skills! {{user.profile.skills}}</li>
       </ul>
     </div>
   </div>
