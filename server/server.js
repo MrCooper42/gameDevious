@@ -26,18 +26,6 @@ mongoose.connect(process.env.MONGOURI);
 
 const appRoutes = require('./routes/app');
 
-const originsWhitelist = [
-  'http://localhost:3000',      //this is my front-end url for development
-  //  'http://www.myproductionurl.com'
-];
-const corsOptions = {
-  origin: function(origin, callback){
-        var isWhitelisted = originsWhitelist.indexOf(origin) !== -1;
-        callback(null, isWhitelisted);
-  },
-  credentials:true
-}
-
 // view engine setup
 app.set('views', path.join(__dirname, '../public/views'));
 app.set('view engine', 'hbs');

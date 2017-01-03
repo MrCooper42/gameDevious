@@ -70,7 +70,7 @@ export class ProfileService {
     headers.append('user_id', userId)
     let options = new RequestOptions({ headers: headers })
     // ${userId}`, options
-    return this.http.get(`http://localhost:3000/facebook/${userId}`, options)
+    return this.http.get(`/facebook/${userId}`, options)
     .map((res: Response) => {
       console.log(res.url, "server response")
       return res.url
@@ -90,7 +90,7 @@ export class ProfileService {
   github(userId) {
     let headers = new Headers()
     headers.append('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Accept, Content-Type')
-    headers.append('Access-Control-Allow-Origin', 'http://localhost:3000')
+    headers.append('Access-Control-Allow-Origin', '*')
     headers.append('user_id', userId)
     let options = new RequestOptions({ headers: headers })
     console.log(options, "options")
