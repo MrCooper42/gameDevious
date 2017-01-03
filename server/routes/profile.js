@@ -80,7 +80,7 @@ router.post("/:id/about", (req, res) => {
           });
         }
         profile.summary = req.body.body
-        console.log(profile.summary, "summary");
+        console.log(profile.summary, "summary asdfasd");
         profile.save((err, result) => {
           if (err) {
             return res.status(500).json({
@@ -96,6 +96,7 @@ router.post("/:id/about", (req, res) => {
 })
 
 router.post("/:id/skills", (req, res) => {
+  console.log("hit");
   let token = req.headers.token
   jwt.verify(token, 'secret', this.ignoreExpiration = true, (err, decoded) => {
     if (err) {
@@ -113,8 +114,9 @@ router.post("/:id/skills", (req, res) => {
             error: err
           });
         }
+        console.log(req.body, "body in here");
         profile.skills.push(req.body.body)
-        console.log(profile.skills, "summary");
+        console.log(profile.skills, "skills");
         profile.save((err, result) => {
           if (err) {
             return res.status(500).json({
@@ -122,6 +124,7 @@ router.post("/:id/skills", (req, res) => {
               error: err
             });
           }
+          console.log(result, "result skill succuss was had");
           res.send(result)
         })
       });

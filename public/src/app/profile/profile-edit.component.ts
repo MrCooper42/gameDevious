@@ -53,19 +53,19 @@ export class ProfileEditComponent implements OnInit {
               // this.router.navigateByUrl('/profile');
           },
           error => console.error(error));
-      this.titleForm.reset();
+      this.aboutForm.reset();
   }
 
   submitSkill() {
-      let skill = this.aboutForm.value.skill
-      this.profileService.aboutUpdate(this.useJwtHelper()._id, skill)
+      let skill = this.skillsForm.value.skills
+      this.profileService.skillUpdate(this.useJwtHelper()._id, skill)
           .subscribe(
           data => {
-              this.user.profile.summary = data.skills
+              this.user.profile.skills = data.skills
               this.router.navigateByUrl('/profile');
           },
           error => console.error(error));
-      this.titleForm.reset();
+      this.skillsForm.reset();
   }
 
   getAvatar() {

@@ -89,18 +89,30 @@
   <a (click)="linkLinkedIn">LinkedIn</a>
   <a (click)="linkGoogle">Google</a>
   <a (click)="linkTwitter">Twitter</a> -->
+  <div>
+    <a class="btn btn-sm btn-outline-primary" href="/github/{{user._id}}" *ngIf="!user.github">Link Github</a>
+  </div>
   <div class="facebook-profile-edit">
     <a class="btn btn-sm btn-outline-primary" href="/facebook/{{user._id}}">{{user.facebook}}Link Facebook</a>
   </div>
-
-  <div>
-    <a class="btn btn-sm btn-outline-primary" href="/github/{{user._id}}" *ngIf="!user.github">Link Github</a>
-    <h5 *ngIf="user.github">Github
-    </h5>
-    <a *ngIf="user.github">{{user.github.url}}</a>
-    <p>followers:
-      {{user.github.followers}}</p>
-    <p>repo #:{{user.github.repoNum}}</p>
-  </div>
-  <br>
   <button class="btn btn-sm btn-outline-primary" (click)="linkLinkedin()">Link LinkedIn</button>
+  <div class="user-github" *ngIf="user.github">
+    <h5>Github
+    </h5>
+    <div *ngIf="user.github">
+    <span>
+    <p><a href="{{user.github.url}}">github link</a>
+    github followers:
+      {{user.github.followers}}  repo #:{{user.github.repoNum}}</p>
+  </span>
+  </div>
+</div>
+  <div class="user-facebook" *ngIf="user.facebook">
+    <h5>Github
+    </h5>
+    <div *ngIf="user.facebook">
+    <span>
+    <p><a href="{{user.facebook.url}}">facebook link</a></p>
+  </span>
+  </div>
+</div>

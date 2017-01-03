@@ -90,6 +90,7 @@ export class ProfileService {
     let headers = new Headers();
     headers.append('Content-Type', 'application/json')
     headers.append('token', token);
+    console.log(reqBody, "to be passed in")
     let options = new RequestOptions({ headers: headers });
     return this.http.post(`/profile/${userId}/skills`, reqBody, options)
     .map((res: Response) => res.json())
