@@ -1,5 +1,7 @@
 remove ! from **/** shim and ngfactory when done in package.json
 
+#heroku Deploying
+
 # MEAN2Seed
 # Bash npm i
 # Bash npm run build:prod
