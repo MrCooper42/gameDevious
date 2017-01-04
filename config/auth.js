@@ -22,8 +22,8 @@ module.exports = {
     },
 
     'linkedinAuth' : {
-      'consumerKey': '78bkfdwvw7vfwa',
-      'consumerSecret': 'YJxAfAY9EMp3CIJj',
+      'clientID': '78bkfdwvw7vfwa',
+      'clientSecret': 'YJxAfAY9EMp3CIJj',
       'callbackURL': 'http://localhost:3000/auth/linkedin/callback'
     },
 

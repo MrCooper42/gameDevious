@@ -261,81 +261,89 @@ class View_ProfileEditComponent1 extends import1.AppView<any> {
   _text_92:any;
   _el_93:any;
   _text_94:any;
-  _el_95:any;
+  _text_95:any;
   _text_96:any;
-  _text_97:any;
+  _anchor_97:any;
+  /*private*/ _vc_97:import12.ViewContainer;
+  _TemplateRef_97_5:any;
+  _NgIf_97_6:import13.Wrapper_NgIf;
   _text_98:any;
-  _text_99:any;
+  _anchor_99:any;
+  /*private*/ _vc_99:import12.ViewContainer;
+  _TemplateRef_99_5:any;
+  _NgIf_99_6:import13.Wrapper_NgIf;
   _text_100:any;
-  _el_101:any;
+  _anchor_101:any;
+  /*private*/ _vc_101:import12.ViewContainer;
+  _TemplateRef_101_5:any;
+  _NgIf_101_6:import13.Wrapper_NgIf;
   _text_102:any;
-  _el_103:any;
-  _text_104:any;
+  _text_103:any;
+  _el_104:any;
   _text_105:any;
-  _text_106:any;
-  _el_107:any;
+  _el_106:any;
+  _text_107:any;
   _text_108:any;
-  _el_109:any;
-  _text_110:any;
+  _text_109:any;
+  _el_110:any;
   _text_111:any;
-  _text_112:any;
-  _el_113:any;
+  _anchor_112:any;
+  /*private*/ _vc_112:import12.ViewContainer;
+  _TemplateRef_112_5:any;
+  _NgIf_112_6:import13.Wrapper_NgIf;
+  _text_113:any;
   _text_114:any;
-  _anchor_115:any;
-  /*private*/ _vc_115:import12.ViewContainer;
-  _TemplateRef_115_5:any;
-  _NgIf_115_6:import13.Wrapper_NgIf;
+  _el_115:any;
   _text_116:any;
   _anchor_117:any;
   /*private*/ _vc_117:import12.ViewContainer;
   _TemplateRef_117_5:any;
   _NgIf_117_6:import13.Wrapper_NgIf;
   _text_118:any;
-  _anchor_119:any;
-  /*private*/ _vc_119:import12.ViewContainer;
-  _TemplateRef_119_5:any;
-  _NgIf_119_6:import13.Wrapper_NgIf;
-  _text_120:any;
-  _el_121:any;
-  _text_122:any;
+  _text_119:any;
+  _el_120:any;
+  _text_121:any;
+  _anchor_122:any;
+  /*private*/ _vc_122:import12.ViewContainer;
+  _TemplateRef_122_5:any;
+  _NgIf_122_6:import13.Wrapper_NgIf;
   _text_123:any;
-  _el_124:any;
-  _text_125:any;
+  _text_124:any;
+  _anchor_125:any;
+  /*private*/ _vc_125:import12.ViewContainer;
+  _TemplateRef_125_5:any;
+  _NgIf_125_6:import13.Wrapper_NgIf;
   _text_126:any;
-  _text_127:any;
-  _el_128:any;
-  _text_129:any;
-  _el_130:any;
-  _text_131:any;
-  _text_132:any;
-  /*private*/ _expr_172:any;
-  /*private*/ _expr_173:any;
-  /*private*/ _expr_174:any;
-  /*private*/ _expr_175:any;
-  /*private*/ _expr_176:any;
-  /*private*/ _expr_177:any;
-  /*private*/ _expr_178:any;
-  /*private*/ _expr_179:any;
-  /*private*/ _expr_180:any;
-  /*private*/ _expr_181:any;
-  /*private*/ _expr_182:any;
-  /*private*/ _expr_183:any;
-  /*private*/ _expr_184:any;
+  _anchor_127:any;
+  /*private*/ _vc_127:import12.ViewContainer;
+  _TemplateRef_127_5:any;
+  _NgIf_127_6:import13.Wrapper_NgIf;
+  _text_128:any;
+  _anchor_129:any;
+  /*private*/ _vc_129:import12.ViewContainer;
+  _TemplateRef_129_5:any;
+  _NgIf_129_6:import13.Wrapper_NgIf;
+  _text_130:any;
+  /*private*/ _expr_188:any;
+  /*private*/ _expr_189:any;
+  /*private*/ _expr_190:any;
+  /*private*/ _expr_191:any;
+  /*private*/ _expr_192:any;
+  /*private*/ _expr_193:any;
+  /*private*/ _expr_194:any;
+  /*private*/ _expr_195:any;
+  /*private*/ _expr_196:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
     super(View_ProfileEditComponent1,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
-    this._expr_172 = import6.UNINITIALIZED;
-    this._expr_173 = import6.UNINITIALIZED;
-    this._expr_174 = import6.UNINITIALIZED;
-    this._expr_175 = import6.UNINITIALIZED;
-    this._expr_176 = import6.UNINITIALIZED;
-    this._expr_177 = import6.UNINITIALIZED;
-    this._expr_178 = import6.UNINITIALIZED;
-    this._expr_179 = import6.UNINITIALIZED;
-    this._expr_180 = import6.UNINITIALIZED;
-    this._expr_181 = import6.UNINITIALIZED;
-    this._expr_182 = import6.UNINITIALIZED;
-    this._expr_183 = import6.UNINITIALIZED;
-    this._expr_184 = import6.UNINITIALIZED;
+    this._expr_188 = import6.UNINITIALIZED;
+    this._expr_189 = import6.UNINITIALIZED;
+    this._expr_190 = import6.UNINITIALIZED;
+    this._expr_191 = import6.UNINITIALIZED;
+    this._expr_192 = import6.UNINITIALIZED;
+    this._expr_193 = import6.UNINITIALIZED;
+    this._expr_194 = import6.UNINITIALIZED;
+    this._expr_195 = import6.UNINITIALIZED;
+    this._expr_196 = import6.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
     this._el_0 = import3.createRenderElement(this.renderer,(null as any),'div',new import3.InlineArray2(2,'class','container'),(null as any));
@@ -458,58 +466,74 @@ class View_ProfileEditComponent1 extends import1.AppView<any> {
     this._el_87 = import3.createRenderElement(this.renderer,this._el_85,'h3',new import3.InlineArray2(2,'class','page-header'),(null as any));
     this._text_88 = this.renderer.createText(this._el_87,'',(null as any));
     this._text_89 = this.renderer.createText(this._el_85,'\n    ',(null as any));
-    this._text_90 = this.renderer.createText(this._el_83,'\n    ',(null as any));
-    this._el_91 = import3.createRenderElement(this.renderer,this._el_83,'div',new import3.InlineArray2(2,'class','col-sm-3 col-xs-6'),(null as any));
-    this._text_92 = this.renderer.createText(this._el_91,'\n      ',(null as any));
-    this._el_93 = import3.createRenderElement(this.renderer,this._el_91,'a',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_94 = this.renderer.createText(this._el_93,'\n        ',(null as any));
-    this._el_95 = import3.createRenderElement(this.renderer,this._el_93,'img',new import3.InlineArray8(6,'alt','','class','img-responsive portfolio-item','src','http://placehold.it/500x300'),(null as any));
-    this._text_96 = this.renderer.createText(this._el_93,'\n        ',(null as any));
-    this._text_97 = this.renderer.createText(this._el_93,'\n      ',(null as any));
-    this._text_98 = this.renderer.createText(this._el_91,'\n    ',(null as any));
-    this._text_99 = this.renderer.createText(this._el_83,'\n  ',(null as any));
-    this._text_100 = this.renderer.createText(this._el_0,'\n  ',(null as any));
-    this._el_101 = import3.createRenderElement(this.renderer,this._el_0,'hr',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_102 = this.renderer.createText(this._el_0,'\n  ',(null as any));
-    this._el_103 = import3.createRenderElement(this.renderer,this._el_0,'h3',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_104 = this.renderer.createText(this._el_103,'Link your social accounts!',(null as any));
+    this._text_90 = this.renderer.createText(this._el_83,'\n      ',(null as any));
+    this._el_91 = import3.createRenderElement(this.renderer,this._el_83,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_92 = this.renderer.createText(this._el_91,'\n        Show your works! Add new or edit. ',(null as any));
+    this._el_93 = import3.createRenderElement(this.renderer,this._el_91,'button',new import3.InlineArray2(2,'class','btn btn-sm btn-outline-primary'),(null as any));
+    this._text_94 = this.renderer.createText(this._el_93,'add avatar',(null as any));
+    this._text_95 = this.renderer.createText(this._el_91,'\n\n      ',(null as any));
+    this._text_96 = this.renderer.createText(this._el_83,'\n',(null as any));
+    this._anchor_97 = this.renderer.createTemplateAnchor(this._el_83,(null as any));
+    this._vc_97 = new import12.ViewContainer(97,83,this,this._anchor_97);
+    this._TemplateRef_97_5 = new import14.TemplateRef_(this,97,this._anchor_97);
+    this._NgIf_97_6 = new import13.Wrapper_NgIf(this._vc_97.vcRef,this._TemplateRef_97_5);
+    this._text_98 = this.renderer.createText(this._el_83,'\n    ',(null as any));
+    this._anchor_99 = this.renderer.createTemplateAnchor(this._el_83,(null as any));
+    this._vc_99 = new import12.ViewContainer(99,83,this,this._anchor_99);
+    this._TemplateRef_99_5 = new import14.TemplateRef_(this,99,this._anchor_99);
+    this._NgIf_99_6 = new import13.Wrapper_NgIf(this._vc_99.vcRef,this._TemplateRef_99_5);
+    this._text_100 = this.renderer.createText(this._el_83,'\n',(null as any));
+    this._anchor_101 = this.renderer.createTemplateAnchor(this._el_83,(null as any));
+    this._vc_101 = new import12.ViewContainer(101,83,this,this._anchor_101);
+    this._TemplateRef_101_5 = new import14.TemplateRef_(this,101,this._anchor_101);
+    this._NgIf_101_6 = new import13.Wrapper_NgIf(this._vc_101.vcRef,this._TemplateRef_101_5);
+    this._text_102 = this.renderer.createText(this._el_83,'\n  ',(null as any));
+    this._text_103 = this.renderer.createText(this._el_0,'\n  ',(null as any));
+    this._el_104 = import3.createRenderElement(this.renderer,this._el_0,'hr',import3.EMPTY_INLINE_ARRAY,(null as any));
     this._text_105 = this.renderer.createText(this._el_0,'\n  ',(null as any));
-    this._text_106 = this.renderer.createText(this._el_0,'\n  ',(null as any));
-    this._el_107 = import3.createRenderElement(this.renderer,this._el_0,'div',new import3.InlineArray2(2,'class','facebook-profile-edit'),(null as any));
-    this._text_108 = this.renderer.createText(this._el_107,'\n    ',(null as any));
-    this._el_109 = import3.createRenderElement(this.renderer,this._el_107,'a',new import3.InlineArray2(2,'class','btn btn-sm btn-outline-primary'),(null as any));
-    this._text_110 = this.renderer.createText(this._el_109,'',(null as any));
-    this._text_111 = this.renderer.createText(this._el_107,'\n  ',(null as any));
-    this._text_112 = this.renderer.createText(this._el_0,'\n\n  ',(null as any));
-    this._el_113 = import3.createRenderElement(this.renderer,this._el_0,'div',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_114 = this.renderer.createText(this._el_113,'\n    ',(null as any));
-    this._anchor_115 = this.renderer.createTemplateAnchor(this._el_113,(null as any));
-    this._vc_115 = new import12.ViewContainer(115,113,this,this._anchor_115);
-    this._TemplateRef_115_5 = new import14.TemplateRef_(this,115,this._anchor_115);
-    this._NgIf_115_6 = new import13.Wrapper_NgIf(this._vc_115.vcRef,this._TemplateRef_115_5);
-    this._text_116 = this.renderer.createText(this._el_113,'\n    ',(null as any));
-    this._anchor_117 = this.renderer.createTemplateAnchor(this._el_113,(null as any));
-    this._vc_117 = new import12.ViewContainer(117,113,this,this._anchor_117);
+    this._el_106 = import3.createRenderElement(this.renderer,this._el_0,'h3',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_107 = this.renderer.createText(this._el_106,'Link your social accounts!',(null as any));
+    this._text_108 = this.renderer.createText(this._el_0,'\n  ',(null as any));
+    this._text_109 = this.renderer.createText(this._el_0,'\n  ',(null as any));
+    this._el_110 = import3.createRenderElement(this.renderer,this._el_0,'div',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_111 = this.renderer.createText(this._el_110,'\n    ',(null as any));
+    this._anchor_112 = this.renderer.createTemplateAnchor(this._el_110,(null as any));
+    this._vc_112 = new import12.ViewContainer(112,110,this,this._anchor_112);
+    this._TemplateRef_112_5 = new import14.TemplateRef_(this,112,this._anchor_112);
+    this._NgIf_112_6 = new import13.Wrapper_NgIf(this._vc_112.vcRef,this._TemplateRef_112_5);
+    this._text_113 = this.renderer.createText(this._el_110,'\n  ',(null as any));
+    this._text_114 = this.renderer.createText(this._el_0,'\n  ',(null as any));
+    this._el_115 = import3.createRenderElement(this.renderer,this._el_0,'div',new import3.InlineArray2(2,'class','facebook-profile-edit'),(null as any));
+    this._text_116 = this.renderer.createText(this._el_115,'\n    ',(null as any));
+    this._anchor_117 = this.renderer.createTemplateAnchor(this._el_115,(null as any));
+    this._vc_117 = new import12.ViewContainer(117,115,this,this._anchor_117);
     this._TemplateRef_117_5 = new import14.TemplateRef_(this,117,this._anchor_117);
     this._NgIf_117_6 = new import13.Wrapper_NgIf(this._vc_117.vcRef,this._TemplateRef_117_5);
-    this._text_118 = this.renderer.createText(this._el_113,'\n    ',(null as any));
-    this._anchor_119 = this.renderer.createTemplateAnchor(this._el_113,(null as any));
-    this._vc_119 = new import12.ViewContainer(119,113,this,this._anchor_119);
-    this._TemplateRef_119_5 = new import14.TemplateRef_(this,119,this._anchor_119);
-    this._NgIf_119_6 = new import13.Wrapper_NgIf(this._vc_119.vcRef,this._TemplateRef_119_5);
-    this._text_120 = this.renderer.createText(this._el_113,'\n    ',(null as any));
-    this._el_121 = import3.createRenderElement(this.renderer,this._el_113,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_122 = this.renderer.createText(this._el_121,'',(null as any));
-    this._text_123 = this.renderer.createText(this._el_113,'\n    ',(null as any));
-    this._el_124 = import3.createRenderElement(this.renderer,this._el_113,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_125 = this.renderer.createText(this._el_124,'',(null as any));
-    this._text_126 = this.renderer.createText(this._el_113,'\n  ',(null as any));
-    this._text_127 = this.renderer.createText(this._el_0,'\n  ',(null as any));
-    this._el_128 = import3.createRenderElement(this.renderer,this._el_0,'br',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_129 = this.renderer.createText(this._el_0,'\n  ',(null as any));
-    this._el_130 = import3.createRenderElement(this.renderer,this._el_0,'button',new import3.InlineArray2(2,'class','btn btn-sm btn-outline-primary'),(null as any));
-    this._text_131 = this.renderer.createText(this._el_130,'Link LinkedIn',(null as any));
-    this._text_132 = this.renderer.createText(this._el_0,'\n',(null as any));
+    this._text_118 = this.renderer.createText(this._el_115,'\n  ',(null as any));
+    this._text_119 = this.renderer.createText(this._el_0,'\n  ',(null as any));
+    this._el_120 = import3.createRenderElement(this.renderer,this._el_0,'div',new import3.InlineArray2(2,'class','linkedin-profile-edit'),(null as any));
+    this._text_121 = this.renderer.createText(this._el_120,'\n    ',(null as any));
+    this._anchor_122 = this.renderer.createTemplateAnchor(this._el_120,(null as any));
+    this._vc_122 = new import12.ViewContainer(122,120,this,this._anchor_122);
+    this._TemplateRef_122_5 = new import14.TemplateRef_(this,122,this._anchor_122);
+    this._NgIf_122_6 = new import13.Wrapper_NgIf(this._vc_122.vcRef,this._TemplateRef_122_5);
+    this._text_123 = this.renderer.createText(this._el_120,'\n  ',(null as any));
+    this._text_124 = this.renderer.createText(this._el_0,'\n  ',(null as any));
+    this._anchor_125 = this.renderer.createTemplateAnchor(this._el_0,(null as any));
+    this._vc_125 = new import12.ViewContainer(125,0,this,this._anchor_125);
+    this._TemplateRef_125_5 = new import14.TemplateRef_(this,125,this._anchor_125);
+    this._NgIf_125_6 = new import13.Wrapper_NgIf(this._vc_125.vcRef,this._TemplateRef_125_5);
+    this._text_126 = this.renderer.createText(this._el_0,'\n  ',(null as any));
+    this._anchor_127 = this.renderer.createTemplateAnchor(this._el_0,(null as any));
+    this._vc_127 = new import12.ViewContainer(127,0,this,this._anchor_127);
+    this._TemplateRef_127_5 = new import14.TemplateRef_(this,127,this._anchor_127);
+    this._NgIf_127_6 = new import13.Wrapper_NgIf(this._vc_127.vcRef,this._TemplateRef_127_5);
+    this._text_128 = this.renderer.createText(this._el_0,'\n  ',(null as any));
+    this._anchor_129 = this.renderer.createTemplateAnchor(this._el_0,(null as any));
+    this._vc_129 = new import12.ViewContainer(129,0,this,this._anchor_129);
+    this._TemplateRef_129_5 = new import14.TemplateRef_(this,129,this._anchor_129);
+    this._NgIf_129_6 = new import13.Wrapper_NgIf(this._vc_129.vcRef,this._TemplateRef_129_5);
+    this._text_130 = this.renderer.createText(this._el_0,'\n',(null as any));
     var disposable_0:Function = import3.subscribeToRenderElement(this,this._el_13,new import3.InlineArray8(6,'ngSubmit',(null as any),'submit',(null as any),'reset',(null as any)),this.eventHandler(this.handleEvent_13));
     this._FormGroupDirective_13_3.subscribe(this,this.eventHandler(this.handleEvent_13),true);
     var disposable_1:Function = import3.subscribeToRenderElement(this,this._el_20,new import3.InlineArray4(4,'input',(null as any),'blur',(null as any)),this.eventHandler(this.handleEvent_20));
@@ -521,7 +545,6 @@ class View_ProfileEditComponent1 extends import1.AppView<any> {
     this._FormGroupDirective_63_3.subscribe(this,this.eventHandler(this.handleEvent_63),true);
     var disposable_6:Function = import3.subscribeToRenderElement(this,this._el_70,new import3.InlineArray4(4,'input',(null as any),'blur',(null as any)),this.eventHandler(this.handleEvent_70));
     var disposable_7:Function = import3.subscribeToRenderElement(this,this._el_93,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_93));
-    var disposable_8:Function = import3.subscribeToRenderElement(this,this._el_130,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_130));
     this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
       this._el_0,
       this._text_1,
@@ -618,44 +641,42 @@ class View_ProfileEditComponent1 extends import1.AppView<any> {
       this._text_92,
       this._el_93,
       this._text_94,
-      this._el_95,
+      this._text_95,
       this._text_96,
-      this._text_97,
+      this._anchor_97,
       this._text_98,
-      this._text_99,
+      this._anchor_99,
       this._text_100,
-      this._el_101,
+      this._anchor_101,
       this._text_102,
-      this._el_103,
-      this._text_104,
+      this._text_103,
+      this._el_104,
       this._text_105,
-      this._text_106,
-      this._el_107,
+      this._el_106,
+      this._text_107,
       this._text_108,
-      this._el_109,
-      this._text_110,
+      this._text_109,
+      this._el_110,
       this._text_111,
-      this._text_112,
-      this._el_113,
+      this._anchor_112,
+      this._text_113,
       this._text_114,
-      this._anchor_115,
+      this._el_115,
       this._text_116,
       this._anchor_117,
       this._text_118,
-      this._anchor_119,
-      this._text_120,
-      this._el_121,
-      this._text_122,
+      this._text_119,
+      this._el_120,
+      this._text_121,
+      this._anchor_122,
       this._text_123,
-      this._el_124,
-      this._text_125,
+      this._text_124,
+      this._anchor_125,
       this._text_126,
-      this._text_127,
-      this._el_128,
-      this._text_129,
-      this._el_130,
-      this._text_131,
-      this._text_132
+      this._anchor_127,
+      this._text_128,
+      this._anchor_129,
+      this._text_130
     ]
     ),[
       disposable_0,
@@ -665,8 +686,7 @@ class View_ProfileEditComponent1 extends import1.AppView<any> {
       disposable_4,
       disposable_5,
       disposable_6,
-      disposable_7,
-      disposable_8
+      disposable_7
     ]
     );
     return (null as any);
@@ -700,12 +720,24 @@ class View_ProfileEditComponent1 extends import1.AppView<any> {
     if (((token === import15.NgIf) && (77 === requestNodeIndex))) { return this._NgIf_77_6.context; }
     if (((token === import14.TemplateRef) && (79 === requestNodeIndex))) { return this._TemplateRef_79_5; }
     if (((token === import15.NgIf) && (79 === requestNodeIndex))) { return this._NgIf_79_6.context; }
-    if (((token === import14.TemplateRef) && (115 === requestNodeIndex))) { return this._TemplateRef_115_5; }
-    if (((token === import15.NgIf) && (115 === requestNodeIndex))) { return this._NgIf_115_6.context; }
+    if (((token === import14.TemplateRef) && (97 === requestNodeIndex))) { return this._TemplateRef_97_5; }
+    if (((token === import15.NgIf) && (97 === requestNodeIndex))) { return this._NgIf_97_6.context; }
+    if (((token === import14.TemplateRef) && (99 === requestNodeIndex))) { return this._TemplateRef_99_5; }
+    if (((token === import15.NgIf) && (99 === requestNodeIndex))) { return this._NgIf_99_6.context; }
+    if (((token === import14.TemplateRef) && (101 === requestNodeIndex))) { return this._TemplateRef_101_5; }
+    if (((token === import15.NgIf) && (101 === requestNodeIndex))) { return this._NgIf_101_6.context; }
+    if (((token === import14.TemplateRef) && (112 === requestNodeIndex))) { return this._TemplateRef_112_5; }
+    if (((token === import15.NgIf) && (112 === requestNodeIndex))) { return this._NgIf_112_6.context; }
     if (((token === import14.TemplateRef) && (117 === requestNodeIndex))) { return this._TemplateRef_117_5; }
     if (((token === import15.NgIf) && (117 === requestNodeIndex))) { return this._NgIf_117_6.context; }
-    if (((token === import14.TemplateRef) && (119 === requestNodeIndex))) { return this._TemplateRef_119_5; }
-    if (((token === import15.NgIf) && (119 === requestNodeIndex))) { return this._NgIf_119_6.context; }
+    if (((token === import14.TemplateRef) && (122 === requestNodeIndex))) { return this._TemplateRef_122_5; }
+    if (((token === import15.NgIf) && (122 === requestNodeIndex))) { return this._NgIf_122_6.context; }
+    if (((token === import14.TemplateRef) && (125 === requestNodeIndex))) { return this._TemplateRef_125_5; }
+    if (((token === import15.NgIf) && (125 === requestNodeIndex))) { return this._NgIf_125_6.context; }
+    if (((token === import14.TemplateRef) && (127 === requestNodeIndex))) { return this._TemplateRef_127_5; }
+    if (((token === import15.NgIf) && (127 === requestNodeIndex))) { return this._NgIf_127_6.context; }
+    if (((token === import14.TemplateRef) && (129 === requestNodeIndex))) { return this._TemplateRef_129_5; }
+    if (((token === import15.NgIf) && (129 === requestNodeIndex))) { return this._NgIf_129_6.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
@@ -742,98 +774,108 @@ class View_ProfileEditComponent1 extends import1.AppView<any> {
     const currVal_79_0_0:any = (this.parentView.context.hasSkill().length < 1);
     this._NgIf_79_6.check_ngIf(currVal_79_0_0,throwOnChange,false);
     this._NgIf_79_6.ngDoCheck(this,this._anchor_79,throwOnChange);
-    const currVal_115_0_0:boolean = !this.parentView.context.user.github;
-    this._NgIf_115_6.check_ngIf(currVal_115_0_0,throwOnChange,false);
-    this._NgIf_115_6.ngDoCheck(this,this._anchor_115,throwOnChange);
-    const currVal_117_0_0:any = this.parentView.context.user.github;
+    const currVal_97_0_0:any = this.parentView.context.showWork;
+    this._NgIf_97_6.check_ngIf(currVal_97_0_0,throwOnChange,false);
+    this._NgIf_97_6.ngDoCheck(this,this._anchor_97,throwOnChange);
+    const currVal_99_0_0:any = (this.parentView.context.hasWorks().length < 1);
+    this._NgIf_99_6.check_ngIf(currVal_99_0_0,throwOnChange,false);
+    this._NgIf_99_6.ngDoCheck(this,this._anchor_99,throwOnChange);
+    const currVal_101_0_0:any = (this.parentView.context.hasWorks().length > 0);
+    this._NgIf_101_6.check_ngIf(currVal_101_0_0,throwOnChange,false);
+    this._NgIf_101_6.ngDoCheck(this,this._anchor_101,throwOnChange);
+    const currVal_112_0_0:boolean = !this.parentView.context.user.github;
+    this._NgIf_112_6.check_ngIf(currVal_112_0_0,throwOnChange,false);
+    this._NgIf_112_6.ngDoCheck(this,this._anchor_112,throwOnChange);
+    const currVal_117_0_0:boolean = !this.parentView.context.user.facebook;
     this._NgIf_117_6.check_ngIf(currVal_117_0_0,throwOnChange,false);
     this._NgIf_117_6.ngDoCheck(this,this._anchor_117,throwOnChange);
-    const currVal_119_0_0:any = this.parentView.context.user.github;
-    this._NgIf_119_6.check_ngIf(currVal_119_0_0,throwOnChange,false);
-    this._NgIf_119_6.ngDoCheck(this,this._anchor_119,throwOnChange);
+    const currVal_122_0_0:boolean = !this.parentView.context.user.linkedin;
+    this._NgIf_122_6.check_ngIf(currVal_122_0_0,throwOnChange,false);
+    this._NgIf_122_6.ngDoCheck(this,this._anchor_122,throwOnChange);
+    const currVal_125_0_0:any = this.parentView.context.user.github;
+    this._NgIf_125_6.check_ngIf(currVal_125_0_0,throwOnChange,false);
+    this._NgIf_125_6.ngDoCheck(this,this._anchor_125,throwOnChange);
+    const currVal_127_0_0:any = this.parentView.context.user.facebook;
+    this._NgIf_127_6.check_ngIf(currVal_127_0_0,throwOnChange,false);
+    this._NgIf_127_6.ngDoCheck(this,this._anchor_127,throwOnChange);
+    const currVal_129_0_0:any = this.parentView.context.user.linkedin;
+    this._NgIf_129_6.check_ngIf(currVal_129_0_0,throwOnChange,false);
+    this._NgIf_129_6.ngDoCheck(this,this._anchor_129,throwOnChange);
     this._vc_77.detectChangesInNestedViews(throwOnChange);
     this._vc_79.detectChangesInNestedViews(throwOnChange);
-    this._vc_115.detectChangesInNestedViews(throwOnChange);
+    this._vc_97.detectChangesInNestedViews(throwOnChange);
+    this._vc_99.detectChangesInNestedViews(throwOnChange);
+    this._vc_101.detectChangesInNestedViews(throwOnChange);
+    this._vc_112.detectChangesInNestedViews(throwOnChange);
     this._vc_117.detectChangesInNestedViews(throwOnChange);
-    this._vc_119.detectChangesInNestedViews(throwOnChange);
-    const currVal_172:any = import3.inlineInterpolate(2,'',this.parentView.context.user.firstName,'\n        ',this.parentView.context.user.lastName,'\n        ');
-    if (import3.checkBinding(throwOnChange,this._expr_172,currVal_172)) {
-      this.renderer.setText(this._text_7,currVal_172);
-      this._expr_172 = currVal_172;
+    this._vc_122.detectChangesInNestedViews(throwOnChange);
+    this._vc_125.detectChangesInNestedViews(throwOnChange);
+    this._vc_127.detectChangesInNestedViews(throwOnChange);
+    this._vc_129.detectChangesInNestedViews(throwOnChange);
+    const currVal_188:any = import3.inlineInterpolate(2,'',this.parentView.context.user.firstName,'\n        ',this.parentView.context.user.lastName,'\n        ');
+    if (import3.checkBinding(throwOnChange,this._expr_188,currVal_188)) {
+      this.renderer.setText(this._text_7,currVal_188);
+      this._expr_188 = currVal_188;
     }
-    const currVal_173:any = import3.inlineInterpolate(1,'',(this.parentView.context.user.profile.title || 'Working title'),'');
-    if (import3.checkBinding(throwOnChange,this._expr_173,currVal_173)) {
-      this.renderer.setText(this._text_9,currVal_173);
-      this._expr_173 = currVal_173;
+    const currVal_189:any = import3.inlineInterpolate(1,'',(this.parentView.context.user.profile.title || 'Working title'),'');
+    if (import3.checkBinding(throwOnChange,this._expr_189,currVal_189)) {
+      this.renderer.setText(this._text_9,currVal_189);
+      this._expr_189 = currVal_189;
     }
     this._NgControlStatusGroup_13_5.checkHost(this,this,this._el_13,throwOnChange);
     this._NgControlStatus_20_7.checkHost(this,this,this._el_20,throwOnChange);
-    const currVal_174:boolean = !this.parentView.context.titleForm.valid;
-    if (import3.checkBinding(throwOnChange,this._expr_174,currVal_174)) {
-      this.renderer.setElementProperty(this._el_22,'disabled',currVal_174);
-      this._expr_174 = currVal_174;
+    const currVal_190:boolean = !this.parentView.context.titleForm.valid;
+    if (import3.checkBinding(throwOnChange,this._expr_190,currVal_190)) {
+      this.renderer.setElementProperty(this._el_22,'disabled',currVal_190);
+      this._expr_190 = currVal_190;
     }
-    const currVal_175:any = this.parentView.context.getAvatar();
-    if (import3.checkBinding(throwOnChange,this._expr_175,currVal_175)) {
-      this.renderer.setElementProperty(this._el_35,'src',this.viewUtils.sanitizer.sanitize(import28.SecurityContext.URL,currVal_175));
-      this._expr_175 = currVal_175;
+    const currVal_191:any = this.parentView.context.getAvatar();
+    if (import3.checkBinding(throwOnChange,this._expr_191,currVal_191)) {
+      this.renderer.setElementProperty(this._el_35,'src',this.viewUtils.sanitizer.sanitize(import28.SecurityContext.URL,currVal_191));
+      this._expr_191 = currVal_191;
     }
-    const currVal_176:any = import3.inlineInterpolate(1,'About\n        ',this.parentView.context.user.firstName,'');
-    if (import3.checkBinding(throwOnChange,this._expr_176,currVal_176)) {
-      this.renderer.setText(this._text_41,currVal_176);
-      this._expr_176 = currVal_176;
+    const currVal_192:any = import3.inlineInterpolate(1,'About\n        ',this.parentView.context.user.firstName,'');
+    if (import3.checkBinding(throwOnChange,this._expr_192,currVal_192)) {
+      this.renderer.setText(this._text_41,currVal_192);
+      this._expr_192 = currVal_192;
     }
-    const currVal_177:any = import3.inlineInterpolate(1,'',(this.parentView.context.user.profile.summary || 'Tell a bit about yourself'),'');
-    if (import3.checkBinding(throwOnChange,this._expr_177,currVal_177)) {
-      this.renderer.setText(this._text_44,currVal_177);
-      this._expr_177 = currVal_177;
+    const currVal_193:any = import3.inlineInterpolate(1,'',(this.parentView.context.user.profile.summary || 'Tell a bit about yourself'),'');
+    if (import3.checkBinding(throwOnChange,this._expr_193,currVal_193)) {
+      this.renderer.setText(this._text_44,currVal_193);
+      this._expr_193 = currVal_193;
     }
     this._NgControlStatusGroup_46_5.checkHost(this,this,this._el_46,throwOnChange);
     this._NgControlStatus_53_7.checkHost(this,this,this._el_53,throwOnChange);
-    const currVal_178:boolean = !this.parentView.context.aboutForm.valid;
-    if (import3.checkBinding(throwOnChange,this._expr_178,currVal_178)) {
-      this.renderer.setElementProperty(this._el_55,'disabled',currVal_178);
-      this._expr_178 = currVal_178;
+    const currVal_194:boolean = !this.parentView.context.aboutForm.valid;
+    if (import3.checkBinding(throwOnChange,this._expr_194,currVal_194)) {
+      this.renderer.setElementProperty(this._el_55,'disabled',currVal_194);
+      this._expr_194 = currVal_194;
     }
     this._NgControlStatusGroup_63_5.checkHost(this,this,this._el_63,throwOnChange);
     this._NgControlStatus_70_7.checkHost(this,this,this._el_70,throwOnChange);
-    const currVal_179:boolean = !this.parentView.context.skillsForm.valid;
-    if (import3.checkBinding(throwOnChange,this._expr_179,currVal_179)) {
-      this.renderer.setElementProperty(this._el_72,'disabled',currVal_179);
-      this._expr_179 = currVal_179;
+    const currVal_195:boolean = !this.parentView.context.skillsForm.valid;
+    if (import3.checkBinding(throwOnChange,this._expr_195,currVal_195)) {
+      this.renderer.setElementProperty(this._el_72,'disabled',currVal_195);
+      this._expr_195 = currVal_195;
     }
-    const currVal_180:any = import3.inlineInterpolate(1,'',this.parentView.context.user.firstName,'\'s Games');
-    if (import3.checkBinding(throwOnChange,this._expr_180,currVal_180)) {
-      this.renderer.setText(this._text_88,currVal_180);
-      this._expr_180 = currVal_180;
-    }
-    const currVal_181:any = import3.inlineInterpolate(1,'/facebook/',this.parentView.context.user._id,'');
-    if (import3.checkBinding(throwOnChange,this._expr_181,currVal_181)) {
-      this.renderer.setElementProperty(this._el_109,'href',this.viewUtils.sanitizer.sanitize(import28.SecurityContext.URL,currVal_181));
-      this._expr_181 = currVal_181;
-    }
-    const currVal_182:any = import3.inlineInterpolate(1,'',this.parentView.context.user.facebook,'Link Facebook');
-    if (import3.checkBinding(throwOnChange,this._expr_182,currVal_182)) {
-      this.renderer.setText(this._text_110,currVal_182);
-      this._expr_182 = currVal_182;
-    }
-    const currVal_183:any = import3.inlineInterpolate(1,'followers:\n      ',this.parentView.context.user.github.followers,'');
-    if (import3.checkBinding(throwOnChange,this._expr_183,currVal_183)) {
-      this.renderer.setText(this._text_122,currVal_183);
-      this._expr_183 = currVal_183;
-    }
-    const currVal_184:any = import3.inlineInterpolate(1,'repo #:',this.parentView.context.user.github.repoNum,'');
-    if (import3.checkBinding(throwOnChange,this._expr_184,currVal_184)) {
-      this.renderer.setText(this._text_125,currVal_184);
-      this._expr_184 = currVal_184;
+    const currVal_196:any = import3.inlineInterpolate(1,'',this.parentView.context.user.firstName,'\'s Games');
+    if (import3.checkBinding(throwOnChange,this._expr_196,currVal_196)) {
+      this.renderer.setText(this._text_88,currVal_196);
+      this._expr_196 = currVal_196;
     }
   }
   destroyInternal():void {
     this._vc_77.destroyNestedViews();
     this._vc_79.destroyNestedViews();
-    this._vc_115.destroyNestedViews();
+    this._vc_97.destroyNestedViews();
+    this._vc_99.destroyNestedViews();
+    this._vc_101.destroyNestedViews();
+    this._vc_112.destroyNestedViews();
     this._vc_117.destroyNestedViews();
-    this._vc_119.destroyNestedViews();
+    this._vc_122.destroyNestedViews();
+    this._vc_125.destroyNestedViews();
+    this._vc_127.destroyNestedViews();
+    this._vc_129.destroyNestedViews();
     this._FormControlName_20_5.ngOnDestroy();
     this._FormGroupDirective_13_3.ngOnDestroy();
     this._FormControlName_53_5.ngOnDestroy();
@@ -847,9 +889,15 @@ class View_ProfileEditComponent1 extends import1.AppView<any> {
   createEmbeddedViewInternal(nodeIndex:number):import1.AppView<any> {
     if ((nodeIndex == 77)) { return new View_ProfileEditComponent2(this.viewUtils,this,77,this._anchor_77,this._vc_77); }
     if ((nodeIndex == 79)) { return new View_ProfileEditComponent4(this.viewUtils,this,79,this._anchor_79,this._vc_79); }
-    if ((nodeIndex == 115)) { return new View_ProfileEditComponent5(this.viewUtils,this,115,this._anchor_115,this._vc_115); }
-    if ((nodeIndex == 117)) { return new View_ProfileEditComponent6(this.viewUtils,this,117,this._anchor_117,this._vc_117); }
-    if ((nodeIndex == 119)) { return new View_ProfileEditComponent7(this.viewUtils,this,119,this._anchor_119,this._vc_119); }
+    if ((nodeIndex == 97)) { return new View_ProfileEditComponent5(this.viewUtils,this,97,this._anchor_97,this._vc_97); }
+    if ((nodeIndex == 99)) { return new View_ProfileEditComponent6(this.viewUtils,this,99,this._anchor_99,this._vc_99); }
+    if ((nodeIndex == 101)) { return new View_ProfileEditComponent7(this.viewUtils,this,101,this._anchor_101,this._vc_101); }
+    if ((nodeIndex == 112)) { return new View_ProfileEditComponent10(this.viewUtils,this,112,this._anchor_112,this._vc_112); }
+    if ((nodeIndex == 117)) { return new View_ProfileEditComponent11(this.viewUtils,this,117,this._anchor_117,this._vc_117); }
+    if ((nodeIndex == 122)) { return new View_ProfileEditComponent12(this.viewUtils,this,122,this._anchor_122,this._vc_122); }
+    if ((nodeIndex == 125)) { return new View_ProfileEditComponent13(this.viewUtils,this,125,this._anchor_125,this._vc_125); }
+    if ((nodeIndex == 127)) { return new View_ProfileEditComponent15(this.viewUtils,this,127,this._anchor_127,this._vc_127); }
+    if ((nodeIndex == 129)) { return new View_ProfileEditComponent17(this.viewUtils,this,129,this._anchor_129,this._vc_129); }
     return (null as any);
   }
   handleEvent_13(eventName:string,$event:any):boolean {
@@ -872,7 +920,7 @@ class View_ProfileEditComponent1 extends import1.AppView<any> {
     this.markPathToRootAsCheckOnce();
     var result:boolean = true;
     if ((eventName == 'click')) {
-      const pd_sub_0:any = ((<any>this.parentView.context.open(this.parentView.context.lg)) !== false);
+      const pd_sub_0:any = ((<any>this.parentView.context.openAvatar(this.parentView.context.lg)) !== false);
       result = (pd_sub_0 && result);
     }
     return result;
@@ -913,16 +961,7 @@ class View_ProfileEditComponent1 extends import1.AppView<any> {
     this.markPathToRootAsCheckOnce();
     var result:boolean = true;
     if ((eventName == 'click')) {
-      const pd_sub_0:any = ((<any>this.parentView.context.useJwtHelper()) !== false);
-      result = (pd_sub_0 && result);
-    }
-    return result;
-  }
-  handleEvent_130(eventName:string,$event:any):boolean {
-    this.markPathToRootAsCheckOnce();
-    var result:boolean = true;
-    if ((eventName == 'click')) {
-      const pd_sub_0:any = ((<any>this.parentView.context.linkLinkedin()) !== false);
+      const pd_sub_0:any = ((<any>this.parentView.context.showWorkForm()) !== false);
       result = (pd_sub_0 && result);
     }
     return result;
@@ -1048,9 +1087,558 @@ class View_ProfileEditComponent4 extends import1.AppView<any> {
 class View_ProfileEditComponent5 extends import1.AppView<any> {
   _el_0:any;
   _text_1:any;
-  /*private*/ _expr_2:any;
+  _el_2:any;
+  _FormGroupDirective_2_3:import16.Wrapper_FormGroupDirective;
+  _ControlContainer_2_4:any;
+  _NgControlStatusGroup_2_5:import17.Wrapper_NgControlStatusGroup;
+  _text_3:any;
+  _el_4:any;
+  _text_5:any;
+  _el_6:any;
+  _text_7:any;
+  _text_8:any;
+  _el_9:any;
+  _DefaultValueAccessor_9_3:import18.Wrapper_DefaultValueAccessor;
+  _NG_VALUE_ACCESSOR_9_4:any[];
+  _FormControlName_9_5:import19.Wrapper_FormControlName;
+  _NgControl_9_6:any;
+  _NgControlStatus_9_7:import17.Wrapper_NgControlStatus;
+  _text_10:any;
+  _el_11:any;
+  _text_12:any;
+  _text_13:any;
+  _el_14:any;
+  _DefaultValueAccessor_14_3:import18.Wrapper_DefaultValueAccessor;
+  _NG_VALUE_ACCESSOR_14_4:any[];
+  _FormControlName_14_5:import19.Wrapper_FormControlName;
+  _NgControl_14_6:any;
+  _NgControlStatus_14_7:import17.Wrapper_NgControlStatus;
+  _text_15:any;
+  _el_16:any;
+  _text_17:any;
+  _text_18:any;
+  _el_19:any;
+  _DefaultValueAccessor_19_3:import18.Wrapper_DefaultValueAccessor;
+  _NG_VALUE_ACCESSOR_19_4:any[];
+  _FormControlName_19_5:import19.Wrapper_FormControlName;
+  _NgControl_19_6:any;
+  _NgControlStatus_19_7:import17.Wrapper_NgControlStatus;
+  _text_20:any;
+  _el_21:any;
+  _text_22:any;
+  _text_23:any;
+  _el_24:any;
+  _DefaultValueAccessor_24_3:import18.Wrapper_DefaultValueAccessor;
+  _NG_VALUE_ACCESSOR_24_4:any[];
+  _FormControlName_24_5:import19.Wrapper_FormControlName;
+  _NgControl_24_6:any;
+  _NgControlStatus_24_7:import17.Wrapper_NgControlStatus;
+  _text_25:any;
+  _el_26:any;
+  _text_27:any;
+  _text_28:any;
+  _text_29:any;
+  _text_30:any;
+  _el_31:any;
+  _text_32:any;
+  _el_33:any;
+  _text_34:any;
+  _text_35:any;
+  _el_36:any;
+  _text_37:any;
+  _text_38:any;
+  _text_39:any;
+  /*private*/ _expr_63:any;
+  /*private*/ _expr_64:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
     super(View_ProfileEditComponent5,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    this._expr_63 = import6.UNINITIALIZED;
+    this._expr_64 = import6.UNINITIALIZED;
+  }
+  createInternal(rootSelector:string):import7.ComponentRef<any> {
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'div',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_1 = this.renderer.createText(this._el_0,'\n        ',(null as any));
+    this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'form',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._FormGroupDirective_2_3 = new import16.Wrapper_FormGroupDirective((null as any),(null as any));
+    this._ControlContainer_2_4 = this._FormGroupDirective_2_3.context;
+    this._NgControlStatusGroup_2_5 = new import17.Wrapper_NgControlStatusGroup(this._ControlContainer_2_4);
+    this._text_3 = this.renderer.createText(this._el_2,'\n        ',(null as any));
+    this._el_4 = import3.createRenderElement(this.renderer,this._el_2,'div',new import3.InlineArray2(2,'class','form-group'),(null as any));
+    this._text_5 = this.renderer.createText(this._el_4,'\n              ',(null as any));
+    this._el_6 = import3.createRenderElement(this.renderer,this._el_4,'label',new import3.InlineArray2(2,'for','title'),(null as any));
+    this._text_7 = this.renderer.createText(this._el_6,'Title',(null as any));
+    this._text_8 = this.renderer.createText(this._el_4,'\n              ',(null as any));
+    this._el_9 = import3.createRenderElement(this.renderer,this._el_4,'input',new import3.InlineArray16(10,'class','form-control','formControlName','title','id','title','placeholder','work title here','type','text'),(null as any));
+    this._DefaultValueAccessor_9_3 = new import18.Wrapper_DefaultValueAccessor(this.renderer,new import20.ElementRef(this._el_9));
+    this._NG_VALUE_ACCESSOR_9_4 = [this._DefaultValueAccessor_9_3.context];
+    this._FormControlName_9_5 = new import19.Wrapper_FormControlName(this._ControlContainer_2_4,(null as any),(null as any),this._NG_VALUE_ACCESSOR_9_4);
+    this._NgControl_9_6 = this._FormControlName_9_5.context;
+    this._NgControlStatus_9_7 = new import17.Wrapper_NgControlStatus(this._NgControl_9_6);
+    this._text_10 = this.renderer.createText(this._el_4,'\n              ',(null as any));
+    this._el_11 = import3.createRenderElement(this.renderer,this._el_4,'label',new import3.InlineArray2(2,'for','description'),(null as any));
+    this._text_12 = this.renderer.createText(this._el_11,'description',(null as any));
+    this._text_13 = this.renderer.createText(this._el_4,'\n              ',(null as any));
+    this._el_14 = import3.createRenderElement(this.renderer,this._el_4,'textarea',new import3.InlineArray16(10,'class','form-control','formControlName','description','id','description','placeholder','work description here','rows','4'),(null as any));
+    this._DefaultValueAccessor_14_3 = new import18.Wrapper_DefaultValueAccessor(this.renderer,new import20.ElementRef(this._el_14));
+    this._NG_VALUE_ACCESSOR_14_4 = [this._DefaultValueAccessor_14_3.context];
+    this._FormControlName_14_5 = new import19.Wrapper_FormControlName(this._ControlContainer_2_4,(null as any),(null as any),this._NG_VALUE_ACCESSOR_14_4);
+    this._NgControl_14_6 = this._FormControlName_14_5.context;
+    this._NgControlStatus_14_7 = new import17.Wrapper_NgControlStatus(this._NgControl_14_6);
+    this._text_15 = this.renderer.createText(this._el_4,'\n              ',(null as any));
+    this._el_16 = import3.createRenderElement(this.renderer,this._el_4,'label',new import3.InlineArray2(2,'for','url'),(null as any));
+    this._text_17 = this.renderer.createText(this._el_16,'Link',(null as any));
+    this._text_18 = this.renderer.createText(this._el_4,'\n              ',(null as any));
+    this._el_19 = import3.createRenderElement(this.renderer,this._el_4,'input',new import3.InlineArray16(10,'class','form-control','formControlName','url','id','url','placeholder','work url here','type','text'),(null as any));
+    this._DefaultValueAccessor_19_3 = new import18.Wrapper_DefaultValueAccessor(this.renderer,new import20.ElementRef(this._el_19));
+    this._NG_VALUE_ACCESSOR_19_4 = [this._DefaultValueAccessor_19_3.context];
+    this._FormControlName_19_5 = new import19.Wrapper_FormControlName(this._ControlContainer_2_4,(null as any),(null as any),this._NG_VALUE_ACCESSOR_19_4);
+    this._NgControl_19_6 = this._FormControlName_19_5.context;
+    this._NgControlStatus_19_7 = new import17.Wrapper_NgControlStatus(this._NgControl_19_6);
+    this._text_20 = this.renderer.createText(this._el_4,'\n              ',(null as any));
+    this._el_21 = import3.createRenderElement(this.renderer,this._el_4,'label',new import3.InlineArray2(2,'for','video'),(null as any));
+    this._text_22 = this.renderer.createText(this._el_21,'Youtube Link',(null as any));
+    this._text_23 = this.renderer.createText(this._el_4,'\n              ',(null as any));
+    this._el_24 = import3.createRenderElement(this.renderer,this._el_4,'input',new import3.InlineArray16(10,'class','form-control','formControlName','video','id','video','placeholder','work video here','type','text'),(null as any));
+    this._DefaultValueAccessor_24_3 = new import18.Wrapper_DefaultValueAccessor(this.renderer,new import20.ElementRef(this._el_24));
+    this._NG_VALUE_ACCESSOR_24_4 = [this._DefaultValueAccessor_24_3.context];
+    this._FormControlName_24_5 = new import19.Wrapper_FormControlName(this._ControlContainer_2_4,(null as any),(null as any),this._NG_VALUE_ACCESSOR_24_4);
+    this._NgControl_24_6 = this._FormControlName_24_5.context;
+    this._NgControlStatus_24_7 = new import17.Wrapper_NgControlStatus(this._NgControl_24_6);
+    this._text_25 = this.renderer.createText(this._el_4,'\n          ',(null as any));
+    this._el_26 = import3.createRenderElement(this.renderer,this._el_4,'button',new import3.InlineArray4(4,'class','btn btn-lg btn-outline-primary','type','submit'),(null as any));
+    this._text_27 = this.renderer.createText(this._el_26,'Submit',(null as any));
+    this._text_28 = this.renderer.createText(this._el_4,'\n                ',(null as any));
+    this._text_29 = this.renderer.createText(this._el_2,'\n      ',(null as any));
+    this._text_30 = this.renderer.createText(this._el_0,'\n      ',(null as any));
+    this._el_31 = import3.createRenderElement(this.renderer,this._el_0,'div',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_32 = this.renderer.createText(this._el_31,'\n      ',(null as any));
+    this._el_33 = import3.createRenderElement(this.renderer,this._el_31,'button',new import3.InlineArray2(2,'class','btn btn-lg btn-outline-primary'),(null as any));
+    this._text_34 = this.renderer.createText(this._el_33,'add avatar',(null as any));
+    this._text_35 = this.renderer.createText(this._el_31,'\n      ',(null as any));
+    this._el_36 = import3.createRenderElement(this.renderer,this._el_31,'button',new import3.InlineArray2(2,'class','btn btn-lg btn-outline-primary'),(null as any));
+    this._text_37 = this.renderer.createText(this._el_36,'add work file',(null as any));
+    this._text_38 = this.renderer.createText(this._el_31,'\n    ',(null as any));
+    this._text_39 = this.renderer.createText(this._el_0,'\n  ',(null as any));
+    var disposable_0:Function = import3.subscribeToRenderElement(this,this._el_2,new import3.InlineArray8(6,'ngSubmit',(null as any),'submit',(null as any),'reset',(null as any)),this.eventHandler(this.handleEvent_2));
+    this._FormGroupDirective_2_3.subscribe(this,this.eventHandler(this.handleEvent_2),true);
+    var disposable_1:Function = import3.subscribeToRenderElement(this,this._el_9,new import3.InlineArray4(4,'input',(null as any),'blur',(null as any)),this.eventHandler(this.handleEvent_9));
+    var disposable_2:Function = import3.subscribeToRenderElement(this,this._el_14,new import3.InlineArray4(4,'input',(null as any),'blur',(null as any)),this.eventHandler(this.handleEvent_14));
+    var disposable_3:Function = import3.subscribeToRenderElement(this,this._el_19,new import3.InlineArray4(4,'input',(null as any),'blur',(null as any)),this.eventHandler(this.handleEvent_19));
+    var disposable_4:Function = import3.subscribeToRenderElement(this,this._el_24,new import3.InlineArray4(4,'input',(null as any),'blur',(null as any)),this.eventHandler(this.handleEvent_24));
+    var disposable_5:Function = import3.subscribeToRenderElement(this,this._el_33,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_33));
+    var disposable_6:Function = import3.subscribeToRenderElement(this,this._el_36,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_36));
+    this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
+      this._el_0,
+      this._text_1,
+      this._el_2,
+      this._text_3,
+      this._el_4,
+      this._text_5,
+      this._el_6,
+      this._text_7,
+      this._text_8,
+      this._el_9,
+      this._text_10,
+      this._el_11,
+      this._text_12,
+      this._text_13,
+      this._el_14,
+      this._text_15,
+      this._el_16,
+      this._text_17,
+      this._text_18,
+      this._el_19,
+      this._text_20,
+      this._el_21,
+      this._text_22,
+      this._text_23,
+      this._el_24,
+      this._text_25,
+      this._el_26,
+      this._text_27,
+      this._text_28,
+      this._text_29,
+      this._text_30,
+      this._el_31,
+      this._text_32,
+      this._el_33,
+      this._text_34,
+      this._text_35,
+      this._el_36,
+      this._text_37,
+      this._text_38,
+      this._text_39
+    ]
+    ),[
+      disposable_0,
+      disposable_1,
+      disposable_2,
+      disposable_3,
+      disposable_4,
+      disposable_5,
+      disposable_6
+    ]
+    );
+    return (null as any);
+  }
+  injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
+    if (((token === import21.DefaultValueAccessor) && (9 === requestNodeIndex))) { return this._DefaultValueAccessor_9_3.context; }
+    if (((token === import22.NG_VALUE_ACCESSOR) && (9 === requestNodeIndex))) { return this._NG_VALUE_ACCESSOR_9_4; }
+    if (((token === import23.FormControlName) && (9 === requestNodeIndex))) { return this._FormControlName_9_5.context; }
+    if (((token === import24.NgControl) && (9 === requestNodeIndex))) { return this._NgControl_9_6; }
+    if (((token === import25.NgControlStatus) && (9 === requestNodeIndex))) { return this._NgControlStatus_9_7.context; }
+    if (((token === import21.DefaultValueAccessor) && (14 === requestNodeIndex))) { return this._DefaultValueAccessor_14_3.context; }
+    if (((token === import22.NG_VALUE_ACCESSOR) && (14 === requestNodeIndex))) { return this._NG_VALUE_ACCESSOR_14_4; }
+    if (((token === import23.FormControlName) && (14 === requestNodeIndex))) { return this._FormControlName_14_5.context; }
+    if (((token === import24.NgControl) && (14 === requestNodeIndex))) { return this._NgControl_14_6; }
+    if (((token === import25.NgControlStatus) && (14 === requestNodeIndex))) { return this._NgControlStatus_14_7.context; }
+    if (((token === import21.DefaultValueAccessor) && (19 === requestNodeIndex))) { return this._DefaultValueAccessor_19_3.context; }
+    if (((token === import22.NG_VALUE_ACCESSOR) && (19 === requestNodeIndex))) { return this._NG_VALUE_ACCESSOR_19_4; }
+    if (((token === import23.FormControlName) && (19 === requestNodeIndex))) { return this._FormControlName_19_5.context; }
+    if (((token === import24.NgControl) && (19 === requestNodeIndex))) { return this._NgControl_19_6; }
+    if (((token === import25.NgControlStatus) && (19 === requestNodeIndex))) { return this._NgControlStatus_19_7.context; }
+    if (((token === import21.DefaultValueAccessor) && (24 === requestNodeIndex))) { return this._DefaultValueAccessor_24_3.context; }
+    if (((token === import22.NG_VALUE_ACCESSOR) && (24 === requestNodeIndex))) { return this._NG_VALUE_ACCESSOR_24_4; }
+    if (((token === import23.FormControlName) && (24 === requestNodeIndex))) { return this._FormControlName_24_5.context; }
+    if (((token === import24.NgControl) && (24 === requestNodeIndex))) { return this._NgControl_24_6; }
+    if (((token === import25.NgControlStatus) && (24 === requestNodeIndex))) { return this._NgControlStatus_24_7.context; }
+    if (((token === import26.FormGroupDirective) && ((2 <= requestNodeIndex) && (requestNodeIndex <= 29)))) { return this._FormGroupDirective_2_3.context; }
+    if (((token === import27.ControlContainer) && ((2 <= requestNodeIndex) && (requestNodeIndex <= 29)))) { return this._ControlContainer_2_4; }
+    if (((token === import25.NgControlStatusGroup) && ((2 <= requestNodeIndex) && (requestNodeIndex <= 29)))) { return this._NgControlStatusGroup_2_5.context; }
+    return notFoundResult;
+  }
+  detectChangesInternal(throwOnChange:boolean):void {
+    const currVal_2_0_0:any = this.parentView.parentView.context.worksForm;
+    this._FormGroupDirective_2_3.check_form(currVal_2_0_0,throwOnChange,false);
+    this._FormGroupDirective_2_3.ngDoCheck(this,this._el_2,throwOnChange);
+    this._NgControlStatusGroup_2_5.ngDoCheck(this,this._el_2,throwOnChange);
+    this._DefaultValueAccessor_9_3.ngDoCheck(this,this._el_9,throwOnChange);
+    const currVal_9_1_0:any = 'title';
+    this._FormControlName_9_5.check_name(currVal_9_1_0,throwOnChange,false);
+    this._FormControlName_9_5.ngDoCheck(this,this._el_9,throwOnChange);
+    this._NgControlStatus_9_7.ngDoCheck(this,this._el_9,throwOnChange);
+    this._DefaultValueAccessor_14_3.ngDoCheck(this,this._el_14,throwOnChange);
+    const currVal_14_1_0:any = 'description';
+    this._FormControlName_14_5.check_name(currVal_14_1_0,throwOnChange,false);
+    this._FormControlName_14_5.ngDoCheck(this,this._el_14,throwOnChange);
+    this._NgControlStatus_14_7.ngDoCheck(this,this._el_14,throwOnChange);
+    this._DefaultValueAccessor_19_3.ngDoCheck(this,this._el_19,throwOnChange);
+    const currVal_19_1_0:any = 'url';
+    this._FormControlName_19_5.check_name(currVal_19_1_0,throwOnChange,false);
+    this._FormControlName_19_5.ngDoCheck(this,this._el_19,throwOnChange);
+    this._NgControlStatus_19_7.ngDoCheck(this,this._el_19,throwOnChange);
+    this._DefaultValueAccessor_24_3.ngDoCheck(this,this._el_24,throwOnChange);
+    const currVal_24_1_0:any = 'video';
+    this._FormControlName_24_5.check_name(currVal_24_1_0,throwOnChange,false);
+    this._FormControlName_24_5.ngDoCheck(this,this._el_24,throwOnChange);
+    this._NgControlStatus_24_7.ngDoCheck(this,this._el_24,throwOnChange);
+    this._NgControlStatusGroup_2_5.checkHost(this,this,this._el_2,throwOnChange);
+    const currVal_63:any = import3.inlineInterpolate(1,'',this.parentView.parentView.context.worksForm.value.select.title,'');
+    if (import3.checkBinding(throwOnChange,this._expr_63,currVal_63)) {
+      this.renderer.setElementProperty(this._el_9,'value',currVal_63);
+      this._expr_63 = currVal_63;
+    }
+    this._NgControlStatus_9_7.checkHost(this,this,this._el_9,throwOnChange);
+    this._NgControlStatus_14_7.checkHost(this,this,this._el_14,throwOnChange);
+    this._NgControlStatus_19_7.checkHost(this,this,this._el_19,throwOnChange);
+    this._NgControlStatus_24_7.checkHost(this,this,this._el_24,throwOnChange);
+    const currVal_64:boolean = !this.parentView.parentView.context.worksForm.valid;
+    if (import3.checkBinding(throwOnChange,this._expr_64,currVal_64)) {
+      this.renderer.setElementProperty(this._el_26,'disabled',currVal_64);
+      this._expr_64 = currVal_64;
+    }
+  }
+  destroyInternal():void {
+    this._FormControlName_9_5.ngOnDestroy();
+    this._FormControlName_14_5.ngOnDestroy();
+    this._FormControlName_19_5.ngOnDestroy();
+    this._FormControlName_24_5.ngOnDestroy();
+    this._FormGroupDirective_2_3.ngOnDestroy();
+  }
+  visitRootNodesInternal(cb:any,ctx:any):void {
+    cb(this._el_0,ctx);
+  }
+  handleEvent_2(eventName:string,$event:any):boolean {
+    this.markPathToRootAsCheckOnce();
+    var result:boolean = true;
+    result = (this._FormGroupDirective_2_3.handleEvent(eventName,$event) && result);
+    if ((eventName == 'ngSubmit')) {
+      const pd_sub_0:any = ((<any>this.parentView.parentView.context.submitWork()) !== false);
+      result = (pd_sub_0 && result);
+    }
+    return result;
+  }
+  handleEvent_9(eventName:string,$event:any):boolean {
+    this.markPathToRootAsCheckOnce();
+    var result:boolean = true;
+    result = (this._DefaultValueAccessor_9_3.handleEvent(eventName,$event) && result);
+    return result;
+  }
+  handleEvent_14(eventName:string,$event:any):boolean {
+    this.markPathToRootAsCheckOnce();
+    var result:boolean = true;
+    result = (this._DefaultValueAccessor_14_3.handleEvent(eventName,$event) && result);
+    return result;
+  }
+  handleEvent_19(eventName:string,$event:any):boolean {
+    this.markPathToRootAsCheckOnce();
+    var result:boolean = true;
+    result = (this._DefaultValueAccessor_19_3.handleEvent(eventName,$event) && result);
+    return result;
+  }
+  handleEvent_24(eventName:string,$event:any):boolean {
+    this.markPathToRootAsCheckOnce();
+    var result:boolean = true;
+    result = (this._DefaultValueAccessor_24_3.handleEvent(eventName,$event) && result);
+    return result;
+  }
+  handleEvent_33(eventName:string,$event:any):boolean {
+    this.markPathToRootAsCheckOnce();
+    var result:boolean = true;
+    if ((eventName == 'click')) {
+      const pd_sub_0:any = ((<any>this.parentView.parentView.context.openWorkAvatar(this.parentView.parentView.context.lg)) !== false);
+      result = (pd_sub_0 && result);
+    }
+    return result;
+  }
+  handleEvent_36(eventName:string,$event:any):boolean {
+    this.markPathToRootAsCheckOnce();
+    var result:boolean = true;
+    if ((eventName == 'click')) {
+      const pd_sub_0:any = ((<any>this.parentView.parentView.context.openWork(this.parentView.parentView.context.lg)) !== false);
+      result = (pd_sub_0 && result);
+    }
+    return result;
+  }
+}
+class View_ProfileEditComponent6 extends import1.AppView<any> {
+  _el_0:any;
+  _text_1:any;
+  _el_2:any;
+  _text_3:any;
+  _text_4:any;
+  _el_5:any;
+  _text_6:any;
+  /*private*/ _expr_7:any;
+  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
+    super(View_ProfileEditComponent6,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    this._expr_7 = import6.UNINITIALIZED;
+  }
+  createInternal(rootSelector:string):import7.ComponentRef<any> {
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'div',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_1 = this.renderer.createText(this._el_0,'\n      ',(null as any));
+    this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'h5',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_3 = this.renderer.createText(this._el_2,'',(null as any));
+    this._text_4 = this.renderer.createText(this._el_0,'\n      ',(null as any));
+    this._el_5 = import3.createRenderElement(this.renderer,this._el_0,'img',new import3.InlineArray8(6,'alt','','class','img-responsive portfolio-item','src','http://placehold.it/500x300'),(null as any));
+    this._text_6 = this.renderer.createText(this._el_0,'\n    ',(null as any));
+    this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
+      this._el_0,
+      this._text_1,
+      this._el_2,
+      this._text_3,
+      this._text_4,
+      this._el_5,
+      this._text_6
+    ]
+    ),(null as any));
+    return (null as any);
+  }
+  detectChangesInternal(throwOnChange:boolean):void {
+    const currVal_7:any = import3.inlineInterpolate(1,'',this.parentView.parentView.context.user.firstName,'\'s Works!');
+    if (import3.checkBinding(throwOnChange,this._expr_7,currVal_7)) {
+      this.renderer.setText(this._text_3,currVal_7);
+      this._expr_7 = currVal_7;
+    }
+  }
+  visitRootNodesInternal(cb:any,ctx:any):void {
+    cb(this._el_0,ctx);
+  }
+}
+class View_ProfileEditComponent7 extends import1.AppView<any> {
+  _el_0:any;
+  _text_1:any;
+  _anchor_2:any;
+  /*private*/ _vc_2:import12.ViewContainer;
+  _TemplateRef_2_5:any;
+  _NgFor_2_6:import29.Wrapper_NgFor;
+  _text_3:any;
+  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
+    super(View_ProfileEditComponent7,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+  }
+  createInternal(rootSelector:string):import7.ComponentRef<any> {
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'div',new import3.InlineArray2(2,'class','has-works'),(null as any));
+    this._text_1 = this.renderer.createText(this._el_0,'\n  ',(null as any));
+    this._anchor_2 = this.renderer.createTemplateAnchor(this._el_0,(null as any));
+    this._vc_2 = new import12.ViewContainer(2,0,this,this._anchor_2);
+    this._TemplateRef_2_5 = new import14.TemplateRef_(this,2,this._anchor_2);
+    this._NgFor_2_6 = new import29.Wrapper_NgFor(this._vc_2.vcRef,this._TemplateRef_2_5,this.parentView.parentView.injectorGet(import30.IterableDiffers,this.parentView.parentIndex),this.parentView.parentView.ref);
+    this._text_3 = this.renderer.createText(this._el_0,'\n    ',(null as any));
+    this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
+      this._el_0,
+      this._text_1,
+      this._anchor_2,
+      this._text_3
+    ]
+    ),(null as any));
+    return (null as any);
+  }
+  injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
+    if (((token === import14.TemplateRef) && (2 === requestNodeIndex))) { return this._TemplateRef_2_5; }
+    if (((token === import31.NgFor) && (2 === requestNodeIndex))) { return this._NgFor_2_6.context; }
+    return notFoundResult;
+  }
+  detectChangesInternal(throwOnChange:boolean):void {
+    const currVal_2_0_0:any = this.parentView.parentView.context.hasWorks();
+    this._NgFor_2_6.check_ngForOf(currVal_2_0_0,throwOnChange,false);
+    this._NgFor_2_6.ngDoCheck(this,this._anchor_2,throwOnChange);
+    this._vc_2.detectChangesInNestedViews(throwOnChange);
+  }
+  destroyInternal():void {
+    this._vc_2.destroyNestedViews();
+  }
+  visitRootNodesInternal(cb:any,ctx:any):void {
+    cb(this._el_0,ctx);
+  }
+  createEmbeddedViewInternal(nodeIndex:number):import1.AppView<any> {
+    if ((nodeIndex == 2)) { return new View_ProfileEditComponent8(this.viewUtils,this,2,this._anchor_2,this._vc_2); }
+    return (null as any);
+  }
+}
+class View_ProfileEditComponent8 extends import1.AppView<any> {
+  _el_0:any;
+  _text_1:any;
+  _el_2:any;
+  _text_3:any;
+  _text_4:any;
+  _el_5:any;
+  _text_6:any;
+  _text_7:any;
+  _el_8:any;
+  _text_9:any;
+  _text_10:any;
+  _anchor_11:any;
+  /*private*/ _vc_11:import12.ViewContainer;
+  _TemplateRef_11_5:any;
+  _NgIf_11_6:import13.Wrapper_NgIf;
+  _text_12:any;
+  /*private*/ _expr_16:any;
+  /*private*/ _expr_17:any;
+  /*private*/ _expr_18:any;
+  /*private*/ _expr_19:any;
+  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
+    super(View_ProfileEditComponent8,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    this._expr_16 = import6.UNINITIALIZED;
+    this._expr_17 = import6.UNINITIALIZED;
+    this._expr_18 = import6.UNINITIALIZED;
+    this._expr_19 = import6.UNINITIALIZED;
+  }
+  createInternal(rootSelector:string):import7.ComponentRef<any> {
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'div',new import3.InlineArray2(2,'class','works col-sm-6 col-xs-12 text-center'),(null as any));
+    this._text_1 = this.renderer.createText(this._el_0,'\n  ',(null as any));
+    this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'a',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_3 = this.renderer.createText(this._el_2,'',(null as any));
+    this._text_4 = this.renderer.createText(this._el_0,'\n  ',(null as any));
+    this._el_5 = import3.createRenderElement(this.renderer,this._el_0,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_6 = this.renderer.createText(this._el_5,'',(null as any));
+    this._text_7 = this.renderer.createText(this._el_0,'\n  ',(null as any));
+    this._el_8 = import3.createRenderElement(this.renderer,this._el_0,'a',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_9 = this.renderer.createText(this._el_8,'Check out the video!',(null as any));
+    this._text_10 = this.renderer.createText(this._el_0,'\n      ',(null as any));
+    this._anchor_11 = this.renderer.createTemplateAnchor(this._el_0,(null as any));
+    this._vc_11 = new import12.ViewContainer(11,0,this,this._anchor_11);
+    this._TemplateRef_11_5 = new import14.TemplateRef_(this,11,this._anchor_11);
+    this._NgIf_11_6 = new import13.Wrapper_NgIf(this._vc_11.vcRef,this._TemplateRef_11_5);
+    this._text_12 = this.renderer.createText(this._el_0,'\n    ',(null as any));
+    this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
+      this._el_0,
+      this._text_1,
+      this._el_2,
+      this._text_3,
+      this._text_4,
+      this._el_5,
+      this._text_6,
+      this._text_7,
+      this._el_8,
+      this._text_9,
+      this._text_10,
+      this._anchor_11,
+      this._text_12
+    ]
+    ),(null as any));
+    return (null as any);
+  }
+  injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
+    if (((token === import14.TemplateRef) && (11 === requestNodeIndex))) { return this._TemplateRef_11_5; }
+    if (((token === import15.NgIf) && (11 === requestNodeIndex))) { return this._NgIf_11_6.context; }
+    return notFoundResult;
+  }
+  detectChangesInternal(throwOnChange:boolean):void {
+    const currVal_11_0_0:any = (this.parentView.parentView.parentView.context.hasWorks().length > 1);
+    this._NgIf_11_6.check_ngIf(currVal_11_0_0,throwOnChange,false);
+    this._NgIf_11_6.ngDoCheck(this,this._anchor_11,throwOnChange);
+    this._vc_11.detectChangesInNestedViews(throwOnChange);
+    const currVal_16:any = import3.inlineInterpolate(1,'',this.context.$implicit.url,'');
+    if (import3.checkBinding(throwOnChange,this._expr_16,currVal_16)) {
+      this.renderer.setElementProperty(this._el_2,'href',this.viewUtils.sanitizer.sanitize(import28.SecurityContext.URL,currVal_16));
+      this._expr_16 = currVal_16;
+    }
+    const currVal_17:any = import3.inlineInterpolate(1,'Title: ',this.context.$implicit.title,'');
+    if (import3.checkBinding(throwOnChange,this._expr_17,currVal_17)) {
+      this.renderer.setText(this._text_3,currVal_17);
+      this._expr_17 = currVal_17;
+    }
+    const currVal_18:any = import3.inlineInterpolate(1,'Description: ',this.context.$implicit.description,'');
+    if (import3.checkBinding(throwOnChange,this._expr_18,currVal_18)) {
+      this.renderer.setText(this._text_6,currVal_18);
+      this._expr_18 = currVal_18;
+    }
+    const currVal_19:any = import3.inlineInterpolate(1,'',this.context.$implicit.video,'');
+    if (import3.checkBinding(throwOnChange,this._expr_19,currVal_19)) {
+      this.renderer.setElementProperty(this._el_8,'href',this.viewUtils.sanitizer.sanitize(import28.SecurityContext.URL,currVal_19));
+      this._expr_19 = currVal_19;
+    }
+  }
+  destroyInternal():void {
+    this._vc_11.destroyNestedViews();
+  }
+  visitRootNodesInternal(cb:any,ctx:any):void {
+    cb(this._el_0,ctx);
+  }
+  createEmbeddedViewInternal(nodeIndex:number):import1.AppView<any> {
+    if ((nodeIndex == 11)) { return new View_ProfileEditComponent9(this.viewUtils,this,11,this._anchor_11,this._vc_11); }
+    return (null as any);
+  }
+}
+class View_ProfileEditComponent9 extends import1.AppView<any> {
+  _el_0:any;
+  /*private*/ _expr_1:any;
+  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
+    super(View_ProfileEditComponent9,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    this._expr_1 = import6.UNINITIALIZED;
+  }
+  createInternal(rootSelector:string):import7.ComponentRef<any> {
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'img',new import3.InlineArray4(4,'alt','','class','img-responsive portfolio-item'),(null as any));
+    this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [this._el_0]),(null as any));
+    return (null as any);
+  }
+  detectChangesInternal(throwOnChange:boolean):void {
+    const currVal_1:any = import3.inlineInterpolate(1,'',this.parentView.context.$implicit.avatar,'');
+    if (import3.checkBinding(throwOnChange,this._expr_1,currVal_1)) {
+      this.renderer.setElementProperty(this._el_0,'src',this.viewUtils.sanitizer.sanitize(import28.SecurityContext.URL,currVal_1));
+      this._expr_1 = currVal_1;
+    }
+  }
+  visitRootNodesInternal(cb:any,ctx:any):void {
+    cb(this._el_0,ctx);
+  }
+}
+class View_ProfileEditComponent10 extends import1.AppView<any> {
+  _el_0:any;
+  _text_1:any;
+  /*private*/ _expr_2:any;
+  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
+    super(View_ProfileEditComponent10,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
     this._expr_2 = import6.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
@@ -1074,37 +1662,17 @@ class View_ProfileEditComponent5 extends import1.AppView<any> {
     cb(this._el_0,ctx);
   }
 }
-class View_ProfileEditComponent6 extends import1.AppView<any> {
-  _el_0:any;
-  _text_1:any;
-  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
-    super(View_ProfileEditComponent6,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
-  }
-  createInternal(rootSelector:string):import7.ComponentRef<any> {
-    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'h5',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_1 = this.renderer.createText(this._el_0,'Github\n    ',(null as any));
-    this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
-      this._el_0,
-      this._text_1
-    ]
-    ),(null as any));
-    return (null as any);
-  }
-  visitRootNodesInternal(cb:any,ctx:any):void {
-    cb(this._el_0,ctx);
-  }
-}
-class View_ProfileEditComponent7 extends import1.AppView<any> {
+class View_ProfileEditComponent11 extends import1.AppView<any> {
   _el_0:any;
   _text_1:any;
   /*private*/ _expr_2:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
-    super(View_ProfileEditComponent7,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    super(View_ProfileEditComponent11,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
     this._expr_2 = import6.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
-    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'a',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_1 = this.renderer.createText(this._el_0,'',(null as any));
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'a',new import3.InlineArray2(2,'class','btn btn-sm btn-outline-primary'),(null as any));
+    this._text_1 = this.renderer.createText(this._el_0,'Link Facebook',(null as any));
     this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
       this._el_0,
       this._text_1
@@ -1113,10 +1681,397 @@ class View_ProfileEditComponent7 extends import1.AppView<any> {
     return (null as any);
   }
   detectChangesInternal(throwOnChange:boolean):void {
-    const currVal_2:any = import3.inlineInterpolate(1,'',this.parentView.parentView.context.user.github.url,'');
+    const currVal_2:any = import3.inlineInterpolate(1,'/facebook/',this.parentView.parentView.context.user._id,'');
     if (import3.checkBinding(throwOnChange,this._expr_2,currVal_2)) {
-      this.renderer.setText(this._text_1,currVal_2);
+      this.renderer.setElementProperty(this._el_0,'href',this.viewUtils.sanitizer.sanitize(import28.SecurityContext.URL,currVal_2));
       this._expr_2 = currVal_2;
+    }
+  }
+  visitRootNodesInternal(cb:any,ctx:any):void {
+    cb(this._el_0,ctx);
+  }
+}
+class View_ProfileEditComponent12 extends import1.AppView<any> {
+  _el_0:any;
+  _text_1:any;
+  /*private*/ _expr_2:any;
+  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
+    super(View_ProfileEditComponent12,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    this._expr_2 = import6.UNINITIALIZED;
+  }
+  createInternal(rootSelector:string):import7.ComponentRef<any> {
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'a',new import3.InlineArray2(2,'class','btn btn-sm btn-outline-primary'),(null as any));
+    this._text_1 = this.renderer.createText(this._el_0,'Link LinkedIn',(null as any));
+    this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
+      this._el_0,
+      this._text_1
+    ]
+    ),(null as any));
+    return (null as any);
+  }
+  detectChangesInternal(throwOnChange:boolean):void {
+    const currVal_2:any = import3.inlineInterpolate(1,'/linkedin/',this.parentView.parentView.context.user._id,'');
+    if (import3.checkBinding(throwOnChange,this._expr_2,currVal_2)) {
+      this.renderer.setElementProperty(this._el_0,'href',this.viewUtils.sanitizer.sanitize(import28.SecurityContext.URL,currVal_2));
+      this._expr_2 = currVal_2;
+    }
+  }
+  visitRootNodesInternal(cb:any,ctx:any):void {
+    cb(this._el_0,ctx);
+  }
+}
+class View_ProfileEditComponent13 extends import1.AppView<any> {
+  _el_0:any;
+  _text_1:any;
+  _el_2:any;
+  _text_3:any;
+  _text_4:any;
+  _anchor_5:any;
+  /*private*/ _vc_5:import12.ViewContainer;
+  _TemplateRef_5_5:any;
+  _NgIf_5_6:import13.Wrapper_NgIf;
+  _text_6:any;
+  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
+    super(View_ProfileEditComponent13,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+  }
+  createInternal(rootSelector:string):import7.ComponentRef<any> {
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'div',new import3.InlineArray2(2,'class','user-github'),(null as any));
+    this._text_1 = this.renderer.createText(this._el_0,'\n    ',(null as any));
+    this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'h5',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_3 = this.renderer.createText(this._el_2,'Github Info:\n    ',(null as any));
+    this._text_4 = this.renderer.createText(this._el_0,'\n    ',(null as any));
+    this._anchor_5 = this.renderer.createTemplateAnchor(this._el_0,(null as any));
+    this._vc_5 = new import12.ViewContainer(5,0,this,this._anchor_5);
+    this._TemplateRef_5_5 = new import14.TemplateRef_(this,5,this._anchor_5);
+    this._NgIf_5_6 = new import13.Wrapper_NgIf(this._vc_5.vcRef,this._TemplateRef_5_5);
+    this._text_6 = this.renderer.createText(this._el_0,'\n',(null as any));
+    this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
+      this._el_0,
+      this._text_1,
+      this._el_2,
+      this._text_3,
+      this._text_4,
+      this._anchor_5,
+      this._text_6
+    ]
+    ),(null as any));
+    return (null as any);
+  }
+  injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
+    if (((token === import14.TemplateRef) && (5 === requestNodeIndex))) { return this._TemplateRef_5_5; }
+    if (((token === import15.NgIf) && (5 === requestNodeIndex))) { return this._NgIf_5_6.context; }
+    return notFoundResult;
+  }
+  detectChangesInternal(throwOnChange:boolean):void {
+    const currVal_5_0_0:any = this.parentView.parentView.context.user.github;
+    this._NgIf_5_6.check_ngIf(currVal_5_0_0,throwOnChange,false);
+    this._NgIf_5_6.ngDoCheck(this,this._anchor_5,throwOnChange);
+    this._vc_5.detectChangesInNestedViews(throwOnChange);
+  }
+  destroyInternal():void {
+    this._vc_5.destroyNestedViews();
+  }
+  visitRootNodesInternal(cb:any,ctx:any):void {
+    cb(this._el_0,ctx);
+  }
+  createEmbeddedViewInternal(nodeIndex:number):import1.AppView<any> {
+    if ((nodeIndex == 5)) { return new View_ProfileEditComponent14(this.viewUtils,this,5,this._anchor_5,this._vc_5); }
+    return (null as any);
+  }
+}
+class View_ProfileEditComponent14 extends import1.AppView<any> {
+  _el_0:any;
+  _text_1:any;
+  _el_2:any;
+  _text_3:any;
+  _el_4:any;
+  _el_5:any;
+  _text_6:any;
+  _text_7:any;
+  _text_8:any;
+  _text_9:any;
+  /*private*/ _expr_10:any;
+  /*private*/ _expr_11:any;
+  /*private*/ _expr_12:any;
+  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
+    super(View_ProfileEditComponent14,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    this._expr_10 = import6.UNINITIALIZED;
+    this._expr_11 = import6.UNINITIALIZED;
+    this._expr_12 = import6.UNINITIALIZED;
+  }
+  createInternal(rootSelector:string):import7.ComponentRef<any> {
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'div',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_1 = this.renderer.createText(this._el_0,'\n    ',(null as any));
+    this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'span',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_3 = this.renderer.createText(this._el_2,'\n    ',(null as any));
+    this._el_4 = import3.createRenderElement(this.renderer,this._el_2,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._el_5 = import3.createRenderElement(this.renderer,this._el_4,'a',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_6 = this.renderer.createText(this._el_5,'',(null as any));
+    this._text_7 = this.renderer.createText(this._el_4,'',(null as any));
+    this._text_8 = this.renderer.createText(this._el_2,'\n  ',(null as any));
+    this._text_9 = this.renderer.createText(this._el_0,'\n  ',(null as any));
+    this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
+      this._el_0,
+      this._text_1,
+      this._el_2,
+      this._text_3,
+      this._el_4,
+      this._el_5,
+      this._text_6,
+      this._text_7,
+      this._text_8,
+      this._text_9
+    ]
+    ),(null as any));
+    return (null as any);
+  }
+  detectChangesInternal(throwOnChange:boolean):void {
+    const currVal_10:any = import3.inlineInterpolate(1,'',this.parentView.parentView.parentView.context.user.github.url,'');
+    if (import3.checkBinding(throwOnChange,this._expr_10,currVal_10)) {
+      this.renderer.setElementProperty(this._el_5,'href',this.viewUtils.sanitizer.sanitize(import28.SecurityContext.URL,currVal_10));
+      this._expr_10 = currVal_10;
+    }
+    const currVal_11:any = import3.inlineInterpolate(1,'',this.parentView.parentView.parentView.context.user.firstName,'\'s github profile');
+    if (import3.checkBinding(throwOnChange,this._expr_11,currVal_11)) {
+      this.renderer.setText(this._text_6,currVal_11);
+      this._expr_11 = currVal_11;
+    }
+    const currVal_12:any = import3.inlineInterpolate(2,'\n    ',this.parentView.parentView.parentView.context.user.github.followers,' github followers,  ',this.parentView.parentView.parentView.context.user.github.repoNum,' repos');
+    if (import3.checkBinding(throwOnChange,this._expr_12,currVal_12)) {
+      this.renderer.setText(this._text_7,currVal_12);
+      this._expr_12 = currVal_12;
+    }
+  }
+  visitRootNodesInternal(cb:any,ctx:any):void {
+    cb(this._el_0,ctx);
+  }
+}
+class View_ProfileEditComponent15 extends import1.AppView<any> {
+  _el_0:any;
+  _text_1:any;
+  _el_2:any;
+  _text_3:any;
+  _text_4:any;
+  _anchor_5:any;
+  /*private*/ _vc_5:import12.ViewContainer;
+  _TemplateRef_5_5:any;
+  _NgIf_5_6:import13.Wrapper_NgIf;
+  _text_6:any;
+  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
+    super(View_ProfileEditComponent15,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+  }
+  createInternal(rootSelector:string):import7.ComponentRef<any> {
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'div',new import3.InlineArray2(2,'class','user-facebook'),(null as any));
+    this._text_1 = this.renderer.createText(this._el_0,'\n    ',(null as any));
+    this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'h5',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_3 = this.renderer.createText(this._el_2,'Facebook Info:\n    ',(null as any));
+    this._text_4 = this.renderer.createText(this._el_0,'\n    ',(null as any));
+    this._anchor_5 = this.renderer.createTemplateAnchor(this._el_0,(null as any));
+    this._vc_5 = new import12.ViewContainer(5,0,this,this._anchor_5);
+    this._TemplateRef_5_5 = new import14.TemplateRef_(this,5,this._anchor_5);
+    this._NgIf_5_6 = new import13.Wrapper_NgIf(this._vc_5.vcRef,this._TemplateRef_5_5);
+    this._text_6 = this.renderer.createText(this._el_0,'\n',(null as any));
+    this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
+      this._el_0,
+      this._text_1,
+      this._el_2,
+      this._text_3,
+      this._text_4,
+      this._anchor_5,
+      this._text_6
+    ]
+    ),(null as any));
+    return (null as any);
+  }
+  injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
+    if (((token === import14.TemplateRef) && (5 === requestNodeIndex))) { return this._TemplateRef_5_5; }
+    if (((token === import15.NgIf) && (5 === requestNodeIndex))) { return this._NgIf_5_6.context; }
+    return notFoundResult;
+  }
+  detectChangesInternal(throwOnChange:boolean):void {
+    const currVal_5_0_0:any = this.parentView.parentView.context.user.facebook;
+    this._NgIf_5_6.check_ngIf(currVal_5_0_0,throwOnChange,false);
+    this._NgIf_5_6.ngDoCheck(this,this._anchor_5,throwOnChange);
+    this._vc_5.detectChangesInNestedViews(throwOnChange);
+  }
+  destroyInternal():void {
+    this._vc_5.destroyNestedViews();
+  }
+  visitRootNodesInternal(cb:any,ctx:any):void {
+    cb(this._el_0,ctx);
+  }
+  createEmbeddedViewInternal(nodeIndex:number):import1.AppView<any> {
+    if ((nodeIndex == 5)) { return new View_ProfileEditComponent16(this.viewUtils,this,5,this._anchor_5,this._vc_5); }
+    return (null as any);
+  }
+}
+class View_ProfileEditComponent16 extends import1.AppView<any> {
+  _el_0:any;
+  _text_1:any;
+  _el_2:any;
+  _text_3:any;
+  _el_4:any;
+  _el_5:any;
+  _text_6:any;
+  _text_7:any;
+  _text_8:any;
+  /*private*/ _expr_9:any;
+  /*private*/ _expr_10:any;
+  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
+    super(View_ProfileEditComponent16,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    this._expr_9 = import6.UNINITIALIZED;
+    this._expr_10 = import6.UNINITIALIZED;
+  }
+  createInternal(rootSelector:string):import7.ComponentRef<any> {
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'div',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_1 = this.renderer.createText(this._el_0,'\n    ',(null as any));
+    this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'span',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_3 = this.renderer.createText(this._el_2,'\n    ',(null as any));
+    this._el_4 = import3.createRenderElement(this.renderer,this._el_2,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._el_5 = import3.createRenderElement(this.renderer,this._el_4,'a',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_6 = this.renderer.createText(this._el_5,'',(null as any));
+    this._text_7 = this.renderer.createText(this._el_2,'\n  ',(null as any));
+    this._text_8 = this.renderer.createText(this._el_0,'\n  ',(null as any));
+    this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
+      this._el_0,
+      this._text_1,
+      this._el_2,
+      this._text_3,
+      this._el_4,
+      this._el_5,
+      this._text_6,
+      this._text_7,
+      this._text_8
+    ]
+    ),(null as any));
+    return (null as any);
+  }
+  detectChangesInternal(throwOnChange:boolean):void {
+    const currVal_9:any = import3.inlineInterpolate(1,'',this.parentView.parentView.parentView.context.user.facebook.url,'');
+    if (import3.checkBinding(throwOnChange,this._expr_9,currVal_9)) {
+      this.renderer.setElementProperty(this._el_5,'href',this.viewUtils.sanitizer.sanitize(import28.SecurityContext.URL,currVal_9));
+      this._expr_9 = currVal_9;
+    }
+    const currVal_10:any = import3.inlineInterpolate(1,'',this.parentView.parentView.parentView.context.user.firstName,'\'s facebook profile');
+    if (import3.checkBinding(throwOnChange,this._expr_10,currVal_10)) {
+      this.renderer.setText(this._text_6,currVal_10);
+      this._expr_10 = currVal_10;
+    }
+  }
+  visitRootNodesInternal(cb:any,ctx:any):void {
+    cb(this._el_0,ctx);
+  }
+}
+class View_ProfileEditComponent17 extends import1.AppView<any> {
+  _el_0:any;
+  _text_1:any;
+  _el_2:any;
+  _text_3:any;
+  _text_4:any;
+  _anchor_5:any;
+  /*private*/ _vc_5:import12.ViewContainer;
+  _TemplateRef_5_5:any;
+  _NgIf_5_6:import13.Wrapper_NgIf;
+  _text_6:any;
+  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
+    super(View_ProfileEditComponent17,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+  }
+  createInternal(rootSelector:string):import7.ComponentRef<any> {
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'div',new import3.InlineArray2(2,'class','user-linkedin'),(null as any));
+    this._text_1 = this.renderer.createText(this._el_0,'\n    ',(null as any));
+    this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'h5',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_3 = this.renderer.createText(this._el_2,'LinedIn Info:\n    ',(null as any));
+    this._text_4 = this.renderer.createText(this._el_0,'\n    ',(null as any));
+    this._anchor_5 = this.renderer.createTemplateAnchor(this._el_0,(null as any));
+    this._vc_5 = new import12.ViewContainer(5,0,this,this._anchor_5);
+    this._TemplateRef_5_5 = new import14.TemplateRef_(this,5,this._anchor_5);
+    this._NgIf_5_6 = new import13.Wrapper_NgIf(this._vc_5.vcRef,this._TemplateRef_5_5);
+    this._text_6 = this.renderer.createText(this._el_0,'\n',(null as any));
+    this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
+      this._el_0,
+      this._text_1,
+      this._el_2,
+      this._text_3,
+      this._text_4,
+      this._anchor_5,
+      this._text_6
+    ]
+    ),(null as any));
+    return (null as any);
+  }
+  injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
+    if (((token === import14.TemplateRef) && (5 === requestNodeIndex))) { return this._TemplateRef_5_5; }
+    if (((token === import15.NgIf) && (5 === requestNodeIndex))) { return this._NgIf_5_6.context; }
+    return notFoundResult;
+  }
+  detectChangesInternal(throwOnChange:boolean):void {
+    const currVal_5_0_0:any = this.parentView.parentView.context.user.linkedin;
+    this._NgIf_5_6.check_ngIf(currVal_5_0_0,throwOnChange,false);
+    this._NgIf_5_6.ngDoCheck(this,this._anchor_5,throwOnChange);
+    this._vc_5.detectChangesInNestedViews(throwOnChange);
+  }
+  destroyInternal():void {
+    this._vc_5.destroyNestedViews();
+  }
+  visitRootNodesInternal(cb:any,ctx:any):void {
+    cb(this._el_0,ctx);
+  }
+  createEmbeddedViewInternal(nodeIndex:number):import1.AppView<any> {
+    if ((nodeIndex == 5)) { return new View_ProfileEditComponent18(this.viewUtils,this,5,this._anchor_5,this._vc_5); }
+    return (null as any);
+  }
+}
+class View_ProfileEditComponent18 extends import1.AppView<any> {
+  _el_0:any;
+  _text_1:any;
+  _el_2:any;
+  _text_3:any;
+  _el_4:any;
+  _el_5:any;
+  _text_6:any;
+  _text_7:any;
+  _text_8:any;
+  /*private*/ _expr_9:any;
+  /*private*/ _expr_10:any;
+  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
+    super(View_ProfileEditComponent18,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    this._expr_9 = import6.UNINITIALIZED;
+    this._expr_10 = import6.UNINITIALIZED;
+  }
+  createInternal(rootSelector:string):import7.ComponentRef<any> {
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'div',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_1 = this.renderer.createText(this._el_0,'\n    ',(null as any));
+    this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'span',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_3 = this.renderer.createText(this._el_2,'\n    ',(null as any));
+    this._el_4 = import3.createRenderElement(this.renderer,this._el_2,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._el_5 = import3.createRenderElement(this.renderer,this._el_4,'a',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_6 = this.renderer.createText(this._el_5,'',(null as any));
+    this._text_7 = this.renderer.createText(this._el_2,'\n  ',(null as any));
+    this._text_8 = this.renderer.createText(this._el_0,'\n  ',(null as any));
+    this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
+      this._el_0,
+      this._text_1,
+      this._el_2,
+      this._text_3,
+      this._el_4,
+      this._el_5,
+      this._text_6,
+      this._text_7,
+      this._text_8
+    ]
+    ),(null as any));
+    return (null as any);
+  }
+  detectChangesInternal(throwOnChange:boolean):void {
+    const currVal_9:any = import3.inlineInterpolate(1,'',this.parentView.parentView.parentView.context.user.linkedin.url,'');
+    if (import3.checkBinding(throwOnChange,this._expr_9,currVal_9)) {
+      this.renderer.setElementProperty(this._el_5,'href',this.viewUtils.sanitizer.sanitize(import28.SecurityContext.URL,currVal_9));
+      this._expr_9 = currVal_9;
+    }
+    const currVal_10:any = import3.inlineInterpolate(1,'',this.parentView.parentView.parentView.context.user.firstName,'\'s linkedin profile');
+    if (import3.checkBinding(throwOnChange,this._expr_10,currVal_10)) {
+      this.renderer.setText(this._text_6,currVal_10);
+      this._expr_10 = currVal_10;
     }
   }
   visitRootNodesInternal(cb:any,ctx:any):void {

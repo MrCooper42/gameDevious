@@ -6,7 +6,7 @@ const LocalStrategy = require('passport-local').Strategy;
 const FacebookStrategy = require('passport-facebook').Strategy;
 const TwitterStrategy = require('passport-twitter').Strategy;
 const SteamStrategy = require('passport-steam').Strategy;
-const LinkedInStrategy = require('passport-linkedin').Strategy;
+var LinkedInStrategy = require('passport-linkedin-oauth2').Strategy;
 const GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 const GithubStrategy = require('passport-github2').Strategy;
 
@@ -256,18 +256,93 @@ module.exports = function(passport) {
 
   // LINKEDIN ====================================================================
 
-  //needs work
   passport.use(new LinkedInStrategy({
-    consumerKey: configAuth.linkedinAuth.consumerKey,
-    consumerSecret: configAuth.linkedinAuth.consumerSecret,
-    callbackURL: configAuth.linkedinAuth.callbackURL
-  }, function(token, tokenSecret, profile, done) {
-    User.findOrCreate({
-      linkedinId: profile.id
-    }, function(err, user) {
-      return done(err, user);
-    });
+    clientID: configAuth.linkedinAuth.clientID,
+    clientSecret: configAuth.linkedinAuth.clientSecret,
+    callbackURL: configAuth.linkedinAuth.callbackURL,
+    state: true,
+    passReqToCallback: true
+  }, function(req, token, refreshToken, profile, done) {
+    console.log('I am here')
+    console.log(profile, "profile");
+    console.log(req.params.id, "req params");
+    // console.log(req.headers, "headers");
+    User.findById(req.params.id, (err, user) => {
+      if (err) {
+        console.log(err, "erroz had");
+      } else {
+        console.log(user, "user in passport");
+        console.log(token, "token in passport");
+        console.log(profile, "profile in passport");
+        // async
+        process.nextTick(function() {
+          // already logged in
+          console.log(user, "user before");
+          if (!user) {
+            console.log(user, "asdfasdf user?");
+            User.findOne({
+              'linkedin.id': profile.id
+            }, function(err, user) {
+              console.log(user, "no linkedin id");
+              if (err)
+                return done(err);
+
+              if (user) {
+                //user but no token
+                if (!user.linkedin.token) {
+
+                  user.linkedin.id = profile.id;
+                  user.linkedin.token = token;
+                  user.linkedin.url = profile.profileUrl;
+                  user.linkedin.email = profile.emails[0].value;
+                  user.linkedin.name = profile.displayName
+
+                  user.save(function(err) {
+                    if (err)
+                      throw err;
+                    return done(null, user);
+                  });
+                }
+
+                return done(null, user);
+              } else {
+                // if there is no user create // delete this bit
+                console.log("you should not be here")
+                // var newUser = new User();
+                //
+                // newUser.linkedin.id = profile.id;
+                // newUser.linkedin.token = token;
+                // newUser.linkedin.url = profile.profileUrl;
+                // newUser.linkedin.email = profile.emails[0].value;
+                //
+                // newUser.save(function(err) {
+                //   if (err)
+                //     throw err;
+                //   return done(null, newUser);
+                // });
+                // console.log("no user send error here");
+              }
+            });
+          } else {
+
+            user.linkedin.id = profile.id;
+            user.linkedin.token = token;
+            user.linkedin.url = profile.profileUrl;
+            user.linkedin.email = profile.emails[0].value;
+            user.linkedin.name = profile.displayName
+
+            user.save(function(err) {
+              if (err)
+                throw err;
+              return done(null, user);
+            });
+
+          }
+        });
+      }
+    })
   }));
+
 
   // STEAM =====================================================================
 

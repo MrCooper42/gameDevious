@@ -1,15 +1,23 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+const User = require('./user');
+
 
 const schema = new Schema({
 	path: {
+		type: String,
+	},
+	title: {
 		type: String,
 		required: true
 	},
 	url: {
 		type: String
 	},
-	image: {
+	video : {
+		type: String
+	},
+	avatar: {
 		type: String
 	},
 	description: {
@@ -17,11 +25,12 @@ const schema = new Schema({
 	},
 	author: {
 		type: Schema.Types.ObjectId,
-		ref: 'user'
+		ref: 'User'
 	},
-	created: {
-		type: Date,
-	}
+	comments: [{
+		type: Schema.Types.ObjectId,
+		ref: 'Comment'
+	}]
 })
 
 module.exports = mongoose.model('Works', schema);

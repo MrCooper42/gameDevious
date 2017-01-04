@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class MEAN2SeedPage {
+export class GameDevIoUsPage {
   navigateTo() {
     return browser.get('/');
   }
