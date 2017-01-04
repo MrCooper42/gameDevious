@@ -39,35 +39,42 @@ module.exports = function(passport) {
     clientID: configAuth.facebookAuth.clientID,
     clientSecret: configAuth.facebookAuth.clientSecret,
     callbackURL: configAuth.facebookAuth.callbackURL,
+    profileFields: configAuth.facebookAuth.profileFields,
     passReqToCallback: true
   }, function(req, token, refreshToken, profile, done) {
     console.log('I am here')
-    console.log(req.params, "req params");
+    console.log(req.user, "scope in req?");
+    console.log(req.params.id, "req params");
     // console.log(req.headers, "headers");
-    User.findById(req.headers, (err, reqUser) => {
+    User.findById(req.params.id, (err, user) => {
       if (err) {
         console.log(err, "erroz had");
       } else {
-        console.log(reqUser, "reqUser in passport");
+        console.log(user, "user in passport");
         console.log(token, "token in passport");
         console.log(profile, "profile in passport");
         // async
         process.nextTick(function() {
           // already logged in
-          if (!reqUser) {
-
+          console.log(user, "user before");
+          if (!user) {
+            console.log(user, "asdfasdf user?");
             User.findOne({
               'facebook.id': profile.id
             }, function(err, user) {
+              console.log(user, "no facebook id");
               if (err)
                 return done(err);
 
               if (user) {
                 //user but no token
                 if (!user.facebook.token) {
+
+                  user.facebook.id = profile.id;
                   user.facebook.token = token;
-                  user.facebook.name = `${profile.name.givenName} ${profile.name.familyName}`;
+                  user.facebook.url = profile.profileUrl;
                   user.facebook.email = profile.emails[0].value;
+                  user.facebook.name = profile.displayName
 
                   user.save(function(err) {
                     if (err)
@@ -79,28 +86,29 @@ module.exports = function(passport) {
                 return done(null, user);
               } else {
                 // if there is no user create // delete this bit
-                var newUser = new User();
-
-                newUser.facebook.id = profile.id;
-                newUser.facebook.token = token;
-                newUser.facebook.name = `${profile.name.givenName} ${profile.name.familyName}`;
-                newUser.facebook.email = profile.emails[0].value;
-
-                newUser.save(function(err) {
-                  if (err)
-                    throw err;
-                  return done(null, newUser);
-                });
-                console.log("no user send error here");
+                console.log("you should not be here")
+                // var newUser = new User();
+                //
+                // newUser.facebook.id = profile.id;
+                // newUser.facebook.token = token;
+                // newUser.facebook.url = profile.profileUrl;
+                // newUser.facebook.email = profile.emails[0].value;
+                //
+                // newUser.save(function(err) {
+                //   if (err)
+                //     throw err;
+                //   return done(null, newUser);
+                // });
+                // console.log("no user send error here");
               }
             });
           } else {
-            var user = req.user;
 
             user.facebook.id = profile.id;
             user.facebook.token = token;
-            user.facebook.name = `${profile.name.givenName} ${profile.name.familyName}`;
+            user.facebook.url = profile.profileUrl;
             user.facebook.email = profile.emails[0].value;
+            user.facebook.name = profile.displayName
 
             user.save(function(err) {
               if (err)

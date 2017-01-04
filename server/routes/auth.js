@@ -31,14 +31,6 @@ module.exports = function(app, passport) {
   });
   //start social accounts
 
-  app.get('/facebook/:id', passport.authenticate('facebook', {scope: 'email'}));
-  //
-
-  app.get('/facebook/callback', passport.authenticate('facebook', {
-    successRedirect: '/profile',
-    failureRedirect: '/auth'
-  }));
-
   app.get('/github/:id', (req, res, next) => {
     passport.authenticate('github', {
       callbackURL: '/github/callback/' + req.params.id
@@ -53,6 +45,23 @@ module.exports = function(app, passport) {
     })(req, res, next);
   });
 
+  app.get('/facebook/:id', (req, res, next) => {
+    req.user = req.params
+    passport.authenticate('facebook', {
+    scope: 'email',
+    callbackURL: '/facebook/callback/' + req.params.id
+  })(req, res, next);
+});
+  //
+
+  app.get('/facebook/callback/:id', (req, res, next) => {
+  passport.authenticate('facebook', {
+    callbackURL: '/facebook/callback/' + req.params.id,
+    scope: 'email',
+    successRedirect: '/profile',
+    failureRedirect: '/login'
+  })(req, res, next);
+});
   // app.get('/login', function(req, res, next) {
   //   passport.authenticate('local', function(err, user, info) {
   //     if (err) {

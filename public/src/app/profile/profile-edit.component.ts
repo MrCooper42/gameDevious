@@ -114,40 +114,41 @@ export class ProfileEditComponent implements OnInit {
     }
   }
 
-  linkFacebook() {
-    this.profileService.facebook(this.useJwtHelper()._id)
-      .subscribe(
-      res => {
-        console.log(res, "response in controller")
-        this.router.navigate(["/"]).then(result => {
-          window.location.href = res;
-        });
-      },
-      error => console.log(error)
-      )
-  }
-
-  linkLinkedin() {
-    this.profileService.linkedin(this.useJwtHelper()._id)
-      .subscribe(
-      res => {
-        console.log(res, "response in controller")
-        this.router.navigate(["/"]).then(result => { window.location.href = res; });
-      },
-      error => console.log(error)
-      )
-  }
-
-  linkGithub() {
-    this.profileService.github(this.useJwtHelper()._id)
-      .subscribe(
-      res => {
-        console.log(res, "response in controller")
-        this.router.navigate(["/"]).then(result => { window.location.href = res; });
-      },
-      error => console.log(error)
-      )
-  }
+// will have to get working
+  // linkFacebook() {
+  //   this.profileService.facebook(this.useJwtHelper()._id)
+  //     .subscribe(
+  //     res => {
+  //       console.log(res, "response in controller")
+  //       this.router.navigate(["/"]).then(result => {
+  //         window.location.href = res;
+  //       });
+  //     },
+  //     error => console.log(error)
+  //     )
+  // }
+  //
+  // linkLinkedin() {
+  //   this.profileService.linkedin(this.useJwtHelper()._id)
+  //     .subscribe(
+  //     res => {
+  //       console.log(res, "response in controller")
+  //       this.router.navigate(["/"]).then(result => { window.location.href = res; });
+  //     },
+  //     error => console.log(error)
+  //     )
+  // }
+  //
+  // linkGithub() {
+  //   this.profileService.github(this.useJwtHelper()._id)
+  //     .subscribe(
+  //     res => {
+  //       console.log(res, "response in controller")
+  //       this.router.navigate(["/"]).then(result => { window.location.href = res; });
+  //     },
+  //     error => console.log(error)
+  //     )
+  // }
 
   ngOnInit() {
     console.log(this.user, "user before")
