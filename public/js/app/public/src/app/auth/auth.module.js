@@ -12,7 +12,7 @@ AuthModule.decorators = [
                 declarations: [
                     LogoutComponent,
                     SignupComponent,
-                    SigninComponent,
+                    SigninComponent
                 ],
                 imports: [
                     CommonModule,

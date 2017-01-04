@@ -11,7 +11,7 @@ import { SigninComponent } from './signin.component';
   declarations: [
     LogoutComponent,
     SignupComponent,
-    SigninComponent,
+    SigninComponent
   ],
   imports: [
     CommonModule,
