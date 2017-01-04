@@ -9,7 +9,7 @@ import { AuthenticationComponent } from './auth/authentication.component';
 const APP_ROUTES: Routes = [
     { path: '', redirectTo: '/news', pathMatch: 'full' },
     { path: 'news', component: NewsComponent },
-    { path: 'profile', component: ProfileEditComponent },
+    { path: 'profile', component: ProfileEditComponent,loadChildren: './works/works.module#WorksModule' },
     { path: 'games', component: GamesComponent },
     { path: 'newblog', component: GamesComponent },
     { path: 'upload', component: UploadComponent },
