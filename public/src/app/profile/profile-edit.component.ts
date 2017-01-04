@@ -89,7 +89,7 @@ export class ProfileEditComponent implements OnInit {
       data => {
         console.log(data, "data returned")
         this.user.profile.works.push(data);
-        // this.router.navigateByUrl('/profile');
+        this.router.navigateByUrl('/profile');
       },
       error => console.error(error));
     this.worksForm.reset();
