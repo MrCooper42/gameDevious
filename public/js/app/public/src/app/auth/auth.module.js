@@ -10,9 +10,9 @@ export class AuthModule {
 AuthModule.decorators = [
     { type: NgModule, args: [{
                 declarations: [
-                    LogoutComponent,
                     SignupComponent,
-                    SigninComponent
+                    SigninComponent,
+                    LogoutComponent
                 ],
                 imports: [
                     CommonModule,

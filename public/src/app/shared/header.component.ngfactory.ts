@@ -462,7 +462,7 @@ class View_HeaderComponent2 extends import1.AppView<any> {
     this._el_19 = import3.createRenderElement(this.renderer,this._el_5,'li',new import3.InlineArray4(4,'class','divider','role','separator'),(null as any));
     this._text_20 = this.renderer.createText(this._el_5,'\n            ',(null as any));
     this._el_21 = import3.createRenderElement(this.renderer,this._el_5,'li',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._el_22 = import3.createRenderElement(this.renderer,this._el_21,'a',new import3.InlineArray2(2,'href','#'),(null as any));
+    this._el_22 = import3.createRenderElement(this.renderer,this._el_21,'a',new import3.InlineArray2(2,'href','/upload'),(null as any));
     this._text_23 = this.renderer.createText(this._el_22,'Submit New',(null as any));
     this._text_24 = this.renderer.createText(this._el_5,'\n            ',(null as any));
     this._el_25 = import3.createRenderElement(this.renderer,this._el_5,'li',new import3.InlineArray4(4,'class','divider','role','separator'),(null as any));
