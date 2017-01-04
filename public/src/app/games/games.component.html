@@ -1,3 +1,15 @@
-<p>
-  games works!
-</p>
+<form [formGroup]="searchGameForm" (ngSubmit)="seachGame()">
+<div class="form-group">
+      <label for="title">Search:</label>
+      <input
+              type="text"
+              id="game"
+              class="form-control"
+              placeholder="search for a game"
+              formControlName="game">
+  <button
+          class="btn btn-lg btn-outline-primary"
+          type="submit"
+          [disabled]="!searchGameForm.valid">Submit</button>
+        </div>
+</form>

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { FileUploader } from 'ng2-file-upload/ng2-file-upload';
-  //  FileSelectDirective, FileDropDirective,
 
 const TOKEN = localStorage.getItem('token');
 const URL = '/upload/avatar';

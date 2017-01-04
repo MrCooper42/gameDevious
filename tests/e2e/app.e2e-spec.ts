@@ -1,10 +1,10 @@
-import { MEAN2SeedPage } from './app.po';
+import { GameDevIoUsPage } from './app.po';
 
-describe('MEAN2-seed App', function() {
-  let page: MEAN2SeedPage;
+describe('GameDev_io.us App', function() {
+  let page: GameDevIoUsPage;
 
   beforeEach(() => {
-    page = new MEAN2SeedPage();
+    page = new GameDevIoUsPage();
   });
 
   it('should display message saying app works', () => {

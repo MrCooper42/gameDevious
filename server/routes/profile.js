@@ -3,38 +3,136 @@
 const express = require('express');
 const router = express.Router();
 const Profile = require('../models/profile');
+const User = require('../models/user');
 const jwt = require('jsonwebtoken');
 
-// INDEX
-// router.get("/", function(req, res){
-//     Blog.find({}, function(err, blogs){
-//         if(err){
-//             console.log(err);
-//         } else {
-//             res.send({blogs: blogs});
-//         }
-//     });
-// });
-
-// NEW
-// router.get("/new", function (req, res){
-//    res.render("blogs/new");
-// });
-
-router.use('/:id', (req, res, next) => jwt.verify(req.query.token, 'secret', (err, decoded) => err ? res.status(401).json({
+router.use('/:id', (req, res, next) => {
+  jwt.verify(req.headers.token, 'secret', this.ignoreExpiration = true,(err, decoded) => err ? res.status(401).json({
     title: 'Not Authenticated ya here',
     error: err
-}) : next()));
+}) : next())});
 
 // CREATE
-router.post("/:id", function(req, res){
-    req.body.body = req.sanitize(req.body.body);
-    Profile.findOneAndUpdate(req.body, {upsert: true, new: true}, function(){
+router.post("/:id", (req, res) => {
+  req.body.body = req.sanitize(req.body.body);
+  Profile.findOneAndUpdate(req.body, {
+    upsert: true,
+    new: true
+  }, function() {
 
-    });
+  });
 });
 
-router.get("/user", function(req, res) {
+router.post("/:id/title", (req, res) => {
+  let token = req.headers.token
+  console.log(req.params, "params title")
+  console.log(req.body.body, "body")
+  jwt.verify(token, 'secret', this.ignoreExpiration = true, (err, decoded) => {
+    if (err) {
+      console.log(err, "errrrrorrrrr title");
+      res.status(401).json({
+        title: 'Not Authenticated ya here',
+        error: err
+      })
+    } else {
+      console.log(decoded.user, "decoded in title");
+      Profile.findOne({
+        user: decoded.user._id
+      }, (err, profile) => {
+        console.log(profile, "profile found");
+        if (err) {
+          return res.status(500).json({
+            title: 'Bad things happened',
+            error: err
+          });
+        }
+        profile.title = req.body.body
+        profile.save((err, result) => {
+          if (err) {
+            return res.status(500).json({
+              title: 'Bad things happened',
+              error: err
+            });
+          }
+          res.send(result)
+        })
+      });
+    }
+  })
+})
+
+router.post("/:id/about", (req, res) => {
+  let token = req.headers.token
+  jwt.verify(token, 'secret', this.ignoreExpiration = true, (err, decoded) => {
+    if (err) {
+      res.status(401).json({
+        title: 'Not Authenticated ya here',
+        error: err
+      })
+    } else {
+      Profile.findOne({
+        user: decoded.user._id
+      }, (err, profile) => {
+        if (err) {
+          return res.status(500).json({
+            title: 'Bad things happened',
+            error: err
+          });
+        }
+        profile.summary = req.body.body
+        console.log(profile.summary, "summary asdfasd");
+        profile.save((err, result) => {
+          if (err) {
+            return res.status(500).json({
+              title: 'Bad things happened',
+              error: err
+            });
+          }
+          res.send(result)
+        })
+      });
+    }
+  })
+})
+
+router.post("/:id/skills", (req, res) => {
+  console.log("hit");
+  let token = req.headers.token
+  jwt.verify(token, 'secret', this.ignoreExpiration = true, (err, decoded) => {
+    if (err) {
+      res.status(401).json({
+        title: 'Not Authenticated ya here',
+        error: err
+      })
+    } else {
+      Profile.findOne({
+        user: decoded.user._id
+      }, (err, profile) => {
+        if (err) {
+          return res.status(500).json({
+            title: 'Bad things happened',
+            error: err
+          });
+        }
+        console.log(req.body, "body in here");
+        profile.skills.push(req.body.body)
+        console.log(profile.skills, "skills");
+        profile.save((err, result) => {
+          if (err) {
+            return res.status(500).json({
+              title: 'Bad things happened',
+              error: err
+            });
+          }
+          console.log(result, "result skill succuss was had");
+          res.send(result)
+        })
+      });
+    }
+  })
+})
+
+router.get("/user", (req, res) => {
   console.log(req.params.token);
   console.log("I am here");
 })
@@ -63,26 +161,26 @@ router.get("/user", function(req, res) {
 // });
 
 // UPDATE
-router.put("/:id", function(req, res){
-    req.body.content = req.sanitize(req.body.content);
-    Blog.findByIdAndUpdate(req.params.id, req.body, function(err, updatedBlog){
-        if(err){
-            res.redirect("/blogs");
-        } else {
-            res.redirect("/blogs/" + req.params.id);
-        }
-    });
+router.put("/:id", function(req, res) {
+  req.body.content = req.sanitize(req.body.content);
+  Blog.findByIdAndUpdate(req.params.id, req.body, function(err, updatedBlog) {
+    if (err) {
+      res.redirect("/blogs");
+    } else {
+      res.redirect("/blogs/" + req.params.id);
+    }
+  });
 });
 
 // DELETE
-router.delete("/:id", function(req, res){
-    Blog.findByIdAndRemove(req.params.id, function(err){
-        if(err){
-            res.redirect("/blogs");
-        } else {
-            res.redirect("/blogs");
-        }
-    });
+router.delete("/:id", function(req, res) {
+  Blog.findByIdAndRemove(req.params.id, function(err) {
+    if (err) {
+      res.redirect("/blogs");
+    } else {
+      res.redirect("/blogs");
+    }
+  });
 });
 
 module.exports = router;

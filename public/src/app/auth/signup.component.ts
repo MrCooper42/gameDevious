@@ -35,7 +35,7 @@ export class SignupComponent implements OnInit {
           },
           error => console.error(error)
           ),
-      error => console.error(error, "error on signup"));
+      error => console.error(error, 'error on signup'));
     this.myForm.reset();
   }
 

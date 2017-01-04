@@ -213,7 +213,7 @@ export class View_UploadComponent0 extends import1.AppView<import0.UploadCompone
     this._el_4 = import3.createRenderElement(this.renderer,this._el_2,'div',new import3.InlineArray2(2,'class','col-md-3'),(null as any));
     this._text_5 = this.renderer.createText(this._el_4,'\n\n      ',(null as any));
     this._el_6 = import3.createRenderElement(this.renderer,this._el_4,'h3',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_7 = this.renderer.createText(this._el_6,'Select game zip file',(null as any));
+    this._text_7 = this.renderer.createText(this._el_6,'Select avatar image',(null as any));
     this._text_8 = this.renderer.createText(this._el_4,'\n\n      ',(null as any));
     this._el_9 = import3.createRenderElement(this.renderer,this._el_4,'div',new import3.InlineArray4(4,'class','well my-drop-zone','ng2FileDrop',''),(null as any));
     this._NgClass_9_3 = new import9.Wrapper_NgClass(this.parentView.injectorGet(import16.IterableDiffers,this.parentIndex),this.parentView.injectorGet(import17.KeyValueDiffers,this.parentIndex),new import18.ElementRef(this._el_9),this.renderer);

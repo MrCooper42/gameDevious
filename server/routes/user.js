@@ -36,15 +36,16 @@ router.post('/', (req, res, next) => {
   })
 });
 
-module.exports = router;
-
 router.get('/:id', (req, res, next) => {
   console.log("here");
-  User.findById(req.params.id).populate("profile").exec((err, user) => {
+  User.findById(req.params.id)
+  .populate("profile").exec((err, user) => {
     if (err) {
       return res.status(500).json({title: 'Bad things happened', error: err});
     }
-    return res.send(user)
+    Profile.populate(user.profile, {path: 'works'}, (err, doc) => {
+      return res.send(user)
+    })
   })
 })
 
@@ -78,3 +79,5 @@ router.post('/signin', (req, res, next) => {
     res.status(200).json({message: 'Succesfully logged in', token: token, userId: user._id})
   });
 });
+
+module.exports = router;

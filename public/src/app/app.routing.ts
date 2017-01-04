@@ -11,6 +11,7 @@ const APP_ROUTES: Routes = [
     { path: 'news', component: NewsComponent },
     { path: 'profile', component: ProfileEditComponent },
     { path: 'games', component: GamesComponent },
+    { path: 'newblog', component: GamesComponent },
     { path: 'upload', component: UploadComponent },
     { path: 'login', component: AuthenticationComponent, loadChildren: './auth/auth.module#AuthModule' }
 ];

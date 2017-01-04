@@ -9,9 +9,9 @@ import { SigninComponent } from './signin.component';
 
 @NgModule({
   declarations: [
-    LogoutComponent,
     SignupComponent,
     SigninComponent,
+    LogoutComponent
   ],
   imports: [
     CommonModule,

@@ -87,86 +87,83 @@ export const NewsComponentNgFactory:import7.ComponentFactory<import0.NewsCompone
 const styles_NewsComponent:any[] = [import9.styles];
 var renderType_NewsComponent:import2.RenderComponentType = import3.createRenderComponentType('',0,import4.ViewEncapsulation.Emulated,styles_NewsComponent,{});
 export class View_NewsComponent0 extends import1.AppView<import0.NewsComponent> {
-  _text_0:any;
-  _el_1:any;
-  compView_1:import1.AppView<import10.NgbCarousel>;
-  _NgbCarousel_1_3:import11.Wrapper_NgbCarousel;
-  _query_NgbSlide_1_0:import12.QueryList<any>;
-  _text_2:any;
-  _anchor_3:any;
-  /*private*/ _vc_3:import13.ViewContainer;
-  _TemplateRef_3_5:any;
-  _NgFor_3_6:import14.Wrapper_NgFor;
+  _el_0:any;
+  compView_0:import1.AppView<import10.NgbCarousel>;
+  _NgbCarousel_0_3:import11.Wrapper_NgbCarousel;
+  _query_NgbSlide_0_0:import12.QueryList<any>;
+  _text_1:any;
+  _anchor_2:any;
+  /*private*/ _vc_2:import13.ViewContainer;
+  _TemplateRef_2_5:any;
+  _NgFor_2_6:import14.Wrapper_NgFor;
+  _text_3:any;
   _text_4:any;
-  _text_5:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any) {
     super(View_NewsComponent0,renderType_NewsComponent,import5.ViewType.COMPONENT,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways);
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
     const parentRenderNode:any = this.renderer.createViewRoot(this.parentElement);
-    this._text_0 = this.renderer.createText(parentRenderNode,'\n',(null as any));
-    this._el_1 = import3.createRenderElement(this.renderer,parentRenderNode,'ngb-carousel',new import3.InlineArray4(4,'class','carousel slide','tabIndex','0'),(null as any));
-    this.compView_1 = new import11.View_NgbCarousel0(this.viewUtils,this,1,this._el_1);
-    this._NgbCarousel_1_3 = new import11.Wrapper_NgbCarousel(this.parentView.injectorGet(import15.NgbCarouselConfig,this.parentIndex));
-    this._query_NgbSlide_1_0 = new import12.QueryList<any>();
-    this._text_2 = this.renderer.createText((null as any),'\n  ',(null as any));
-    this._anchor_3 = this.renderer.createTemplateAnchor((null as any),(null as any));
-    this._vc_3 = new import13.ViewContainer(3,1,this,this._anchor_3);
-    this._TemplateRef_3_5 = new import16.TemplateRef_(this,3,this._anchor_3);
-    this._NgFor_3_6 = new import14.Wrapper_NgFor(this._vc_3.vcRef,this._TemplateRef_3_5,this.parentView.injectorGet(import17.IterableDiffers,this.parentIndex),this.ref);
-    this._text_4 = this.renderer.createText((null as any),'\n',(null as any));
-    this.compView_1.create(this._NgbCarousel_1_3.context);
-    this._text_5 = this.renderer.createText(parentRenderNode,'\n',(null as any));
-    var disposable_0:Function = import3.subscribeToRenderElement(this,this._el_1,new import3.InlineArray8(8,'mouseenter',(null as any),'mouseleave',(null as any),'keydown.arrowLeft',(null as any),'keydown.arrowRight',(null as any)),this.eventHandler(this.handleEvent_1));
+    this._el_0 = import3.createRenderElement(this.renderer,parentRenderNode,'ngb-carousel',new import3.InlineArray4(4,'class','carousel slide','tabIndex','0'),(null as any));
+    this.compView_0 = new import11.View_NgbCarousel0(this.viewUtils,this,0,this._el_0);
+    this._NgbCarousel_0_3 = new import11.Wrapper_NgbCarousel(this.parentView.injectorGet(import15.NgbCarouselConfig,this.parentIndex));
+    this._query_NgbSlide_0_0 = new import12.QueryList<any>();
+    this._text_1 = this.renderer.createText((null as any),'\n  ',(null as any));
+    this._anchor_2 = this.renderer.createTemplateAnchor((null as any),(null as any));
+    this._vc_2 = new import13.ViewContainer(2,0,this,this._anchor_2);
+    this._TemplateRef_2_5 = new import16.TemplateRef_(this,2,this._anchor_2);
+    this._NgFor_2_6 = new import14.Wrapper_NgFor(this._vc_2.vcRef,this._TemplateRef_2_5,this.parentView.injectorGet(import17.IterableDiffers,this.parentIndex),this.ref);
+    this._text_3 = this.renderer.createText((null as any),'\n',(null as any));
+    this.compView_0.create(this._NgbCarousel_0_3.context);
+    this._text_4 = this.renderer.createText(parentRenderNode,'\n',(null as any));
+    var disposable_0:Function = import3.subscribeToRenderElement(this,this._el_0,new import3.InlineArray8(8,'mouseenter',(null as any),'mouseleave',(null as any),'keydown.arrowLeft',(null as any),'keydown.arrowRight',(null as any)),this.eventHandler(this.handleEvent_0));
     this.init((null as any),((<any>this.renderer).directRenderer? (null as any): [
-      this._text_0,
-      this._el_1,
-      this._text_2,
-      this._anchor_3,
-      this._text_4,
-      this._text_5
+      this._el_0,
+      this._text_1,
+      this._anchor_2,
+      this._text_3,
+      this._text_4
     ]
     ),[disposable_0]);
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import16.TemplateRef) && (3 === requestNodeIndex))) { return this._TemplateRef_3_5; }
-    if (((token === import18.NgFor) && (3 === requestNodeIndex))) { return this._NgFor_3_6.context; }
-    if (((token === import10.NgbCarousel) && ((1 <= requestNodeIndex) && (requestNodeIndex <= 4)))) { return this._NgbCarousel_1_3.context; }
+    if (((token === import16.TemplateRef) && (2 === requestNodeIndex))) { return this._TemplateRef_2_5; }
+    if (((token === import18.NgFor) && (2 === requestNodeIndex))) { return this._NgFor_2_6.context; }
+    if (((token === import10.NgbCarousel) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 3)))) { return this._NgbCarousel_0_3.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
-    this._NgbCarousel_1_3.ngDoCheck(this,this._el_1,throwOnChange);
-    const currVal_3_0_0:any = this.context.news;
-    this._NgFor_3_6.check_ngForOf(currVal_3_0_0,throwOnChange,false);
-    this._NgFor_3_6.ngDoCheck(this,this._anchor_3,throwOnChange);
-    this._vc_3.detectChangesInNestedViews(throwOnChange);
+    this._NgbCarousel_0_3.ngDoCheck(this,this._el_0,throwOnChange);
+    const currVal_2_0_0:any = this.context.news;
+    this._NgFor_2_6.check_ngForOf(currVal_2_0_0,throwOnChange,false);
+    this._NgFor_2_6.ngDoCheck(this,this._anchor_2,throwOnChange);
+    this._vc_2.detectChangesInNestedViews(throwOnChange);
     if (!throwOnChange) {
-      if (this._query_NgbSlide_1_0.dirty) {
-          this._query_NgbSlide_1_0.reset([this._vc_3.mapNestedViews(View_NewsComponent1,(nestedView:View_NewsComponent1):any => {
+      if (this._query_NgbSlide_0_0.dirty) {
+          this._query_NgbSlide_0_0.reset([this._vc_2.mapNestedViews(View_NewsComponent1,(nestedView:View_NewsComponent1):any => {
             return [nestedView._NgbSlide_0_5.context];
         })]);
-        this._NgbCarousel_1_3.context.slides = this._query_NgbSlide_1_0;
-        this._query_NgbSlide_1_0.notifyOnChanges();
+        this._NgbCarousel_0_3.context.slides = this._query_NgbSlide_0_0;
+        this._query_NgbSlide_0_0.notifyOnChanges();
       }
-      this._NgbCarousel_1_3.context.ngAfterContentChecked();
+      this._NgbCarousel_0_3.context.ngAfterContentChecked();
     }
-    this._NgbCarousel_1_3.checkHost(this,this.compView_1,this._el_1,throwOnChange);
-    this.compView_1.detectChanges(throwOnChange);
+    this._NgbCarousel_0_3.checkHost(this,this.compView_0,this._el_0,throwOnChange);
+    this.compView_0.detectChanges(throwOnChange);
   }
   destroyInternal():void {
-    this._vc_3.destroyNestedViews();
-    this.compView_1.destroy();
-    this._NgbCarousel_1_3.ngOnDestroy();
+    this._vc_2.destroyNestedViews();
+    this.compView_0.destroy();
+    this._NgbCarousel_0_3.ngOnDestroy();
   }
   createEmbeddedViewInternal(nodeIndex:number):import1.AppView<any> {
-    if ((nodeIndex == 3)) { return new View_NewsComponent1(this.viewUtils,this,3,this._anchor_3,this._vc_3); }
+    if ((nodeIndex == 2)) { return new View_NewsComponent1(this.viewUtils,this,2,this._anchor_2,this._vc_2); }
     return (null as any);
   }
-  handleEvent_1(eventName:string,$event:any):boolean {
-    this.compView_1.markPathToRootAsCheckOnce();
+  handleEvent_0(eventName:string,$event:any):boolean {
+    this.compView_0.markPathToRootAsCheckOnce();
     var result:boolean = true;
-    result = (this._NgbCarousel_1_3.handleEvent(eventName,$event) && result);
+    result = (this._NgbCarousel_0_3.handleEvent(eventName,$event) && result);
     return result;
   }
 }
@@ -196,7 +193,7 @@ class View_NewsComponent1 extends import1.AppView<any> {
     this._vc_0.detectChangesInNestedViews(throwOnChange);
   }
   dirtyParentQueriesInternal():void {
-    (<View_NewsComponent0>this.parentView)._query_NgbSlide_1_0.setDirty();
+    (<View_NewsComponent0>this.parentView)._query_NgbSlide_0_0.setDirty();
   }
   destroyInternal():void {
     this._vc_0.destroyNestedViews();
@@ -233,7 +230,7 @@ class View_NewsComponent2 extends import1.AppView<any> {
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
     this._text_0 = this.renderer.createText((null as any),'\n    ',(null as any));
-    this._el_1 = import3.createRenderElement(this.renderer,(null as any),'img',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._el_1 = import3.createRenderElement(this.renderer,(null as any),'img',new import3.InlineArray2(2,'class','img-responsive center-block'),(null as any));
     this._text_2 = this.renderer.createText((null as any),'\n    ',(null as any));
     this._el_3 = import3.createRenderElement(this.renderer,(null as any),'div',new import3.InlineArray2(2,'class','carousel-caption'),(null as any));
     this._text_4 = this.renderer.createText(this._el_3,'\n      ',(null as any));

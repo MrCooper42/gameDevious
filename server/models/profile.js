@@ -61,13 +61,7 @@ const schema = new Schema({
       }
     }
   ],
-  skills: [
-    {
-      type: String,
-      default: ''
-
-    }
-  ],
+  skills: [String],
   user: {
       type: Schema.Types.ObjectId,
       ref: 'User'

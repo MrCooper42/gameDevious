@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {NgClass} from '@angular/common';
+import { NgClass } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -17,7 +17,7 @@ import { ProfileService } from './profile/profile.service';
 import { ProfileComponent } from './profile/profile.component';
 import { NewsComponent } from './news/news.component';
 import { NewsService } from './news/news.service';
-import { GamesComponent } from './games/games.component';
+import { GamesModule } from './games/games.module';
 import { JobListingsComponent } from './job-listings/job-listings.component';
 import { FilesComponent } from './files/files.component';
 import { ProfileModule } from './profile/profile.module';
@@ -29,9 +29,7 @@ import { UploadModule } from './upload/upload.module';
     AuthenticationComponent,
     HeaderComponent,
     ErrorComponent,
-    AppComponent,
     NewsComponent,
-    GamesComponent,
     JobListingsComponent,
     FilesComponent
   ],
@@ -40,6 +38,7 @@ import { UploadModule } from './upload/upload.module';
     routing,
     UploadModule,
     BrowserModule,
+    GamesModule,
     FormsModule,
     HttpModule,
     ProfileModule

@@ -5,7 +5,8 @@ module.exports = {
     'facebookAuth' : {
         'clientID'      : '558382341031650',
         'clientSecret'  : '1146ecca95d01c0acba10d602572a1fa',
-        'callbackURL'   : 'http://localhost:3000/facebook/callback'
+        'callbackURL'   : 'http://localhost:3000/facebook/callback',
+        'profileFields'   : ['email', 'profileUrl', 'displayName']
     },
 
     'twitterAuth' : {
@@ -21,8 +22,8 @@ module.exports = {
     },
 
     'linkedinAuth' : {
-      'consumerKey': '78bkfdwvw7vfwa',
-      'consumerSecret': 'YJxAfAY9EMp3CIJj',
+      'clientID': '78bkfdwvw7vfwa',
+      'clientSecret': 'YJxAfAY9EMp3CIJj',
       'callbackURL': 'http://localhost:3000/auth/linkedin/callback'
     },
 

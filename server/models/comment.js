@@ -22,11 +22,4 @@ var schema = new Schema({
     }
 });
 
-// schema.post('remove', (comment) => {
-//     User.findById(comment.user, (err, user) => {
-//         user.comment.pull(comment)
-//         user.save();
-//     });
-// });
-
 module.exports = mongoose.model('Comment', schema);

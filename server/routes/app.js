@@ -5,7 +5,7 @@ const router = express.Router();
 
 const api = require('./api');
 const user = require('./user');
-// const auth = require('./auth')(app, passport);
+const works = require('./works');
 const upload = require('./upload');
 const profile = require('./profile');
 const blog = require('./blog');
@@ -18,7 +18,7 @@ router.get('/', (req, res, next) =>{
 
 router.use('/api', api);
 router.use('/user', user);
-// router.use('/auth', auth)
+router.use('/works', works)
 router.use('/upload', upload);
 router.use('/profile', profile);
 router.use('/blog', blog);

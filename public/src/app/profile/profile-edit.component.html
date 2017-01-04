@@ -1,24 +1,72 @@
 <div class="container" *ngIf="user">
   <div class="row">
     <div class="col-lg-12">
-      <h1 class="page-header">{{user.firstName}} {{user.lastName}}
-        <small>{{user.profile.title || 'fill me in'}}</small>
+      <h1 class="page-header">{{user.firstName}}
+        {{user.lastName}}
+        <small>{{user.profile.title || 'Working title'}}</small>
       </h1>
     </div>
+    <form [formGroup]="titleForm" (ngSubmit)="submitTitle()">
+        <div class="form-group">
+            <label for="email">Title</label>
+            <input
+                    type="text"
+                    id="title"
+                    class="form-control"
+                    placeholder="working title here"
+                    formControlName="title">
+        <button
+                class="btn btn-primary"
+                type="submit"
+                [disabled]="!titleForm.valid">Submit</button>
+        </div>
+    </form>
   </div>
   <div class="row">
-    <div class="col-md-8">
-      <button class="btn btn-lg btn-outline-primary" (click)="open(lg)">add avatar</button>
-      <img class="img-responsive" [src]="getAvatar()" alt="">
-    </div>
     <div class="col-md-4">
-      <h3>About {{user.firstName}}</h3>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.
-      PROFILE FILL</p>
+      <button class="btn btn-lg btn-outline-primary" (click)="openAvatar(lg)">add avatar</button>
+      <img class="img-thumbnail" [src]="getAvatar()" alt="">
+    </div>
+    <div class="col-md-8">
+      <h3>About
+        {{user.firstName}}</h3>
+      <p>{{user.profile.summary || "Tell a bit about yourself"}}</p>
+      <form [formGroup]="aboutForm" (ngSubmit)="submitAbout()">
+          <div class="form-group">
+              <label for="email">About</label>
+              <input
+                      type="text"
+                      id="about"
+                      class="form-control"
+                      placeholder="about you here"
+                      formControlName="about">
+          <button
+                  class="btn btn-primary"
+                  type="submit"
+                  [disabled]="!aboutForm.valid">Submit</button>
+          </div>
+      </form>
       <h3>Skills</h3>
-      <ul>
-        <li>List Skills here as tags</li>
+      <form [formGroup]="skillsForm" (ngSubmit)="submitSkill()">
+          <div class="form-group">
+              <label for="email">Add Skill</label>
+              <input
+                      type="text"
+                      id="skills"
+                      class="form-control"
+                      placeholder="add new skill here"
+                      formControlName="skills">
+          <button
+                  class="btn btn-primary"
+                  type="submit"
+                  [disabled]="!skillsForm.valid">Submit</button>
+          </div>
+      </form>
+      <ul *ngIf="hasSkill().length > 0">
+        <li *ngFor="let skill of this.user.profile.skills">{{skill}}</li>
+      </ul>
+      <ul *ngIf="hasSkill().length < 1">
+        <li>add your skills! {{user.profile.skills}}</li>
       </ul>
     </div>
   </div>
@@ -26,27 +74,108 @@
     <div class="col-lg-12">
       <h3 class="page-header">{{user.firstName}}'s Games</h3>
     </div>
-    <div class="col-sm-3 col-xs-6">
-      <a (click)="useJwtHelper()">
-        <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
-        <!-- portfolio.works.image ngrepeat -->
-      </a>
+      <p>
+        Show your works! Add new or edit. <button class="btn btn-sm btn-outline-primary" (click)="showWorkForm()">add avatar</button>
+
+      </p>
+<div *ngIf="showWork">
+        <form [formGroup]="worksForm" (ngSubmit)="submitWork()">
+        <div class="form-group">
+              <label for="title">Title</label>
+              <input
+                      type="text"
+                      id="title"
+                      class="form-control"
+                      value="{{worksForm.value.select.title}}"
+                      placeholder="work title here"
+                      formControlName="title">
+              <label for="description">description</label>
+              <textarea
+                      rows="4"
+                      id="description"
+                      class="form-control"
+                      placeholder="work description here"
+                      formControlName="description"></textarea>
+              <label for="url">Link</label>
+              <input
+                      type="text"
+                      id="url"
+                      class="form-control"
+                      placeholder="work url here"
+                      formControlName="url">
+              <label for="video">Youtube Link</label>
+              <input
+                      type="text"
+                      id="video"
+                      class="form-control"
+                      placeholder="work video here"
+                      formControlName="video">
+          <button
+                  class="btn btn-lg btn-outline-primary"
+                  type="submit"
+                  [disabled]="!worksForm.valid">Submit</button>
+                </div>
+      </form>
+      <div>
+      <button class="btn btn-lg btn-outline-primary" (click)="openWorkAvatar(lg)">add avatar</button>
+      <button class="btn btn-lg btn-outline-primary" (click)="openWork(lg)">add work file</button>
+    </div>
+  </div>
+    <div  *ngIf="hasWorks().length < 1">
+      <h5>{{user.firstName}}'s Works!</h5>
+      <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+    </div>
+<div class="has-works" *ngIf="hasWorks().length > 0">
+  <div class="works col-sm-6 col-xs-12 text-center" *ngFor="let work of hasWorks()">
+  <a href="{{work.url}}">Title: {{work.title}}</a>
+  <p>Description: {{work.description}}</p>
+  <a href="{{work.video}}">Check out the video!</a>
+      <img class="img-responsive portfolio-item" src="{{work.avatar}}" alt="" *ngIf="hasWorks().length > 1">
+    </div>
     </div>
   </div>
   <hr>
   <h3>Link your social accounts!</h3>
-<!--
+  <!--
   <a (click)="linkSteam">Steam</a>
   <a (click)="linkGithub">Github</a>
   <a (click)="linkLinkedIn">LinkedIn</a>
   <a (click)="linkGoogle">Google</a>
   <a (click)="linkTwitter">Twitter</a> -->
-<div class="facebook-profile-edit">
-<a class="btn btn-sm btn-outline-primary" href="/facebook/{{user._id}}">{{user.facebook}}Link Facebook</a>
+  <div>
+    <a class="btn btn-sm btn-outline-primary" href="/github/{{user._id}}" *ngIf="!user.github">Link Github</a>
+  </div>
+  <div class="facebook-profile-edit">
+    <a class="btn btn-sm btn-outline-primary" href="/facebook/{{user._id}}" *ngIf="!user.facebook">Link Facebook</a>
+  </div>
+  <div class="linkedin-profile-edit">
+    <a class="btn btn-sm btn-outline-primary" href="/linkedin/{{user._id}}" *ngIf="!user.linkedin">Link LinkedIn</a>
+  </div>
+  <div class="user-github" *ngIf="user.github">
+    <h5>Github Info:
+    </h5>
+    <div *ngIf="user.github">
+    <span>
+    <p><a href="{{user.github.url}}">{{user.firstName}}'s github profile</a>
+    {{user.github.followers}} github followers,  {{user.github.repoNum}} repos</p>
+  </span>
+  </div>
 </div>
-
-<div>
-  <a class="btn btn-sm btn-outline-primary" href="/github/{{user._id}}" *ngIf="!user.github">Link Github</a><h5 *ngIf="user.github">Github </h5><a *ngIf="user.github">{{user.github.url}}</a><p>followers: {{user.github.followers}}</p><p>repo #:{{user.github.repoNum}}</p>
+  <div class="user-facebook" *ngIf="user.facebook">
+    <h5>Facebook Info:
+    </h5>
+    <div *ngIf="user.facebook">
+    <span>
+    <p><a href="{{user.facebook.url}}">{{user.firstName}}'s facebook profile</a></p>
+  </span>
+  </div>
 </div>
-<br>
-<button class="btn btn-sm btn-outline-primary" (click)="linkLinkedin()">Link LinkedIn</button>
+  <div class="user-linkedin" *ngIf="user.linkedin">
+    <h5>LinedIn Info:
+    </h5>
+    <div *ngIf="user.linkedin">
+    <span>
+    <p><a href="{{user.linkedin.url}}">{{user.firstName}}'s linkedin profile</a></p>
+  </span>
+  </div>
+</div>
