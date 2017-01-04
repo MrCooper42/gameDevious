@@ -103,7 +103,7 @@ export class ProfileEditComponent implements OnInit {
     let options: NgbModalOptions = {
       size: 'lg'
     };
-    const modalRef = this.modalService.open(UploadComponent, options);
+    const modalRef = this.modalService.open(UploadComponent, options)
     modalRef.componentInstance.name = 'World';
   }
 
@@ -111,16 +111,16 @@ export class ProfileEditComponent implements OnInit {
     let options: NgbModalOptions = {
       size: 'lg'
     };
-    const modalRef = this.modalService.open(UploadWorksComponent, options);
-    modalRef.componentInstance.name = 'World';
+    const modalWorkRef = this.modalService.open(UploadWorksComponent, options);
+    modalWorkRef.componentInstance.name = 'World';
   }
 
   openWorkAvatar() {
     let options: NgbModalOptions = {
       size: 'lg'
     };
-    const modalRef = this.modalService.open(UploadWorksAvatarComponent, options);
-    modalRef.componentInstance.name = 'World';
+    const modalWorkAvatarRef = this.modalService.open(UploadWorksAvatarComponent, options);
+    modalWorkAvatarRef.componentInstance.name = 'World';
   }
 
   useJwtHelper() {

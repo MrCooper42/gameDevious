@@ -75,7 +75,7 @@
       <h3 class="page-header">{{user.firstName}}'s Games</h3>
     </div>
       <p>
-        Show your works! Add new or edit. <button class="btn btn-sm btn-outline-primary" (click)="showWorkForm()">add avatar</button>
+        Show your works! Add new or edit. <button class="btn btn-sm btn-outline-primary" (click)="showWorkForm()">Add a new work</button>
 
       </p>
 <div *ngIf="showWork">
@@ -127,9 +127,9 @@
     </div>
 <div class="has-works" *ngIf="hasWorks().length > 0">
   <div class="works col-sm-6 col-xs-12 text-center" *ngFor="let work of hasWorks()">
-  <a href="{{work.url}}">Title: {{work.title}}</a>
+  <a href="//{{work.url}}">Title: {{work.title}}</a>
   <p>Description: {{work.description}}</p>
-  <a href="{{work.video}}">Check out the video!</a>
+  <a href="//{{work.video}}">Check out the video!</a>
       <img class="img-responsive portfolio-item" src="{{work.avatar}}" alt="" *ngIf="hasWorks().length > 1">
     </div>
     </div>

@@ -13,10 +13,13 @@ export class GamesService {
   getGame(body) {
     console.log(body, "body here")
     let reqBody = JSON.stringify(body);
+    console.log(reqBody, "body here")
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
-    headers.append('game', reqBody);
+    headers.append('game', body);
     let options = new RequestOptions({ headers: headers });
-    return this.http.get('/api/game', options)
+    console.log(options, "headers")
+    return this.http.get('/api/game', {headers: headers})
+    .map((res: Response) => res.json())
   }
 }

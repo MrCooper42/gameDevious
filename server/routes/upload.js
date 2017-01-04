@@ -27,7 +27,7 @@ const upload = multer({storage: storage}).single('file');
 
 router.post('/:folder', (req, res, next) => {
   let token = req.headers.authorization;
-  jwt.verify(token, 'secret', this.ignoreExpiration = true,(err, decoded) => {
+  jwt.verify(token, 'secret', ignoreExpiration = true,(err, decoded) => {
     if (err) {
       console.log(err, "errrrrorrrrr upload");
       res.status(401).json({title: 'Not Authenticated ya here', error: err})

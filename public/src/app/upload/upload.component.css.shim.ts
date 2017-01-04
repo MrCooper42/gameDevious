@@ -5,8 +5,4 @@
  */
  /* tslint:disable */
 
-<<<<<<< HEAD
-export const styles:any[] = ['.my-drop-zone[_ngcontent-%COMP%] {\n  border: dotted 3px lightgray;\n}\n.nv-file-over[_ngcontent-%COMP%] {\n  border: dotted 3px red;\n}\n\n.another-file-over-class[_ngcontent-%COMP%] {\n  border: dotted 3px green;\n}\n\n.modal-content[_ngcontent-%COMP%] {\n  height: 900px;\n  \n}\n\nbody[_ngcontent-%COMP%], html[_ngcontent-%COMP%] {\n  height: 100%;\n}'];
-=======
-export const styles:any[] = ['.my-drop-zone[_ngcontent-%COMP%] {\r\n  border: dotted 3px lightgray;\r\n}\r\n.nv-file-over[_ngcontent-%COMP%] {\r\n  border: dotted 3px red;\r\n}\r\n\r\n.another-file-over-class[_ngcontent-%COMP%] {\r\n  border: dotted 3px green;\r\n}\r\n\r\nbody[_ngcontent-%COMP%], html[_ngcontent-%COMP%] {\r\n  height: 100%;\r\n}'];
->>>>>>> 489b1a80631680d5e716fe87c968de3bd285cd43
+export const styles:any[] = ['.my-drop-zone[_ngcontent-%COMP%] {\n  border: dotted 3px lightgray;\n}\n.nv-file-over[_ngcontent-%COMP%] {\n  border: dotted 3px red;\n}\n\n.another-file-over-class[_ngcontent-%COMP%] {\n  border: dotted 3px green;\n}\n\nbody[_ngcontent-%COMP%], html[_ngcontent-%COMP%] {\n  height: 100%;\n}'];

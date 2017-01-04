@@ -30,12 +30,12 @@ router.get('/pulse', (req, res, next) => {
 })
 
 router.get(`/game`, (req, res, next) => {
-  console.log(req.headers, "body here");
-  unirest.get("https://igdbcom-internet-game-database-v1.p.mashape.com/games/?fields=name&limit=10&offset=0&order=release_dates.date%3Adesc&search="+req.body)
+  console.log(req.headers.game, "req headers game ")
+  unirest.get("https://igdbcom-internet-game-database-v1.p.mashape.com/games/?fields=*&limit=10&offset=0&order=release_dates.date%3Adesc&search="+req.headers.game)
     .header("X-Mashape-Key", key)
     .header("Accept", "application/json")
     .end(function(result) {
-      console.log(result.status, result.headers, result.body);
+      res.send(result);
     });
 })
 

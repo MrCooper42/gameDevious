@@ -18,12 +18,13 @@ export class GamesComponent implements OnInit {
   constructor(private gamesService: GamesService) { }
 
   seachGame() {
-      let game = this.searchGameForm.value;
+      let game = this.searchGameForm.value.game;
+      console.log(game, "game comp")
       this.gamesService.getGame(game)
         .subscribe(
         data => {
-          console.log(data, "returned data")
-          // this.games = data;
+          console.log(data.body, "returned data")
+          this.games = data.body;
         },
         error => console.error(error));
       this.searchGameForm.reset();

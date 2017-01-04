@@ -22,6 +22,7 @@ import { JobListingsComponent } from './job-listings/job-listings.component';
 import { FilesComponent } from './files/files.component';
 import { ProfileModule } from './profile/profile.module';
 import { UploadModule } from './upload/upload.module';
+import { WorksComponent } from './works/works.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { UploadModule } from './upload/upload.module';
     ErrorComponent,
     NewsComponent,
     JobListingsComponent,
-    FilesComponent
+    FilesComponent,
+    WorksComponent
   ],
   imports: [
     NgbModule.forRoot(),

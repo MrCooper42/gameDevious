@@ -1,0 +1,1127 @@
+[
+  {
+    "id": 7346,
+    "name": "The Legend of Zelda: Breath of the Wild",
+    "slug": "the-legend-of-zelda-breath-of-the-wild",
+    "url": "https://www.igdb.com/games/the-legend-of-zelda-breath-of-the-wild",
+    "created_at": 1402423357911,
+    "updated_at": 1482939964695,
+    "summary": "\"Step into a world of discovery, exploration and adventure in The Legend of Zelda: Breath of the Wild, a boundary-breaking new game in the acclaimed series. Travel across fields, through forests and to mountain peaks as you discover what has become of the ruined kingdom of Hyrule in this stunning open-air adventure.\"",
+    "storyline": "Link awakes in a mysterious chamber after 100 years of slumber to find that Calamity Ganon has taken over Hyrule Castle and left Hyrule to decay and be taken over by nature.",
+    "collection": 106,
+    "hypes": 100,
+    "popularity": 1.16214335421016,
+    "developers": [
+      70
+    ],
+    "publishers": [
+      70
+    ],
+    "category": 0,
+    "game_modes": [
+      1
+    ],
+    "keywords": [
+      510,
+      1309,
+      1524,
+      2030,
+      2280,
+      2446,
+      2451
+    ],
+    "themes": [
+      17,
+      38,
+      1
+    ],
+    "genres": [
+      31
+    ],
+    "first_release_date": 1498780800000,
+    "release_dates": [
+      {
+        "category": 4,
+        "platform": 41,
+        "date": 1498780800000,
+        "region": 8,
+        "human": "2017-Q2",
+        "y": 2017,
+        "m": 6
+      },
+      {
+        "category": 4,
+        "platform": 130,
+        "date": 1498780800000,
+        "region": 8,
+        "human": "2017-Q2",
+        "y": 2017,
+        "m": 6
+      }
+    ],
+    "alternative_names": [
+      {
+        "name": "ゼルダの伝説 ブレス オブ ザ ワイルド",
+        "comment": "Japanese title"
+      }
+    ],
+    "screenshots": [
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/mepn5qujlccdlkhfkwr8.png",
+        "cloudinary_id": "mepn5qujlccdlkhfkwr8",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/ngyp9tw3elpfdngwc00i.png",
+        "cloudinary_id": "ngyp9tw3elpfdngwc00i",
+        "width": 1593,
+        "height": 891
+      },
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/djytg7kqip9d5dgekfew.png",
+        "cloudinary_id": "djytg7kqip9d5dgekfew",
+        "width": 1585,
+        "height": 887
+      },
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/tjlglyti9pi4cowyiact.png",
+        "cloudinary_id": "tjlglyti9pi4cowyiact",
+        "width": 1591,
+        "height": 893
+      },
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/vbs1btl6ts17zeos4g5v.png",
+        "cloudinary_id": "vbs1btl6ts17zeos4g5v",
+        "width": 1593,
+        "height": 893
+      }
+    ],
+    "videos": [
+      {
+        "name": "Trailer",
+        "video_id": "kFgEdYiihhA"
+      },
+      {
+        "name": "Trailer",
+        "video_id": "vDFZIUdo764"
+      },
+      {
+        "name": "Trailer",
+        "video_id": "1rPxiXXxftE"
+      },
+      {
+        "name": "Trailer",
+        "video_id": "Z6BeAtdoELY"
+      }
+    ],
+    "cover": {
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/id7oqxsma8y2lcazszzk.png",
+      "cloudinary_id": "id7oqxsma8y2lcazszzk",
+      "width": 300,
+      "height": 428
+    }
+  },
+  {
+    "id": 18017,
+    "name": "The Legend of Zelda: Twilight Princess HD",
+    "slug": "the-legend-of-zelda-twilight-princess-hd",
+    "url": "https://www.igdb.com/games/the-legend-of-zelda-twilight-princess-hd",
+    "created_at": 1455570168477,
+    "updated_at": 1483174588119,
+    "summary": "The Legend of Zelda: Twilight Princess is a critically acclaimed masterpiece, set in a massive world bursting with life—but also shadow. A dark figure from the Twilight Realm has invaded the world of light. As Link™, a farmhand turned cursed beast, join forces with the impish Midna and trusted (albeit unusual) allies to survive a quest that'll take you to the farthest corners of Hyrule and beyond… to the Twilight Realm. This emotional adventure is now on the Wii U™ console with improved visuals and controls—and new challenges. Choose Hero Mode to take 2x normal damage, or tap the Wolf Link amiibo™ figure to unlock the tough Cave of Shadows.",
+    "hypes": 3,
+    "rating": 90.7148805808297,
+    "popularity": 1.03409881697982,
+    "aggregated_rating": 85.3636363636364,
+    "rating_count": 7,
+    "developers": [
+      70,
+      5534,
+      1304
+    ],
+    "publishers": [
+      70
+    ],
+    "category": 0,
+    "time_to_beat": {
+      "completely": 158400
+    },
+    "game_modes": [
+      1
+    ],
+    "keywords": [
+      1753
+    ],
+    "themes": [
+      1,
+      17
+    ],
+    "genres": [
+      31
+    ],
+    "first_release_date": 1457049600000,
+    "release_dates": [
+      {
+        "category": 0,
+        "platform": 41,
+        "date": 1457049600000,
+        "region": 2,
+        "human": "2016-Mar-04",
+        "y": 2016,
+        "m": 3
+      },
+      {
+        "category": 0,
+        "platform": 41,
+        "date": 1457049600000,
+        "region": 1,
+        "human": "2016-Mar-04",
+        "y": 2016,
+        "m": 3
+      },
+      {
+        "category": 0,
+        "platform": 41,
+        "date": 1457568000000,
+        "region": 5,
+        "human": "2016-Mar-10",
+        "y": 2016,
+        "m": 3
+      }
+    ],
+    "screenshots": [
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/o34dekperu1mbk8kurbz.png",
+        "cloudinary_id": "o34dekperu1mbk8kurbz",
+        "width": 640,
+        "height": 360
+      }
+    ],
+    "videos": [
+      {
+        "name": "Trailer",
+        "video_id": "LZNWbCragSk"
+      }
+    ],
+    "cover": {
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/klebtdw8yafmdcyc8ljl.png",
+      "cloudinary_id": "klebtdw8yafmdcyc8ljl",
+      "width": 768,
+      "height": 1080
+    },
+    "esrb": {
+      "synopsis": "This is an action-adventure game in which players assume the role of Link, a young hero who must save a fantasy kingdom by defeating an evil villain. From a third-person perspective, players explore caves/dungeons, solve puzzles, and use swords, arrows, bombs, and magic to defeat enemy creatures (e.g., skeletons, spiders, dragons, plant creatures). Some sequences allow players to use ranged weapons/abilities from a first-person perspective; one section allows players to engage in a one-on-one sword-fight with a boss character. Cutscenes occasionally depict characters impaled by swords or shot with arrows; one boss creature emits small puffs of purple fluid when stabbed.",
+      "rating": 5
+    },
+    "pegi": {
+      "rating": 3
+    }
+  },
+  {
+    "id": 11194,
+    "name": "The Legend of Zelda: Tri Force Heroes",
+    "slug": "the-legend-of-zelda-tri-force-heroes",
+    "url": "https://www.igdb.com/games/the-legend-of-zelda-tri-force-heroes",
+    "created_at": 1434476645523,
+    "updated_at": 1478665965952,
+    "summary": "A princess in distress... A kingdom in peril...a fashion emergency?! Team up with two other heroes to save the world of Hytopia from a witch's evil fashion curse.\n\nFor the first time, you can stack three Links into a totem to solve puzzles and defeat enemies. And don’t forget to pick the perfect outfit—each one gives you a different boost or ability.",
+    "collection": 106,
+    "hypes": 4,
+    "popularity": 1.00069589422408,
+    "aggregated_rating": 71.8571428571429,
+    "publishers": [
+      70
+    ],
+    "category": 0,
+    "game_modes": [
+      1,
+      2,
+      3
+    ],
+    "keywords": [
+      793,
+      988,
+      1635,
+      1975,
+      1976
+    ],
+    "themes": [
+      1,
+      17
+    ],
+    "genres": [
+      8,
+      31,
+      9,
+      25
+    ],
+    "first_release_date": 1445472000000,
+    "release_dates": [
+      {
+        "category": 0,
+        "platform": 37,
+        "date": 1445472000000,
+        "region": 5,
+        "human": "2015-Oct-22",
+        "y": 2015,
+        "m": 10
+      },
+      {
+        "category": 0,
+        "platform": 37,
+        "date": 1445558400000,
+        "region": 2,
+        "human": "2015-Oct-23",
+        "y": 2015,
+        "m": 10
+      },
+      {
+        "category": 0,
+        "platform": 37,
+        "date": 1445558400000,
+        "region": 1,
+        "human": "2015-Oct-23",
+        "y": 2015,
+        "m": 10
+      },
+      {
+        "category": 0,
+        "platform": 37,
+        "date": 1445644800000,
+        "region": 3,
+        "human": "2015-Oct-24",
+        "y": 2015,
+        "m": 10
+      }
+    ],
+    "alternative_names": [
+      {
+        "name": "ゼルダの伝説 トライフォース3銃士",
+        "comment": "Japanese title"
+      }
+    ],
+    "screenshots": [
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/r8cd03jalrlknq0ddryo.png",
+        "cloudinary_id": "r8cd03jalrlknq0ddryo",
+        "width": 630,
+        "height": 350
+      }
+    ],
+    "videos": [
+      {
+        "name": "Trailer",
+        "video_id": "1mptQhqArcA"
+      },
+      {
+        "name": "Gameplay video",
+        "video_id": "HHiHmsK6lcw"
+      }
+    ],
+    "cover": {
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/dtj80vlbzqbywzcdcdiv.png",
+      "cloudinary_id": "dtj80vlbzqbywzcdcdiv",
+      "width": 698,
+      "height": 289
+    },
+    "esrb": {
+      "rating": 3
+    }
+  },
+  {
+    "id": 5314,
+    "name": "Hyrule Warriors",
+    "slug": "hyrule-warriors",
+    "url": "https://www.igdb.com/games/hyrule-warriors",
+    "created_at": 1392082778982,
+    "updated_at": 1482097113469,
+    "summary": "A Legendary Pairing: Cut down entire legions of enemies as Link, Zelda, Midna and other characters from The Legend of Zelda franchise using over-the-top powerful Dynasty Warriors-style moves. This tour de force through the beloved locales of Hyrule will have players battling some of the fiercest enemies in The Legend of Zelda history. Two players can play local co-op, with one player joining with the Wii U GamePad controller and another with the Wii U Pro Controller or Wii Remote and Nunchuk controllers.",
+    "collection": 106,
+    "hypes": 5,
+    "rating": 70.3018264299959,
+    "popularity": 1.0062630480167,
+    "aggregated_rating": 74.6666666666667,
+    "rating_count": 22,
+    "developers": [
+      858,
+      70
+    ],
+    "publishers": [
+      70
+    ],
+    "game_engines": [
+      108
+    ],
+    "category": 0,
+    "game_modes": [
+      1,
+      3
+    ],
+    "themes": [
+      1
+    ],
+    "genres": [
+      25
+    ],
+    "first_release_date": 1407974400000,
+    "release_dates": [
+      {
+        "category": 0,
+        "platform": 41,
+        "date": 1407974400000,
+        "region": 5,
+        "human": "2014-Aug-14",
+        "y": 2014,
+        "m": 8
+      },
+      {
+        "category": 0,
+        "platform": 41,
+        "date": 1411689600000,
+        "region": 2,
+        "human": "2014-Sep-26",
+        "y": 2014,
+        "m": 9
+      },
+      {
+        "category": 0,
+        "platform": 41,
+        "date": 1411084800000,
+        "region": 1,
+        "human": "2014-Sep-19",
+        "y": 2014,
+        "m": 9
+      },
+      {
+        "category": 0,
+        "platform": 41,
+        "date": 1411171200000,
+        "region": 3,
+        "human": "2014-Sep-20",
+        "y": 2014,
+        "m": 9
+      }
+    ],
+    "alternative_names": [
+      {
+        "name": "Zelda Musō",
+        "comment": "Japanese title"
+      },
+      {
+        "name": "ゼルダ無双",
+        "comment": "Japanese title"
+      },
+      {
+        "name": "Zeruda Musō",
+        "comment": "Hepburn title"
+      }
+    ],
+    "screenshots": [
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/omrqxebus2d1vlh9kpds.png",
+        "cloudinary_id": "omrqxebus2d1vlh9kpds",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/afv2dc22uwldxxso4iaa.png",
+        "cloudinary_id": "afv2dc22uwldxxso4iaa",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/uqq9gmtmpljq880gecro.png",
+        "cloudinary_id": "uqq9gmtmpljq880gecro",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/ssnirej5lrjyktvjtle5.png",
+        "cloudinary_id": "ssnirej5lrjyktvjtle5",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/ksxitbu8md5bi6p7dkap.png",
+        "cloudinary_id": "ksxitbu8md5bi6p7dkap",
+        "width": 1280,
+        "height": 720
+      }
+    ],
+    "videos": [
+      {
+        "name": "Teaser",
+        "video_id": "ZOq4IiuRMWk"
+      }
+    ],
+    "cover": {
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/qucn5uwcxryxsgsyoco5.png",
+      "cloudinary_id": "qucn5uwcxryxsgsyoco5",
+      "width": 456,
+      "height": 642
+    },
+    "esrb": {
+      "rating": 5
+    },
+    "pegi": {
+      "rating": 3
+    }
+  },
+  {
+    "id": 2909,
+    "name": "The Legend of Zelda: A Link Between Worlds",
+    "slug": "the-legend-of-zelda-a-link-between-worlds",
+    "url": "https://www.igdb.com/games/the-legend-of-zelda-a-link-between-worlds",
+    "created_at": 1376833404544,
+    "updated_at": 1482985147146,
+    "summary": "The Legend of Zelda: A Link Between Worlds is the first Zelda game made exclusively for the Nintendo 3DS is set in the fan-favorite world of The Legend of Zelda: A Link to the Past. A daring adventure awaits Link in Hyrule, where he can use his new ability to become a “drawing” and move along walls of dungeons. This opens up ways to explore and puzzle elements that give Link access to locations he could not otherwise reach.",
+    "collection": 106,
+    "hypes": 5,
+    "rating": 97.2433791868614,
+    "popularity": 1.01809324982603,
+    "aggregated_rating": 92.3333333333333,
+    "rating_count": 47,
+    "developers": [
+      1366
+    ],
+    "publishers": [
+      70
+    ],
+    "category": 0,
+    "game_modes": [
+      1
+    ],
+    "keywords": [
+      174,
+      226,
+      227,
+      238,
+      274,
+      341,
+      353,
+      389
+    ],
+    "themes": [
+      17,
+      38
+    ],
+    "genres": [
+      12,
+      31,
+      9
+    ],
+    "first_release_date": 1385078400000,
+    "release_dates": [
+      {
+        "category": 0,
+        "platform": 37,
+        "date": 1385078400000,
+        "region": 2,
+        "human": "2013-Nov-22",
+        "y": 2013,
+        "m": 11
+      },
+      {
+        "category": 0,
+        "platform": 37,
+        "date": 1385078400000,
+        "region": 1,
+        "human": "2013-Nov-22",
+        "y": 2013,
+        "m": 11
+      },
+      {
+        "category": 0,
+        "platform": 37,
+        "date": 1385424000000,
+        "region": 5,
+        "human": "2013-Nov-26",
+        "y": 2013,
+        "m": 11
+      }
+    ],
+    "alternative_names": [
+      {
+        "name": "Zeruda no Densetsu: Kamigami no Toraifōsu 2"
+      },
+      {
+        "name": "젤다의 전설 신들의 트라이포스 2"
+      }
+    ],
+    "screenshots": [
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/g1ig6se7vb8pizqeezwr.png",
+        "cloudinary_id": "g1ig6se7vb8pizqeezwr",
+        "width": 640,
+        "height": 486
+      },
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/tmkars8oniz0d1uecwt5.png",
+        "cloudinary_id": "tmkars8oniz0d1uecwt5",
+        "width": 400,
+        "height": 240
+      },
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/kuyxlabaqpswy2v3nhuz.png",
+        "cloudinary_id": "kuyxlabaqpswy2v3nhuz",
+        "width": 690,
+        "height": 388
+      },
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/tzksq0scjszfoniwansp.png",
+        "cloudinary_id": "tzksq0scjszfoniwansp",
+        "width": 630,
+        "height": 420
+      },
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/whn4yncmdku05xdjwpbm.png",
+        "cloudinary_id": "whn4yncmdku05xdjwpbm",
+        "width": 618,
+        "height": 371
+      }
+    ],
+    "videos": [
+      {
+        "name": "Trailer",
+        "video_id": "qAluniNRibs"
+      }
+    ],
+    "cover": {
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/r9ezsk5yhljc83dfjeqc.png",
+      "cloudinary_id": "r9ezsk5yhljc83dfjeqc",
+      "width": 406,
+      "height": 362
+    },
+    "esrb": {
+      "synopsis": "This is an adventure game in which players assume the role of Link, a young hero on a quest to stop an evil villain's plan. From a top-down view, players explore dungeons, solve puzzles, and use swords, bows, and magic to defeat “cartoony” enemy creatures (e.g. skeletons, rats, birds, knights in armor). Occasional boss battles depict more protracted fighting. Enemies usually flash or get knocked back when hit, disappearing in puffs of stars and smoke.",
+      "rating": 3
+    },
+    "pegi": {
+      "synopsis": "The content of this game is suitable for persons aged 7 years and over only.\nIt contains: Non realistic looking violence towards fantasy characters",
+      "rating": 2
+    }
+  },
+  {
+    "id": 2276,
+    "name": "The Legend of Zelda: The Wind Waker HD",
+    "slug": "the-legend-of-zelda-the-wind-waker-hd",
+    "url": "https://www.igdb.com/games/the-legend-of-zelda-the-wind-waker-hd",
+    "created_at": 1372423443829,
+    "updated_at": 1479345733214,
+    "collection": 106,
+    "rating": 87.8299064212793,
+    "popularity": 1.00695894224078,
+    "aggregated_rating": 90.5,
+    "rating_count": 48,
+    "developers": [
+      70,
+      2670
+    ],
+    "publishers": [
+      70
+    ],
+    "category": 0,
+    "game_modes": [
+      1
+    ],
+    "keywords": [
+      217,
+      227,
+      238,
+      337,
+      505,
+      779
+    ],
+    "themes": [
+      35,
+      38,
+      17,
+      1
+    ],
+    "genres": [
+      8,
+      12,
+      31,
+      9
+    ],
+    "first_release_date": 1380585600000,
+    "release_dates": [
+      {
+        "category": 1,
+        "platform": 41,
+        "date": 1380585600000,
+        "human": "2013-Oct",
+        "y": 2013,
+        "m": 10
+      }
+    ],
+    "screenshots": [
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/ncjicz8a2zxwa3m6q7el.png",
+        "cloudinary_id": "ncjicz8a2zxwa3m6q7el",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/zkyxfsetxh9usl3ezqbf.png",
+        "cloudinary_id": "zkyxfsetxh9usl3ezqbf",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/zbuxibfkegb0qogxqkt5.png",
+        "cloudinary_id": "zbuxibfkegb0qogxqkt5",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/pjtarpcichwkw1mhtoyb.png",
+        "cloudinary_id": "pjtarpcichwkw1mhtoyb",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/tpyrax7hqpg5urexui5d.png",
+        "cloudinary_id": "tpyrax7hqpg5urexui5d",
+        "width": 1280,
+        "height": 720
+      }
+    ],
+    "videos": [
+      {
+        "name": "Trailer",
+        "video_id": "y3f-xaRxi_o"
+      }
+    ],
+    "cover": {
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/xcivov9txngp8jyd0cyd.png",
+      "cloudinary_id": "xcivov9txngp8jyd0cyd",
+      "width": 250,
+      "height": 321
+    },
+    "esrb": {
+      "rating": 4
+    }
+  },
+  {
+    "id": 1035,
+    "name": "The Legend of Zelda: The Minish Cap",
+    "slug": "the-legend-of-zelda-the-minish-cap",
+    "url": "https://www.igdb.com/games/the-legend-of-zelda-the-minish-cap",
+    "created_at": 1326379185596,
+    "updated_at": 1482087140068,
+    "summary": "When the sorcerer Vaati turns Princess Zelda to stone, the king of Hyrule sends Link on a quest to free Zelda from her curse. With the help of Ezlo, a Minish also cursed by Vaati, Link must travel through a fantastical world rife with new items, puzzles, and bosses. As Link, you can shrink down to battle large enemies from within, find or unlock secret items and solve puzzles by fusing together magic relics.",
+    "collection": 106,
+    "rating": 87.4126929536046,
+    "popularity": 1.03131524008351,
+    "aggregated_rating": 90,
+    "rating_count": 48,
+    "developers": [
+      37
+    ],
+    "publishers": [
+      70
+    ],
+    "category": 0,
+    "time_to_beat": {
+      "normally": 61200
+    },
+    "game_modes": [
+      1
+    ],
+    "keywords": [
+      1033
+    ],
+    "themes": [
+      1,
+      17
+    ],
+    "genres": [
+      31
+    ],
+    "first_release_date": 1099526400000,
+    "release_dates": [
+      {
+        "category": 0,
+        "platform": 24,
+        "date": 1099526400000,
+        "human": "2004-Nov-04",
+        "y": 2004,
+        "m": 11
+      },
+      {
+        "category": 0,
+        "platform": 47,
+        "date": 1323993600000,
+        "human": "2011-Dec-16",
+        "y": 2011,
+        "m": 12
+      }
+    ],
+    "alternative_names": [
+      {
+        "name": "ゼルダの伝説 ふしぎのぼうし",
+        "comment": "Japanese title"
+      },
+      {
+        "name": "ゼルダの伝説 ふしぎのぼうし",
+        "comment": "Japanese title"
+      },
+      {
+        "name": "ゼルダの伝説 ふしぎのぼうし",
+        "comment": "Japanese title"
+      },
+      {
+        "name": "ゼルダの伝説 ふしぎのぼうし",
+        "comment": "Japanese title"
+      },
+      {
+        "name": "ゼルダの伝説 ふしぎのぼうし",
+        "comment": "Japanese title"
+      }
+    ],
+    "screenshots": [
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/zkh2naeaedhb4r71aqq7.png",
+        "cloudinary_id": "zkh2naeaedhb4r71aqq7",
+        "width": 798,
+        "height": 530
+      },
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/ojtwv85xergv7swnbgsz.png",
+        "cloudinary_id": "ojtwv85xergv7swnbgsz",
+        "width": 799,
+        "height": 531
+      }
+    ],
+    "videos": [
+      {
+        "name": "Trailer (Japanese)",
+        "video_id": "l4l86EtYers"
+      }
+    ],
+    "cover": {
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/rtsxyofw5svqq8tixtru.png",
+      "cloudinary_id": "rtsxyofw5svqq8tixtru",
+      "width": 870,
+      "height": 768
+    }
+  },
+  {
+    "id": 534,
+    "name": "The Legend of Zelda: Skyward Sword",
+    "slug": "the-legend-of-zelda-skyward-sword",
+    "url": "https://www.igdb.com/games/the-legend-of-zelda-skyward-sword",
+    "created_at": 1317639159000,
+    "updated_at": 1480842698060,
+    "summary": "Skyward Sword is the sixteenth entry in the Legend of Zelda series. The game makes use of the Wii MotionPlus peripheral for sword fighting, with a revised Wii Remote pointing system used for targeting.",
+    "storyline": "The game's storyline is the earliest in Zelda continuity, preceding The Legend of Zelda: The Minish Cap. Skyward Sword follows an incarnation of the series protagonist Link who was raised in a society above the clouds known as Skyloft. After his closest childhood friend, Zelda, is swept into the land below the clouds by demonic forces, Link does whatever it takes to save her, traveling between Skyloft and the surface below while battling the dark forces of the self-proclaimed \"Demon Lord\", Ghirahim.",
+    "collection": 106,
+    "rating": 87.2416397262616,
+    "popularity": 1.00835073068894,
+    "aggregated_rating": 92.7142857142857,
+    "rating_count": 57,
+    "developers": [
+      421
+    ],
+    "publishers": [
+      70
+    ],
+    "category": 0,
+    "time_to_beat": {
+      "hastly": 165600,
+      "normally": 252000
+    },
+    "game_modes": [
+      1
+    ],
+    "themes": [
+      1
+    ],
+    "genres": [
+      9,
+      31
+    ],
+    "first_release_date": 1321574400000,
+    "release_dates": [
+      {
+        "category": 0,
+        "platform": 5,
+        "date": 1321574400000,
+        "human": "2011-Nov-18",
+        "y": 2011,
+        "m": 11
+      }
+    ],
+    "alternative_names": [
+      {
+        "name": "塞尔达传说：天空之剑",
+        "comment": "Chinese title"
+      },
+      {
+        "name": "ゼルダの伝説 スカイウォードソード",
+        "comment": "Japanese title"
+      }
+    ],
+    "screenshots": [
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/s8izoxbiyjpxpr0kdh1e.png",
+        "cloudinary_id": "s8izoxbiyjpxpr0kdh1e",
+        "width": 750,
+        "height": 421
+      },
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/me0xfxmsvrqihgrfxh9r.png",
+        "cloudinary_id": "me0xfxmsvrqihgrfxh9r",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/cjg7nanyb1vxzzq1ki9q.png",
+        "cloudinary_id": "cjg7nanyb1vxzzq1ki9q",
+        "width": 1600,
+        "height": 899
+      },
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/ka2i4aehuuibfecyaphh.png",
+        "cloudinary_id": "ka2i4aehuuibfecyaphh",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/gh2aalxmfzxqaxow9kou.png",
+        "cloudinary_id": "gh2aalxmfzxqaxow9kou",
+        "width": 1024,
+        "height": 575
+      }
+    ],
+    "videos": [
+      {
+        "name": "Trailer",
+        "video_id": "2dYgrMz_XBI"
+      }
+    ],
+    "cover": {
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/acupjubv0zatshopxcpn.png",
+      "cloudinary_id": "acupjubv0zatshopxcpn",
+      "width": 591,
+      "height": 836
+    },
+    "esrb": {
+      "synopsis": "",
+      "rating": 4
+    }
+  },
+  {
+    "id": 1039,
+    "name": "The Legend of Zelda: Ocarina of Time 3D",
+    "slug": "the-legend-of-zelda-ocarina-of-time-3d",
+    "url": "https://www.igdb.com/games/the-legend-of-zelda-ocarina-of-time-3d",
+    "created_at": 1326379553958,
+    "updated_at": 1482097040231,
+    "summary": "The Legend of Zelda: Ocarina of Time 3D takes the Nintendo 64 classic – one of the most critically acclaimed games ever made – and returns it to the Nintendo 3DS system with the added depth and realism of stunning, glasses free 3D visuals. \n\nIn this game, Link sets off on a legendary journey through time to stop Ganondorf, the Gerudo King of Thieves who is seeking the Triforce, a holy relic that gives its holder ultimate power. The graphical upgrades and three-dimensional depth breathe new life into the expansive world of Hyrule. An improved and intuitive interface, coupled with the easier navigation offered by playing in a world with 3D visuals, give players better control as they solve puzzles, travel through time and explore this immersive world. Whether you're a first-time player or a regular visitor to Hyrule, The Legend of Zelda: Ocarina of Time 3D is a new adventure for everyone.",
+    "storyline": "A young Kokiri boy discovers that his destiny is to free the Seven Sages and save the land of Hyrule from the treacherous sorcerer Ganondorf.",
+    "collection": 106,
+    "rating": 93.4996538842271,
+    "popularity": 1.02157272094642,
+    "aggregated_rating": 92,
+    "rating_count": 107,
+    "developers": [
+      421,
+      739
+    ],
+    "publishers": [
+      70
+    ],
+    "category": 3,
+    "time_to_beat": {
+      "hastly": 100800,
+      "normally": 198000
+    },
+    "game_modes": [
+      1
+    ],
+    "themes": [
+      1,
+      17
+    ],
+    "genres": [
+      31
+    ],
+    "first_release_date": 1308182400000,
+    "release_dates": [
+      {
+        "category": 0,
+        "platform": 37,
+        "date": 1308182400000,
+        "human": "2011-Jun-16",
+        "y": 2011,
+        "m": 6
+      }
+    ],
+    "screenshots": [
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/uvr5dkunpfiqdz9jkf7l.png",
+        "cloudinary_id": "uvr5dkunpfiqdz9jkf7l",
+        "width": 1200,
+        "height": 900
+      },
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/kfva4s5owp3jjoywztri.png",
+        "cloudinary_id": "kfva4s5owp3jjoywztri",
+        "width": 768,
+        "height": 461
+      },
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/dkqmsjmfqcevaukyo3fp.png",
+        "cloudinary_id": "dkqmsjmfqcevaukyo3fp",
+        "width": 800,
+        "height": 480
+      },
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/akrguozacilcnhmq1q7z.png",
+        "cloudinary_id": "akrguozacilcnhmq1q7z",
+        "width": 606,
+        "height": 364
+      },
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/beyzjxy1joedphrqyrel.png",
+        "cloudinary_id": "beyzjxy1joedphrqyrel",
+        "width": 1280,
+        "height": 720
+      }
+    ],
+    "videos": [
+      {
+        "name": "Trailer",
+        "video_id": "PX6RndmM1CU"
+      },
+      {
+        "name": "Trailer",
+        "video_id": "faLvYtLhNqo"
+      }
+    ],
+    "cover": {
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/y2nz1vsmqyrvm7twqrh0.png",
+      "cloudinary_id": "y2nz1vsmqyrvm7twqrh0",
+      "width": 500,
+      "height": 445
+    },
+    "esrb": {
+      "synopsis": "This is an adventure game in which players assume the role of Link, a young hero who must stop an evil king from obtaining a magical relic. Players explore dungeons and caves while using a sword, boomerang, slingshot, and magical spells to defeat a variety of fantastical enemies (e.g, dinosaurs, skeletons, giant spiders). Some ranged weapons also allow players to shoot projectiles (e.g., arrows) from a first-person view. Battles are accompanied by grunting sounds and colorful light effects; enemies blink and disappear when defeated. During one boss battle, Link jabs at a pig-like enemy, resulting in brief splashes of green liquid; a handful of other enemies emit similar effects when struck. As the game progresses, Link encounters a few female characters that are depicted from low camera angles and dressed in outfits that display moderate amounts of cleavage.",
+      "rating": 4
+    },
+    "pegi": {
+      "synopsis": "Non realistic looking violence towards human characters",
+      "rating": 3
+    }
+  },
+  {
+    "id": 1028,
+    "name": "The Legend of Zelda Link's Awakening",
+    "slug": "the-legend-of-zelda-link-s-awakening",
+    "url": "https://www.igdb.com/games/the-legend-of-zelda-link-s-awakening",
+    "created_at": 1326322863754,
+    "updated_at": 1482985777863,
+    "collection": 106,
+    "rating": 83.5208711680787,
+    "popularity": 1.00278357689631,
+    "rating_count": 42,
+    "developers": [
+      421
+    ],
+    "publishers": [
+      70
+    ],
+    "category": 0,
+    "game_modes": [
+      1
+    ],
+    "keywords": [
+      203,
+      337,
+      1975,
+      2102
+    ],
+    "themes": [
+      1,
+      17
+    ],
+    "genres": [
+      31
+    ],
+    "first_release_date": 739324800000,
+    "release_dates": [
+      {
+        "category": 0,
+        "platform": 47,
+        "date": 1307404800000,
+        "human": "2011-Jun-07",
+        "y": 2011,
+        "m": 6
+      },
+      {
+        "category": 0,
+        "platform": 33,
+        "date": 739324800000,
+        "region": 5,
+        "human": "1993-Jun-06",
+        "y": 1993,
+        "m": 6
+      }
+    ],
+    "alternative_names": [
+      {
+        "name": "ゼルダの伝説 夢をみる島"
+      }
+    ],
+    "screenshots": [
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/s6zwlfyx9kebutiaqmqc.png",
+        "cloudinary_id": "s6zwlfyx9kebutiaqmqc",
+        "width": 620,
+        "height": 382
+      },
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/d6srebvzkfkpfbshorfb.png",
+        "cloudinary_id": "d6srebvzkfkpfbshorfb",
+        "width": 480,
+        "height": 432
+      },
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/hbxbet7xbqfzwvubls05.png",
+        "cloudinary_id": "hbxbet7xbqfzwvubls05",
+        "width": 340,
+        "height": 306
+      },
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/bttdewtcjlb5tzomdnhh.png",
+        "cloudinary_id": "bttdewtcjlb5tzomdnhh",
+        "width": 320,
+        "height": 289
+      },
+      {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/z2j5kdenbbs0adpfpypd.png",
+        "cloudinary_id": "z2j5kdenbbs0adpfpypd",
+        "width": 640,
+        "height": 576
+      }
+    ],
+    "videos": [
+      {
+        "name": "Game intro",
+        "video_id": "E0ErE4l1EKM"
+      }
+    ],
+    "cover": {
+      "url": "//images.igdb.com/igdb/image/upload/t_thumb/k6eoyz86wcmeyzq9lr0s.png",
+      "cloudinary_id": "k6eoyz86wcmeyzq9lr0s",
+      "width": 1200,
+      "height": 1070
+    },
+    "esrb": {
+      "rating": 3
+    }
+  }
+]
