@@ -9,6 +9,7 @@ import { ProfileComponent } from './profile.component';
 import { AuthConfig, AUTH_PROVIDERS, provideAuth } from 'angular2-jwt';
 
 import { UploadModule } from '../upload/upload.module';
+import { WorkDetailsComponent } from './work-details.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { UploadModule } from '../upload/upload.module';
   declarations: [
     ProfileComponent,
     ProfileEditComponent,
+    WorkDetailsComponent
   ]
 })
 export class ProfileModule { }

@@ -19,11 +19,11 @@ export class GamesComponent implements OnInit {
 
   seachGame() {
       let game = this.searchGameForm.value.game;
-      console.log(game, "game comp")
+      console.log(game, 'game comp')
       this.gamesService.getGame(game)
         .subscribe(
         data => {
-          console.log(data.body, "returned data")
+          console.log(data.body, 'returned data')
           this.games = data.body;
         },
         error => console.error(error));

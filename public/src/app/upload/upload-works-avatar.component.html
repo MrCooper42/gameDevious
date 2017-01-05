@@ -4,18 +4,18 @@
 
     <div class="col-md-3">
 
-      <h3>Select game zip file</h3>
+      <h3>Select game image file</h3>
       <div ng2FileDrop [ngClass]="{'nv-file-over': hasBaseDropZoneOver}" (fileOver)="fileOverBase($event)" [uploader]="uploader" class="well my-drop-zone">
         drop zone
       </div>
 
       Single File
-      <input type="avatar" ng2FileSelect [uploader]="uploader"/>
+      <input type="file" ng2FileSelect [uploader]="uploader"/>
     </div>
 
     <div class="col-md-9" style="margin-bottom: 40px">
 
-      <h3>Upload queue</h3>
+      <h3>Upload work picture</h3>
       <p>Queue length:
         {{ uploader?.queue?.length }}</p>
 

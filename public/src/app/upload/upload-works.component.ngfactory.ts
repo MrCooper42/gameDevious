@@ -13,34 +13,33 @@ import * as import4 from '@angular/core/src/metadata/view';
 import * as import5 from '@angular/core/src/linker/view_type';
 import * as import6 from '@angular/core/src/change_detection/change_detection';
 import * as import7 from '@angular/core/src/linker/component_factory';
-import * as import8 from '@ng-bootstrap/ng-bootstrap/modal/modal-ref';
-import * as import9 from './upload-works.component.css.shim';
-import * as import10 from '../../../../node_modules/@angular/common/src/directives/ng_class.ngfactory';
-import * as import11 from '../../../../node_modules/ng2-file-upload/file-upload/file-drop.directive.ngfactory';
-import * as import12 from '../../../../node_modules/ng2-file-upload/file-upload/file-select.directive.ngfactory';
-import * as import13 from '@angular/core/src/linker/view_container';
-import * as import14 from '../../../../node_modules/@angular/common/src/directives/ng_for.ngfactory';
-import * as import15 from '../../../../node_modules/@angular/common/src/directives/ng_style.ngfactory';
-import * as import16 from '@angular/common/src/pipes/number_pipe';
-import * as import17 from '@angular/core/src/change_detection/differs/iterable_differs';
-import * as import18 from '@angular/core/src/change_detection/differs/keyvalue_differs';
-import * as import19 from '@angular/core/src/linker/element_ref';
-import * as import20 from '@angular/core/src/linker/template_ref';
-import * as import21 from '@angular/core/src/i18n/tokens';
-import * as import22 from '@angular/common/src/directives/ng_class';
-import * as import23 from 'ng2-file-upload/file-upload/file-drop.directive';
-import * as import24 from 'ng2-file-upload/file-upload/file-select.directive';
-import * as import25 from '@angular/common/src/directives/ng_for';
-import * as import26 from '@angular/common/src/directives/ng_style';
-import * as import27 from '../../../../node_modules/@angular/common/src/directives/ng_if.ngfactory';
-import * as import28 from '@angular/common/src/directives/ng_if';
+import * as import8 from './upload-works.component.css.shim';
+import * as import9 from '../../../../node_modules/@angular/common/src/directives/ng_class.ngfactory';
+import * as import10 from '../../../../node_modules/ng2-file-upload/file-upload/file-drop.directive.ngfactory';
+import * as import11 from '../../../../node_modules/ng2-file-upload/file-upload/file-select.directive.ngfactory';
+import * as import12 from '@angular/core/src/linker/view_container';
+import * as import13 from '../../../../node_modules/@angular/common/src/directives/ng_for.ngfactory';
+import * as import14 from '../../../../node_modules/@angular/common/src/directives/ng_style.ngfactory';
+import * as import15 from '@angular/common/src/pipes/number_pipe';
+import * as import16 from '@angular/core/src/change_detection/differs/iterable_differs';
+import * as import17 from '@angular/core/src/change_detection/differs/keyvalue_differs';
+import * as import18 from '@angular/core/src/linker/element_ref';
+import * as import19 from '@angular/core/src/linker/template_ref';
+import * as import20 from '@angular/core/src/i18n/tokens';
+import * as import21 from '@angular/common/src/directives/ng_class';
+import * as import22 from 'ng2-file-upload/file-upload/file-drop.directive';
+import * as import23 from 'ng2-file-upload/file-upload/file-select.directive';
+import * as import24 from '@angular/common/src/directives/ng_for';
+import * as import25 from '@angular/common/src/directives/ng_style';
+import * as import26 from '../../../../node_modules/@angular/common/src/directives/ng_if.ngfactory';
+import * as import27 from '@angular/common/src/directives/ng_if';
 export class Wrapper_UploadWorksComponent {
   /*private*/ _eventHandler:Function;
   context:import0.UploadWorksComponent;
   /*private*/ _changed:boolean;
-  constructor(p0:any) {
+  constructor() {
     this._changed = false;
-    this.context = new import0.UploadWorksComponent(p0);
+    this.context = new import0.UploadWorksComponent();
   }
   ngOnDetach(view:import1.AppView<any>,componentView:import1.AppView<any>,el:any):void {
   }
@@ -72,7 +71,7 @@ class View_UploadWorksComponent_Host0 extends import1.AppView<any> {
   createInternal(rootSelector:string):import7.ComponentRef<any> {
     this._el_0 = import3.selectOrCreateRenderHostElement(this.renderer,'app-upload-works',import3.EMPTY_INLINE_ARRAY,rootSelector,(null as any));
     this.compView_0 = new View_UploadWorksComponent0(this.viewUtils,this,0,this._el_0);
-    this._UploadWorksComponent_0_3 = new Wrapper_UploadWorksComponent(this.injectorGet(import8.NgbActiveModal,this.parentIndex));
+    this._UploadWorksComponent_0_3 = new Wrapper_UploadWorksComponent();
     this.compView_0.create(this._UploadWorksComponent_0_3.context);
     this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [this._el_0]),(null as any));
     return new import7.ComponentRef_<any>(0,this,this._el_0,this._UploadWorksComponent_0_3.context);
@@ -93,7 +92,7 @@ class View_UploadWorksComponent_Host0 extends import1.AppView<any> {
   }
 }
 export const UploadWorksComponentNgFactory:import7.ComponentFactory<import0.UploadWorksComponent> = new import7.ComponentFactory<import0.UploadWorksComponent>('app-upload-works',View_UploadWorksComponent_Host0,import0.UploadWorksComponent);
-const styles_UploadWorksComponent:any[] = [import9.styles];
+const styles_UploadWorksComponent:any[] = [import8.styles];
 var renderType_UploadWorksComponent:import2.RenderComponentType = import3.createRenderComponentType('',0,import4.ViewEncapsulation.Emulated,styles_UploadWorksComponent,{});
 export class View_UploadWorksComponent0 extends import1.AppView<import0.UploadWorksComponent> {
   _el_0:any;
@@ -106,13 +105,13 @@ export class View_UploadWorksComponent0 extends import1.AppView<import0.UploadWo
   _text_7:any;
   _text_8:any;
   _el_9:any;
-  _NgClass_9_3:import10.Wrapper_NgClass;
-  _FileDropDirective_9_4:import11.Wrapper_FileDropDirective;
+  _NgClass_9_3:import9.Wrapper_NgClass;
+  _FileDropDirective_9_4:import10.Wrapper_FileDropDirective;
   _text_10:any;
   _text_11:any;
   _text_12:any;
   _el_13:any;
-  _FileSelectDirective_13_3:import12.Wrapper_FileSelectDirective;
+  _FileSelectDirective_13_3:import11.Wrapper_FileSelectDirective;
   _text_14:any;
   _text_15:any;
   _el_16:any;
@@ -149,9 +148,9 @@ export class View_UploadWorksComponent0 extends import1.AppView<import0.UploadWo
   _el_47:any;
   _text_48:any;
   _anchor_49:any;
-  /*private*/ _vc_49:import13.ViewContainer;
+  /*private*/ _vc_49:import12.ViewContainer;
   _TemplateRef_49_5:any;
-  _NgFor_49_6:import14.Wrapper_NgFor;
+  _NgFor_49_6:import13.Wrapper_NgFor;
   _text_50:any;
   _text_51:any;
   _text_52:any;
@@ -162,7 +161,7 @@ export class View_UploadWorksComponent0 extends import1.AppView<import0.UploadWo
   _el_57:any;
   _text_58:any;
   _el_59:any;
-  _NgStyle_59_3:import15.Wrapper_NgStyle;
+  _NgStyle_59_3:import14.Wrapper_NgStyle;
   _text_60:any;
   _text_61:any;
   _text_62:any;
@@ -187,7 +186,7 @@ export class View_UploadWorksComponent0 extends import1.AppView<import0.UploadWo
   _text_81:any;
   _map_89:any;
   /*private*/ _expr_90:any;
-  _pipe_number_0:import16.DecimalPipe;
+  _pipe_number_0:import15.DecimalPipe;
   _map_92:any;
   /*private*/ _expr_93:any;
   /*private*/ _expr_94:any;
@@ -207,7 +206,7 @@ export class View_UploadWorksComponent0 extends import1.AppView<import0.UploadWo
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
     const parentRenderNode:any = this.renderer.createViewRoot(this.parentElement);
-    this._el_0 = import3.createRenderElement(this.renderer,parentRenderNode,'div',new import3.InlineArray4(4,'class','container','ngbModalWorksContainer',''),(null as any));
+    this._el_0 = import3.createRenderElement(this.renderer,parentRenderNode,'div',new import3.InlineArray2(2,'class','container'),(null as any));
     this._text_1 = this.renderer.createText(this._el_0,'\n\n  ',(null as any));
     this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'div',new import3.InlineArray2(2,'class','row modal-size'),(null as any));
     this._text_3 = this.renderer.createText(this._el_2,'\n\n    ',(null as any));
@@ -217,13 +216,13 @@ export class View_UploadWorksComponent0 extends import1.AppView<import0.UploadWo
     this._text_7 = this.renderer.createText(this._el_6,'Select game zip file',(null as any));
     this._text_8 = this.renderer.createText(this._el_4,'\n\n      ',(null as any));
     this._el_9 = import3.createRenderElement(this.renderer,this._el_4,'div',new import3.InlineArray4(4,'class','well my-drop-zone','ng2FileDrop',''),(null as any));
-    this._NgClass_9_3 = new import10.Wrapper_NgClass(this.parentView.injectorGet(import17.IterableDiffers,this.parentIndex),this.parentView.injectorGet(import18.KeyValueDiffers,this.parentIndex),new import19.ElementRef(this._el_9),this.renderer);
-    this._FileDropDirective_9_4 = new import11.Wrapper_FileDropDirective(new import19.ElementRef(this._el_9));
+    this._NgClass_9_3 = new import9.Wrapper_NgClass(this.parentView.injectorGet(import16.IterableDiffers,this.parentIndex),this.parentView.injectorGet(import17.KeyValueDiffers,this.parentIndex),new import18.ElementRef(this._el_9),this.renderer);
+    this._FileDropDirective_9_4 = new import10.Wrapper_FileDropDirective(new import18.ElementRef(this._el_9));
     this._text_10 = this.renderer.createText(this._el_9,'\n        drop zone\n      ',(null as any));
     this._text_11 = this.renderer.createText(this._el_4,'\n\n      ',(null as any));
     this._text_12 = this.renderer.createText(this._el_4,'\n\n      Single File\n      ',(null as any));
     this._el_13 = import3.createRenderElement(this.renderer,this._el_4,'input',new import3.InlineArray4(4,'ng2FileSelect','','type','file'),(null as any));
-    this._FileSelectDirective_13_3 = new import12.Wrapper_FileSelectDirective(new import19.ElementRef(this._el_13));
+    this._FileSelectDirective_13_3 = new import11.Wrapper_FileSelectDirective(new import18.ElementRef(this._el_13));
     this._text_14 = this.renderer.createText(this._el_4,'\n    ',(null as any));
     this._text_15 = this.renderer.createText(this._el_2,'\n\n    ',(null as any));
     this._el_16 = import3.createRenderElement(this.renderer,this._el_2,'div',new import3.InlineArray4(4,'class','col-md-9','style','margin-bottom: 40px'),(null as any));
@@ -260,9 +259,9 @@ export class View_UploadWorksComponent0 extends import1.AppView<import0.UploadWo
     this._el_47 = import3.createRenderElement(this.renderer,this._el_24,'tbody',import3.EMPTY_INLINE_ARRAY,(null as any));
     this._text_48 = this.renderer.createText(this._el_47,'\n          ',(null as any));
     this._anchor_49 = this.renderer.createTemplateAnchor(this._el_47,(null as any));
-    this._vc_49 = new import13.ViewContainer(49,47,this,this._anchor_49);
-    this._TemplateRef_49_5 = new import20.TemplateRef_(this,49,this._anchor_49);
-    this._NgFor_49_6 = new import14.Wrapper_NgFor(this._vc_49.vcRef,this._TemplateRef_49_5,this.parentView.injectorGet(import17.IterableDiffers,this.parentIndex),this.ref);
+    this._vc_49 = new import12.ViewContainer(49,47,this,this._anchor_49);
+    this._TemplateRef_49_5 = new import19.TemplateRef_(this,49,this._anchor_49);
+    this._NgFor_49_6 = new import13.Wrapper_NgFor(this._vc_49.vcRef,this._TemplateRef_49_5,this.parentView.injectorGet(import16.IterableDiffers,this.parentIndex),this.ref);
     this._text_50 = this.renderer.createText(this._el_47,'\n        ',(null as any));
     this._text_51 = this.renderer.createText(this._el_24,'\n      ',(null as any));
     this._text_52 = this.renderer.createText(this._el_16,'\n\n      ',(null as any));
@@ -273,7 +272,7 @@ export class View_UploadWorksComponent0 extends import1.AppView<import0.UploadWo
     this._el_57 = import3.createRenderElement(this.renderer,this._el_55,'div',new import3.InlineArray4(4,'class','progress','style',''),(null as any));
     this._text_58 = this.renderer.createText(this._el_57,'\n            ',(null as any));
     this._el_59 = import3.createRenderElement(this.renderer,this._el_57,'div',new import3.InlineArray4(4,'class','progress-bar','role','progressbar'),(null as any));
-    this._NgStyle_59_3 = new import15.Wrapper_NgStyle(this.parentView.injectorGet(import18.KeyValueDiffers,this.parentIndex),new import19.ElementRef(this._el_59),this.renderer);
+    this._NgStyle_59_3 = new import14.Wrapper_NgStyle(this.parentView.injectorGet(import17.KeyValueDiffers,this.parentIndex),new import18.ElementRef(this._el_59),this.renderer);
     this._text_60 = this.renderer.createText(this._el_57,'\n          ',(null as any));
     this._text_61 = this.renderer.createText(this._el_55,'\n        ',(null as any));
     this._text_62 = this.renderer.createText(this._el_53,'\n\n        ',(null as any));
@@ -299,7 +298,7 @@ export class View_UploadWorksComponent0 extends import1.AppView<import0.UploadWo
     var disposable_0:Function = import3.subscribeToRenderElement(this,this._el_9,new import3.InlineArray8(8,'fileOver',(null as any),'drop',(null as any),'dragover',(null as any),'dragleave',(null as any)),this.eventHandler(this.handleEvent_9));
     this._FileDropDirective_9_4.subscribe(this,this.eventHandler(this.handleEvent_9),true,false);
     var disposable_1:Function = import3.subscribeToRenderElement(this,this._el_13,new import3.InlineArray2(2,'change',(null as any)),this.eventHandler(this.handleEvent_13));
-    this._pipe_number_0 = new import16.DecimalPipe(this.parentView.injectorGet(import21.LOCALE_ID,this.parentIndex));
+    this._pipe_number_0 = new import15.DecimalPipe(this.parentView.injectorGet(import20.LOCALE_ID,this.parentIndex));
     var disposable_2:Function = import3.subscribeToRenderElement(this,this._el_63,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_63));
     var disposable_3:Function = import3.subscribeToRenderElement(this,this._el_68,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_68));
     var disposable_4:Function = import3.subscribeToRenderElement(this,this._el_73,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_73));
@@ -398,12 +397,12 @@ export class View_UploadWorksComponent0 extends import1.AppView<import0.UploadWo
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import22.NgClass) && ((9 <= requestNodeIndex) && (requestNodeIndex <= 10)))) { return this._NgClass_9_3.context; }
-    if (((token === import23.FileDropDirective) && ((9 <= requestNodeIndex) && (requestNodeIndex <= 10)))) { return this._FileDropDirective_9_4.context; }
-    if (((token === import24.FileSelectDirective) && (13 === requestNodeIndex))) { return this._FileSelectDirective_13_3.context; }
-    if (((token === import20.TemplateRef) && (49 === requestNodeIndex))) { return this._TemplateRef_49_5; }
-    if (((token === import25.NgFor) && (49 === requestNodeIndex))) { return this._NgFor_49_6.context; }
-    if (((token === import26.NgStyle) && (59 === requestNodeIndex))) { return this._NgStyle_59_3.context; }
+    if (((token === import21.NgClass) && ((9 <= requestNodeIndex) && (requestNodeIndex <= 10)))) { return this._NgClass_9_3.context; }
+    if (((token === import22.FileDropDirective) && ((9 <= requestNodeIndex) && (requestNodeIndex <= 10)))) { return this._FileDropDirective_9_4.context; }
+    if (((token === import23.FileSelectDirective) && (13 === requestNodeIndex))) { return this._FileSelectDirective_13_3.context; }
+    if (((token === import19.TemplateRef) && (49 === requestNodeIndex))) { return this._TemplateRef_49_5; }
+    if (((token === import24.NgFor) && (49 === requestNodeIndex))) { return this._NgFor_49_6.context; }
+    if (((token === import25.NgStyle) && (59 === requestNodeIndex))) { return this._NgStyle_59_3.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
@@ -508,31 +507,31 @@ class View_UploadWorksComponent1 extends import1.AppView<any> {
   _text_6:any;
   _text_7:any;
   _anchor_8:any;
-  /*private*/ _vc_8:import13.ViewContainer;
+  /*private*/ _vc_8:import12.ViewContainer;
   _TemplateRef_8_5:any;
-  _NgIf_8_6:import27.Wrapper_NgIf;
+  _NgIf_8_6:import26.Wrapper_NgIf;
   _text_9:any;
   _anchor_10:any;
-  /*private*/ _vc_10:import13.ViewContainer;
+  /*private*/ _vc_10:import12.ViewContainer;
   _TemplateRef_10_5:any;
-  _NgIf_10_6:import27.Wrapper_NgIf;
+  _NgIf_10_6:import26.Wrapper_NgIf;
   _text_11:any;
   _el_12:any;
   _text_13:any;
   _anchor_14:any;
-  /*private*/ _vc_14:import13.ViewContainer;
+  /*private*/ _vc_14:import12.ViewContainer;
   _TemplateRef_14_5:any;
-  _NgIf_14_6:import27.Wrapper_NgIf;
+  _NgIf_14_6:import26.Wrapper_NgIf;
   _text_15:any;
   _anchor_16:any;
-  /*private*/ _vc_16:import13.ViewContainer;
+  /*private*/ _vc_16:import12.ViewContainer;
   _TemplateRef_16_5:any;
-  _NgIf_16_6:import27.Wrapper_NgIf;
+  _NgIf_16_6:import26.Wrapper_NgIf;
   _text_17:any;
   _anchor_18:any;
-  /*private*/ _vc_18:import13.ViewContainer;
+  /*private*/ _vc_18:import12.ViewContainer;
   _TemplateRef_18_5:any;
-  _NgIf_18_6:import27.Wrapper_NgIf;
+  _NgIf_18_6:import26.Wrapper_NgIf;
   _text_19:any;
   _text_20:any;
   _el_21:any;
@@ -556,7 +555,7 @@ class View_UploadWorksComponent1 extends import1.AppView<any> {
   /*private*/ _expr_54:any;
   /*private*/ _expr_55:any;
   /*private*/ _expr_56:any;
-  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import13.ViewContainer) {
+  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
     super(View_UploadWorksComponent1,renderType_UploadWorksComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
     this._expr_54 = import6.UNINITIALIZED;
     this._expr_55 = import6.UNINITIALIZED;
@@ -572,31 +571,31 @@ class View_UploadWorksComponent1 extends import1.AppView<any> {
     this._text_6 = this.renderer.createText(this._el_2,'\n            ',(null as any));
     this._text_7 = this.renderer.createText(this._el_0,'\n            ',(null as any));
     this._anchor_8 = this.renderer.createTemplateAnchor(this._el_0,(null as any));
-    this._vc_8 = new import13.ViewContainer(8,0,this,this._anchor_8);
-    this._TemplateRef_8_5 = new import20.TemplateRef_(this,8,this._anchor_8);
-    this._NgIf_8_6 = new import27.Wrapper_NgIf(this._vc_8.vcRef,this._TemplateRef_8_5);
+    this._vc_8 = new import12.ViewContainer(8,0,this,this._anchor_8);
+    this._TemplateRef_8_5 = new import19.TemplateRef_(this,8,this._anchor_8);
+    this._NgIf_8_6 = new import26.Wrapper_NgIf(this._vc_8.vcRef,this._TemplateRef_8_5);
     this._text_9 = this.renderer.createText(this._el_0,'\n            ',(null as any));
     this._anchor_10 = this.renderer.createTemplateAnchor(this._el_0,(null as any));
-    this._vc_10 = new import13.ViewContainer(10,0,this,this._anchor_10);
-    this._TemplateRef_10_5 = new import20.TemplateRef_(this,10,this._anchor_10);
-    this._NgIf_10_6 = new import27.Wrapper_NgIf(this._vc_10.vcRef,this._TemplateRef_10_5);
+    this._vc_10 = new import12.ViewContainer(10,0,this,this._anchor_10);
+    this._TemplateRef_10_5 = new import19.TemplateRef_(this,10,this._anchor_10);
+    this._NgIf_10_6 = new import26.Wrapper_NgIf(this._vc_10.vcRef,this._TemplateRef_10_5);
     this._text_11 = this.renderer.createText(this._el_0,'\n            ',(null as any));
     this._el_12 = import3.createRenderElement(this.renderer,this._el_0,'td',new import3.InlineArray2(2,'class','text-center'),(null as any));
     this._text_13 = this.renderer.createText(this._el_12,'\n              ',(null as any));
     this._anchor_14 = this.renderer.createTemplateAnchor(this._el_12,(null as any));
-    this._vc_14 = new import13.ViewContainer(14,12,this,this._anchor_14);
-    this._TemplateRef_14_5 = new import20.TemplateRef_(this,14,this._anchor_14);
-    this._NgIf_14_6 = new import27.Wrapper_NgIf(this._vc_14.vcRef,this._TemplateRef_14_5);
+    this._vc_14 = new import12.ViewContainer(14,12,this,this._anchor_14);
+    this._TemplateRef_14_5 = new import19.TemplateRef_(this,14,this._anchor_14);
+    this._NgIf_14_6 = new import26.Wrapper_NgIf(this._vc_14.vcRef,this._TemplateRef_14_5);
     this._text_15 = this.renderer.createText(this._el_12,'\n              ',(null as any));
     this._anchor_16 = this.renderer.createTemplateAnchor(this._el_12,(null as any));
-    this._vc_16 = new import13.ViewContainer(16,12,this,this._anchor_16);
-    this._TemplateRef_16_5 = new import20.TemplateRef_(this,16,this._anchor_16);
-    this._NgIf_16_6 = new import27.Wrapper_NgIf(this._vc_16.vcRef,this._TemplateRef_16_5);
+    this._vc_16 = new import12.ViewContainer(16,12,this,this._anchor_16);
+    this._TemplateRef_16_5 = new import19.TemplateRef_(this,16,this._anchor_16);
+    this._NgIf_16_6 = new import26.Wrapper_NgIf(this._vc_16.vcRef,this._TemplateRef_16_5);
     this._text_17 = this.renderer.createText(this._el_12,'\n              ',(null as any));
     this._anchor_18 = this.renderer.createTemplateAnchor(this._el_12,(null as any));
-    this._vc_18 = new import13.ViewContainer(18,12,this,this._anchor_18);
-    this._TemplateRef_18_5 = new import20.TemplateRef_(this,18,this._anchor_18);
-    this._NgIf_18_6 = new import27.Wrapper_NgIf(this._vc_18.vcRef,this._TemplateRef_18_5);
+    this._vc_18 = new import12.ViewContainer(18,12,this,this._anchor_18);
+    this._TemplateRef_18_5 = new import19.TemplateRef_(this,18,this._anchor_18);
+    this._NgIf_18_6 = new import26.Wrapper_NgIf(this._vc_18.vcRef,this._TemplateRef_18_5);
     this._text_19 = this.renderer.createText(this._el_12,'\n            ',(null as any));
     this._text_20 = this.renderer.createText(this._el_0,'\n            ',(null as any));
     this._el_21 = import3.createRenderElement(this.renderer,this._el_0,'td',new import3.InlineArray2(2,'nowrap',''),(null as any));
@@ -670,16 +669,16 @@ class View_UploadWorksComponent1 extends import1.AppView<any> {
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import20.TemplateRef) && (8 === requestNodeIndex))) { return this._TemplateRef_8_5; }
-    if (((token === import28.NgIf) && (8 === requestNodeIndex))) { return this._NgIf_8_6.context; }
-    if (((token === import20.TemplateRef) && (10 === requestNodeIndex))) { return this._TemplateRef_10_5; }
-    if (((token === import28.NgIf) && (10 === requestNodeIndex))) { return this._NgIf_10_6.context; }
-    if (((token === import20.TemplateRef) && (14 === requestNodeIndex))) { return this._TemplateRef_14_5; }
-    if (((token === import28.NgIf) && (14 === requestNodeIndex))) { return this._NgIf_14_6.context; }
-    if (((token === import20.TemplateRef) && (16 === requestNodeIndex))) { return this._TemplateRef_16_5; }
-    if (((token === import28.NgIf) && (16 === requestNodeIndex))) { return this._NgIf_16_6.context; }
-    if (((token === import20.TemplateRef) && (18 === requestNodeIndex))) { return this._TemplateRef_18_5; }
-    if (((token === import28.NgIf) && (18 === requestNodeIndex))) { return this._NgIf_18_6.context; }
+    if (((token === import19.TemplateRef) && (8 === requestNodeIndex))) { return this._TemplateRef_8_5; }
+    if (((token === import27.NgIf) && (8 === requestNodeIndex))) { return this._NgIf_8_6.context; }
+    if (((token === import19.TemplateRef) && (10 === requestNodeIndex))) { return this._TemplateRef_10_5; }
+    if (((token === import27.NgIf) && (10 === requestNodeIndex))) { return this._NgIf_10_6.context; }
+    if (((token === import19.TemplateRef) && (14 === requestNodeIndex))) { return this._TemplateRef_14_5; }
+    if (((token === import27.NgIf) && (14 === requestNodeIndex))) { return this._NgIf_14_6.context; }
+    if (((token === import19.TemplateRef) && (16 === requestNodeIndex))) { return this._TemplateRef_16_5; }
+    if (((token === import27.NgIf) && (16 === requestNodeIndex))) { return this._NgIf_16_6.context; }
+    if (((token === import19.TemplateRef) && (18 === requestNodeIndex))) { return this._TemplateRef_18_5; }
+    if (((token === import27.NgIf) && (18 === requestNodeIndex))) { return this._NgIf_18_6.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
@@ -770,7 +769,7 @@ class View_UploadWorksComponent2 extends import1.AppView<any> {
   _text_1:any;
   /*private*/ _expr_2:any;
   _pipe_number_0_0:any;
-  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import13.ViewContainer) {
+  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
     super(View_UploadWorksComponent2,renderType_UploadWorksComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
     this._expr_2 = import6.UNINITIALIZED;
   }
@@ -804,11 +803,11 @@ class View_UploadWorksComponent3 extends import1.AppView<any> {
   _el_2:any;
   _text_3:any;
   _el_4:any;
-  _NgStyle_4_3:import15.Wrapper_NgStyle;
+  _NgStyle_4_3:import14.Wrapper_NgStyle;
   _text_5:any;
   _text_6:any;
   _map_8:any;
-  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import13.ViewContainer) {
+  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
     super(View_UploadWorksComponent3,renderType_UploadWorksComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
     this._map_8 = import3.pureProxy1((p0:any):{[key: string]:any} => {
       return {width: p0};
@@ -820,7 +819,7 @@ class View_UploadWorksComponent3 extends import1.AppView<any> {
     this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'div',new import3.InlineArray4(4,'class','progress','style','margin-bottom: 0;'),(null as any));
     this._text_3 = this.renderer.createText(this._el_2,'\n                ',(null as any));
     this._el_4 = import3.createRenderElement(this.renderer,this._el_2,'div',new import3.InlineArray4(4,'class','progress-bar','role','progressbar'),(null as any));
-    this._NgStyle_4_3 = new import15.Wrapper_NgStyle(this.parentView.parentView.parentView.injectorGet(import18.KeyValueDiffers,this.parentView.parentView.parentIndex),new import19.ElementRef(this._el_4),this.renderer);
+    this._NgStyle_4_3 = new import14.Wrapper_NgStyle(this.parentView.parentView.parentView.injectorGet(import17.KeyValueDiffers,this.parentView.parentView.parentIndex),new import18.ElementRef(this._el_4),this.renderer);
     this._text_5 = this.renderer.createText(this._el_2,'\n              ',(null as any));
     this._text_6 = this.renderer.createText(this._el_0,'\n            ',(null as any));
     this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
@@ -836,7 +835,7 @@ class View_UploadWorksComponent3 extends import1.AppView<any> {
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import26.NgStyle) && (4 === requestNodeIndex))) { return this._NgStyle_4_3.context; }
+    if (((token === import25.NgStyle) && (4 === requestNodeIndex))) { return this._NgStyle_4_3.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
@@ -853,7 +852,7 @@ class View_UploadWorksComponent4 extends import1.AppView<any> {
   _text_1:any;
   _el_2:any;
   _text_3:any;
-  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import13.ViewContainer) {
+  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
     super(View_UploadWorksComponent4,renderType_UploadWorksComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
@@ -879,7 +878,7 @@ class View_UploadWorksComponent5 extends import1.AppView<any> {
   _text_1:any;
   _el_2:any;
   _text_3:any;
-  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import13.ViewContainer) {
+  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
     super(View_UploadWorksComponent5,renderType_UploadWorksComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
@@ -905,7 +904,7 @@ class View_UploadWorksComponent6 extends import1.AppView<any> {
   _text_1:any;
   _el_2:any;
   _text_3:any;
-  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import13.ViewContainer) {
+  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
     super(View_UploadWorksComponent6,renderType_UploadWorksComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {

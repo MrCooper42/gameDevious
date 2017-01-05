@@ -7,13 +7,13 @@ import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms'
 import { NgbModal, NgbActiveModal, NgbModalOptions } from '@ng-bootstrap/ng-bootstrap';
 
 import { UploadComponent } from '../upload/upload.component';
+import { WorkDetailsComponent } from './work-details.component';
 import { UploadWorksComponent } from '../upload/upload-works.component';
 import { UploadWorksAvatarComponent } from '../upload/upload-works-avatar.component';
 import { User } from './user.model';
 
 @Component({
   selector: 'app-profile-edit',
-  // template: `<router-outlet></router-outlet>`,
   templateUrl: './profile-edit.component.html',
   styleUrls: ['./profile-edit.component.css']
 })
@@ -22,9 +22,9 @@ export class ProfileEditComponent implements OnInit {
   titleForm: FormGroup;
   aboutForm: FormGroup;
   skillsForm: FormGroup;
-  worksForm: FormGroup;
 
   showWork: Boolean;
+  // showForm: Boolean;
 
   user: any;
 
@@ -38,7 +38,12 @@ export class ProfileEditComponent implements OnInit {
 
   showWorkForm() {
     this.showWork = !this.showWork;
-    // this.worksForm.reset();
+  }
+
+  refreshWorks() {
+    this.returnUser().subscribe(res => this.user = res);
+    this.showWork = !this.showWork;
+    this.router.navigateByUrl('/profile');
   }
 
   hasWorks() {
@@ -88,18 +93,6 @@ export class ProfileEditComponent implements OnInit {
       data => this.user.profile.skills = data.obj.skills)
   }
 
-  submitWork() {
-    let work = this.worksForm.value;
-    let works = this.user.profile.works
-    this.profileService.goWork(work)
-      .subscribe(
-      data => {
-        works.push(data)
-        this.user.profile.works = works
-      },
-      error => console.error(error));
-  }
-
   deleteWork(workId) {
     let works = this.user.profile.works;
     let filtered = works.filter(el => el._id != workId);
@@ -126,21 +119,21 @@ export class ProfileEditComponent implements OnInit {
     const modalRef = this.modalService.open(UploadComponent, options)
   }
 
-  openWork() {
-    let options: NgbModalOptions = {
-      size: 'lg'
-    };
-    const modalWorkRef = this.modalService.open(UploadWorksComponent, options);
-    modalWorkRef.componentInstance.name = 'World';
-  }
-
-  openWorkAvatar() {
-    let options: NgbModalOptions = {
-      size: 'lg'
-    };
-    const modalWorkAvatarRef = this.modalService.open(UploadWorksAvatarComponent, options);
-    modalWorkAvatarRef.componentInstance.name = 'World';
-  }
+  // openWork() {
+  //   let options: NgbModalOptions = {
+  //     size: 'lg'
+  //   };
+  //   const modalWorkRef = this.modalService.open(UploadWorksComponent, options);
+  //   modalWorkRef.componentInstance.name = 'World';
+  // }
+  //
+  // openWorkAvatar() {
+  //   let options: NgbModalOptions = {
+  //     size: 'lg'
+  //   };
+  //   const modalWorkAvatarRef = this.modalService.open(UploadWorksAvatarComponent, options);
+  //   modalWorkAvatarRef.componentInstance.name = 'World';
+  // }
 
   useJwtHelper() {
     let token = localStorage.getItem('token');
@@ -178,7 +171,8 @@ export class ProfileEditComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.showWork = false;
+    this.showWork = true;
+    // this.showForm = false;
     this.titleForm = new FormGroup({
       title: new FormControl(null, Validators.required),
     });
@@ -187,12 +181,6 @@ export class ProfileEditComponent implements OnInit {
     });
     this.aboutForm = new FormGroup({
       about: new FormControl(null, Validators.required),
-    });
-    this.worksForm = new FormGroup({
-      title: new FormControl(null, Validators.required),
-      description: new FormControl(null, Validators.required),
-      url: new FormControl(''),
-      video: new FormControl('')
     });
     this.returnUser().subscribe(res => this.user = res);
   }
