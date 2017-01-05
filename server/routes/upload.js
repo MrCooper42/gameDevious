@@ -57,9 +57,7 @@ router.post('/:folder', (req, res, next) => {
           if (req.params.folder == "works") {
             cosole.log("works hit")
           }
-          console.log(req.params);
         })
-        console.log("hit here and ending");
         res.json({error_code: 0, err_desc: null});
       });
     }

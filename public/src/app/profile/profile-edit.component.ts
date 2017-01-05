@@ -84,7 +84,7 @@ export class ProfileEditComponent implements OnInit {
   deleteSkill(skill) {
     this.profileService.killSkill(skill)
       .subscribe(
-        data => this.user.profile.skills = data.obj.skills)
+      data => this.user.profile.skills = data.obj.skills)
   }
 
   submitWork() {
@@ -104,19 +104,25 @@ export class ProfileEditComponent implements OnInit {
     let filtered = works.filter(el => el._id != workId);
     this.profileService.deleteWork(workId)
       .subscribe(
-        data => this.user.profile.works = filtered)
+      data => this.user.profile.works = filtered)
   }
 
   getAvatar() {
     return this.user.profile.avatar;
   }
 
+  updateAvatar() {
+    this.returnUser().subscribe(res => this.user = res);
+  }
+
   openAvatar() {
+    setTimeout(() => {
+      this.returnUser().subscribe(res => this.user = res);
+    }, 15000);
     let options: NgbModalOptions = {
       size: 'lg'
     };
     const modalRef = this.modalService.open(UploadComponent, options)
-    modalRef.componentInstance.name = 'World';
   }
 
   openWork() {
