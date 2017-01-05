@@ -62,9 +62,9 @@
                   [disabled]="!skillsForm.valid">Submit</button>
           </div>
       </form>
-      <ul *ngIf="hasSkill().length > 0">
-        <li *ngFor="let skill of this.user.profile.skills">{{skill}}</li>
-      </ul>
+      <div class="skill-list" *ngIf="hasSkill().length > 0">
+        <li *ngFor="let skill of this.user.profile.skills">{{skill}}</li>        
+      </div>
       <ul *ngIf="hasSkill().length < 1">
         <li>add your skills! {{user.profile.skills}}</li>
       </ul>
