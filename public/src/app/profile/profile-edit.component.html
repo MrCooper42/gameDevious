@@ -78,6 +78,18 @@
         Show your works! Add new or edit. <button class="btn btn-sm btn-outline-primary" (click)="showWorkForm()">Add a new work</button>
 
       </p>
+      <header class="row spacing">
+        <nav class="col-md-8 col-md-offset-2">
+          <ul class="nav nav-tabs">
+            <li routerLinkActive="active"><a [routerLink]="['profile']">Details</a></li>
+            <li routerLinkActive="active"><a [routerLink]="['work-avatar']">Picture Upload</a></li>
+            <li routerLinkActive="active"><a [routerLink]="['work-file']">Upload Work</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="row spacing">
+        <router-outlet></router-outlet>
+      </div>
 <div *ngIf="showWork">
   <form [formGroup]="worksForm" (ngSubmit)="submitWork()">
   <div class="form-group">
@@ -116,10 +128,6 @@
             [disabled]="!worksForm.valid">Submit</button>
           </div>
   </form>
-      <div>
-      <button class="btn btn-lg btn-outline-primary" (click)="openWorkAvatar(lg)">add avatar</button>
-      <button class="btn btn-lg btn-outline-primary" (click)="openWork(lg)">add work file</button>
-    </div>
   </div>
     <div  *ngIf="hasWorks().length < 1">
       <h5>{{user.firstName}}'s Works!</h5>
