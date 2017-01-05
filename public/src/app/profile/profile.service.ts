@@ -69,7 +69,7 @@ export class ProfileService {
     headers.append('Content-Type', 'application/json');
     headers.append('token', token);
     let options = new RequestOptions({ headers: headers });
-    return this.http.post(`/profile/skills`, reqBody, options)
+    return this.http.post(`/profile/${userId}/skills`, reqBody, options)
       .map((res: Response) => res.json());
   }
 

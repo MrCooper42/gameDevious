@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { authRouting } from './auth.routing';
+import { AuthService } from './auth.service';
 import { LogoutComponent } from './logout.component';
 import { SignupComponent } from './signup.component';
 import { SigninComponent } from './signin.component';
@@ -17,6 +18,9 @@ import { SigninComponent } from './signin.component';
     CommonModule,
     ReactiveFormsModule,
     authRouting
+  ],
+  providers: [
+    AuthService
   ]
 })
 
