@@ -979,13 +979,13 @@ class View_ProfileEditComponent2 extends import1.AppView<any> {
     super(View_ProfileEditComponent2,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
-    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'div',new import3.InlineArray2(2,'class','skill-list'),(null as any));
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'div',new import3.InlineArray2(2,'class','skill-list container'),(null as any));
     this._text_1 = this.renderer.createText(this._el_0,'\n        ',(null as any));
     this._anchor_2 = this.renderer.createTemplateAnchor(this._el_0,(null as any));
     this._vc_2 = new import12.ViewContainer(2,0,this,this._anchor_2);
     this._TemplateRef_2_5 = new import14.TemplateRef_(this,2,this._anchor_2);
     this._NgFor_2_6 = new import29.Wrapper_NgFor(this._vc_2.vcRef,this._TemplateRef_2_5,this.parentView.parentView.injectorGet(import30.IterableDiffers,this.parentView.parentIndex),this.parentView.parentView.ref);
-    this._text_3 = this.renderer.createText(this._el_0,'        \n      ',(null as any));
+    this._text_3 = this.renderer.createText(this._el_0,'\n      ',(null as any));
     this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
       this._el_0,
       this._text_1,
@@ -1020,30 +1020,73 @@ class View_ProfileEditComponent2 extends import1.AppView<any> {
 class View_ProfileEditComponent3 extends import1.AppView<any> {
   _el_0:any;
   _text_1:any;
-  /*private*/ _expr_2:any;
+  _el_2:any;
+  _text_3:any;
+  _el_4:any;
+  _text_5:any;
+  _text_6:any;
+  _el_7:any;
+  _text_8:any;
+  _el_9:any;
+  _text_10:any;
+  _text_11:any;
+  _text_12:any;
+  /*private*/ _expr_13:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
     super(View_ProfileEditComponent3,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
-    this._expr_2 = import6.UNINITIALIZED;
+    this._expr_13 = import6.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
-    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'li',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_1 = this.renderer.createText(this._el_0,'',(null as any));
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'div',new import3.InlineArray2(2,'class','col-xs-6'),(null as any));
+    this._text_1 = this.renderer.createText(this._el_0,'\n        ',(null as any));
+    this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'h3',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_3 = this.renderer.createText(this._el_2,'\n          ',(null as any));
+    this._el_4 = import3.createRenderElement(this.renderer,this._el_2,'span',new import3.InlineArray2(2,'class','tag tag-pill tag-info'),(null as any));
+    this._text_5 = this.renderer.createText(this._el_4,'',(null as any));
+    this._text_6 = this.renderer.createText(this._el_2,'\n            ',(null as any));
+    this._el_7 = import3.createRenderElement(this.renderer,this._el_2,'button',new import3.InlineArray2(2,'type','button'),(null as any));
+    this._text_8 = this.renderer.createText(this._el_7,'\n               ',(null as any));
+    this._el_9 = import3.createRenderElement(this.renderer,this._el_7,'span',new import3.InlineArray4(4,'aria-hidden','true','class','glyphicon glyphicon-trash'),(null as any));
+    this._text_10 = this.renderer.createText(this._el_7,'\n            ',(null as any));
+    this._text_11 = this.renderer.createText(this._el_2,'\n        ',(null as any));
+    this._text_12 = this.renderer.createText(this._el_0,'\n      ',(null as any));
+    var disposable_0:Function = import3.subscribeToRenderElement(this,this._el_7,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_7));
     this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
       this._el_0,
-      this._text_1
+      this._text_1,
+      this._el_2,
+      this._text_3,
+      this._el_4,
+      this._text_5,
+      this._text_6,
+      this._el_7,
+      this._text_8,
+      this._el_9,
+      this._text_10,
+      this._text_11,
+      this._text_12
     ]
-    ),(null as any));
+    ),[disposable_0]);
     return (null as any);
   }
   detectChangesInternal(throwOnChange:boolean):void {
-    const currVal_2:any = import3.inlineInterpolate(1,'',this.context.$implicit,'');
-    if (import3.checkBinding(throwOnChange,this._expr_2,currVal_2)) {
-      this.renderer.setText(this._text_1,currVal_2);
-      this._expr_2 = currVal_2;
+    const currVal_13:any = import3.inlineInterpolate(1,'\n            ',this.context.$implicit,'\n          ');
+    if (import3.checkBinding(throwOnChange,this._expr_13,currVal_13)) {
+      this.renderer.setText(this._text_5,currVal_13);
+      this._expr_13 = currVal_13;
     }
   }
   visitRootNodesInternal(cb:any,ctx:any):void {
     cb(this._el_0,ctx);
+  }
+  handleEvent_7(eventName:string,$event:any):boolean {
+    this.markPathToRootAsCheckOnce();
+    var result:boolean = true;
+    if ((eventName == 'click')) {
+      const pd_sub_0:any = ((<any>this.parentView.parentView.parentView.context.deleteSkill(this.context.$implicit)) !== false);
+      result = (pd_sub_0 && result);
+    }
+    return result;
   }
 }
 class View_ProfileEditComponent4 extends import1.AppView<any> {

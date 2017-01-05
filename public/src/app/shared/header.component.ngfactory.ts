@@ -183,7 +183,7 @@ export class View_HeaderComponent0 extends import1.AppView<import0.HeaderCompone
     this._text_23 = this.renderer.createText(this._el_22,'\n      ',(null as any));
     this._el_24 = import3.createRenderElement(this.renderer,this._el_22,'ul',new import3.InlineArray2(2,'class','nav navbar-nav'),(null as any));
     this._text_25 = this.renderer.createText(this._el_24,'\n        ',(null as any));
-    this._el_26 = import3.createRenderElement(this.renderer,this._el_24,'li',new import3.InlineArray2(2,'class','active'),(null as any));
+    this._el_26 = import3.createRenderElement(this.renderer,this._el_24,'li',import3.EMPTY_INLINE_ARRAY,(null as any));
     this._el_27 = import3.createRenderElement(this.renderer,this._el_26,'a',new import3.InlineArray2(2,'href','/news'),(null as any));
     this._text_28 = this.renderer.createText(this._el_27,'News ',(null as any));
     this._el_29 = import3.createRenderElement(this.renderer,this._el_27,'span',new import3.InlineArray2(2,'class','sr-only'),(null as any));
