@@ -81,6 +81,12 @@ export class ProfileEditComponent implements OnInit {
     this.skillsForm.reset();
   }
 
+  deleteSkill(skill) {
+    this.profileService.killSkill(skill)
+      .subscribe(
+        data => this.user.profile.skills = data.obj.skills)
+  }
+
   submitWork() {
     let work = this.worksForm.value;
     let works = this.user.profile.works
@@ -94,18 +100,11 @@ export class ProfileEditComponent implements OnInit {
   }
 
   deleteWork(workId) {
-    console.log(workId, "clicked");
     let works = this.user.profile.works;
-    console.log(works.length, "works before filter");
     let filtered = works.filter(el => el._id != workId);
-    console.log(filtered.length, "filtered after filter");
     this.profileService.deleteWork(workId)
       .subscribe(
-        data => {
-          console.log(data, "data")
-          this.user.profile.works = filtered
-        }
-      )
+        data => this.user.profile.works = filtered)
   }
 
   getAvatar() {

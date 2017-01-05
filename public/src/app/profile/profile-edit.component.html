@@ -62,8 +62,17 @@
                   [disabled]="!skillsForm.valid">Submit</button>
           </div>
       </form>
-      <div class="skill-list" *ngIf="hasSkill().length > 0">
-        <li *ngFor="let skill of this.user.profile.skills">{{skill}}</li>        
+      <div class="skill-list container" *ngIf="hasSkill().length > 0">
+        <div class="col-xs-6"  *ngFor="let skill of this.user.profile.skills">
+        <h3>
+          <span class="tag tag-pill tag-info">
+            {{skill}}
+          </span>
+            <button type="button" (click)="deleteSkill(skill)">
+               <span aria-hidden="true" class="glyphicon glyphicon-trash"></span>
+            </button>
+        </h3>
+      </div>
       </div>
       <ul *ngIf="hasSkill().length < 1">
         <li>add your skills! {{user.profile.skills}}</li>

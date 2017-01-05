@@ -6,11 +6,12 @@ const Profile = require('../models/profile');
 const User = require('../models/user');
 const jwt = require('jsonwebtoken');
 
-router.use('/:id', (req, res, next) => {
-  jwt.verify(req.headers.token, 'secret', this.ignoreExpiration = true,(err, decoded) => err ? res.status(401).json({
-    title: 'Not Authenticated ya here',
-    error: err
-}) : next())});
+// router.use('/:id', (req, res, next) => {
+//   jwt.verify(req.headers.token, 'secret', this.ignoreExpiration = true, (err, decoded) => err ? res.status(401).json({
+//     title: 'Not Authenticated ya here',
+//     error: err
+//   }) : next())
+// });
 
 // CREATE
 router.post("/:id", (req, res) => {
@@ -95,8 +96,7 @@ router.post("/:id/about", (req, res) => {
   })
 })
 
-router.post("/:id/skills", (req, res) => {
-  console.log("hit");
+router.post("/skills", (req, res) => {
   let token = req.headers.token
   jwt.verify(token, 'secret', this.ignoreExpiration = true, (err, decoded) => {
     if (err) {
@@ -131,6 +131,55 @@ router.post("/:id/skills", (req, res) => {
     }
   })
 })
+
+// DELETE
+router.delete("/skills/:id", (req, res, next) => {
+  console.log(req.params.id, "//skill here?");
+  let decoded = jwt.decode(req.headers.token);
+  Profile.findOne({
+    user: decoded.user._id
+  }, (err, profile) => {
+    if (err) {
+      return res.status(500).json({
+        title: 'Bad things happened',
+        error: err
+      });
+    }
+    if (!profile) {
+      return res.status(500).json({
+        title: 'No Profile Found!',
+        error: {
+          message: 'Profile not found'
+        }
+      })
+    }
+    if (profile.user != decoded.user._id) {
+      return res.status(401).json({
+        title: 'This is not your profile',
+        error: {
+          message: 'Go make your own profile'
+        }
+      });
+    }
+    let index = profile.skills.indexOf(req.params.id)
+    if (index != 1) {
+      profile.skills.splice(index, 1);
+      profile.save((err, result) => {
+        if (err) {
+          return res.status(500).json({
+            title: 'Bad things happened',
+            error: err
+          });
+        }
+        res.status(200).json({
+          message: 'Message was deleted',
+          obj: result
+        });
+      });
+    }
+  });
+});
+
 
 router.get("/user", (req, res) => {
   console.log(req.params.token);

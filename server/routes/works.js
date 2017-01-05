@@ -67,7 +67,7 @@ router.post("/", (req, res) => {
   })
 });
 
-// delete
+// DELETE
 router.delete("/:id", (req, res, next) => {
   let decoded = jwt.decode(req.headers.token);
   Works.findById(req.params.id, (err, work) => {
@@ -79,9 +79,9 @@ router.delete("/:id", (req, res, next) => {
     }
     if (!work) {
       return res.status(500).json({
-        title: 'No Message Found!',
+        title: 'No Works Found!',
         error: {
-          message: 'Message not found'
+          message: 'Works not found'
         }
       })
     }

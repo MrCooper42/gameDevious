@@ -69,8 +69,22 @@ export class ProfileService {
     headers.append('Content-Type', 'application/json');
     headers.append('token', token);
     let options = new RequestOptions({ headers: headers });
-    return this.http.post(`/profile/${userId}/skills`, reqBody, options)
+    return this.http.post(`/profile/skills`, reqBody, options)
       .map((res: Response) => res.json());
+  }
+
+  killSkill(skill) {
+    let token = localStorage.getItem('token');
+    let headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    headers.append('token', token);
+    let options = new RequestOptions({ headers: headers });
+    return this.http.delete(`/profile/skills/${skill}`, options)
+      .map((res: Response) => {
+        console.log(res, "response delete sent back")
+        return res.json()
+      })
+      .catch((error: any) => Observable.throw(error.json().error || console.log(error, 'error')));
   }
 
   goWork(body) {
@@ -91,10 +105,7 @@ export class ProfileService {
     headers.append('token', token);
     let options = new RequestOptions({ headers: headers });
     return this.http.delete(`/works/${workId}`, options)
-      .map((res: Response) => {
-        console.log(res, "response delete sent back")
-        return res.json()
-      })
+      .map((res: Response) => res.json())
       .catch((error: any) => Observable.throw(error.json().error || console.log(error, 'error')));
   }
 
