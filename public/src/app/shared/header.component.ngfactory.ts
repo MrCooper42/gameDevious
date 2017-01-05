@@ -17,22 +17,17 @@ import * as import8 from '../auth/auth.service';
 import * as import9 from '@angular/router/src/router';
 import * as import10 from './header.component.css.shim';
 import * as import11 from '../../../../node_modules/@angular/common/src/directives/ng_class.ngfactory';
-import * as import12 from '../../../../node_modules/@angular/forms/src/directives/ng_form.ngfactory';
-import * as import13 from '../../../../node_modules/@angular/forms/src/directives/ng_control_status.ngfactory';
-import * as import14 from '@angular/core/src/linker/view_container';
-import * as import15 from '../../../../node_modules/@angular/common/src/directives/ng_if.ngfactory';
-import * as import16 from '@angular/core/src/change_detection/differs/iterable_differs';
-import * as import17 from '@angular/core/src/change_detection/differs/keyvalue_differs';
-import * as import18 from '@angular/core/src/linker/element_ref';
-import * as import19 from '@angular/core/src/linker/template_ref';
-import * as import20 from '@angular/forms/src/directives/ng_form';
-import * as import21 from '@angular/forms/src/directives/control_container';
-import * as import22 from '@angular/forms/src/directives/ng_control_status';
-import * as import23 from '@angular/common/src/directives/ng_if';
-import * as import24 from '@angular/common/src/directives/ng_class';
-import * as import25 from '../../../../node_modules/@ng-bootstrap/ng-bootstrap/dropdown/dropdown.ngfactory';
-import * as import26 from '@ng-bootstrap/ng-bootstrap/dropdown/dropdown-config';
-import * as import27 from '@ng-bootstrap/ng-bootstrap/dropdown/dropdown';
+import * as import12 from '@angular/core/src/linker/view_container';
+import * as import13 from '../../../../node_modules/@angular/common/src/directives/ng_if.ngfactory';
+import * as import14 from '@angular/core/src/change_detection/differs/iterable_differs';
+import * as import15 from '@angular/core/src/change_detection/differs/keyvalue_differs';
+import * as import16 from '@angular/core/src/linker/element_ref';
+import * as import17 from '@angular/core/src/linker/template_ref';
+import * as import18 from '@angular/common/src/directives/ng_if';
+import * as import19 from '@angular/common/src/directives/ng_class';
+import * as import20 from '../../../../node_modules/@ng-bootstrap/ng-bootstrap/dropdown/dropdown.ngfactory';
+import * as import21 from '@ng-bootstrap/ng-bootstrap/dropdown/dropdown-config';
+import * as import22 from '@ng-bootstrap/ng-bootstrap/dropdown/dropdown';
 export class Wrapper_HeaderComponent {
   /*private*/ _eventHandler:Function;
   context:import0.HeaderComponent;
@@ -134,41 +129,28 @@ export class View_HeaderComponent0 extends import1.AppView<import0.HeaderCompone
   _text_35:any;
   _text_36:any;
   _text_37:any;
-  _el_38:any;
-  _NgForm_38_3:import12.Wrapper_NgForm;
-  _ControlContainer_38_4:any;
-  _NgControlStatusGroup_38_5:import13.Wrapper_NgControlStatusGroup;
-  _text_39:any;
-  _el_40:any;
-  _text_41:any;
-  _el_42:any;
+  _text_38:any;
+  _el_39:any;
+  _text_40:any;
+  _el_41:any;
+  _anchor_42:any;
+  /*private*/ _vc_42:import12.ViewContainer;
+  _TemplateRef_42_5:any;
+  _NgIf_42_6:import13.Wrapper_NgIf;
   _text_43:any;
-  _text_44:any;
-  _el_45:any;
+  _anchor_44:any;
+  /*private*/ _vc_44:import12.ViewContainer;
+  _TemplateRef_44_5:any;
+  _NgIf_44_6:import13.Wrapper_NgIf;
+  _text_45:any;
   _text_46:any;
   _text_47:any;
   _text_48:any;
-  _el_49:any;
-  _text_50:any;
-  _el_51:any;
-  _anchor_52:any;
-  /*private*/ _vc_52:import14.ViewContainer;
-  _TemplateRef_52_5:any;
-  _NgIf_52_6:import15.Wrapper_NgIf;
-  _text_53:any;
-  _anchor_54:any;
-  /*private*/ _vc_54:import14.ViewContainer;
-  _TemplateRef_54_5:any;
-  _NgIf_54_6:import15.Wrapper_NgIf;
-  _text_55:any;
-  _text_56:any;
-  _text_57:any;
-  _text_58:any;
-  _text_59:any;
-  _map_70:any;
+  _text_49:any;
+  _map_57:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any) {
     super(View_HeaderComponent0,renderType_HeaderComponent,import5.ViewType.COMPONENT,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways);
-    this._map_70 = import3.pureProxy1((p0:any):{[key: string]:any} => {
+    this._map_57 = import3.pureProxy1((p0:any):{[key: string]:any} => {
       return {in: p0};
     });
   }
@@ -197,7 +179,7 @@ export class View_HeaderComponent0 extends import1.AppView<import0.HeaderCompone
     this._text_20 = this.renderer.createText(this._el_4,'\n    ',(null as any));
     this._text_21 = this.renderer.createText(this._el_2,'\n\n    ',(null as any));
     this._el_22 = import3.createRenderElement(this.renderer,this._el_2,'div',new import3.InlineArray4(4,'class','collapse navbar-collapse','id','navbar-mobile-collapse'),(null as any));
-    this._NgClass_22_3 = new import11.Wrapper_NgClass(this.parentView.injectorGet(import16.IterableDiffers,this.parentIndex),this.parentView.injectorGet(import17.KeyValueDiffers,this.parentIndex),new import18.ElementRef(this._el_22),this.renderer);
+    this._NgClass_22_3 = new import11.Wrapper_NgClass(this.parentView.injectorGet(import14.IterableDiffers,this.parentIndex),this.parentView.injectorGet(import15.KeyValueDiffers,this.parentIndex),new import16.ElementRef(this._el_22),this.renderer);
     this._text_23 = this.renderer.createText(this._el_22,'\n      ',(null as any));
     this._el_24 = import3.createRenderElement(this.renderer,this._el_22,'ul',new import3.InlineArray2(2,'class','nav navbar-nav'),(null as any));
     this._text_25 = this.renderer.createText(this._el_24,'\n        ',(null as any));
@@ -213,39 +195,25 @@ export class View_HeaderComponent0 extends import1.AppView<import0.HeaderCompone
     this._text_35 = this.renderer.createText(this._el_24,'\n        ',(null as any));
     this._text_36 = this.renderer.createText(this._el_24,'\n      ',(null as any));
     this._text_37 = this.renderer.createText(this._el_22,'\n      ',(null as any));
-    this._el_38 = import3.createRenderElement(this.renderer,this._el_22,'form',new import3.InlineArray2(2,'class','navbar-form navbar-left'),(null as any));
-    this._NgForm_38_3 = new import12.Wrapper_NgForm((null as any),(null as any));
-    this._ControlContainer_38_4 = this._NgForm_38_3.context;
-    this._NgControlStatusGroup_38_5 = new import13.Wrapper_NgControlStatusGroup(this._ControlContainer_38_4);
-    this._text_39 = this.renderer.createText(this._el_38,'\n        ',(null as any));
-    this._el_40 = import3.createRenderElement(this.renderer,this._el_38,'div',new import3.InlineArray2(2,'class','form-group'),(null as any));
-    this._text_41 = this.renderer.createText(this._el_40,'\n          ',(null as any));
-    this._el_42 = import3.createRenderElement(this.renderer,this._el_40,'input',new import3.InlineArray8(6,'class','form-control','placeholder','Search','type','text'),(null as any));
-    this._text_43 = this.renderer.createText(this._el_40,'\n        ',(null as any));
-    this._text_44 = this.renderer.createText(this._el_38,'\n        ',(null as any));
-    this._el_45 = import3.createRenderElement(this.renderer,this._el_38,'button',new import3.InlineArray4(4,'class','btn btn-default','type','submit'),(null as any));
-    this._text_46 = this.renderer.createText(this._el_45,'Submit',(null as any));
-    this._text_47 = this.renderer.createText(this._el_38,'\n      ',(null as any));
-    this._text_48 = this.renderer.createText(this._el_22,'\n      ',(null as any));
-    this._el_49 = import3.createRenderElement(this.renderer,this._el_22,'ul',new import3.InlineArray2(2,'class','nav navbar-nav navbar-right'),(null as any));
-    this._text_50 = this.renderer.createText(this._el_49,'\n        ',(null as any));
-    this._el_51 = import3.createRenderElement(this.renderer,this._el_49,'li',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._anchor_52 = this.renderer.createTemplateAnchor(this._el_51,(null as any));
-    this._vc_52 = new import14.ViewContainer(52,51,this,this._anchor_52);
-    this._TemplateRef_52_5 = new import19.TemplateRef_(this,52,this._anchor_52);
-    this._NgIf_52_6 = new import15.Wrapper_NgIf(this._vc_52.vcRef,this._TemplateRef_52_5);
-    this._text_53 = this.renderer.createText(this._el_49,'\n        ',(null as any));
-    this._anchor_54 = this.renderer.createTemplateAnchor(this._el_49,(null as any));
-    this._vc_54 = new import14.ViewContainer(54,49,this,this._anchor_54);
-    this._TemplateRef_54_5 = new import19.TemplateRef_(this,54,this._anchor_54);
-    this._NgIf_54_6 = new import15.Wrapper_NgIf(this._vc_54.vcRef,this._TemplateRef_54_5);
-    this._text_55 = this.renderer.createText(this._el_49,'\n      ',(null as any));
-    this._text_56 = this.renderer.createText(this._el_22,'\n    ',(null as any));
-    this._text_57 = this.renderer.createText(this._el_2,'\n  ',(null as any));
-    this._text_58 = this.renderer.createText(this._el_0,'\n',(null as any));
-    this._text_59 = this.renderer.createText(parentRenderNode,'\n',(null as any));
+    this._text_38 = this.renderer.createText(this._el_22,'\n      ',(null as any));
+    this._el_39 = import3.createRenderElement(this.renderer,this._el_22,'ul',new import3.InlineArray2(2,'class','nav navbar-nav navbar-right'),(null as any));
+    this._text_40 = this.renderer.createText(this._el_39,'\n        ',(null as any));
+    this._el_41 = import3.createRenderElement(this.renderer,this._el_39,'li',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._anchor_42 = this.renderer.createTemplateAnchor(this._el_41,(null as any));
+    this._vc_42 = new import12.ViewContainer(42,41,this,this._anchor_42);
+    this._TemplateRef_42_5 = new import17.TemplateRef_(this,42,this._anchor_42);
+    this._NgIf_42_6 = new import13.Wrapper_NgIf(this._vc_42.vcRef,this._TemplateRef_42_5);
+    this._text_43 = this.renderer.createText(this._el_39,'\n        ',(null as any));
+    this._anchor_44 = this.renderer.createTemplateAnchor(this._el_39,(null as any));
+    this._vc_44 = new import12.ViewContainer(44,39,this,this._anchor_44);
+    this._TemplateRef_44_5 = new import17.TemplateRef_(this,44,this._anchor_44);
+    this._NgIf_44_6 = new import13.Wrapper_NgIf(this._vc_44.vcRef,this._TemplateRef_44_5);
+    this._text_45 = this.renderer.createText(this._el_39,'\n      ',(null as any));
+    this._text_46 = this.renderer.createText(this._el_22,'\n    ',(null as any));
+    this._text_47 = this.renderer.createText(this._el_2,'\n  ',(null as any));
+    this._text_48 = this.renderer.createText(this._el_0,'\n',(null as any));
+    this._text_49 = this.renderer.createText(parentRenderNode,'\n',(null as any));
     var disposable_0:Function = import3.subscribeToRenderElement(this,this._el_6,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_6));
-    var disposable_1:Function = import3.subscribeToRenderElement(this,this._el_38,new import3.InlineArray4(4,'submit',(null as any),'reset',(null as any)),this.eventHandler(this.handleEvent_38));
     this.init((null as any),((<any>this.renderer).directRenderer? (null as any): [
       this._el_0,
       this._text_1,
@@ -285,73 +253,52 @@ export class View_HeaderComponent0 extends import1.AppView<import0.HeaderCompone
       this._text_35,
       this._text_36,
       this._text_37,
-      this._el_38,
-      this._text_39,
-      this._el_40,
-      this._text_41,
-      this._el_42,
+      this._text_38,
+      this._el_39,
+      this._text_40,
+      this._el_41,
+      this._anchor_42,
       this._text_43,
-      this._text_44,
-      this._el_45,
+      this._anchor_44,
+      this._text_45,
       this._text_46,
       this._text_47,
       this._text_48,
-      this._el_49,
-      this._text_50,
-      this._el_51,
-      this._anchor_52,
-      this._text_53,
-      this._anchor_54,
-      this._text_55,
-      this._text_56,
-      this._text_57,
-      this._text_58,
-      this._text_59
+      this._text_49
     ]
-    ),[
-      disposable_0,
-      disposable_1
-    ]
-    );
+    ),[disposable_0]);
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import20.NgForm) && ((38 <= requestNodeIndex) && (requestNodeIndex <= 47)))) { return this._NgForm_38_3.context; }
-    if (((token === import21.ControlContainer) && ((38 <= requestNodeIndex) && (requestNodeIndex <= 47)))) { return this._ControlContainer_38_4; }
-    if (((token === import22.NgControlStatusGroup) && ((38 <= requestNodeIndex) && (requestNodeIndex <= 47)))) { return this._NgControlStatusGroup_38_5.context; }
-    if (((token === import19.TemplateRef) && (52 === requestNodeIndex))) { return this._TemplateRef_52_5; }
-    if (((token === import23.NgIf) && (52 === requestNodeIndex))) { return this._NgIf_52_6.context; }
-    if (((token === import19.TemplateRef) && (54 === requestNodeIndex))) { return this._TemplateRef_54_5; }
-    if (((token === import23.NgIf) && (54 === requestNodeIndex))) { return this._NgIf_54_6.context; }
-    if (((token === import24.NgClass) && ((22 <= requestNodeIndex) && (requestNodeIndex <= 56)))) { return this._NgClass_22_3.context; }
+    if (((token === import17.TemplateRef) && (42 === requestNodeIndex))) { return this._TemplateRef_42_5; }
+    if (((token === import18.NgIf) && (42 === requestNodeIndex))) { return this._NgIf_42_6.context; }
+    if (((token === import17.TemplateRef) && (44 === requestNodeIndex))) { return this._TemplateRef_44_5; }
+    if (((token === import18.NgIf) && (44 === requestNodeIndex))) { return this._NgIf_44_6.context; }
+    if (((token === import19.NgClass) && ((22 <= requestNodeIndex) && (requestNodeIndex <= 46)))) { return this._NgClass_22_3.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
     const currVal_22_0_0:any = 'collapse navbar-collapse';
     this._NgClass_22_3.check_klass(currVal_22_0_0,throwOnChange,false);
-    const currVal_22_0_1:any = this._map_70(this.context.isIn);
+    const currVal_22_0_1:any = this._map_57(this.context.isIn);
     this._NgClass_22_3.check_ngClass(currVal_22_0_1,throwOnChange,false);
     this._NgClass_22_3.ngDoCheck(this,this._el_22,throwOnChange);
-    this._NgForm_38_3.ngDoCheck(this,this._el_38,throwOnChange);
-    this._NgControlStatusGroup_38_5.ngDoCheck(this,this._el_38,throwOnChange);
-    const currVal_52_0_0:boolean = !this.context.belongsToUser();
-    this._NgIf_52_6.check_ngIf(currVal_52_0_0,throwOnChange,false);
-    this._NgIf_52_6.ngDoCheck(this,this._anchor_52,throwOnChange);
-    const currVal_54_0_0:any = this.context.belongsToUser();
-    this._NgIf_54_6.check_ngIf(currVal_54_0_0,throwOnChange,false);
-    this._NgIf_54_6.ngDoCheck(this,this._anchor_54,throwOnChange);
-    this._vc_52.detectChangesInNestedViews(throwOnChange);
-    this._vc_54.detectChangesInNestedViews(throwOnChange);
-    this._NgControlStatusGroup_38_5.checkHost(this,this,this._el_38,throwOnChange);
+    const currVal_42_0_0:boolean = !this.context.belongsToUser();
+    this._NgIf_42_6.check_ngIf(currVal_42_0_0,throwOnChange,false);
+    this._NgIf_42_6.ngDoCheck(this,this._anchor_42,throwOnChange);
+    const currVal_44_0_0:any = this.context.belongsToUser();
+    this._NgIf_44_6.check_ngIf(currVal_44_0_0,throwOnChange,false);
+    this._NgIf_44_6.ngDoCheck(this,this._anchor_44,throwOnChange);
+    this._vc_42.detectChangesInNestedViews(throwOnChange);
+    this._vc_44.detectChangesInNestedViews(throwOnChange);
   }
   destroyInternal():void {
-    this._vc_52.destroyNestedViews();
-    this._vc_54.destroyNestedViews();
-    this._NgForm_38_3.ngOnDestroy();
+    this._vc_42.destroyNestedViews();
+    this._vc_44.destroyNestedViews();
   }
   createEmbeddedViewInternal(nodeIndex:number):import1.AppView<any> {
-    if ((nodeIndex == 52)) { return new View_HeaderComponent1(this.viewUtils,this,52,this._anchor_52,this._vc_52); }
-    if ((nodeIndex == 54)) { return new View_HeaderComponent2(this.viewUtils,this,54,this._anchor_54,this._vc_54); }
+    if ((nodeIndex == 42)) { return new View_HeaderComponent1(this.viewUtils,this,42,this._anchor_42,this._vc_42); }
+    if ((nodeIndex == 44)) { return new View_HeaderComponent2(this.viewUtils,this,44,this._anchor_44,this._vc_44); }
     return (null as any);
   }
   handleEvent_6(eventName:string,$event:any):boolean {
@@ -363,18 +310,12 @@ export class View_HeaderComponent0 extends import1.AppView<import0.HeaderCompone
     }
     return result;
   }
-  handleEvent_38(eventName:string,$event:any):boolean {
-    this.markPathToRootAsCheckOnce();
-    var result:boolean = true;
-    result = (this._NgForm_38_3.handleEvent(eventName,$event) && result);
-    return result;
-  }
 }
 class View_HeaderComponent1 extends import1.AppView<any> {
   _el_0:any;
   _text_1:any;
   /*private*/ _expr_2:any;
-  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import14.ViewContainer) {
+  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
     super(View_HeaderComponent1,renderType_HeaderComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
     this._expr_2 = import6.UNINITIALIZED;
   }
@@ -401,10 +342,10 @@ class View_HeaderComponent1 extends import1.AppView<any> {
 }
 class View_HeaderComponent2 extends import1.AppView<any> {
   _el_0:any;
-  _NgbDropdown_0_3:import25.Wrapper_NgbDropdown;
+  _NgbDropdown_0_3:import20.Wrapper_NgbDropdown;
   _text_1:any;
   _el_2:any;
-  _NgbDropdownToggle_2_3:import25.Wrapper_NgbDropdownToggle;
+  _NgbDropdownToggle_2_3:import20.Wrapper_NgbDropdownToggle;
   _text_3:any;
   _text_4:any;
   _el_5:any;
@@ -434,15 +375,15 @@ class View_HeaderComponent2 extends import1.AppView<any> {
   _text_29:any;
   _text_30:any;
   _text_31:any;
-  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import14.ViewContainer) {
+  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
     super(View_HeaderComponent2,renderType_HeaderComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
     this._el_0 = import3.createRenderElement(this.renderer,(null as any),'li',new import3.InlineArray4(4,'class','dropdown','ngbDropdown',''),(null as any));
-    this._NgbDropdown_0_3 = new import25.Wrapper_NgbDropdown(this.parentView.parentView.injectorGet(import26.NgbDropdownConfig,this.parentView.parentIndex));
+    this._NgbDropdown_0_3 = new import20.Wrapper_NgbDropdown(this.parentView.parentView.injectorGet(import21.NgbDropdownConfig,this.parentView.parentIndex));
     this._text_1 = this.renderer.createText(this._el_0,'\n          ',(null as any));
     this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'a',new import3.InlineArray16(12,'aria-expanded','false','aria-haspopup','true','class','dropdown-toggle dropdown-toggle','data-toggle','dropdown','ngbDropdownToggle','','role','button'),(null as any));
-    this._NgbDropdownToggle_2_3 = new import25.Wrapper_NgbDropdownToggle(this._NgbDropdown_0_3.context,new import18.ElementRef(this._el_2));
+    this._NgbDropdownToggle_2_3 = new import20.Wrapper_NgbDropdownToggle(this._NgbDropdown_0_3.context,new import16.ElementRef(this._el_2));
     this._text_3 = this.renderer.createText(this._el_2,'Profile ',(null as any));
     this._text_4 = this.renderer.createText(this._el_0,'\n          ',(null as any));
     this._el_5 = import3.createRenderElement(this.renderer,this._el_0,'ul',new import3.InlineArray2(2,'class','dropdown-menu'),(null as any));
@@ -518,8 +459,8 @@ class View_HeaderComponent2 extends import1.AppView<any> {
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import27.NgbDropdownToggle) && ((2 <= requestNodeIndex) && (requestNodeIndex <= 3)))) { return this._NgbDropdownToggle_2_3.context; }
-    if (((token === import27.NgbDropdown) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 31)))) { return this._NgbDropdown_0_3.context; }
+    if (((token === import22.NgbDropdownToggle) && ((2 <= requestNodeIndex) && (requestNodeIndex <= 3)))) { return this._NgbDropdownToggle_2_3.context; }
+    if (((token === import22.NgbDropdown) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 31)))) { return this._NgbDropdown_0_3.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {

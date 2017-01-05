@@ -470,7 +470,7 @@ class View_ProfileEditComponent1 extends import1.AppView<any> {
     this._el_91 = import3.createRenderElement(this.renderer,this._el_83,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
     this._text_92 = this.renderer.createText(this._el_91,'\n        Show your works! Add new or edit. ',(null as any));
     this._el_93 = import3.createRenderElement(this.renderer,this._el_91,'button',new import3.InlineArray2(2,'class','btn btn-sm btn-outline-primary'),(null as any));
-    this._text_94 = this.renderer.createText(this._el_93,'add avatar',(null as any));
+    this._text_94 = this.renderer.createText(this._el_93,'Add a new work',(null as any));
     this._text_95 = this.renderer.createText(this._el_91,'\n\n      ',(null as any));
     this._text_96 = this.renderer.createText(this._el_83,'\n',(null as any));
     this._anchor_97 = this.renderer.createTemplateAnchor(this._el_83,(null as any));
@@ -1157,58 +1157,58 @@ class View_ProfileEditComponent5 extends import1.AppView<any> {
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
     this._el_0 = import3.createRenderElement(this.renderer,(null as any),'div',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_1 = this.renderer.createText(this._el_0,'\n        ',(null as any));
+    this._text_1 = this.renderer.createText(this._el_0,'\n  ',(null as any));
     this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'form',import3.EMPTY_INLINE_ARRAY,(null as any));
     this._FormGroupDirective_2_3 = new import16.Wrapper_FormGroupDirective((null as any),(null as any));
     this._ControlContainer_2_4 = this._FormGroupDirective_2_3.context;
     this._NgControlStatusGroup_2_5 = new import17.Wrapper_NgControlStatusGroup(this._ControlContainer_2_4);
-    this._text_3 = this.renderer.createText(this._el_2,'\n        ',(null as any));
+    this._text_3 = this.renderer.createText(this._el_2,'\n  ',(null as any));
     this._el_4 = import3.createRenderElement(this.renderer,this._el_2,'div',new import3.InlineArray2(2,'class','form-group'),(null as any));
-    this._text_5 = this.renderer.createText(this._el_4,'\n              ',(null as any));
+    this._text_5 = this.renderer.createText(this._el_4,'\n        ',(null as any));
     this._el_6 = import3.createRenderElement(this.renderer,this._el_4,'label',new import3.InlineArray2(2,'for','title'),(null as any));
     this._text_7 = this.renderer.createText(this._el_6,'Title',(null as any));
-    this._text_8 = this.renderer.createText(this._el_4,'\n              ',(null as any));
+    this._text_8 = this.renderer.createText(this._el_4,'\n        ',(null as any));
     this._el_9 = import3.createRenderElement(this.renderer,this._el_4,'input',new import3.InlineArray16(10,'class','form-control','formControlName','title','id','title','placeholder','work title here','type','text'),(null as any));
     this._DefaultValueAccessor_9_3 = new import18.Wrapper_DefaultValueAccessor(this.renderer,new import20.ElementRef(this._el_9));
     this._NG_VALUE_ACCESSOR_9_4 = [this._DefaultValueAccessor_9_3.context];
     this._FormControlName_9_5 = new import19.Wrapper_FormControlName(this._ControlContainer_2_4,(null as any),(null as any),this._NG_VALUE_ACCESSOR_9_4);
     this._NgControl_9_6 = this._FormControlName_9_5.context;
     this._NgControlStatus_9_7 = new import17.Wrapper_NgControlStatus(this._NgControl_9_6);
-    this._text_10 = this.renderer.createText(this._el_4,'\n              ',(null as any));
+    this._text_10 = this.renderer.createText(this._el_4,'\n        ',(null as any));
     this._el_11 = import3.createRenderElement(this.renderer,this._el_4,'label',new import3.InlineArray2(2,'for','description'),(null as any));
     this._text_12 = this.renderer.createText(this._el_11,'description',(null as any));
-    this._text_13 = this.renderer.createText(this._el_4,'\n              ',(null as any));
+    this._text_13 = this.renderer.createText(this._el_4,'\n        ',(null as any));
     this._el_14 = import3.createRenderElement(this.renderer,this._el_4,'textarea',new import3.InlineArray16(10,'class','form-control','formControlName','description','id','description','placeholder','work description here','rows','4'),(null as any));
     this._DefaultValueAccessor_14_3 = new import18.Wrapper_DefaultValueAccessor(this.renderer,new import20.ElementRef(this._el_14));
     this._NG_VALUE_ACCESSOR_14_4 = [this._DefaultValueAccessor_14_3.context];
     this._FormControlName_14_5 = new import19.Wrapper_FormControlName(this._ControlContainer_2_4,(null as any),(null as any),this._NG_VALUE_ACCESSOR_14_4);
     this._NgControl_14_6 = this._FormControlName_14_5.context;
     this._NgControlStatus_14_7 = new import17.Wrapper_NgControlStatus(this._NgControl_14_6);
-    this._text_15 = this.renderer.createText(this._el_4,'\n              ',(null as any));
+    this._text_15 = this.renderer.createText(this._el_4,'\n        ',(null as any));
     this._el_16 = import3.createRenderElement(this.renderer,this._el_4,'label',new import3.InlineArray2(2,'for','url'),(null as any));
     this._text_17 = this.renderer.createText(this._el_16,'Link',(null as any));
-    this._text_18 = this.renderer.createText(this._el_4,'\n              ',(null as any));
+    this._text_18 = this.renderer.createText(this._el_4,'\n        ',(null as any));
     this._el_19 = import3.createRenderElement(this.renderer,this._el_4,'input',new import3.InlineArray16(10,'class','form-control','formControlName','url','id','url','placeholder','work url here','type','text'),(null as any));
     this._DefaultValueAccessor_19_3 = new import18.Wrapper_DefaultValueAccessor(this.renderer,new import20.ElementRef(this._el_19));
     this._NG_VALUE_ACCESSOR_19_4 = [this._DefaultValueAccessor_19_3.context];
     this._FormControlName_19_5 = new import19.Wrapper_FormControlName(this._ControlContainer_2_4,(null as any),(null as any),this._NG_VALUE_ACCESSOR_19_4);
     this._NgControl_19_6 = this._FormControlName_19_5.context;
     this._NgControlStatus_19_7 = new import17.Wrapper_NgControlStatus(this._NgControl_19_6);
-    this._text_20 = this.renderer.createText(this._el_4,'\n              ',(null as any));
+    this._text_20 = this.renderer.createText(this._el_4,'\n        ',(null as any));
     this._el_21 = import3.createRenderElement(this.renderer,this._el_4,'label',new import3.InlineArray2(2,'for','video'),(null as any));
     this._text_22 = this.renderer.createText(this._el_21,'Youtube Link',(null as any));
-    this._text_23 = this.renderer.createText(this._el_4,'\n              ',(null as any));
+    this._text_23 = this.renderer.createText(this._el_4,'\n        ',(null as any));
     this._el_24 = import3.createRenderElement(this.renderer,this._el_4,'input',new import3.InlineArray16(10,'class','form-control','formControlName','video','id','video','placeholder','work video here','type','text'),(null as any));
     this._DefaultValueAccessor_24_3 = new import18.Wrapper_DefaultValueAccessor(this.renderer,new import20.ElementRef(this._el_24));
     this._NG_VALUE_ACCESSOR_24_4 = [this._DefaultValueAccessor_24_3.context];
     this._FormControlName_24_5 = new import19.Wrapper_FormControlName(this._ControlContainer_2_4,(null as any),(null as any),this._NG_VALUE_ACCESSOR_24_4);
     this._NgControl_24_6 = this._FormControlName_24_5.context;
     this._NgControlStatus_24_7 = new import17.Wrapper_NgControlStatus(this._NgControl_24_6);
-    this._text_25 = this.renderer.createText(this._el_4,'\n          ',(null as any));
+    this._text_25 = this.renderer.createText(this._el_4,'\n    ',(null as any));
     this._el_26 = import3.createRenderElement(this.renderer,this._el_4,'button',new import3.InlineArray4(4,'class','btn btn-lg btn-outline-primary','type','submit'),(null as any));
     this._text_27 = this.renderer.createText(this._el_26,'Submit',(null as any));
-    this._text_28 = this.renderer.createText(this._el_4,'\n                ',(null as any));
-    this._text_29 = this.renderer.createText(this._el_2,'\n      ',(null as any));
+    this._text_28 = this.renderer.createText(this._el_4,'\n          ',(null as any));
+    this._text_29 = this.renderer.createText(this._el_2,'\n  ',(null as any));
     this._text_30 = this.renderer.createText(this._el_0,'\n      ',(null as any));
     this._el_31 = import3.createRenderElement(this.renderer,this._el_0,'div',import3.EMPTY_INLINE_ARRAY,(null as any));
     this._text_32 = this.renderer.createText(this._el_31,'\n      ',(null as any));
@@ -1578,7 +1578,7 @@ class View_ProfileEditComponent8 extends import1.AppView<any> {
     this._NgIf_11_6.check_ngIf(currVal_11_0_0,throwOnChange,false);
     this._NgIf_11_6.ngDoCheck(this,this._anchor_11,throwOnChange);
     this._vc_11.detectChangesInNestedViews(throwOnChange);
-    const currVal_16:any = import3.inlineInterpolate(1,'',this.context.$implicit.url,'');
+    const currVal_16:any = import3.inlineInterpolate(1,'//',this.context.$implicit.url,'');
     if (import3.checkBinding(throwOnChange,this._expr_16,currVal_16)) {
       this.renderer.setElementProperty(this._el_2,'href',this.viewUtils.sanitizer.sanitize(import28.SecurityContext.URL,currVal_16));
       this._expr_16 = currVal_16;
@@ -1593,7 +1593,7 @@ class View_ProfileEditComponent8 extends import1.AppView<any> {
       this.renderer.setText(this._text_6,currVal_18);
       this._expr_18 = currVal_18;
     }
-    const currVal_19:any = import3.inlineInterpolate(1,'',this.context.$implicit.video,'');
+    const currVal_19:any = import3.inlineInterpolate(1,'//',this.context.$implicit.video,'');
     if (import3.checkBinding(throwOnChange,this._expr_19,currVal_19)) {
       this.renderer.setElementProperty(this._el_8,'href',this.viewUtils.sanitizer.sanitize(import28.SecurityContext.URL,currVal_19));
       this._expr_19 = currVal_19;

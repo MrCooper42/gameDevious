@@ -11,8 +11,6 @@ import { UploadWorksComponent } from '../upload/upload-works.component';
 import { UploadWorksAvatarComponent } from '../upload/upload-works-avatar.component';
 import { User } from './user.model';
 
-const TOKEN = localStorage.getItem('token');
-
 @Component({
   selector: 'app-profile-edit',
   templateUrl: './profile-edit.component.html',
@@ -39,6 +37,7 @@ export class ProfileEditComponent implements OnInit {
 
   showWorkForm() {
     this.showWork = !this.showWork;
+    // this.worksForm.reset();
   }
 
   hasWorks() {
@@ -74,6 +73,7 @@ export class ProfileEditComponent implements OnInit {
     this.profileService.skillUpdate(this.useJwtHelper()._id, skill)
       .subscribe(
       data => {
+        console.log(data.skills)
         this.user.profile.skills = data.skills;
         // this.router.navigateByUrl('/profile');
       },
@@ -83,16 +83,29 @@ export class ProfileEditComponent implements OnInit {
 
   submitWork() {
     let work = this.worksForm.value;
-
+    let works = this.user.profile.works
     this.profileService.goWork(work)
       .subscribe(
       data => {
-        console.log(data, "data returned")
-        this.user.profile.works.push(data);
-        this.router.navigateByUrl('/profile');
+        works.push(data)
+        this.user.profile.works = works
       },
       error => console.error(error));
-    this.worksForm.reset();
+  }
+
+  deleteWork(workId) {
+    console.log(workId, "clicked");
+    let works = this.user.profile.works;
+    console.log(works.length, "works before filter");
+    let filtered = works.filter(el => el._id != workId);
+    console.log(filtered.length, "filtered after filter");
+    this.profileService.deleteWork(workId)
+      .subscribe(
+        data => {
+          console.log(data, "data")
+          this.user.profile.works = filtered
+        }
+      )
   }
 
   getAvatar() {
@@ -170,11 +183,10 @@ export class ProfileEditComponent implements OnInit {
       about: new FormControl(null, Validators.required),
     });
     this.worksForm = new FormGroup({
-      title: new FormControl('', Validators.required),
-      description: new FormControl('', Validators.required),
+      title: new FormControl(null, Validators.required),
+      description: new FormControl(null, Validators.required),
       url: new FormControl(''),
-      video: new FormControl(''),
-      select: new FormControl('')
+      video: new FormControl('')
     });
     this.returnUser().subscribe(res => this.user = res);
   }

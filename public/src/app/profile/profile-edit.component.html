@@ -8,7 +8,7 @@
     </div>
     <form [formGroup]="titleForm" (ngSubmit)="submitTitle()">
         <div class="form-group">
-            <label for="email">Title</label>
+            <label for="title">Title</label>
             <input
                     type="text"
                     id="title"
@@ -33,7 +33,7 @@
       <p>{{user.profile.summary || "Tell a bit about yourself"}}</p>
       <form [formGroup]="aboutForm" (ngSubmit)="submitAbout()">
           <div class="form-group">
-              <label for="email">About</label>
+              <label for="about">About</label>
               <input
                       type="text"
                       id="about"
@@ -49,7 +49,7 @@
       <h3>Skills</h3>
       <form [formGroup]="skillsForm" (ngSubmit)="submitSkill()">
           <div class="form-group">
-              <label for="email">Add Skill</label>
+              <label for="skills">Add Skill</label>
               <input
                       type="text"
                       id="skills"
@@ -86,10 +86,9 @@
                 type="text"
                 id="title"
                 class="form-control"
-                value="{{worksForm.value.select.title}}"
                 placeholder="work title here"
                 formControlName="title">
-        <label for="description">description</label>
+        <label for="description">Description</label>
         <textarea
                 rows="4"
                 id="description"
@@ -127,6 +126,12 @@
     </div>
 <div class="has-works" *ngIf="hasWorks().length > 0">
   <div class="works col-sm-6 col-xs-12 text-center" *ngFor="let work of hasWorks()">
+    <div class="row hover-btn">
+  <button type="button" class="close" (click)="deleteWork(work._id)">
+     <span aria-hidden="true" class="glyphicon glyphicon-trash"></span>
+     <span class="sr-only">Close</span>
+  </button>
+</div>
   <a href="//{{work.url}}">Title: {{work.title}}</a>
   <p>Description: {{work.description}}</p>
   <a href="//{{work.video}}">Check out the video!</a>

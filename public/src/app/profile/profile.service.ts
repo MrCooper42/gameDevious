@@ -84,47 +84,62 @@ export class ProfileService {
       .map((res: Response) => res.json());
   }
 
-  facebook(userId) {
+  deleteWork(workId) {
+    let token = localStorage.getItem('token');
     let headers = new Headers();
-    headers.append('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Accept, Content-Type');
-    headers.append('Access-Control-Allow-Origin', '*');
-    headers.append('user_id', userId);
+    headers.append('Content-Type', 'application/json');
+    headers.append('token', token);
     let options = new RequestOptions({ headers: headers });
-    // ${userId}`, options
-    return this.http.get(`/facebook/${userId}`, options)
+    return this.http.delete(`/works/${workId}`, options)
       .map((res: Response) => {
-        console.log(res.url, 'server response');
-        return res.url;
+        console.log(res, "response delete sent back")
+        return res.json()
       })
       .catch((error: any) => Observable.throw(error.json().error || console.log(error, 'error')));
   }
 
-  linkedin(userId) {
-    let headers = new Headers();
-    headers.append('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Accept, Content-Type');
-    headers.append('Access-Control-Allow-Origin', '*');
-    headers.append('user_id', userId);
-    let options = new RequestOptions({ headers: headers });
-    return this.http.get(`/linkedin/${userId}`)
-      .map((res: Response) => {
-        console.log(res.url, 'server response');
-        return res.url;
-      })
-      .catch((error: any) => Observable.throw(error.json().error || console.log(error, 'error')));
-  }
+  // github(userId) {
+  //   let headers = new Headers();
+  //   headers.append('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Accept, Content-Type');
+  //   headers.append('Access-Control-Allow-Origin', '*');
+  //   headers.append('user_id', userId);
+  //   let options = new RequestOptions({ headers: headers });
+  //   console.log(options, 'options');
+  //   return this.http.get(`/github/${userId}`, options)
+  //     .map((res: Response) => {
+  //       console.log(res.url, 'server response');
+  //       return res.url;
+  //     })
+  //     .catch((error: any) => Observable.throw(error.json().error || console.log(error, 'error')));
+  // }
+  //
+  // facebook(userId) {
+  //   let headers = new Headers();
+  //   headers.append('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Accept, Content-Type');
+  //   headers.append('Access-Control-Allow-Origin', '*');
+  //   headers.append('user_id', userId);
+  //   let options = new RequestOptions({ headers: headers });
+  //   // ${userId}`, options
+  //   return this.http.get(`/facebook/${userId}`, options)
+  //     .map((res: Response) => {
+  //       console.log(res.url, 'server response');
+  //       return res.url;
+  //     })
+  //     .catch((error: any) => Observable.throw(error.json().error || console.log(error, 'error')));
+  // }
+  //
+  // linkedin(userId) {
+  //   let headers = new Headers();
+  //   headers.append('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Accept, Content-Type');
+  //   headers.append('Access-Control-Allow-Origin', '*');
+  //   headers.append('user_id', userId);
+  //   let options = new RequestOptions({ headers: headers });
+  //   return this.http.get(`/linkedin/${userId}`)
+  //     .map((res: Response) => {
+  //       console.log(res.url, 'server response');
+  //       return res.url;
+  //     })
+  //     .catch((error: any) => Observable.throw(error.json().error || console.log(error, 'error')));
+  // }
 
-  github(userId) {
-    let headers = new Headers();
-    headers.append('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Accept, Content-Type');
-    headers.append('Access-Control-Allow-Origin', '*');
-    headers.append('user_id', userId);
-    let options = new RequestOptions({ headers: headers });
-    console.log(options, 'options');
-    return this.http.get(`/github/${userId}`, options)
-      .map((res: Response) => {
-        console.log(res.url, 'server response');
-        return res.url;
-      })
-      .catch((error: any) => Observable.throw(error.json().error || console.log(error, 'error')));
-  }
 }

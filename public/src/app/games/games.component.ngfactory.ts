@@ -19,14 +19,24 @@ import * as import10 from '../../../../node_modules/@angular/forms/src/directive
 import * as import11 from '../../../../node_modules/@angular/forms/src/directives/ng_control_status.ngfactory';
 import * as import12 from '../../../../node_modules/@angular/forms/src/directives/default_value_accessor.ngfactory';
 import * as import13 from '../../../../node_modules/@angular/forms/src/directives/reactive_directives/form_control_name.ngfactory';
-import * as import14 from '@angular/core/src/linker/element_ref';
-import * as import15 from '@angular/forms/src/directives/default_value_accessor';
-import * as import16 from '@angular/forms/src/directives/control_value_accessor';
-import * as import17 from '@angular/forms/src/directives/reactive_directives/form_control_name';
-import * as import18 from '@angular/forms/src/directives/ng_control';
-import * as import19 from '@angular/forms/src/directives/ng_control_status';
-import * as import20 from '@angular/forms/src/directives/reactive_directives/form_group_directive';
-import * as import21 from '@angular/forms/src/directives/control_container';
+import * as import14 from '@angular/core/src/linker/view_container';
+import * as import15 from '../../../../node_modules/@angular/common/src/directives/ng_for.ngfactory';
+import * as import16 from '@angular/common/src/pipes/number_pipe';
+import * as import17 from '@angular/core/src/linker/element_ref';
+import * as import18 from '@angular/core/src/linker/template_ref';
+import * as import19 from '@angular/core/src/change_detection/differs/iterable_differs';
+import * as import20 from '@angular/core/src/i18n/tokens';
+import * as import21 from '@angular/forms/src/directives/default_value_accessor';
+import * as import22 from '@angular/forms/src/directives/control_value_accessor';
+import * as import23 from '@angular/forms/src/directives/reactive_directives/form_control_name';
+import * as import24 from '@angular/forms/src/directives/ng_control';
+import * as import25 from '@angular/forms/src/directives/ng_control_status';
+import * as import26 from '@angular/forms/src/directives/reactive_directives/form_group_directive';
+import * as import27 from '@angular/forms/src/directives/control_container';
+import * as import28 from '@angular/common/src/directives/ng_for';
+import * as import29 from '../../../../node_modules/@angular/common/src/directives/ng_if.ngfactory';
+import * as import30 from '@angular/common/src/directives/ng_if';
+import * as import31 from '@angular/core/src/security';
 export class Wrapper_GamesComponent {
   /*private*/ _eventHandler:Function;
   context:import0.GamesComponent;
@@ -112,10 +122,17 @@ export class View_GamesComponent0 extends import1.AppView<import0.GamesComponent
   _text_11:any;
   _text_12:any;
   _text_13:any;
-  /*private*/ _expr_22:any;
+  _anchor_14:any;
+  /*private*/ _vc_14:import14.ViewContainer;
+  _TemplateRef_14_5:any;
+  _NgFor_14_6:import15.Wrapper_NgFor;
+  _text_15:any;
+  _text_16:any;
+  /*private*/ _expr_28:any;
+  _pipe_number_0:import16.DecimalPipe;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any) {
     super(View_GamesComponent0,renderType_GamesComponent,import5.ViewType.COMPONENT,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways);
-    this._expr_22 = import6.UNINITIALIZED;
+    this._expr_28 = import6.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
     const parentRenderNode:any = this.renderer.createViewRoot(this.parentElement);
@@ -130,7 +147,7 @@ export class View_GamesComponent0 extends import1.AppView<import0.GamesComponent
     this._text_5 = this.renderer.createText(this._el_4,'Search:',(null as any));
     this._text_6 = this.renderer.createText(this._el_2,'\n      ',(null as any));
     this._el_7 = import3.createRenderElement(this.renderer,this._el_2,'input',new import3.InlineArray16(10,'class','form-control','formControlName','game','id','game','placeholder','search for a game','type','text'),(null as any));
-    this._DefaultValueAccessor_7_3 = new import12.Wrapper_DefaultValueAccessor(this.renderer,new import14.ElementRef(this._el_7));
+    this._DefaultValueAccessor_7_3 = new import12.Wrapper_DefaultValueAccessor(this.renderer,new import17.ElementRef(this._el_7));
     this._NG_VALUE_ACCESSOR_7_4 = [this._DefaultValueAccessor_7_3.context];
     this._FormControlName_7_5 = new import13.Wrapper_FormControlName(this._ControlContainer_0_4,(null as any),(null as any),this._NG_VALUE_ACCESSOR_7_4);
     this._NgControl_7_6 = this._FormControlName_7_5.context;
@@ -140,10 +157,17 @@ export class View_GamesComponent0 extends import1.AppView<import0.GamesComponent
     this._text_10 = this.renderer.createText(this._el_9,'Submit',(null as any));
     this._text_11 = this.renderer.createText(this._el_2,'\n        ',(null as any));
     this._text_12 = this.renderer.createText(this._el_0,'\n',(null as any));
-    this._text_13 = this.renderer.createText(parentRenderNode,'\n',(null as any));
+    this._text_13 = this.renderer.createText(parentRenderNode,'\n\n',(null as any));
+    this._anchor_14 = this.renderer.createTemplateAnchor(parentRenderNode,(null as any));
+    this._vc_14 = new import14.ViewContainer(14,(null as any),this,this._anchor_14);
+    this._TemplateRef_14_5 = new import18.TemplateRef_(this,14,this._anchor_14);
+    this._NgFor_14_6 = new import15.Wrapper_NgFor(this._vc_14.vcRef,this._TemplateRef_14_5,this.parentView.injectorGet(import19.IterableDiffers,this.parentIndex),this.ref);
+    this._text_15 = this.renderer.createText(parentRenderNode,'\n',(null as any));
+    this._text_16 = this.renderer.createText(parentRenderNode,'\n',(null as any));
     var disposable_0:Function = import3.subscribeToRenderElement(this,this._el_0,new import3.InlineArray8(6,'ngSubmit',(null as any),'submit',(null as any),'reset',(null as any)),this.eventHandler(this.handleEvent_0));
     this._FormGroupDirective_0_3.subscribe(this,this.eventHandler(this.handleEvent_0),true);
     var disposable_1:Function = import3.subscribeToRenderElement(this,this._el_7,new import3.InlineArray4(4,'input',(null as any),'blur',(null as any)),this.eventHandler(this.handleEvent_7));
+    this._pipe_number_0 = new import16.DecimalPipe(this.parentView.injectorGet(import20.LOCALE_ID,this.parentIndex));
     this.init((null as any),((<any>this.renderer).directRenderer? (null as any): [
       this._el_0,
       this._text_1,
@@ -158,7 +182,10 @@ export class View_GamesComponent0 extends import1.AppView<import0.GamesComponent
       this._text_10,
       this._text_11,
       this._text_12,
-      this._text_13
+      this._text_13,
+      this._anchor_14,
+      this._text_15,
+      this._text_16
     ]
     ),[
       disposable_0,
@@ -168,14 +195,16 @@ export class View_GamesComponent0 extends import1.AppView<import0.GamesComponent
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import15.DefaultValueAccessor) && (7 === requestNodeIndex))) { return this._DefaultValueAccessor_7_3.context; }
-    if (((token === import16.NG_VALUE_ACCESSOR) && (7 === requestNodeIndex))) { return this._NG_VALUE_ACCESSOR_7_4; }
-    if (((token === import17.FormControlName) && (7 === requestNodeIndex))) { return this._FormControlName_7_5.context; }
-    if (((token === import18.NgControl) && (7 === requestNodeIndex))) { return this._NgControl_7_6; }
-    if (((token === import19.NgControlStatus) && (7 === requestNodeIndex))) { return this._NgControlStatus_7_7.context; }
-    if (((token === import20.FormGroupDirective) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 12)))) { return this._FormGroupDirective_0_3.context; }
-    if (((token === import21.ControlContainer) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 12)))) { return this._ControlContainer_0_4; }
-    if (((token === import19.NgControlStatusGroup) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 12)))) { return this._NgControlStatusGroup_0_5.context; }
+    if (((token === import21.DefaultValueAccessor) && (7 === requestNodeIndex))) { return this._DefaultValueAccessor_7_3.context; }
+    if (((token === import22.NG_VALUE_ACCESSOR) && (7 === requestNodeIndex))) { return this._NG_VALUE_ACCESSOR_7_4; }
+    if (((token === import23.FormControlName) && (7 === requestNodeIndex))) { return this._FormControlName_7_5.context; }
+    if (((token === import24.NgControl) && (7 === requestNodeIndex))) { return this._NgControl_7_6; }
+    if (((token === import25.NgControlStatus) && (7 === requestNodeIndex))) { return this._NgControlStatus_7_7.context; }
+    if (((token === import26.FormGroupDirective) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 12)))) { return this._FormGroupDirective_0_3.context; }
+    if (((token === import27.ControlContainer) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 12)))) { return this._ControlContainer_0_4; }
+    if (((token === import25.NgControlStatusGroup) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 12)))) { return this._NgControlStatusGroup_0_5.context; }
+    if (((token === import18.TemplateRef) && (14 === requestNodeIndex))) { return this._TemplateRef_14_5; }
+    if (((token === import28.NgFor) && (14 === requestNodeIndex))) { return this._NgFor_14_6.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
@@ -188,17 +217,26 @@ export class View_GamesComponent0 extends import1.AppView<import0.GamesComponent
     this._FormControlName_7_5.check_name(currVal_7_1_0,throwOnChange,false);
     this._FormControlName_7_5.ngDoCheck(this,this._el_7,throwOnChange);
     this._NgControlStatus_7_7.ngDoCheck(this,this._el_7,throwOnChange);
+    const currVal_14_0_0:any = this.context.games;
+    this._NgFor_14_6.check_ngForOf(currVal_14_0_0,throwOnChange,false);
+    this._NgFor_14_6.ngDoCheck(this,this._anchor_14,throwOnChange);
+    this._vc_14.detectChangesInNestedViews(throwOnChange);
     this._NgControlStatusGroup_0_5.checkHost(this,this,this._el_0,throwOnChange);
     this._NgControlStatus_7_7.checkHost(this,this,this._el_7,throwOnChange);
-    const currVal_22:boolean = !this.context.searchGameForm.valid;
-    if (import3.checkBinding(throwOnChange,this._expr_22,currVal_22)) {
-      this.renderer.setElementProperty(this._el_9,'disabled',currVal_22);
-      this._expr_22 = currVal_22;
+    const currVal_28:boolean = !this.context.searchGameForm.valid;
+    if (import3.checkBinding(throwOnChange,this._expr_28,currVal_28)) {
+      this.renderer.setElementProperty(this._el_9,'disabled',currVal_28);
+      this._expr_28 = currVal_28;
     }
   }
   destroyInternal():void {
+    this._vc_14.destroyNestedViews();
     this._FormControlName_7_5.ngOnDestroy();
     this._FormGroupDirective_0_3.ngOnDestroy();
+  }
+  createEmbeddedViewInternal(nodeIndex:number):import1.AppView<any> {
+    if ((nodeIndex == 14)) { return new View_GamesComponent1(this.viewUtils,this,14,this._anchor_14,this._vc_14); }
+    return (null as any);
   }
   handleEvent_0(eventName:string,$event:any):boolean {
     this.markPathToRootAsCheckOnce();
@@ -215,5 +253,315 @@ export class View_GamesComponent0 extends import1.AppView<import0.GamesComponent
     var result:boolean = true;
     result = (this._DefaultValueAccessor_7_3.handleEvent(eventName,$event) && result);
     return result;
+  }
+}
+class View_GamesComponent1 extends import1.AppView<any> {
+  _el_0:any;
+  _text_1:any;
+  _el_2:any;
+  _text_3:any;
+  _el_4:any;
+  _text_5:any;
+  _text_6:any;
+  _anchor_7:any;
+  /*private*/ _vc_7:import14.ViewContainer;
+  _TemplateRef_7_5:any;
+  _NgIf_7_6:import29.Wrapper_NgIf;
+  _text_8:any;
+  _text_9:any;
+  _anchor_10:any;
+  /*private*/ _vc_10:import14.ViewContainer;
+  _TemplateRef_10_5:any;
+  _NgIf_10_6:import29.Wrapper_NgIf;
+  _text_11:any;
+  _el_12:any;
+  _text_13:any;
+  _anchor_14:any;
+  /*private*/ _vc_14:import14.ViewContainer;
+  _TemplateRef_14_5:any;
+  _NgIf_14_6:import29.Wrapper_NgIf;
+  _text_15:any;
+  _anchor_16:any;
+  /*private*/ _vc_16:import14.ViewContainer;
+  _TemplateRef_16_5:any;
+  _NgIf_16_6:import29.Wrapper_NgIf;
+  _text_17:any;
+  _anchor_18:any;
+  /*private*/ _vc_18:import14.ViewContainer;
+  _TemplateRef_18_5:any;
+  _NgIf_18_6:import29.Wrapper_NgIf;
+  _text_19:any;
+  _text_20:any;
+  _text_21:any;
+  /*private*/ _expr_37:any;
+  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import14.ViewContainer) {
+    super(View_GamesComponent1,renderType_GamesComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    this._expr_37 = import6.UNINITIALIZED;
+  }
+  createInternal(rootSelector:string):import7.ComponentRef<any> {
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'div',new import3.InlineArray2(2,'class','card card-block text-xs-center col-xs-12 col-sm-6'),(null as any));
+    this._text_1 = this.renderer.createText(this._el_0,'\n  ',(null as any));
+    this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'div',new import3.InlineArray2(2,'class','card-block'),(null as any));
+    this._text_3 = this.renderer.createText(this._el_2,'\n    ',(null as any));
+    this._el_4 = import3.createRenderElement(this.renderer,this._el_2,'h4',new import3.InlineArray2(2,'class','card-title'),(null as any));
+    this._text_5 = this.renderer.createText(this._el_4,'',(null as any));
+    this._text_6 = this.renderer.createText(this._el_2,'\n    ',(null as any));
+    this._anchor_7 = this.renderer.createTemplateAnchor(this._el_2,(null as any));
+    this._vc_7 = new import14.ViewContainer(7,2,this,this._anchor_7);
+    this._TemplateRef_7_5 = new import18.TemplateRef_(this,7,this._anchor_7);
+    this._NgIf_7_6 = new import29.Wrapper_NgIf(this._vc_7.vcRef,this._TemplateRef_7_5);
+    this._text_8 = this.renderer.createText(this._el_2,'\n  ',(null as any));
+    this._text_9 = this.renderer.createText(this._el_0,'\n  ',(null as any));
+    this._anchor_10 = this.renderer.createTemplateAnchor(this._el_0,(null as any));
+    this._vc_10 = new import14.ViewContainer(10,0,this,this._anchor_10);
+    this._TemplateRef_10_5 = new import18.TemplateRef_(this,10,this._anchor_10);
+    this._NgIf_10_6 = new import29.Wrapper_NgIf(this._vc_10.vcRef,this._TemplateRef_10_5);
+    this._text_11 = this.renderer.createText(this._el_0,'\n  ',(null as any));
+    this._el_12 = import3.createRenderElement(this.renderer,this._el_0,'div',new import3.InlineArray2(2,'class','card-block'),(null as any));
+    this._text_13 = this.renderer.createText(this._el_12,'\n    ',(null as any));
+    this._anchor_14 = this.renderer.createTemplateAnchor(this._el_12,(null as any));
+    this._vc_14 = new import14.ViewContainer(14,12,this,this._anchor_14);
+    this._TemplateRef_14_5 = new import18.TemplateRef_(this,14,this._anchor_14);
+    this._NgIf_14_6 = new import29.Wrapper_NgIf(this._vc_14.vcRef,this._TemplateRef_14_5);
+    this._text_15 = this.renderer.createText(this._el_12,'\n    ',(null as any));
+    this._anchor_16 = this.renderer.createTemplateAnchor(this._el_12,(null as any));
+    this._vc_16 = new import14.ViewContainer(16,12,this,this._anchor_16);
+    this._TemplateRef_16_5 = new import18.TemplateRef_(this,16,this._anchor_16);
+    this._NgIf_16_6 = new import29.Wrapper_NgIf(this._vc_16.vcRef,this._TemplateRef_16_5);
+    this._text_17 = this.renderer.createText(this._el_12,'\n    ',(null as any));
+    this._anchor_18 = this.renderer.createTemplateAnchor(this._el_12,(null as any));
+    this._vc_18 = new import14.ViewContainer(18,12,this,this._anchor_18);
+    this._TemplateRef_18_5 = new import18.TemplateRef_(this,18,this._anchor_18);
+    this._NgIf_18_6 = new import29.Wrapper_NgIf(this._vc_18.vcRef,this._TemplateRef_18_5);
+    this._text_19 = this.renderer.createText(this._el_12,'\n    ',(null as any));
+    this._text_20 = this.renderer.createText(this._el_12,'\n  ',(null as any));
+    this._text_21 = this.renderer.createText(this._el_0,'\n',(null as any));
+    this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
+      this._el_0,
+      this._text_1,
+      this._el_2,
+      this._text_3,
+      this._el_4,
+      this._text_5,
+      this._text_6,
+      this._anchor_7,
+      this._text_8,
+      this._text_9,
+      this._anchor_10,
+      this._text_11,
+      this._el_12,
+      this._text_13,
+      this._anchor_14,
+      this._text_15,
+      this._anchor_16,
+      this._text_17,
+      this._anchor_18,
+      this._text_19,
+      this._text_20,
+      this._text_21
+    ]
+    ),(null as any));
+    return (null as any);
+  }
+  injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
+    if (((token === import18.TemplateRef) && (7 === requestNodeIndex))) { return this._TemplateRef_7_5; }
+    if (((token === import30.NgIf) && (7 === requestNodeIndex))) { return this._NgIf_7_6.context; }
+    if (((token === import18.TemplateRef) && (10 === requestNodeIndex))) { return this._TemplateRef_10_5; }
+    if (((token === import30.NgIf) && (10 === requestNodeIndex))) { return this._NgIf_10_6.context; }
+    if (((token === import18.TemplateRef) && (14 === requestNodeIndex))) { return this._TemplateRef_14_5; }
+    if (((token === import30.NgIf) && (14 === requestNodeIndex))) { return this._NgIf_14_6.context; }
+    if (((token === import18.TemplateRef) && (16 === requestNodeIndex))) { return this._TemplateRef_16_5; }
+    if (((token === import30.NgIf) && (16 === requestNodeIndex))) { return this._NgIf_16_6.context; }
+    if (((token === import18.TemplateRef) && (18 === requestNodeIndex))) { return this._TemplateRef_18_5; }
+    if (((token === import30.NgIf) && (18 === requestNodeIndex))) { return this._NgIf_18_6.context; }
+    return notFoundResult;
+  }
+  detectChangesInternal(throwOnChange:boolean):void {
+    const currVal_7_0_0:any = this.context.$implicit.alternative_names;
+    this._NgIf_7_6.check_ngIf(currVal_7_0_0,throwOnChange,false);
+    this._NgIf_7_6.ngDoCheck(this,this._anchor_7,throwOnChange);
+    const currVal_10_0_0:any = (this.context.$implicit.cover && this.context.$implicit.cover.url);
+    this._NgIf_10_6.check_ngIf(currVal_10_0_0,throwOnChange,false);
+    this._NgIf_10_6.ngDoCheck(this,this._anchor_10,throwOnChange);
+    const currVal_14_0_0:any = (this.context.$implicit.release_dates && this.context.$implicit.release_dates[0].human);
+    this._NgIf_14_6.check_ngIf(currVal_14_0_0,throwOnChange,false);
+    this._NgIf_14_6.ngDoCheck(this,this._anchor_14,throwOnChange);
+    const currVal_16_0_0:any = this.context.$implicit.aggregated_rating;
+    this._NgIf_16_6.check_ngIf(currVal_16_0_0,throwOnChange,false);
+    this._NgIf_16_6.ngDoCheck(this,this._anchor_16,throwOnChange);
+    const currVal_18_0_0:any = this.context.$implicit.url;
+    this._NgIf_18_6.check_ngIf(currVal_18_0_0,throwOnChange,false);
+    this._NgIf_18_6.ngDoCheck(this,this._anchor_18,throwOnChange);
+    this._vc_7.detectChangesInNestedViews(throwOnChange);
+    this._vc_10.detectChangesInNestedViews(throwOnChange);
+    this._vc_14.detectChangesInNestedViews(throwOnChange);
+    this._vc_16.detectChangesInNestedViews(throwOnChange);
+    this._vc_18.detectChangesInNestedViews(throwOnChange);
+    const currVal_37:any = import3.inlineInterpolate(1,'',this.context.$implicit.name,'');
+    if (import3.checkBinding(throwOnChange,this._expr_37,currVal_37)) {
+      this.renderer.setText(this._text_5,currVal_37);
+      this._expr_37 = currVal_37;
+    }
+  }
+  destroyInternal():void {
+    this._vc_7.destroyNestedViews();
+    this._vc_10.destroyNestedViews();
+    this._vc_14.destroyNestedViews();
+    this._vc_16.destroyNestedViews();
+    this._vc_18.destroyNestedViews();
+  }
+  visitRootNodesInternal(cb:any,ctx:any):void {
+    cb(this._el_0,ctx);
+  }
+  createEmbeddedViewInternal(nodeIndex:number):import1.AppView<any> {
+    if ((nodeIndex == 7)) { return new View_GamesComponent2(this.viewUtils,this,7,this._anchor_7,this._vc_7); }
+    if ((nodeIndex == 10)) { return new View_GamesComponent3(this.viewUtils,this,10,this._anchor_10,this._vc_10); }
+    if ((nodeIndex == 14)) { return new View_GamesComponent4(this.viewUtils,this,14,this._anchor_14,this._vc_14); }
+    if ((nodeIndex == 16)) { return new View_GamesComponent5(this.viewUtils,this,16,this._anchor_16,this._vc_16); }
+    if ((nodeIndex == 18)) { return new View_GamesComponent6(this.viewUtils,this,18,this._anchor_18,this._vc_18); }
+    return (null as any);
+  }
+}
+class View_GamesComponent2 extends import1.AppView<any> {
+  _el_0:any;
+  _text_1:any;
+  /*private*/ _expr_2:any;
+  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import14.ViewContainer) {
+    super(View_GamesComponent2,renderType_GamesComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    this._expr_2 = import6.UNINITIALIZED;
+  }
+  createInternal(rootSelector:string):import7.ComponentRef<any> {
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'h6',new import3.InlineArray2(2,'class','card-subtitle text-muted'),(null as any));
+    this._text_1 = this.renderer.createText(this._el_0,'',(null as any));
+    this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
+      this._el_0,
+      this._text_1
+    ]
+    ),(null as any));
+    return (null as any);
+  }
+  detectChangesInternal(throwOnChange:boolean):void {
+    const currVal_2:any = import3.inlineInterpolate(1,'',this.parentView.context.$implicit.alternative_names.name,'');
+    if (import3.checkBinding(throwOnChange,this._expr_2,currVal_2)) {
+      this.renderer.setText(this._text_1,currVal_2);
+      this._expr_2 = currVal_2;
+    }
+  }
+  visitRootNodesInternal(cb:any,ctx:any):void {
+    cb(this._el_0,ctx);
+  }
+}
+class View_GamesComponent3 extends import1.AppView<any> {
+  _el_0:any;
+  /*private*/ _expr_1:any;
+  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import14.ViewContainer) {
+    super(View_GamesComponent3,renderType_GamesComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    this._expr_1 = import6.UNINITIALIZED;
+  }
+  createInternal(rootSelector:string):import7.ComponentRef<any> {
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'img',new import3.InlineArray2(2,'alt','Card image'),(null as any));
+    this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [this._el_0]),(null as any));
+    return (null as any);
+  }
+  detectChangesInternal(throwOnChange:boolean):void {
+    const currVal_1:any = import3.inlineInterpolate(1,'',this.parentView.context.$implicit.cover.url,'');
+    if (import3.checkBinding(throwOnChange,this._expr_1,currVal_1)) {
+      this.renderer.setElementProperty(this._el_0,'src',this.viewUtils.sanitizer.sanitize(import31.SecurityContext.URL,currVal_1));
+      this._expr_1 = currVal_1;
+    }
+  }
+  visitRootNodesInternal(cb:any,ctx:any):void {
+    cb(this._el_0,ctx);
+  }
+}
+class View_GamesComponent4 extends import1.AppView<any> {
+  _el_0:any;
+  _text_1:any;
+  /*private*/ _expr_2:any;
+  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import14.ViewContainer) {
+    super(View_GamesComponent4,renderType_GamesComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    this._expr_2 = import6.UNINITIALIZED;
+  }
+  createInternal(rootSelector:string):import7.ComponentRef<any> {
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'p',new import3.InlineArray2(2,'class','card-text'),(null as any));
+    this._text_1 = this.renderer.createText(this._el_0,'',(null as any));
+    this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
+      this._el_0,
+      this._text_1
+    ]
+    ),(null as any));
+    return (null as any);
+  }
+  detectChangesInternal(throwOnChange:boolean):void {
+    const currVal_2:any = import3.inlineInterpolate(1,'released: ',this.parentView.context.$implicit.release_dates[0].human,'');
+    if (import3.checkBinding(throwOnChange,this._expr_2,currVal_2)) {
+      this.renderer.setText(this._text_1,currVal_2);
+      this._expr_2 = currVal_2;
+    }
+  }
+  visitRootNodesInternal(cb:any,ctx:any):void {
+    cb(this._el_0,ctx);
+  }
+}
+class View_GamesComponent5 extends import1.AppView<any> {
+  _el_0:any;
+  _text_1:any;
+  /*private*/ _expr_2:any;
+  _pipe_number_0_0:any;
+  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import14.ViewContainer) {
+    super(View_GamesComponent5,renderType_GamesComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    this._expr_2 = import6.UNINITIALIZED;
+  }
+  createInternal(rootSelector:string):import7.ComponentRef<any> {
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'p',new import3.InlineArray2(2,'class','card-text'),(null as any));
+    this._text_1 = this.renderer.createText(this._el_0,'',(null as any));
+    this._pipe_number_0_0 = import3.pureProxy2((<View_GamesComponent0>this.parentView.parentView)._pipe_number_0.transform.bind((<View_GamesComponent0>this.parentView.parentView)._pipe_number_0));
+    this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
+      this._el_0,
+      this._text_1
+    ]
+    ),(null as any));
+    return (null as any);
+  }
+  detectChangesInternal(throwOnChange:boolean):void {
+    const valUnwrapper:any = new import6.ValueUnwrapper();
+    valUnwrapper.reset();
+    const currVal_2:any = import3.inlineInterpolate(1,'rating: ',valUnwrapper.unwrap(import3.castByValue(this._pipe_number_0_0,(<View_GamesComponent0>this.parentView.parentView)._pipe_number_0.transform)(this.parentView.context.$implicit.aggregated_rating,'1.1-2')),'');
+    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_2,currVal_2))) {
+      this.renderer.setText(this._text_1,currVal_2);
+      this._expr_2 = currVal_2;
+    }
+  }
+  visitRootNodesInternal(cb:any,ctx:any):void {
+    cb(this._el_0,ctx);
+  }
+}
+class View_GamesComponent6 extends import1.AppView<any> {
+  _el_0:any;
+  _text_1:any;
+  /*private*/ _expr_2:any;
+  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import14.ViewContainer) {
+    super(View_GamesComponent6,renderType_GamesComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    this._expr_2 = import6.UNINITIALIZED;
+  }
+  createInternal(rootSelector:string):import7.ComponentRef<any> {
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'a',new import3.InlineArray2(2,'class','card-link'),(null as any));
+    this._text_1 = this.renderer.createText(this._el_0,'Link to Igdb',(null as any));
+    this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
+      this._el_0,
+      this._text_1
+    ]
+    ),(null as any));
+    return (null as any);
+  }
+  detectChangesInternal(throwOnChange:boolean):void {
+    const currVal_2:any = import3.inlineInterpolate(1,'',this.parentView.context.$implicit.url,'');
+    if (import3.checkBinding(throwOnChange,this._expr_2,currVal_2)) {
+      this.renderer.setElementProperty(this._el_0,'href',this.viewUtils.sanitizer.sanitize(import31.SecurityContext.URL,currVal_2));
+      this._expr_2 = currVal_2;
+    }
+  }
+  visitRootNodesInternal(cb:any,ctx:any):void {
+    cb(this._el_0,ctx);
   }
 }
