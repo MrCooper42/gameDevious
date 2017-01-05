@@ -13,6 +13,7 @@ import { User } from './user.model';
 
 @Component({
   selector: 'app-profile-edit',
+  // template: `<router-outlet></router-outlet>`,
   templateUrl: './profile-edit.component.html',
   styleUrls: ['./profile-edit.component.css']
 })

@@ -5,4 +5,4 @@
  */
  /* tslint:disable */
 
-export const styles:any[] = ['.btn[_ngcontent-%COMP%] {\r\n  color: orange;\r\n}'];
+export const styles:any[] = ['.btn[_ngcontent-%COMP%] {\n  color: orange;\n}'];

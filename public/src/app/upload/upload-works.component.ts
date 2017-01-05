@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { FileUploader } from 'ng2-file-upload/ng2-file-upload';
-import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 const TOKEN = localStorage.getItem('token');
 const URL = '/upload/works';
@@ -12,7 +11,7 @@ const URL = '/upload/works';
 })
 export class UploadWorksComponent {
 
-  constructor(public activeModal: NgbActiveModal) { }
+  constructor() { }
 
   public uploader: FileUploader = new FileUploader({url: URL, authToken: TOKEN});
 

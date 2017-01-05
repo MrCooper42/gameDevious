@@ -486,7 +486,8 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
         ,
         {
           path: 'profile',
-          component: import99.ProfileEditComponent
+          component: import99.ProfileEditComponent,
+          loadChildren: './works/works.module#WorksModule'
         }
         ,
         {
