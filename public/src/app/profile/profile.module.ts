@@ -20,7 +20,7 @@ import { UploadModule } from '../upload/upload.module';
   ],
   declarations: [
     ProfileComponent,
-    ProfileEditComponent,
+    ProfileEditComponent
   ]
 })
 export class ProfileModule { }

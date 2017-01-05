@@ -160,27 +160,27 @@ router.get("/user", (req, res) => {
 //     });
 // });
 
-// UPDATE
-router.put("/:id", function(req, res) {
-  req.body.content = req.sanitize(req.body.content);
-  Blog.findByIdAndUpdate(req.params.id, req.body, function(err, updatedBlog) {
-    if (err) {
-      res.redirect("/blogs");
-    } else {
-      res.redirect("/blogs/" + req.params.id);
-    }
-  });
-});
-
-// DELETE
-router.delete("/:id", function(req, res) {
-  Blog.findByIdAndRemove(req.params.id, function(err) {
-    if (err) {
-      res.redirect("/blogs");
-    } else {
-      res.redirect("/blogs");
-    }
-  });
-});
+// // UPDATE
+// router.put("/:id", function(req, res) {
+//   req.body.content = req.sanitize(req.body.content);
+//   Blog.findByIdAndUpdate(req.params.id, req.body, function(err, updatedBlog) {
+//     if (err) {
+//       res.redirect("/blogs");
+//     } else {
+//       res.redirect("/blogs/" + req.params.id);
+//     }
+//   });
+// });
+//
+// // DELETE
+// router.delete("/:id", function(req, res) {
+//   Blog.findByIdAndRemove(req.params.id, function(err) {
+//     if (err) {
+//       res.redirect("/blogs");
+//     } else {
+//       res.redirect("/blogs");
+//     }
+//   });
+// });
 
 module.exports = router;
