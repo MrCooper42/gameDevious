@@ -37,7 +37,7 @@ module.exports = {
     'githubAuth': {
       'clientID': 'bd65031dc69e29f81a86',
       'clientSecret': 'ce62064995fa5322be486266c9c1e2ab0c2a4e82',
-      'callbackURL': 'http://localhost:3000/github/callback'
+      'callbackURL': 'https://gamedevious.herokuapp.com/github/callback'
     }
     // https://github.com/settings/applications/new
 
