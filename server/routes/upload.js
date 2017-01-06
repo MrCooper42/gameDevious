@@ -139,8 +139,9 @@ router.post('/works/:id/avatar', (req, res, next) => {
   })
 });
 
-router.post('/works/:id/file', (req, res, next) => {
+router.post('/works/file', (req, res, next) => {
   console.log("route hit");
+  console.log(req.headers);
   const upload = multer({
     storage: storage
   }).single('file');

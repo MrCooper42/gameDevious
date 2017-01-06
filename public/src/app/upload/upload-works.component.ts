@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 import { JwtHelper } from 'angular2-jwt/angular2-jwt';
 import { NgbDropdown } from '@ng-bootstrap/ng-bootstrap'
 
-const URL = '/upload/works/586d650f40dbc42a1646864a/file'
+const URL = '/upload/works/file'
 const TOKEN = localStorage.getItem('token');
 
 @Component({
@@ -15,8 +15,10 @@ const TOKEN = localStorage.getItem('token');
 })
 export class UploadWorksComponent implements OnInit {
 
+  token: any;
   user: any;
   URL: string;
+  workId: string;
   chosenFile: string;
   works: any;
 
@@ -24,9 +26,17 @@ export class UploadWorksComponent implements OnInit {
 
   setURL(id, title) {
     this.chosenFile = title;
-    URL =  `/upload/works/${id}/file`
+    this.token = {
+      token: TOKEN,
+      workId: id
+    }
+    this.URL = `/upload/works/${id}/file`
     console.log(title, "title")
-    console.log(URL, "URL")
+    console.log(this.workId, "id")
+  }
+
+  getURL() {
+    return this.URL
   }
 
   jwtHelper: JwtHelper = new JwtHelper();
@@ -58,7 +68,7 @@ export class UploadWorksComponent implements OnInit {
   }
 
 
-  public uploader: FileUploader = new FileUploader({url: this.URL, authToken: TOKEN});
+  public uploader: FileUploader = new FileUploader({url: URL, authToken: this.token});
 
   public hasBaseDropZoneOver: boolean = false;
 
@@ -73,6 +83,8 @@ export class UploadWorksComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.URL = '';
+    this.workId = '';
     console.log(this.user, "user in file upload");
     this.returnUser().subscribe((res: any) => {
       this.user = res
