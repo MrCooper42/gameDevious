@@ -30,7 +30,7 @@ router.post('/avatar', (req, res, next) => {
   let token = req.headers.authorization;
   console.log(req.headers, "headers");
   let decoded = jwt.decode(token);
-  console.log(req.params.folder, "params");
+  console.log(decoded, "params");
   DIR = `./server/uploads/${decoded.user._id}/avatar`
   upload(req, res, (err) => {
     console.log(req.file, "req.file");
