@@ -10,7 +10,6 @@ import {AppComponent} from './app.component';
 import { routing } from './app.routing';
 import { HeaderComponent } from './shared/header.component';
 import { AuthService } from './auth/auth.service';
-import { AuthenticationComponent } from './auth/authentication.component';
 import { ErrorComponent } from './errors/error.component';
 import { ErrorService } from './errors/error.service';
 import { ProfileService } from './profile/profile.service';
@@ -22,11 +21,11 @@ import { JobListingsComponent } from './job-listings/job-listings.component';
 import { FilesComponent } from './files/files.component';
 import { ProfileModule } from './profile/profile.module';
 import { UploadModule } from './upload/upload.module';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AuthenticationComponent,
     HeaderComponent,
     ErrorComponent,
     NewsComponent,
@@ -36,6 +35,7 @@ import { UploadModule } from './upload/upload.module';
   imports: [
     NgbModule.forRoot(),
     routing,
+    AuthModule,
     UploadModule,
     BrowserModule,
     GamesModule,

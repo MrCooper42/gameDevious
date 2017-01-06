@@ -320,7 +320,7 @@ class View_HeaderComponent1 extends import1.AppView<any> {
     this._expr_2 = import6.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
-    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'a',new import3.InlineArray2(2,'href','/login'),(null as any));
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'a',new import3.InlineArray2(2,'href','/logger'),(null as any));
     this._text_1 = this.renderer.createText(this._el_0,'',(null as any));
     this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
       this._el_0,
@@ -409,7 +409,7 @@ class View_HeaderComponent2 extends import1.AppView<any> {
     this._el_25 = import3.createRenderElement(this.renderer,this._el_5,'li',new import3.InlineArray4(4,'class','divider','role','separator'),(null as any));
     this._text_26 = this.renderer.createText(this._el_5,'\n            ',(null as any));
     this._el_27 = import3.createRenderElement(this.renderer,this._el_5,'li',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._el_28 = import3.createRenderElement(this.renderer,this._el_27,'a',new import3.InlineArray2(2,'href','/login'),(null as any));
+    this._el_28 = import3.createRenderElement(this.renderer,this._el_27,'a',new import3.InlineArray2(2,'href','/logger'),(null as any));
     this._text_29 = this.renderer.createText(this._el_28,'Logout',(null as any));
     this._text_30 = this.renderer.createText(this._el_5,'\n          ',(null as any));
     this._text_31 = this.renderer.createText(this._el_0,'\n        ',(null as any));

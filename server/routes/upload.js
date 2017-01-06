@@ -29,6 +29,7 @@ const upload = multer({
 
 router.post('/avatar', (req, res, next) => {
   let token = req.headers.authorization;
+  console.log(req.headers, "headers");
   jwt.verify(token, 'secret', ignoreExpiration = true, (err, decoded) => {
     if (err) {
       console.log(err, "errrrrorrrrr upload");
@@ -38,7 +39,7 @@ router.post('/avatar', (req, res, next) => {
       })
     } else {
       console.log(req.params.folder, "params");
-      DIR = `./server/uploads/${decoded.user._id}/${req.params.folder}`
+      DIR = `./server/uploads/${decoded.user._id}/avatar`
       upload(req, res, (err) => {
         console.log(req.file, "req.file");
         if (err) {
