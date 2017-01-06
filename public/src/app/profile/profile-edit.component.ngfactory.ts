@@ -1143,11 +1143,11 @@ class View_ProfileEditComponent1 extends import1.AppView<any> {
     if ((nodeIndex == 103)) { return new View_ProfileEditComponent7(this.viewUtils,this,103,this._anchor_103,this._vc_103); }
     if ((nodeIndex == 154)) { return new View_ProfileEditComponent8(this.viewUtils,this,154,this._anchor_154,this._vc_154); }
     if ((nodeIndex == 156)) { return new View_ProfileEditComponent9(this.viewUtils,this,156,this._anchor_156,this._vc_156); }
-    if ((nodeIndex == 167)) { return new View_ProfileEditComponent12(this.viewUtils,this,167,this._anchor_167,this._vc_167); }
-    if ((nodeIndex == 172)) { return new View_ProfileEditComponent13(this.viewUtils,this,172,this._anchor_172,this._vc_172); }
-    if ((nodeIndex == 176)) { return new View_ProfileEditComponent14(this.viewUtils,this,176,this._anchor_176,this._vc_176); }
-    if ((nodeIndex == 178)) { return new View_ProfileEditComponent16(this.viewUtils,this,178,this._anchor_178,this._vc_178); }
-    if ((nodeIndex == 180)) { return new View_ProfileEditComponent18(this.viewUtils,this,180,this._anchor_180,this._vc_180); }
+    if ((nodeIndex == 167)) { return new View_ProfileEditComponent11(this.viewUtils,this,167,this._anchor_167,this._vc_167); }
+    if ((nodeIndex == 172)) { return new View_ProfileEditComponent12(this.viewUtils,this,172,this._anchor_172,this._vc_172); }
+    if ((nodeIndex == 176)) { return new View_ProfileEditComponent13(this.viewUtils,this,176,this._anchor_176,this._vc_176); }
+    if ((nodeIndex == 178)) { return new View_ProfileEditComponent15(this.viewUtils,this,178,this._anchor_178,this._vc_178); }
+    if ((nodeIndex == 180)) { return new View_ProfileEditComponent17(this.viewUtils,this,180,this._anchor_180,this._vc_180); }
     return (null as any);
   }
   handleEvent_10(eventName:string,$event:any):boolean {
@@ -2075,10 +2075,7 @@ class View_ProfileEditComponent10 extends import1.AppView<any> {
   _text_3:any;
   _el_4:any;
   _text_5:any;
-  _anchor_6:any;
-  /*private*/ _vc_6:import12.ViewContainer;
-  _TemplateRef_6_5:any;
-  _NgIf_6_6:import13.Wrapper_NgIf;
+  _el_6:any;
   _text_7:any;
   _text_8:any;
   _el_9:any;
@@ -2105,16 +2102,18 @@ class View_ProfileEditComponent10 extends import1.AppView<any> {
   _text_30:any;
   _text_31:any;
   _text_32:any;
+  /*private*/ _expr_33:any;
+  /*private*/ _expr_34:any;
+  /*private*/ _expr_35:any;
   /*private*/ _expr_36:any;
   /*private*/ _expr_37:any;
-  /*private*/ _expr_38:any;
-  /*private*/ _expr_39:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
     super(View_ProfileEditComponent10,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    this._expr_33 = import6.UNINITIALIZED;
+    this._expr_34 = import6.UNINITIALIZED;
+    this._expr_35 = import6.UNINITIALIZED;
     this._expr_36 = import6.UNINITIALIZED;
     this._expr_37 = import6.UNINITIALIZED;
-    this._expr_38 = import6.UNINITIALIZED;
-    this._expr_39 = import6.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
     this._el_0 = import3.createRenderElement(this.renderer,(null as any),'div',new import3.InlineArray2(2,'class','row works col-xs-12 text-center'),(null as any));
@@ -2123,10 +2122,7 @@ class View_ProfileEditComponent10 extends import1.AppView<any> {
     this._text_3 = this.renderer.createText(this._el_2,'\n            ',(null as any));
     this._el_4 = import3.createRenderElement(this.renderer,this._el_2,'div',new import3.InlineArray2(2,'class','col-xs-3'),(null as any));
     this._text_5 = this.renderer.createText(this._el_4,'\n              ',(null as any));
-    this._anchor_6 = this.renderer.createTemplateAnchor(this._el_4,(null as any));
-    this._vc_6 = new import12.ViewContainer(6,4,this,this._anchor_6);
-    this._TemplateRef_6_5 = new import14.TemplateRef_(this,6,this._anchor_6);
-    this._NgIf_6_6 = new import13.Wrapper_NgIf(this._vc_6.vcRef,this._TemplateRef_6_5);
+    this._el_6 = import3.createRenderElement(this.renderer,this._el_4,'img',new import3.InlineArray4(4,'alt','','class','img-fluid work-img'),(null as any));
     this._text_7 = this.renderer.createText(this._el_4,'\n            ',(null as any));
     this._text_8 = this.renderer.createText(this._el_2,'\n            ',(null as any));
     this._el_9 = import3.createRenderElement(this.renderer,this._el_2,'div',new import3.InlineArray2(2,'class','col-xs-9'),(null as any));
@@ -2161,7 +2157,7 @@ class View_ProfileEditComponent10 extends import1.AppView<any> {
       this._text_3,
       this._el_4,
       this._text_5,
-      this._anchor_6,
+      this._el_6,
       this._text_7,
       this._text_8,
       this._el_9,
@@ -2192,46 +2188,35 @@ class View_ProfileEditComponent10 extends import1.AppView<any> {
     ),[disposable_0]);
     return (null as any);
   }
-  injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import14.TemplateRef) && (6 === requestNodeIndex))) { return this._TemplateRef_6_5; }
-    if (((token === import15.NgIf) && (6 === requestNodeIndex))) { return this._NgIf_6_6.context; }
-    return notFoundResult;
-  }
   detectChangesInternal(throwOnChange:boolean):void {
-    const currVal_6_0_0:any = (this.parentView.parentView.parentView.context.hasWorks().length > 1);
-    this._NgIf_6_6.check_ngIf(currVal_6_0_0,throwOnChange,false);
-    this._NgIf_6_6.ngDoCheck(this,this._anchor_6,throwOnChange);
-    this._vc_6.detectChangesInNestedViews(throwOnChange);
-    const currVal_36:any = import3.inlineInterpolate(1,'//',this.context.$implicit.url,'');
+    const currVal_33:any = this.parentView.parentView.parentView.context.workAvatar(this.context.$implicit._id);
+    if (import3.checkBinding(throwOnChange,this._expr_33,currVal_33)) {
+      this.renderer.setElementProperty(this._el_6,'src',this.viewUtils.sanitizer.sanitize(import39.SecurityContext.URL,currVal_33));
+      this._expr_33 = currVal_33;
+    }
+    const currVal_34:any = import3.inlineInterpolate(1,'//',this.context.$implicit.url,'');
+    if (import3.checkBinding(throwOnChange,this._expr_34,currVal_34)) {
+      this.renderer.setElementProperty(this._el_20,'href',this.viewUtils.sanitizer.sanitize(import39.SecurityContext.URL,currVal_34));
+      this._expr_34 = currVal_34;
+    }
+    const currVal_35:any = import3.inlineInterpolate(1,'Title:\n              ',this.context.$implicit.title,'');
+    if (import3.checkBinding(throwOnChange,this._expr_35,currVal_35)) {
+      this.renderer.setText(this._text_21,currVal_35);
+      this._expr_35 = currVal_35;
+    }
+    const currVal_36:any = import3.inlineInterpolate(1,'\n              ',this.context.$implicit.description,'');
     if (import3.checkBinding(throwOnChange,this._expr_36,currVal_36)) {
-      this.renderer.setElementProperty(this._el_20,'href',this.viewUtils.sanitizer.sanitize(import39.SecurityContext.URL,currVal_36));
+      this.renderer.setText(this._text_27,currVal_36);
       this._expr_36 = currVal_36;
     }
-    const currVal_37:any = import3.inlineInterpolate(1,'Title:\n              ',this.context.$implicit.title,'');
+    const currVal_37:any = import3.inlineInterpolate(1,'//',this.context.$implicit.video,'');
     if (import3.checkBinding(throwOnChange,this._expr_37,currVal_37)) {
-      this.renderer.setText(this._text_21,currVal_37);
+      this.renderer.setElementProperty(this._el_29,'href',this.viewUtils.sanitizer.sanitize(import39.SecurityContext.URL,currVal_37));
       this._expr_37 = currVal_37;
     }
-    const currVal_38:any = import3.inlineInterpolate(1,'\n              ',this.context.$implicit.description,'');
-    if (import3.checkBinding(throwOnChange,this._expr_38,currVal_38)) {
-      this.renderer.setText(this._text_27,currVal_38);
-      this._expr_38 = currVal_38;
-    }
-    const currVal_39:any = import3.inlineInterpolate(1,'//',this.context.$implicit.video,'');
-    if (import3.checkBinding(throwOnChange,this._expr_39,currVal_39)) {
-      this.renderer.setElementProperty(this._el_29,'href',this.viewUtils.sanitizer.sanitize(import39.SecurityContext.URL,currVal_39));
-      this._expr_39 = currVal_39;
-    }
-  }
-  destroyInternal():void {
-    this._vc_6.destroyNestedViews();
   }
   visitRootNodesInternal(cb:any,ctx:any):void {
     cb(this._el_0,ctx);
-  }
-  createEmbeddedViewInternal(nodeIndex:number):import1.AppView<any> {
-    if ((nodeIndex == 6)) { return new View_ProfileEditComponent11(this.viewUtils,this,6,this._anchor_6,this._vc_6); }
-    return (null as any);
   }
   handleEvent_11(eventName:string,$event:any):boolean {
     this.markPathToRootAsCheckOnce();
@@ -2245,33 +2230,10 @@ class View_ProfileEditComponent10 extends import1.AppView<any> {
 }
 class View_ProfileEditComponent11 extends import1.AppView<any> {
   _el_0:any;
-  /*private*/ _expr_1:any;
-  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
-    super(View_ProfileEditComponent11,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
-    this._expr_1 = import6.UNINITIALIZED;
-  }
-  createInternal(rootSelector:string):import7.ComponentRef<any> {
-    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'img',new import3.InlineArray4(4,'alt','','class','img-fluid work-img'),(null as any));
-    this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [this._el_0]),(null as any));
-    return (null as any);
-  }
-  detectChangesInternal(throwOnChange:boolean):void {
-    const currVal_1:any = this.parentView.parentView.parentView.parentView.context.workAvatar(this.parentView.context.$implicit._id);
-    if (import3.checkBinding(throwOnChange,this._expr_1,currVal_1)) {
-      this.renderer.setElementProperty(this._el_0,'src',this.viewUtils.sanitizer.sanitize(import39.SecurityContext.URL,currVal_1));
-      this._expr_1 = currVal_1;
-    }
-  }
-  visitRootNodesInternal(cb:any,ctx:any):void {
-    cb(this._el_0,ctx);
-  }
-}
-class View_ProfileEditComponent12 extends import1.AppView<any> {
-  _el_0:any;
   _text_1:any;
   /*private*/ _expr_2:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
-    super(View_ProfileEditComponent12,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    super(View_ProfileEditComponent11,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
     this._expr_2 = import6.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
@@ -2295,12 +2257,12 @@ class View_ProfileEditComponent12 extends import1.AppView<any> {
     cb(this._el_0,ctx);
   }
 }
-class View_ProfileEditComponent13 extends import1.AppView<any> {
+class View_ProfileEditComponent12 extends import1.AppView<any> {
   _el_0:any;
   _text_1:any;
   /*private*/ _expr_2:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
-    super(View_ProfileEditComponent13,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    super(View_ProfileEditComponent12,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
     this._expr_2 = import6.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
@@ -2324,7 +2286,7 @@ class View_ProfileEditComponent13 extends import1.AppView<any> {
     cb(this._el_0,ctx);
   }
 }
-class View_ProfileEditComponent14 extends import1.AppView<any> {
+class View_ProfileEditComponent13 extends import1.AppView<any> {
   _el_0:any;
   _text_1:any;
   _el_2:any;
@@ -2336,7 +2298,7 @@ class View_ProfileEditComponent14 extends import1.AppView<any> {
   _NgIf_5_6:import13.Wrapper_NgIf;
   _text_6:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
-    super(View_ProfileEditComponent14,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    super(View_ProfileEditComponent13,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
     this._el_0 = import3.createRenderElement(this.renderer,(null as any),'div',new import3.InlineArray2(2,'class','user-github'),(null as any));
@@ -2379,11 +2341,11 @@ class View_ProfileEditComponent14 extends import1.AppView<any> {
     cb(this._el_0,ctx);
   }
   createEmbeddedViewInternal(nodeIndex:number):import1.AppView<any> {
-    if ((nodeIndex == 5)) { return new View_ProfileEditComponent15(this.viewUtils,this,5,this._anchor_5,this._vc_5); }
+    if ((nodeIndex == 5)) { return new View_ProfileEditComponent14(this.viewUtils,this,5,this._anchor_5,this._vc_5); }
     return (null as any);
   }
 }
-class View_ProfileEditComponent15 extends import1.AppView<any> {
+class View_ProfileEditComponent14 extends import1.AppView<any> {
   _el_0:any;
   _text_1:any;
   _el_2:any;
@@ -2399,7 +2361,7 @@ class View_ProfileEditComponent15 extends import1.AppView<any> {
   /*private*/ _expr_12:any;
   /*private*/ _expr_13:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
-    super(View_ProfileEditComponent15,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    super(View_ProfileEditComponent14,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
     this._expr_11 = import6.UNINITIALIZED;
     this._expr_12 = import6.UNINITIALIZED;
     this._expr_13 = import6.UNINITIALIZED;
@@ -2453,7 +2415,7 @@ class View_ProfileEditComponent15 extends import1.AppView<any> {
     cb(this._el_0,ctx);
   }
 }
-class View_ProfileEditComponent16 extends import1.AppView<any> {
+class View_ProfileEditComponent15 extends import1.AppView<any> {
   _el_0:any;
   _text_1:any;
   _el_2:any;
@@ -2465,7 +2427,7 @@ class View_ProfileEditComponent16 extends import1.AppView<any> {
   _NgIf_5_6:import13.Wrapper_NgIf;
   _text_6:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
-    super(View_ProfileEditComponent16,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    super(View_ProfileEditComponent15,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
     this._el_0 = import3.createRenderElement(this.renderer,(null as any),'div',new import3.InlineArray2(2,'class','user-facebook'),(null as any));
@@ -2508,11 +2470,11 @@ class View_ProfileEditComponent16 extends import1.AppView<any> {
     cb(this._el_0,ctx);
   }
   createEmbeddedViewInternal(nodeIndex:number):import1.AppView<any> {
-    if ((nodeIndex == 5)) { return new View_ProfileEditComponent17(this.viewUtils,this,5,this._anchor_5,this._vc_5); }
+    if ((nodeIndex == 5)) { return new View_ProfileEditComponent16(this.viewUtils,this,5,this._anchor_5,this._vc_5); }
     return (null as any);
   }
 }
-class View_ProfileEditComponent17 extends import1.AppView<any> {
+class View_ProfileEditComponent16 extends import1.AppView<any> {
   _el_0:any;
   _text_1:any;
   _el_2:any;
@@ -2527,7 +2489,7 @@ class View_ProfileEditComponent17 extends import1.AppView<any> {
   /*private*/ _expr_11:any;
   /*private*/ _expr_12:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
-    super(View_ProfileEditComponent17,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    super(View_ProfileEditComponent16,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
     this._expr_11 = import6.UNINITIALIZED;
     this._expr_12 = import6.UNINITIALIZED;
   }
@@ -2575,7 +2537,7 @@ class View_ProfileEditComponent17 extends import1.AppView<any> {
     cb(this._el_0,ctx);
   }
 }
-class View_ProfileEditComponent18 extends import1.AppView<any> {
+class View_ProfileEditComponent17 extends import1.AppView<any> {
   _el_0:any;
   _text_1:any;
   _el_2:any;
@@ -2587,7 +2549,7 @@ class View_ProfileEditComponent18 extends import1.AppView<any> {
   _NgIf_5_6:import13.Wrapper_NgIf;
   _text_6:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
-    super(View_ProfileEditComponent18,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    super(View_ProfileEditComponent17,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
     this._el_0 = import3.createRenderElement(this.renderer,(null as any),'div',new import3.InlineArray2(2,'class','user-linkedin'),(null as any));
@@ -2630,11 +2592,11 @@ class View_ProfileEditComponent18 extends import1.AppView<any> {
     cb(this._el_0,ctx);
   }
   createEmbeddedViewInternal(nodeIndex:number):import1.AppView<any> {
-    if ((nodeIndex == 5)) { return new View_ProfileEditComponent19(this.viewUtils,this,5,this._anchor_5,this._vc_5); }
+    if ((nodeIndex == 5)) { return new View_ProfileEditComponent18(this.viewUtils,this,5,this._anchor_5,this._vc_5); }
     return (null as any);
   }
 }
-class View_ProfileEditComponent19 extends import1.AppView<any> {
+class View_ProfileEditComponent18 extends import1.AppView<any> {
   _el_0:any;
   _text_1:any;
   _el_2:any;
@@ -2649,7 +2611,7 @@ class View_ProfileEditComponent19 extends import1.AppView<any> {
   /*private*/ _expr_11:any;
   /*private*/ _expr_12:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
-    super(View_ProfileEditComponent19,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    super(View_ProfileEditComponent18,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
     this._expr_11 = import6.UNINITIALIZED;
     this._expr_12 = import6.UNINITIALIZED;
   }

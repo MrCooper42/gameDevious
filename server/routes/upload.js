@@ -110,6 +110,7 @@ router.post('/works/:id/file', (req, res, next) => {
       return;
     }
     Works.findById(req.params.id, (err, work) => {
+      console.log(work, "work round");
       if (err) {
         return res.status(500).json({title: 'Bad things happened', error: err});
       }
