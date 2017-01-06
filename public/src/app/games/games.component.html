@@ -14,24 +14,14 @@
         </div>
 </form>
 
-<div class="card card-block text-xs-center col-xs-12 col-sm-6" *ngFor="let game of games">
-  <div class="card-block">
-    <h4 class="card-title">{{game.name}}</h4>
-    <h6 class="card-subtitle text-muted" *ngIf="game.alternative_names">{{game.alternative_names.name}}</h6>
-  </div>
-  <img src="{{game.cover.url}}" alt="Card image" *ngIf="game.cover && game.cover.url">
-  <div class="card-block">
-    <p class="card-text" *ngIf="game.release_dates && game.release_dates[0].human">released: {{game.release_dates[0].human}}</p>
-    <p class="card-text" *ngIf="game.aggregated_rating">rating: {{game.aggregated_rating | number:'1.1-2'}}</p>
-    <a href="{{game.url}}" class="card-link" *ngIf="game.url">Link to Igdb</a>
-    <!-- <a href="{{game.videos}}" class="card-link">Video link</a> -->
+<div class="card-columns">
+  <div class="card" *ngFor="let game of games">
+    <div class="card-block">
+    <img class="card-img-top img-fluid" src="{{game.cover.url}}" alt="Card image cap" *ngIf="game.cover">
+      <h4 class="card-title">{{game.name}}</h4>
+      <p class="card-text" *ngIf="game.release_dates && game.release_dates[0].human">released: {{game.release_dates[0].human}}</p>
+      <p class="card-text" *ngIf="game.aggregated_rating">rating: {{game.aggregated_rating | number:'1.1-2'}}</p>
+      <a class="card-link" *ngIf="game.url" href="game.url" >Link to Igdb</a>
+    </div>
   </div>
 </div>
-<!--
-<div *ngFor="let game of games">
-
-  <a href="{{game.url}}">
-  <img src="{{game.cover.url}}" alt="">
-</a>
-
-</div> -->

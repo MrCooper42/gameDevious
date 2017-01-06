@@ -23,73 +23,103 @@ const storage = multer.diskStorage({
   }
 })
 
-const upload = multer({storage: storage}).single('file');
+const upload = multer({
+  storage: storage
+}).single('file');
 
-router.post('/:folder', (req, res, next) => {
+router.post('/avatar', (req, res, next) => {
   let token = req.headers.authorization;
-  jwt.verify(token, 'secret', ignoreExpiration = true,(err, decoded) => {
+  jwt.verify(token, 'secret', ignoreExpiration = true, (err, decoded) => {
     if (err) {
       console.log(err, "errrrrorrrrr upload");
-      res.status(401).json({title: 'Not Authenticated ya here', error: err})
+      res.status(401).json({
+        title: 'Not Authenticated ya here',
+        error: err
+      })
     } else {
       console.log(req.params.folder, "params");
       DIR = `./server/uploads/${decoded.user._id}/${req.params.folder}`
       upload(req, res, (err) => {
         console.log(req.file, "req.file");
         if (err) {
-          res.json({error_code: 1, err_desc: err});
+          res.json({
+            error_code: 1,
+            err_desc: err
+          });
           return;
         }
-        Profile.findOne({user: decoded.user._id}, (err, profile) => {
+        Profile.findOne({
+          user: decoded.user._id
+        }, (err, profile) => {
           if (err) {
-            return res.status(500).json({title: 'Bad things happened', error: err});
+            return res.status(500).json({
+              title: 'Bad things happened',
+              error: err
+            });
           }
-          if (req.params.folder == "avatar") {
-            profile.avatar = `/uploads/${decoded.user._id}/${req.params.folder}/${req.file.filename}`;
-            console.log(profile.avatar, "avatar after");
-            profile.save((err, result) => {
-              if (err) {
-                return res.status(500).json({title: 'Bad things happened', error: err});
-              }
-              console.log(result, "user save result");
-            })
-          }
-          if (req.params.folder == "works") {
-            cosole.log("works hit")
-          }
+          profile.avatar = `/uploads/${decoded.user._id}/avatar/${req.file.filename}`;
+          console.log(profile.avatar, "avatar after");
+          profile.save((err, result) => {
+            if (err) {
+              return res.status(500).json({
+                title: 'Bad things happened',
+                error: err
+              });
+            }
+            console.log(result, "user save result");
+          })
         })
-        res.json({error_code: 0, err_desc: null});
+        res.json({
+          error_code: 0,
+          err_desc: null
+        });
       });
     }
   })
 });
 
-router.post('/:folder/works/avatar', (req, res, next) => {
-  const upload = multer({storage: storage}).single('avatar');
+router.post('/works/:id/avatar', (req, res, next) => {
+  const upload = multer({
+    storage: storage
+  }).single('avatar');
   let token = req.headers.authorization;
-  jwt.verify(token, 'secret', this.ignoreExpiration = true,(err, decoded) => {
+  jwt.verify(token, 'secret', this.ignoreExpiration = true, (err, decoded) => {
     if (err) {
       console.log(err, "errrrrorrrrr upload");
-      res.status(401).json({title: 'Not Authenticated ya here', error: err})
+      res.status(401).json({
+        title: 'Not Authenticated ya here',
+        error: err
+      })
     } else {
       console.log(req.params.folder, "params");
       DIR = `./server/uploads/${decoded.user._id}/${req.params.folder}`
       upload(req, res, (err) => {
         console.log(req.file, "req.file");
         if (err) {
-          res.json({error_code: 1, err_desc: err});
+          res.json({
+            error_code: 1,
+            err_desc: err
+          });
           return;
         }
-        Profile.findOne({user: decoded.user._id}, (err, profile) => {
+        Profile.findOne({
+          user: decoded.user._id
+        }, (err, profile) => {
           if (err) {
-            return res.status(500).json({title: 'Bad things happened', error: err});
+            return res.status(500).json({
+              title: 'Bad things happened',
+              error: err
+            });
           }
           if (req.params.folder == "avatar") {
             profile.avatar = `/uploads/${decoded.user._id}/${req.params.folder}/${req.file.filename}`;
             console.log(profile.avatar, "avatar after");
             profile.save((err, result) => {
               if (err) {
-                return res.status(500).json({title: 'Bad things happened', error: err});
+                return res.status(500).json({
+                  title: 'Bad things happened',
+                  error: err
+                });
               }
               console.log(result, "user save result");
             })
@@ -100,10 +130,67 @@ router.post('/:folder/works/avatar', (req, res, next) => {
           console.log(req.params);
         })
         console.log("hit here and ending");
-        res.json({error_code: 0, err_desc: null});
+        res.json({
+          error_code: 0,
+          err_desc: null
+        });
       });
     }
   })
+});
+
+router.post('/works/:id/file', (req, res, next) => {
+  console.log("route hit");
+  const upload = multer({
+    storage: storage
+  }).single('file');
+  let token = req.headers.authorization;
+  jwt.verify(token, 'secret', this.ignoreExpiration = true, (err, decoded) => {
+    if (err) {
+      console.log(err, "errrrrorrrrr upload");
+      res.status(401).json({
+        title: 'Not Authenticated ya here',
+        error: err
+      })
+    } else {
+      console.log(req.params.folder, "params");
+      DIR = `./server/uploads/${decoded.user._id}/works/${req.params.id}/file`
+      upload(req, res, (err) => {
+        console.log(req.file, "req.file");
+        if (err) {
+          res.json({
+            error_code: 1,
+            err_desc: err
+          });
+          return;
+        }
+        Works.findById(req.params.id, (err, work) => {
+          if (err) {
+            return res.status(500).json({
+              title: 'Bad things happened',
+              error: err
+            });
+          }
+          work.path = `/uploads/${decoded.user._id}/works/${req.params.id}/file/${req.file.filename};`
+          console.log(work.path, "work path after");
+          work.save((err, result) => {
+            if (err) {
+              return res.status(500).json({
+                title: 'Bad things happened',
+                error: err
+              });
+            }
+            console.log(result, "work save");
+          })
+          console.log("hit here and ending");
+          res.json({
+            error_code: 0,
+            err_desc: null
+          });
+        });
+      })
+    }
+  });
 });
 
 module.exports = router;

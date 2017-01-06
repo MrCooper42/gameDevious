@@ -9,9 +9,8 @@
   border: dotted 3px green;
 }
 
-.modal-content {
-  height: 900px;
-
+.dropdown-item {
+  color: white;
 }
 
 body, html {

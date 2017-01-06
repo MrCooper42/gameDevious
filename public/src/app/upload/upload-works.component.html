@@ -18,8 +18,20 @@
     </div>
 
     <div class="col-md-9" style="margin-bottom: 40px">
-
-      <h3>Upload queue</h3>
+        <div class="row" *ngIf="user">
+          <h3>Upload file</h3>
+          <div class="col-xs-6">
+            <div ngbDropdown class="dropdown">
+              <button class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown"
+              role="button" aria-haspopup="true" aria-expanded="false"
+              id="dropdownMenu1" ngbDropdownToggle>{{chosenFile || "choose a title"}}</button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <button *ngFor="let work of works" class="dropdown-item" (click)="setURL(work._id, work.title)">{{work.title}}</button>
+              </div>
+            </div>
+            <h3>{{chosenFile}}</h3>
+          </div>
+        </div>
       <p>Queue length:
         {{ uploader?.queue?.length }}</p>
 

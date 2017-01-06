@@ -21,6 +21,10 @@ const schema = new Schema({
   },
   experiance: [
     {
+      // current: {
+      //   type: Boolean,
+      //   default: true
+      // }
       company: {
         type: String,
         default: ''
@@ -78,6 +82,11 @@ const schema = new Schema({
       ref: 'Blog'
     }
   ]
+  // ,
+  // hireable: {
+  //   type: Boolean,
+  //   default: true
+  // }
 });
 
 module.exports = mongoose.model('Profile', schema);

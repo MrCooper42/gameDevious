@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ProfileService } from './profile.service';
 import { Router } from '@angular/router';
 import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
@@ -14,7 +14,6 @@ import { ProfileEditComponent } from './profile-edit.component';
 export class WorkDetailsComponent implements OnInit {
 
   user: any;
-
   worksForm: FormGroup;
 
   constructor(private profileService: ProfileService, private router: Router) { }

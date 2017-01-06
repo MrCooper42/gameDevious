@@ -89,7 +89,7 @@ router.delete("/:id", (req, res, next) => {
       return res.status(401).json({
         title: 'This is not your work',
         error: {
-          message: 'Go make your own work'
+          message: 'Go make your own'
         }
       });
     }

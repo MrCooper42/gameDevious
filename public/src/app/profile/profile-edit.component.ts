@@ -22,9 +22,13 @@ export class ProfileEditComponent implements OnInit {
   titleForm: FormGroup;
   aboutForm: FormGroup;
   skillsForm: FormGroup;
+  eduForm: FormGroup;
+  xpForm: FormGroup;
 
   showWork: Boolean;
-  // showForm: Boolean;
+  showTitleForm: Boolean;
+  showXpForm: Boolean;
+  showEduForm: Boolean;
 
   user: any;
 
@@ -38,6 +42,18 @@ export class ProfileEditComponent implements OnInit {
 
   showWorkForm() {
     this.showWork = !this.showWork;
+  }
+
+  showTitle() {
+    this.showTitleForm = !this.showTitleForm;
+  }
+
+  showEdu() {
+    this.showEduForm = !this.showEduForm;
+  }
+
+  showXp() {
+    this.showXpForm = !this.showXpForm;
   }
 
   refreshWorks() {
@@ -60,6 +76,7 @@ export class ProfileEditComponent implements OnInit {
       },
       error => console.error(error));
     this.titleForm.reset();
+    this.showTitleForm = false;
   }
 
   submitAbout() {
@@ -171,8 +188,10 @@ export class ProfileEditComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.showWork = true;
-    // this.showForm = false;
+    this.showWork = false;
+    this.showTitleForm = false;
+    this.showXpForm = false;
+    this.showEduForm = false;
     this.titleForm = new FormGroup({
       title: new FormControl(null, Validators.required),
     });
@@ -182,6 +201,16 @@ export class ProfileEditComponent implements OnInit {
     this.aboutForm = new FormGroup({
       about: new FormControl(null, Validators.required),
     });
+    this.xpForm = new FormGroup({
+      company: new FormControl(null, Validators.required),
+      roll: new FormControl(null, Validators.required),
+      description: new FormControl('')
+    });
+    this.eduForm = new FormGroup({
+        school: new FormControl(null, Validators.required),
+        degree: new FormControl(null, Validators.required),
+        extras: new FormControl(''),
+      });
     this.returnUser().subscribe(res => this.user = res);
   }
 
