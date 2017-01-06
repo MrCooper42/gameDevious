@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 import { JwtHelper } from 'angular2-jwt/angular2-jwt';
 import { NgbDropdown } from '@ng-bootstrap/ng-bootstrap'
 
-const URL = '/upload/works/file'
+// const URL = '/upload/works/file'
 const TOKEN = localStorage.getItem('token');
 
 @Component({
@@ -24,15 +24,27 @@ export class UploadWorksComponent implements OnInit {
 
   constructor(private profileService: ProfileService, private router: Router) { }
 
+
+    public uploader: FileUploader = new FileUploader({url: this.URL, authToken: TOKEN});
+
+    public hasBaseDropZoneOver: boolean = false;
+
+    public hasAnotherDropZoneOver: boolean = false;
+
+    public fileOverBase(e: any): void {
+      this.hasBaseDropZoneOver = e;
+    }
+
+    public fileOverAnother(e: any): void {
+      this.hasAnotherDropZoneOver = e;
+    }
+
   setURL(id, title) {
     this.chosenFile = title;
-    this.token = {
-      token: TOKEN,
-      workId: id
-    }
     this.URL = `/upload/works/${id}/file`
-    console.log(title, "title")
-    console.log(this.workId, "id")
+    this.uploader.options.url = this.URL
+     console.log(this.uploader.options, "options")
+
   }
 
   getURL() {
@@ -67,20 +79,6 @@ export class UploadWorksComponent implements OnInit {
       });
   }
 
-
-  public uploader: FileUploader = new FileUploader({url: URL, authToken: this.token});
-
-  public hasBaseDropZoneOver: boolean = false;
-
-  public hasAnotherDropZoneOver: boolean = false;
-
-  public fileOverBase(e: any): void {
-    this.hasBaseDropZoneOver = e;
-  }
-
-  public fileOverAnother(e: any): void {
-    this.hasAnotherDropZoneOver = e;
-  }
 
   ngOnInit() {
     this.URL = '';

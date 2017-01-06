@@ -218,7 +218,7 @@ export class View_UploadWorksComponent0 extends import1.AppView<import0.UploadWo
     this._el_4 = import3.createRenderElement(this.renderer,this._el_2,'div',new import3.InlineArray2(2,'class','col-md-3'),(null as any));
     this._text_5 = this.renderer.createText(this._el_4,'\n\n      ',(null as any));
     this._el_6 = import3.createRenderElement(this.renderer,this._el_4,'h3',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_7 = this.renderer.createText(this._el_6,'Select game zip file',(null as any));
+    this._text_7 = this.renderer.createText(this._el_6,'Select game picture',(null as any));
     this._text_8 = this.renderer.createText(this._el_4,'\n\n      ',(null as any));
     this._el_9 = import3.createRenderElement(this.renderer,this._el_4,'div',new import3.InlineArray4(4,'class','well my-drop-zone','ng2FileDrop',''),(null as any));
     this._NgClass_9_3 = new import11.Wrapper_NgClass(this.parentView.injectorGet(import19.IterableDiffers,this.parentIndex),this.parentView.injectorGet(import20.KeyValueDiffers,this.parentIndex),new import21.ElementRef(this._el_9),this.renderer);
@@ -548,7 +548,7 @@ class View_UploadWorksComponent1 extends import1.AppView<any> {
     this._el_0 = import3.createRenderElement(this.renderer,(null as any),'div',new import3.InlineArray2(2,'class','row'),(null as any));
     this._text_1 = this.renderer.createText(this._el_0,'\n          ',(null as any));
     this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'h3',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_3 = this.renderer.createText(this._el_2,'Upload file',(null as any));
+    this._text_3 = this.renderer.createText(this._el_2,'Upload picture',(null as any));
     this._text_4 = this.renderer.createText(this._el_0,'\n          ',(null as any));
     this._el_5 = import3.createRenderElement(this.renderer,this._el_0,'div',new import3.InlineArray2(2,'class','col-xs-6'),(null as any));
     this._text_6 = this.renderer.createText(this._el_5,'\n            ',(null as any));

@@ -8,6 +8,7 @@ const mkdirp = require('mkdirp')
 
 const User = require('../models/user.js')
 const Profile = require('../models/profile.js')
+const Works = require('../models/works.js')
 
 let DIR = './server/uploads/';
 
@@ -140,7 +141,7 @@ router.post('/works/:id/avatar', (req, res, next) => {
   })
 });
 
-router.post('/works/file', (req, res, next) => {
+router.post('/works/:id/file', (req, res, next) => {
   console.log("route hit");
   console.log(req.headers);
   const upload = multer({

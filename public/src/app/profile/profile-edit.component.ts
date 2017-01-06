@@ -122,6 +122,17 @@ export class ProfileEditComponent implements OnInit {
     return this.user.profile.avatar;
   }
 
+  workAvatar(id) {
+    for (let i = 0; i < this.user.profile.works.length; i++) {
+        if (this.user.profile.works[i]._id = id) {
+          console.log(this.user.profile.works[i].path)
+          let avatar = this.user.profile.works[i].path.replace(/[;]/gi,'')
+
+          return avatar;
+        }
+    }
+  }
+
   updateAvatar() {
     this.returnUser().subscribe(res => this.user = res);
   }
