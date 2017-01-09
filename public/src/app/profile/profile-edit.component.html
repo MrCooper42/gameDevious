@@ -21,8 +21,9 @@
           </small>
         </h3>
         <hr>
-        <div class="educations" *ngIf="user.profile.education.length > 0">
+        <div class="educations container" *ngIf="user.profile.education.length > 0">
           <div *ngFor="let edu of user.profile.education">
+            <hr>
             <strong>School:<small>
                 {{edu.school}}</small>
             </strong>
@@ -34,17 +35,37 @@
             <strong>Degree/ Certification:</strong>
             <small>
               {{edu.degree}}</small>
-            <hr>
           </div>
         </div>
       </h4>
+      <hr>
       <h4>
-        <strong>Company:</strong>
-        {{user.profile.experiance.company}}:
-        <small>{{user.profile.experiance.roll}}</small>
-        <button type="btn btn-sm" (click)="showXp()">
-          <span aria-hidden="true" class="glyphicon glyphicon-pencil"></span>
-        </button>
+        <h3>
+          <u>Experiance:</u>
+          <small>
+            <button type="btn btn-sm" (click)="showXp()">
+              <span aria-hidden="true" class="glyphicon glyphicon-pencil"></span>
+            </button>
+          </small>
+        </h3>
+        <div class="experiances container" *ngIf="user.profile.experiance.length > 0">
+          <div *ngFor="let exp of user.profile.experiance">
+            <hr>
+            <strong>Company:<small>
+                {{exp.company}}</small>
+            </strong>
+            <br>
+            <strong>Roll:
+              <small>
+                {{exp.roll}}</small>
+            </strong>
+            <br>
+            <strong>Description:
+              <small>
+                {{exp.description}}</small>
+            </strong>
+          </div>
+        </div>
       </h4>
       <div *ngIf="showEduForm">
         <form [formGroup]="eduForm" (ngSubmit)="submitEdu()">
@@ -70,6 +91,7 @@
             <input type="text" id="roll" class="form-control" placeholder="roll in company" formControlName="roll">
             <label for="description">What you did</label>
             <input id="description" class="form-control" placeholder="certifications, activities, etc" formControlName="description">
+            <button class="btn btn-primary" type="submit" [disabled]="!xpForm.valid">Submit</button>
           </div>
         </form>
       </div>

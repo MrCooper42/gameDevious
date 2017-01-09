@@ -88,8 +88,21 @@ export class ProfileEditComponent implements OnInit {
         this.router.navigateByUrl('/profile');
       },
       error => console.error(error));
-    this.titleForm.reset();
-    this.showTitleForm = false;
+    this.eduForm.reset();
+    this.showEduForm = false;
+  }
+
+  submitXp() {
+    let experiance = this.xpForm.value;
+    this.profileService.addExp(this.useJwtHelper()._id, experiance)
+      .subscribe(
+      data => {
+        this.user.profile.experiance = data.experiance;
+        this.router.navigateByUrl('/profile');
+      },
+      error => console.error(error));
+    this.xpForm.reset();
+    this.showXpForm = false;
   }
 
   submitAbout() {
@@ -98,7 +111,6 @@ export class ProfileEditComponent implements OnInit {
       .subscribe(
       data => {
         this.user.profile.summary = data.summary;
-        // this.router.navigateByUrl('/profile');
       },
       error => console.error(error));
     this.aboutForm.reset();
