@@ -2269,13 +2269,11 @@ class View_ProfileEditComponent11 extends import1.AppView<any> {
 class View_ProfileEditComponent12 extends import1.AppView<any> {
   _el_0:any;
   _text_1:any;
-  /*private*/ _expr_2:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
     super(View_ProfileEditComponent12,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
-    this._expr_2 = import6.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
-    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'a',new import3.InlineArray2(2,'class','btn btn-sm btn-outline-primary'),(null as any));
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'a',new import3.InlineArray4(4,'class','btn btn-sm btn-outline-primary','href','/github'),(null as any));
     this._text_1 = this.renderer.createText(this._el_0,'Link Github',(null as any));
     this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
       this._el_0,
@@ -2284,13 +2282,6 @@ class View_ProfileEditComponent12 extends import1.AppView<any> {
     ),(null as any));
     return (null as any);
   }
-  detectChangesInternal(throwOnChange:boolean):void {
-    const currVal_2:any = import3.inlineInterpolate(1,'/github/',this.parentView.parentView.context.user._id,'');
-    if (import3.checkBinding(throwOnChange,this._expr_2,currVal_2)) {
-      this.renderer.setElementProperty(this._el_0,'href',this.viewUtils.sanitizer.sanitize(import39.SecurityContext.URL,currVal_2));
-      this._expr_2 = currVal_2;
-    }
-  }
   visitRootNodesInternal(cb:any,ctx:any):void {
     cb(this._el_0,ctx);
   }
@@ -2298,13 +2289,11 @@ class View_ProfileEditComponent12 extends import1.AppView<any> {
 class View_ProfileEditComponent13 extends import1.AppView<any> {
   _el_0:any;
   _text_1:any;
-  /*private*/ _expr_2:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
     super(View_ProfileEditComponent13,renderType_ProfileEditComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
-    this._expr_2 = import6.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
-    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'a',new import3.InlineArray2(2,'class','btn btn-sm btn-outline-primary'),(null as any));
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'a',new import3.InlineArray4(4,'class','btn btn-sm btn-outline-primary','href','/facebook'),(null as any));
     this._text_1 = this.renderer.createText(this._el_0,'Link Facebook',(null as any));
     this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
       this._el_0,
@@ -2312,13 +2301,6 @@ class View_ProfileEditComponent13 extends import1.AppView<any> {
     ]
     ),(null as any));
     return (null as any);
-  }
-  detectChangesInternal(throwOnChange:boolean):void {
-    const currVal_2:any = import3.inlineInterpolate(1,'/facebook/',this.parentView.parentView.context.user._id,'');
-    if (import3.checkBinding(throwOnChange,this._expr_2,currVal_2)) {
-      this.renderer.setElementProperty(this._el_0,'href',this.viewUtils.sanitizer.sanitize(import39.SecurityContext.URL,currVal_2));
-      this._expr_2 = currVal_2;
-    }
   }
   visitRootNodesInternal(cb:any,ctx:any):void {
     cb(this._el_0,ctx);
