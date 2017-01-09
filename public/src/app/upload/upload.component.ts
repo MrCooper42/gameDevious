@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FileUploader } from 'ng2-file-upload/ng2-file-upload';
 
 const TOKEN = localStorage.getItem('token');
@@ -9,7 +9,7 @@ const URL = '/upload/avatar';
   templateUrl: 'upload.component.html',
   styleUrls: ['./upload.component.css']
 })
-export class UploadComponent {
+export class UploadComponent implements OnInit {
 
   public uploader: FileUploader = new FileUploader({url: URL, authToken: TOKEN});
 
@@ -23,6 +23,10 @@ export class UploadComponent {
 
   public fileOverAnother(e: any): void {
     this.hasAnotherDropZoneOver = e;
+  }
+
+  ngOnInit() {
+    console.log(TOKEN, "token here")
   }
 }
 
