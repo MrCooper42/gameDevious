@@ -17,50 +17,49 @@ const isLoggedIn = (req, res, next) => {;
 
 module.exports = function(app, passport) {
 
-  app.use(session({
-    secret: 'superSecret',
-    cookie: {
-      maxAge: 60000
-    }
-  }))
+  // app.use(session({
+  //   secret: 'superSecret',
+  //   cookie: {
+  //     maxAge: 60000
+  //   }
+  // }))
 
-  app.use(cors())
+  // app.use(cors())
 
-  router.get('/ping', function(req, res) {
+  app.get('/ping', (req, res) => {
     res.status(200).send("pong!");
   });
   //start social accounts
 
-  app.get('/github/:id', (req, res, next) => {
+  app.get('/github', (req, res, next) => {
     passport.authenticate('github', {
-      callbackURL: '/github/callback/' + req.params.id
+      callbackURL: '/github/callback/',
     })(req, res, next);
   });
 
-  app.get('/github/callback/:id', (req, res, next) => {
+  app.get('/github/callback', (req, res, next) => {
     passport.authenticate('github', {
-      callbackURL: '/github/callback/' + req.params.id,
+      callbackURL: '/github/callback/',
       successRedirect: '/profile',
       failureRedirect: '/login'
     })(req, res, next);
   });
 
-  app.get('/facebook/:id', (req, res, next) => {
+  app.get('/facebook', (req, res, next) => {
     passport.authenticate('facebook', {
     scope: 'email',
-    callbackURL: '/facebook/callback/' + req.params.id
+    callbackURL: '/facebook/callback/',
   })(req, res, next);
 });
-  //
 
-  app.get('/facebook/callback/:id', (req, res, next) => {
+  app.get('/facebook/callback', (req, res, next) => {
   passport.authenticate('facebook', {
-    callbackURL: '/facebook/callback/' + req.params.id,
+    callbackURL: '/facebook/callback/',
     successRedirect: '/profile',
     failureRedirect: '/login'
   })(req, res, next);
 });
-// 
+//
 //   app.get('/linkedin/:id', (req, res, next) => {
 //     req.user = {user:"i am a user"}
 //     passport.authenticate('linkedin', {

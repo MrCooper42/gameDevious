@@ -168,10 +168,10 @@
   <a (click)="linkGoogle">Google</a>
   <a (click)="linkTwitter">Twitter</a> -->
     <div>
-      <a class="btn btn-sm btn-outline-primary" href="/github/{{user._id}}" *ngIf="!user.github">Link Github</a>
+      <a class="btn btn-sm btn-outline-primary" href="/github" *ngIf="!user.github">Link Github</a>
     </div>
     <div class="facebook-profile-edit">
-      <a class="btn btn-sm btn-outline-primary" href="/facebook/{{user._id}}" *ngIf="!user.facebook">Link Facebook</a>
+      <a class="btn btn-sm btn-outline-primary" href="/facebook" *ngIf="!user.facebook">Link Facebook</a>
     </div>
     <!-- <div class="linkedin-profile-edit">
     <a class="btn btn-sm btn-outline-primary" href="/linkedin/{{user._id}}" *ngIf="!user.linkedin">Link LinkedIn</a>

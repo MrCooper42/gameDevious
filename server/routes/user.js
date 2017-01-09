@@ -76,7 +76,7 @@ router.post('/signin', (req, res, next) => {
       user: user
     }, 'secret', {expiresIn: 5000000});
     console.log(user, "user signed in");
-    res.status(200).json({message: 'Succesfully logged in', token: token, userId: user._id})
+    res.status(200).cookie('token', token).json({message: 'Succesfully logged in', token: token, userId: user._id})
   });
 });
 

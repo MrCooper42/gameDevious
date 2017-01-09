@@ -1,12 +1,12 @@
 'use strict'
 
 const passport = require('passport');
-// const jwt = require('jsonwebtoken')
+const jwt = require('jsonwebtoken')
 const LocalStrategy = require('passport-local').Strategy;
 const FacebookStrategy = require('passport-facebook').Strategy;
 const TwitterStrategy = require('passport-twitter').Strategy;
 const SteamStrategy = require('passport-steam').Strategy;
-var LinkedInStrategy = require('passport-linkedin-oauth2').Strategy;
+const LinkedInStrategy = require('passport-linkedin-oauth2').Strategy;
 const GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 const GithubStrategy = require('passport-github2').Strategy;
 
@@ -43,10 +43,9 @@ module.exports = function(passport) {
     passReqToCallback: true
   }, function(req, token, refreshToken, profile, done) {
     console.log('I am here')
-    console.log(req.user, "scope in req?");
-    console.log(req.params.id, "req params");
-    // console.log(req.headers, "headers");
-    User.findById(req.params.id, (err, user) => {
+    console.log(req.cookies.token, "cookie in req?");
+    let decoded = jwt.decode(req.cookies.token);
+    User.findById(decoded.user._id, (err, user) => {
       if (err) {
         console.log(err, "erroz had");
       } else {
@@ -355,8 +354,8 @@ module.exports = function(passport) {
     passReqToCallback: true
   }, function(req, accessToken, refreshToken, profile, done) {
     console.log('I am here')
-    console.log(req.params.id, "session passport");
-    User.findById(req.params.id, (err, user) => {
+    let decoded = jwt.decode(req.cookies.token);
+    User.findById(decoded.user._id, (err, user) => {
       if (err) {
         console.log(err, "erroz had");
       } else {
