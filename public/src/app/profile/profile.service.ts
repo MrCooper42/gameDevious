@@ -62,6 +62,17 @@ export class ProfileService {
       .map((res: Response) => res.json());
   }
 
+  addEdu(userId, body) {
+    let token = localStorage.getItem('token');
+    let reqBody = JSON.stringify({ 'body': body });
+    let headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    headers.append('token', token);
+    let options = new RequestOptions({ headers: headers });
+    return this.http.post(`/profile/${userId}/education`, reqBody, options)
+      .map((res: Response) => res.json());
+  }
+
   skillUpdate(userId, body) {
     let token = localStorage.getItem('token');
     let reqBody = JSON.stringify({ 'body': body });

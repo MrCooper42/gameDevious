@@ -96,6 +96,41 @@ router.post("/:id/about", (req, res) => {
   })
 })
 
+router.post("/:id/education", (req, res) => {
+  console.log("hit");
+  let token = req.headers.token
+  jwt.verify(token, 'secret', this.ignoreExpiration = 'true', (err, decoded) => {
+    if (err) {
+      res.status(401).json({
+        title: 'Not Authenticated ya here',
+        error: err
+      })
+    } else {
+      Profile.findOne({
+        user: decoded.user._id
+      }, (err, profile) => {
+        if (err) {
+          return res.status(500).json({
+            title: 'Bad things happened',
+            error: err
+          });
+        }
+        profile.education.push(req.body.body)
+        profile.save((err, result) => {
+          if (err) {
+            return res.status(500).json({
+              title: 'Bad things happened',
+              error: err
+            });
+          }
+          console.log(result, "result skill succuss was had");
+          res.send(result)
+        })
+      });
+    }
+  })
+})
+
 router.post("/:id/skills", (req, res) => {
   console.log("hit");
   let token = req.headers.token

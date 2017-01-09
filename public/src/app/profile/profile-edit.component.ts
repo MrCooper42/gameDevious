@@ -79,6 +79,19 @@ export class ProfileEditComponent implements OnInit {
     this.showTitleForm = false;
   }
 
+  submitEdu() {
+    let education = this.eduForm.value;
+    this.profileService.addEdu(this.useJwtHelper()._id, education)
+      .subscribe(
+      data => {
+        this.user.profile.education = data.education;
+        this.router.navigateByUrl('/profile');
+      },
+      error => console.error(error));
+    this.titleForm.reset();
+    this.showTitleForm = false;
+  }
+
   submitAbout() {
     let about = this.aboutForm.value.about;
     this.profileService.aboutUpdate(this.useJwtHelper()._id, about)
@@ -224,6 +237,7 @@ export class ProfileEditComponent implements OnInit {
     });
     this.eduForm = new FormGroup({
         school: new FormControl(null, Validators.required),
+        study: new FormControl(null, Validators.required),
         degree: new FormControl(null, Validators.required),
         extras: new FormControl(''),
       });

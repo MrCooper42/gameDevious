@@ -4,19 +4,39 @@
       <h1 class="page-header">{{user.firstName}}
         {{user.lastName}}
         <small>{{user.profile.title || 'Working title'}}
-          <button type="btn btn-sm" (click)="showTitle()">
-            <span aria-hidden="true" class="glyphicon glyphicon-pencil"></span>
-          </button>
+          <small>
+            <button type="btn btn-sm" (click)="showTitle()">
+              <span aria-hidden="true" class="glyphicon glyphicon-pencil"></span>
+            </button>
+          </small>
         </small>
       </h1>
       <h4>
-        <strong>Education:</strong>
-        {{user.profile.education.school}}
-        -
-        {{user.profile.education.study}}
-        <button type="btn btn-sm" (click)="showEdu()">
-          <span aria-hidden="true" class="glyphicon glyphicon-pencil"></span>
-        </button>
+        <h3>
+          <u>Education</u>
+          <small>
+            <button type="btn btn-sm" (click)="showEdu()">
+              <span aria-hidden="true" class="glyphicon glyphicon-pencil"></span>
+            </button>
+          </small>
+        </h3>
+        <hr>
+        <div class="educations" *ngIf="user.profile.education.length > 0">
+          <div *ngFor="let edu of user.profile.education">
+            <strong>School:<small>
+                {{edu.school}}</small>
+            </strong>
+            <br>
+            <strong>Study:</strong>
+            <small>
+              {{edu.study}}</small>
+            <br>
+            <strong>Degree/ Certification:</strong>
+            <small>
+              {{edu.degree}}</small>
+            <hr>
+          </div>
+        </div>
       </h4>
       <h4>
         <strong>Company:</strong>
@@ -31,10 +51,13 @@
           <div class="form-group">
             <label for="school">School</label>
             <input type="text" id="school" class="form-control" placeholder="School" formControlName="school">
+            <label for="study">Area of study</label>
+            <input type="text" id="study" class="form-control" placeholder="What are you studying?" formControlName="study">
             <label for="degree">Degree/ Cert.</label>
             <input type="text" id="degree" class="form-control" placeholder="degree recieved or working on" formControlName="degree">
             <label for="extras">What you did</label>
             <input id="extras" class="form-control" placeholder="certifications, activities, etc" formControlName="extras">
+            <button class="btn btn-primary" type="submit" [disabled]="!eduForm.valid">Submit</button>
           </div>
         </form>
       </div>
