@@ -33,13 +33,12 @@ module.exports = function(app, passport) {
 
   app.get('/github', (req, res, next) => {
     passport.authenticate('github', {
-      callbackURL: '/github/callback/',
+      callbackURL: '/github/callback',
     })(req, res, next);
   });
 
   app.get('/github/callback', (req, res, next) => {
     passport.authenticate('github', {
-      callbackURL: '/github/callback/',
       successRedirect: '/profile',
       failureRedirect: '/login'
     })(req, res, next);
@@ -48,13 +47,12 @@ module.exports = function(app, passport) {
   app.get('/facebook', (req, res, next) => {
     passport.authenticate('facebook', {
     scope: 'email',
-    callbackURL: '/facebook/callback/',
+    callbackURL: '/facebook/callback',
   })(req, res, next);
 });
 
   app.get('/facebook/callback', (req, res, next) => {
   passport.authenticate('facebook', {
-    callbackURL: '/facebook/callback/',
     successRedirect: '/profile',
     failureRedirect: '/login'
   })(req, res, next);
