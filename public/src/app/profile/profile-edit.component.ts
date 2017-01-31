@@ -168,14 +168,14 @@ export class ProfileEditComponent implements OnInit {
     }
   }
 
-  updateAvatar() {
-    this.returnUser().subscribe(res => this.user = res);
-  }
+  // updateAvatar() {
+  //   this.returnUser().subscribe(res => this.user = res);
+  // }
 
   openAvatar() {
     setTimeout(() => {
       this.returnUser().subscribe(res => this.user = res);
-    }, 15000);
+    }, 10000);
     let options: NgbModalOptions = {
       size: 'lg'
     };

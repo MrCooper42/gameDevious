@@ -22,7 +22,6 @@
     <div class="row">
       <div class="col-md-4">
         <button class="btn btn-lg btn-outline-primary" (click)="openAvatar(lg)">add avatar</button>
-        <button class="btn btn-lg btn-outline-primary" (click)="updateAvatar()">update avatar</button>
         <img class="img-thumbnail" [src]="getAvatar()" alt="">
       </div>
       <div class="col-md-8">
@@ -85,7 +84,7 @@
                 <label for="roll">Roll</label>
                 <input type="text" id="roll" class="form-control" placeholder="roll in company" formControlName="roll">
                 <label for="description">What you did</label>
-                <input id="description" class="form-control" placeholder="certifications, activities, etc" formControlName="description">
+                <input id="description" class="form-control" placeholder="development, managment, team-leader" formControlName="description">
                 <button class="btn btn-primary" type="submit" [disabled]="!xpForm.valid">Submit</button>
               </div>
             </form>
@@ -181,7 +180,6 @@
         </div>
       </div>
       <div *ngIf="hasWorks().length < 1">
-        <h5>{{user.firstName}}'s Works!</h5>
         <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
       </div>
       <div class="has-works" *ngIf="hasWorks().length > 0">
