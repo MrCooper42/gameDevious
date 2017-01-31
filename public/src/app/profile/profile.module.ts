@@ -17,7 +17,8 @@ import { WorkDetailsComponent } from './work-details.component';
     CommonModule,
     ReactiveFormsModule,
     UploadModule,
-    profileRouting
+    profileRouting,
+    NgbModule
   ],
   declarations: [
     ProfileComponent,

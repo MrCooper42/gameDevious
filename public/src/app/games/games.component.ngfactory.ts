@@ -20,22 +20,22 @@ import * as import11 from '../../../../node_modules/@angular/forms/src/directive
 import * as import12 from '../../../../node_modules/@angular/forms/src/directives/default_value_accessor.ngfactory';
 import * as import13 from '../../../../node_modules/@angular/forms/src/directives/reactive_directives/form_control_name.ngfactory';
 import * as import14 from '@angular/core/src/linker/view_container';
-import * as import15 from '../../../../node_modules/@angular/common/src/directives/ng_for.ngfactory';
-import * as import16 from '@angular/common/src/pipes/number_pipe';
-import * as import17 from '@angular/core/src/linker/element_ref';
-import * as import18 from '@angular/core/src/linker/template_ref';
-import * as import19 from '@angular/core/src/change_detection/differs/iterable_differs';
-import * as import20 from '@angular/core/src/i18n/tokens';
-import * as import21 from '@angular/forms/src/directives/default_value_accessor';
-import * as import22 from '@angular/forms/src/directives/control_value_accessor';
-import * as import23 from '@angular/forms/src/directives/reactive_directives/form_control_name';
-import * as import24 from '@angular/forms/src/directives/ng_control';
-import * as import25 from '@angular/forms/src/directives/ng_control_status';
-import * as import26 from '@angular/forms/src/directives/reactive_directives/form_group_directive';
-import * as import27 from '@angular/forms/src/directives/control_container';
-import * as import28 from '@angular/common/src/directives/ng_for';
-import * as import29 from '../../../../node_modules/@angular/common/src/directives/ng_if.ngfactory';
-import * as import30 from '@angular/common/src/directives/ng_if';
+import * as import15 from '../../../../node_modules/@angular/common/src/directives/ng_if.ngfactory';
+import * as import16 from '../../../../node_modules/@angular/common/src/directives/ng_for.ngfactory';
+import * as import17 from '@angular/common/src/pipes/number_pipe';
+import * as import18 from '@angular/core/src/linker/element_ref';
+import * as import19 from '@angular/core/src/linker/template_ref';
+import * as import20 from '@angular/core/src/change_detection/differs/iterable_differs';
+import * as import21 from '@angular/core/src/i18n/tokens';
+import * as import22 from '@angular/forms/src/directives/default_value_accessor';
+import * as import23 from '@angular/forms/src/directives/control_value_accessor';
+import * as import24 from '@angular/forms/src/directives/reactive_directives/form_control_name';
+import * as import25 from '@angular/forms/src/directives/ng_control';
+import * as import26 from '@angular/forms/src/directives/ng_control_status';
+import * as import27 from '@angular/forms/src/directives/reactive_directives/form_group_directive';
+import * as import28 from '@angular/forms/src/directives/control_container';
+import * as import29 from '@angular/common/src/directives/ng_if';
+import * as import30 from '@angular/common/src/directives/ng_for';
 import * as import31 from '@angular/core/src/security';
 export class Wrapper_GamesComponent {
   /*private*/ _eventHandler:Function;
@@ -122,19 +122,24 @@ export class View_GamesComponent0 extends import1.AppView<import0.GamesComponent
   _text_11:any;
   _text_12:any;
   _text_13:any;
-  _el_14:any;
+  _anchor_14:any;
+  /*private*/ _vc_14:import14.ViewContainer;
+  _TemplateRef_14_5:any;
+  _NgIf_14_6:import15.Wrapper_NgIf;
   _text_15:any;
-  _anchor_16:any;
-  /*private*/ _vc_16:import14.ViewContainer;
-  _TemplateRef_16_5:any;
-  _NgFor_16_6:import15.Wrapper_NgFor;
+  _el_16:any;
   _text_17:any;
-  _text_18:any;
-  /*private*/ _expr_30:any;
-  _pipe_number_0:import16.DecimalPipe;
+  _anchor_18:any;
+  /*private*/ _vc_18:import14.ViewContainer;
+  _TemplateRef_18_5:any;
+  _NgFor_18_6:import16.Wrapper_NgFor;
+  _text_19:any;
+  _text_20:any;
+  /*private*/ _expr_35:any;
+  _pipe_number_0:import17.DecimalPipe;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any) {
     super(View_GamesComponent0,renderType_GamesComponent,import5.ViewType.COMPONENT,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways);
-    this._expr_30 = import6.UNINITIALIZED;
+    this._expr_35 = import6.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
     const parentRenderNode:any = this.renderer.createViewRoot(this.parentElement);
@@ -149,7 +154,7 @@ export class View_GamesComponent0 extends import1.AppView<import0.GamesComponent
     this._text_5 = this.renderer.createText(this._el_4,'Search:',(null as any));
     this._text_6 = this.renderer.createText(this._el_2,'\n      ',(null as any));
     this._el_7 = import3.createRenderElement(this.renderer,this._el_2,'input',new import3.InlineArray16(10,'class','form-control','formControlName','game','id','game','placeholder','search for a game','type','text'),(null as any));
-    this._DefaultValueAccessor_7_3 = new import12.Wrapper_DefaultValueAccessor(this.renderer,new import17.ElementRef(this._el_7));
+    this._DefaultValueAccessor_7_3 = new import12.Wrapper_DefaultValueAccessor(this.renderer,new import18.ElementRef(this._el_7));
     this._NG_VALUE_ACCESSOR_7_4 = [this._DefaultValueAccessor_7_3.context];
     this._FormControlName_7_5 = new import13.Wrapper_FormControlName(this._ControlContainer_0_4,(null as any),(null as any),this._NG_VALUE_ACCESSOR_7_4);
     this._NgControl_7_6 = this._FormControlName_7_5.context;
@@ -160,18 +165,23 @@ export class View_GamesComponent0 extends import1.AppView<import0.GamesComponent
     this._text_11 = this.renderer.createText(this._el_2,'\n        ',(null as any));
     this._text_12 = this.renderer.createText(this._el_0,'\n',(null as any));
     this._text_13 = this.renderer.createText(parentRenderNode,'\n\n',(null as any));
-    this._el_14 = import3.createRenderElement(this.renderer,parentRenderNode,'div',new import3.InlineArray2(2,'class','card-columns'),(null as any));
-    this._text_15 = this.renderer.createText(this._el_14,'\n  ',(null as any));
-    this._anchor_16 = this.renderer.createTemplateAnchor(this._el_14,(null as any));
-    this._vc_16 = new import14.ViewContainer(16,14,this,this._anchor_16);
-    this._TemplateRef_16_5 = new import18.TemplateRef_(this,16,this._anchor_16);
-    this._NgFor_16_6 = new import15.Wrapper_NgFor(this._vc_16.vcRef,this._TemplateRef_16_5,this.parentView.injectorGet(import19.IterableDiffers,this.parentIndex),this.ref);
-    this._text_17 = this.renderer.createText(this._el_14,'\n',(null as any));
-    this._text_18 = this.renderer.createText(parentRenderNode,'\n',(null as any));
+    this._anchor_14 = this.renderer.createTemplateAnchor(parentRenderNode,(null as any));
+    this._vc_14 = new import14.ViewContainer(14,(null as any),this,this._anchor_14);
+    this._TemplateRef_14_5 = new import19.TemplateRef_(this,14,this._anchor_14);
+    this._NgIf_14_6 = new import15.Wrapper_NgIf(this._vc_14.vcRef,this._TemplateRef_14_5);
+    this._text_15 = this.renderer.createText(parentRenderNode,'\n\n',(null as any));
+    this._el_16 = import3.createRenderElement(this.renderer,parentRenderNode,'div',new import3.InlineArray2(2,'class','card-columns'),(null as any));
+    this._text_17 = this.renderer.createText(this._el_16,'\n  ',(null as any));
+    this._anchor_18 = this.renderer.createTemplateAnchor(this._el_16,(null as any));
+    this._vc_18 = new import14.ViewContainer(18,16,this,this._anchor_18);
+    this._TemplateRef_18_5 = new import19.TemplateRef_(this,18,this._anchor_18);
+    this._NgFor_18_6 = new import16.Wrapper_NgFor(this._vc_18.vcRef,this._TemplateRef_18_5,this.parentView.injectorGet(import20.IterableDiffers,this.parentIndex),this.ref);
+    this._text_19 = this.renderer.createText(this._el_16,'\n',(null as any));
+    this._text_20 = this.renderer.createText(parentRenderNode,'\n',(null as any));
     var disposable_0:Function = import3.subscribeToRenderElement(this,this._el_0,new import3.InlineArray8(6,'ngSubmit',(null as any),'submit',(null as any),'reset',(null as any)),this.eventHandler(this.handleEvent_0));
     this._FormGroupDirective_0_3.subscribe(this,this.eventHandler(this.handleEvent_0),true);
     var disposable_1:Function = import3.subscribeToRenderElement(this,this._el_7,new import3.InlineArray4(4,'input',(null as any),'blur',(null as any)),this.eventHandler(this.handleEvent_7));
-    this._pipe_number_0 = new import16.DecimalPipe(this.parentView.injectorGet(import20.LOCALE_ID,this.parentIndex));
+    this._pipe_number_0 = new import17.DecimalPipe(this.parentView.injectorGet(import21.LOCALE_ID,this.parentIndex));
     this.init((null as any),((<any>this.renderer).directRenderer? (null as any): [
       this._el_0,
       this._text_1,
@@ -187,11 +197,13 @@ export class View_GamesComponent0 extends import1.AppView<import0.GamesComponent
       this._text_11,
       this._text_12,
       this._text_13,
-      this._el_14,
+      this._anchor_14,
       this._text_15,
-      this._anchor_16,
+      this._el_16,
       this._text_17,
-      this._text_18
+      this._anchor_18,
+      this._text_19,
+      this._text_20
     ]
     ),[
       disposable_0,
@@ -201,16 +213,18 @@ export class View_GamesComponent0 extends import1.AppView<import0.GamesComponent
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import21.DefaultValueAccessor) && (7 === requestNodeIndex))) { return this._DefaultValueAccessor_7_3.context; }
-    if (((token === import22.NG_VALUE_ACCESSOR) && (7 === requestNodeIndex))) { return this._NG_VALUE_ACCESSOR_7_4; }
-    if (((token === import23.FormControlName) && (7 === requestNodeIndex))) { return this._FormControlName_7_5.context; }
-    if (((token === import24.NgControl) && (7 === requestNodeIndex))) { return this._NgControl_7_6; }
-    if (((token === import25.NgControlStatus) && (7 === requestNodeIndex))) { return this._NgControlStatus_7_7.context; }
-    if (((token === import26.FormGroupDirective) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 12)))) { return this._FormGroupDirective_0_3.context; }
-    if (((token === import27.ControlContainer) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 12)))) { return this._ControlContainer_0_4; }
-    if (((token === import25.NgControlStatusGroup) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 12)))) { return this._NgControlStatusGroup_0_5.context; }
-    if (((token === import18.TemplateRef) && (16 === requestNodeIndex))) { return this._TemplateRef_16_5; }
-    if (((token === import28.NgFor) && (16 === requestNodeIndex))) { return this._NgFor_16_6.context; }
+    if (((token === import22.DefaultValueAccessor) && (7 === requestNodeIndex))) { return this._DefaultValueAccessor_7_3.context; }
+    if (((token === import23.NG_VALUE_ACCESSOR) && (7 === requestNodeIndex))) { return this._NG_VALUE_ACCESSOR_7_4; }
+    if (((token === import24.FormControlName) && (7 === requestNodeIndex))) { return this._FormControlName_7_5.context; }
+    if (((token === import25.NgControl) && (7 === requestNodeIndex))) { return this._NgControl_7_6; }
+    if (((token === import26.NgControlStatus) && (7 === requestNodeIndex))) { return this._NgControlStatus_7_7.context; }
+    if (((token === import27.FormGroupDirective) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 12)))) { return this._FormGroupDirective_0_3.context; }
+    if (((token === import28.ControlContainer) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 12)))) { return this._ControlContainer_0_4; }
+    if (((token === import26.NgControlStatusGroup) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 12)))) { return this._NgControlStatusGroup_0_5.context; }
+    if (((token === import19.TemplateRef) && (14 === requestNodeIndex))) { return this._TemplateRef_14_5; }
+    if (((token === import29.NgIf) && (14 === requestNodeIndex))) { return this._NgIf_14_6.context; }
+    if (((token === import19.TemplateRef) && (18 === requestNodeIndex))) { return this._TemplateRef_18_5; }
+    if (((token === import30.NgFor) && (18 === requestNodeIndex))) { return this._NgFor_18_6.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
@@ -223,25 +237,31 @@ export class View_GamesComponent0 extends import1.AppView<import0.GamesComponent
     this._FormControlName_7_5.check_name(currVal_7_1_0,throwOnChange,false);
     this._FormControlName_7_5.ngDoCheck(this,this._el_7,throwOnChange);
     this._NgControlStatus_7_7.ngDoCheck(this,this._el_7,throwOnChange);
-    const currVal_16_0_0:any = this.context.games;
-    this._NgFor_16_6.check_ngForOf(currVal_16_0_0,throwOnChange,false);
-    this._NgFor_16_6.ngDoCheck(this,this._anchor_16,throwOnChange);
-    this._vc_16.detectChangesInNestedViews(throwOnChange);
+    const currVal_14_0_0:any = this.context.noGames;
+    this._NgIf_14_6.check_ngIf(currVal_14_0_0,throwOnChange,false);
+    this._NgIf_14_6.ngDoCheck(this,this._anchor_14,throwOnChange);
+    const currVal_18_0_0:any = this.context.games;
+    this._NgFor_18_6.check_ngForOf(currVal_18_0_0,throwOnChange,false);
+    this._NgFor_18_6.ngDoCheck(this,this._anchor_18,throwOnChange);
+    this._vc_14.detectChangesInNestedViews(throwOnChange);
+    this._vc_18.detectChangesInNestedViews(throwOnChange);
     this._NgControlStatusGroup_0_5.checkHost(this,this,this._el_0,throwOnChange);
     this._NgControlStatus_7_7.checkHost(this,this,this._el_7,throwOnChange);
-    const currVal_30:boolean = !this.context.searchGameForm.valid;
-    if (import3.checkBinding(throwOnChange,this._expr_30,currVal_30)) {
-      this.renderer.setElementProperty(this._el_9,'disabled',currVal_30);
-      this._expr_30 = currVal_30;
+    const currVal_35:boolean = !this.context.searchGameForm.valid;
+    if (import3.checkBinding(throwOnChange,this._expr_35,currVal_35)) {
+      this.renderer.setElementProperty(this._el_9,'disabled',currVal_35);
+      this._expr_35 = currVal_35;
     }
   }
   destroyInternal():void {
-    this._vc_16.destroyNestedViews();
+    this._vc_14.destroyNestedViews();
+    this._vc_18.destroyNestedViews();
     this._FormControlName_7_5.ngOnDestroy();
     this._FormGroupDirective_0_3.ngOnDestroy();
   }
   createEmbeddedViewInternal(nodeIndex:number):import1.AppView<any> {
-    if ((nodeIndex == 16)) { return new View_GamesComponent1(this.viewUtils,this,16,this._anchor_16,this._vc_16); }
+    if ((nodeIndex == 14)) { return new View_GamesComponent1(this.viewUtils,this,14,this._anchor_14,this._vc_14); }
+    if ((nodeIndex == 18)) { return new View_GamesComponent2(this.viewUtils,this,18,this._anchor_18,this._vc_18); }
     return (null as any);
   }
   handleEvent_0(eventName:string,$event:any):boolean {
@@ -266,10 +286,39 @@ class View_GamesComponent1 extends import1.AppView<any> {
   _text_1:any;
   _el_2:any;
   _text_3:any;
+  _text_4:any;
+  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import14.ViewContainer) {
+    super(View_GamesComponent1,renderType_GamesComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+  }
+  createInternal(rootSelector:string):import7.ComponentRef<any> {
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'div',new import3.InlineArray2(2,'class','noGames'),(null as any));
+    this._text_1 = this.renderer.createText(this._el_0,'\n  ',(null as any));
+    this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'h1',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_3 = this.renderer.createText(this._el_2,'No games with that name found. Please try again.',(null as any));
+    this._text_4 = this.renderer.createText(this._el_0,'\n',(null as any));
+    this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
+      this._el_0,
+      this._text_1,
+      this._el_2,
+      this._text_3,
+      this._text_4
+    ]
+    ),(null as any));
+    return (null as any);
+  }
+  visitRootNodesInternal(cb:any,ctx:any):void {
+    cb(this._el_0,ctx);
+  }
+}
+class View_GamesComponent2 extends import1.AppView<any> {
+  _el_0:any;
+  _text_1:any;
+  _el_2:any;
+  _text_3:any;
   _anchor_4:any;
   /*private*/ _vc_4:import14.ViewContainer;
   _TemplateRef_4_5:any;
-  _NgIf_4_6:import29.Wrapper_NgIf;
+  _NgIf_4_6:import15.Wrapper_NgIf;
   _text_5:any;
   _el_6:any;
   _text_7:any;
@@ -277,22 +326,22 @@ class View_GamesComponent1 extends import1.AppView<any> {
   _anchor_9:any;
   /*private*/ _vc_9:import14.ViewContainer;
   _TemplateRef_9_5:any;
-  _NgIf_9_6:import29.Wrapper_NgIf;
+  _NgIf_9_6:import15.Wrapper_NgIf;
   _text_10:any;
   _anchor_11:any;
   /*private*/ _vc_11:import14.ViewContainer;
   _TemplateRef_11_5:any;
-  _NgIf_11_6:import29.Wrapper_NgIf;
+  _NgIf_11_6:import15.Wrapper_NgIf;
   _text_12:any;
   _anchor_13:any;
   /*private*/ _vc_13:import14.ViewContainer;
   _TemplateRef_13_5:any;
-  _NgIf_13_6:import29.Wrapper_NgIf;
+  _NgIf_13_6:import15.Wrapper_NgIf;
   _text_14:any;
   _text_15:any;
   /*private*/ _expr_28:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import14.ViewContainer) {
-    super(View_GamesComponent1,renderType_GamesComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    super(View_GamesComponent2,renderType_GamesComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
     this._expr_28 = import6.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
@@ -302,26 +351,26 @@ class View_GamesComponent1 extends import1.AppView<any> {
     this._text_3 = this.renderer.createText(this._el_2,'\n    ',(null as any));
     this._anchor_4 = this.renderer.createTemplateAnchor(this._el_2,(null as any));
     this._vc_4 = new import14.ViewContainer(4,2,this,this._anchor_4);
-    this._TemplateRef_4_5 = new import18.TemplateRef_(this,4,this._anchor_4);
-    this._NgIf_4_6 = new import29.Wrapper_NgIf(this._vc_4.vcRef,this._TemplateRef_4_5);
+    this._TemplateRef_4_5 = new import19.TemplateRef_(this,4,this._anchor_4);
+    this._NgIf_4_6 = new import15.Wrapper_NgIf(this._vc_4.vcRef,this._TemplateRef_4_5);
     this._text_5 = this.renderer.createText(this._el_2,'\n      ',(null as any));
     this._el_6 = import3.createRenderElement(this.renderer,this._el_2,'h4',new import3.InlineArray2(2,'class','card-title'),(null as any));
     this._text_7 = this.renderer.createText(this._el_6,'',(null as any));
     this._text_8 = this.renderer.createText(this._el_2,'\n      ',(null as any));
     this._anchor_9 = this.renderer.createTemplateAnchor(this._el_2,(null as any));
     this._vc_9 = new import14.ViewContainer(9,2,this,this._anchor_9);
-    this._TemplateRef_9_5 = new import18.TemplateRef_(this,9,this._anchor_9);
-    this._NgIf_9_6 = new import29.Wrapper_NgIf(this._vc_9.vcRef,this._TemplateRef_9_5);
+    this._TemplateRef_9_5 = new import19.TemplateRef_(this,9,this._anchor_9);
+    this._NgIf_9_6 = new import15.Wrapper_NgIf(this._vc_9.vcRef,this._TemplateRef_9_5);
     this._text_10 = this.renderer.createText(this._el_2,'\n      ',(null as any));
     this._anchor_11 = this.renderer.createTemplateAnchor(this._el_2,(null as any));
     this._vc_11 = new import14.ViewContainer(11,2,this,this._anchor_11);
-    this._TemplateRef_11_5 = new import18.TemplateRef_(this,11,this._anchor_11);
-    this._NgIf_11_6 = new import29.Wrapper_NgIf(this._vc_11.vcRef,this._TemplateRef_11_5);
+    this._TemplateRef_11_5 = new import19.TemplateRef_(this,11,this._anchor_11);
+    this._NgIf_11_6 = new import15.Wrapper_NgIf(this._vc_11.vcRef,this._TemplateRef_11_5);
     this._text_12 = this.renderer.createText(this._el_2,'\n      ',(null as any));
     this._anchor_13 = this.renderer.createTemplateAnchor(this._el_2,(null as any));
     this._vc_13 = new import14.ViewContainer(13,2,this,this._anchor_13);
-    this._TemplateRef_13_5 = new import18.TemplateRef_(this,13,this._anchor_13);
-    this._NgIf_13_6 = new import29.Wrapper_NgIf(this._vc_13.vcRef,this._TemplateRef_13_5);
+    this._TemplateRef_13_5 = new import19.TemplateRef_(this,13,this._anchor_13);
+    this._NgIf_13_6 = new import15.Wrapper_NgIf(this._vc_13.vcRef,this._TemplateRef_13_5);
     this._text_14 = this.renderer.createText(this._el_2,'\n    ',(null as any));
     this._text_15 = this.renderer.createText(this._el_0,'\n  ',(null as any));
     this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
@@ -346,14 +395,14 @@ class View_GamesComponent1 extends import1.AppView<any> {
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import18.TemplateRef) && (4 === requestNodeIndex))) { return this._TemplateRef_4_5; }
-    if (((token === import30.NgIf) && (4 === requestNodeIndex))) { return this._NgIf_4_6.context; }
-    if (((token === import18.TemplateRef) && (9 === requestNodeIndex))) { return this._TemplateRef_9_5; }
-    if (((token === import30.NgIf) && (9 === requestNodeIndex))) { return this._NgIf_9_6.context; }
-    if (((token === import18.TemplateRef) && (11 === requestNodeIndex))) { return this._TemplateRef_11_5; }
-    if (((token === import30.NgIf) && (11 === requestNodeIndex))) { return this._NgIf_11_6.context; }
-    if (((token === import18.TemplateRef) && (13 === requestNodeIndex))) { return this._TemplateRef_13_5; }
-    if (((token === import30.NgIf) && (13 === requestNodeIndex))) { return this._NgIf_13_6.context; }
+    if (((token === import19.TemplateRef) && (4 === requestNodeIndex))) { return this._TemplateRef_4_5; }
+    if (((token === import29.NgIf) && (4 === requestNodeIndex))) { return this._NgIf_4_6.context; }
+    if (((token === import19.TemplateRef) && (9 === requestNodeIndex))) { return this._TemplateRef_9_5; }
+    if (((token === import29.NgIf) && (9 === requestNodeIndex))) { return this._NgIf_9_6.context; }
+    if (((token === import19.TemplateRef) && (11 === requestNodeIndex))) { return this._TemplateRef_11_5; }
+    if (((token === import29.NgIf) && (11 === requestNodeIndex))) { return this._NgIf_11_6.context; }
+    if (((token === import19.TemplateRef) && (13 === requestNodeIndex))) { return this._TemplateRef_13_5; }
+    if (((token === import29.NgIf) && (13 === requestNodeIndex))) { return this._NgIf_13_6.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
@@ -389,18 +438,18 @@ class View_GamesComponent1 extends import1.AppView<any> {
     cb(this._el_0,ctx);
   }
   createEmbeddedViewInternal(nodeIndex:number):import1.AppView<any> {
-    if ((nodeIndex == 4)) { return new View_GamesComponent2(this.viewUtils,this,4,this._anchor_4,this._vc_4); }
-    if ((nodeIndex == 9)) { return new View_GamesComponent3(this.viewUtils,this,9,this._anchor_9,this._vc_9); }
-    if ((nodeIndex == 11)) { return new View_GamesComponent4(this.viewUtils,this,11,this._anchor_11,this._vc_11); }
-    if ((nodeIndex == 13)) { return new View_GamesComponent5(this.viewUtils,this,13,this._anchor_13,this._vc_13); }
+    if ((nodeIndex == 4)) { return new View_GamesComponent3(this.viewUtils,this,4,this._anchor_4,this._vc_4); }
+    if ((nodeIndex == 9)) { return new View_GamesComponent4(this.viewUtils,this,9,this._anchor_9,this._vc_9); }
+    if ((nodeIndex == 11)) { return new View_GamesComponent5(this.viewUtils,this,11,this._anchor_11,this._vc_11); }
+    if ((nodeIndex == 13)) { return new View_GamesComponent6(this.viewUtils,this,13,this._anchor_13,this._vc_13); }
     return (null as any);
   }
 }
-class View_GamesComponent2 extends import1.AppView<any> {
+class View_GamesComponent3 extends import1.AppView<any> {
   _el_0:any;
   /*private*/ _expr_1:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import14.ViewContainer) {
-    super(View_GamesComponent2,renderType_GamesComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    super(View_GamesComponent3,renderType_GamesComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
     this._expr_1 = import6.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
@@ -419,12 +468,12 @@ class View_GamesComponent2 extends import1.AppView<any> {
     cb(this._el_0,ctx);
   }
 }
-class View_GamesComponent3 extends import1.AppView<any> {
+class View_GamesComponent4 extends import1.AppView<any> {
   _el_0:any;
   _text_1:any;
   /*private*/ _expr_2:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import14.ViewContainer) {
-    super(View_GamesComponent3,renderType_GamesComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    super(View_GamesComponent4,renderType_GamesComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
     this._expr_2 = import6.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
@@ -448,13 +497,13 @@ class View_GamesComponent3 extends import1.AppView<any> {
     cb(this._el_0,ctx);
   }
 }
-class View_GamesComponent4 extends import1.AppView<any> {
+class View_GamesComponent5 extends import1.AppView<any> {
   _el_0:any;
   _text_1:any;
   /*private*/ _expr_2:any;
   _pipe_number_0_0:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import14.ViewContainer) {
-    super(View_GamesComponent4,renderType_GamesComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    super(View_GamesComponent5,renderType_GamesComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
     this._expr_2 = import6.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
@@ -481,14 +530,16 @@ class View_GamesComponent4 extends import1.AppView<any> {
     cb(this._el_0,ctx);
   }
 }
-class View_GamesComponent5 extends import1.AppView<any> {
+class View_GamesComponent6 extends import1.AppView<any> {
   _el_0:any;
   _text_1:any;
+  /*private*/ _expr_2:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import14.ViewContainer) {
-    super(View_GamesComponent5,renderType_GamesComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    super(View_GamesComponent6,renderType_GamesComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    this._expr_2 = import6.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
-    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'a',new import3.InlineArray4(4,'class','card-link','href','game.url'),(null as any));
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'a',new import3.InlineArray2(2,'class','card-link'),(null as any));
     this._text_1 = this.renderer.createText(this._el_0,'Link to Igdb',(null as any));
     this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
       this._el_0,
@@ -496,6 +547,13 @@ class View_GamesComponent5 extends import1.AppView<any> {
     ]
     ),(null as any));
     return (null as any);
+  }
+  detectChangesInternal(throwOnChange:boolean):void {
+    const currVal_2:any = import3.inlineInterpolate(1,'',this.parentView.context.$implicit.url,'');
+    if (import3.checkBinding(throwOnChange,this._expr_2,currVal_2)) {
+      this.renderer.setElementProperty(this._el_0,'href',this.viewUtils.sanitizer.sanitize(import31.SecurityContext.URL,currVal_2));
+      this._expr_2 = currVal_2;
+    }
   }
   visitRootNodesInternal(cb:any,ctx:any):void {
     cb(this._el_0,ctx);

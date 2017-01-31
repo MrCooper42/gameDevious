@@ -29,5 +29,3 @@ export class UploadComponent implements OnInit {
     console.log(TOKEN, "token here")
   }
 }
-
-// !uploader.getNotUploadedItems().length for html upload all

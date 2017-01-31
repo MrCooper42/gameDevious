@@ -22,7 +22,7 @@
     "@angular/platform-browser": "2.2.3",
     "@angular/platform-browser-dynamic": "2.2.3",
     "@angular/router": "3.2.3",
-    "@ng-bootstrap/ng-bootstrap": "^1.0.0-alpha.15",
+    "@ng-bootstrap/ng-bootstrap": "^1.0.0-alpha.19",
     "@types/core-js": "^0.9.35",
     "angular2-jwt": "^0.1.27",
     "auth0-lock": "^10.7.3",
@@ -92,7 +92,7 @@
     "tslint": "^4.0.2",
     "typescript": "2.0.10",
     "webdriver-manager": "10.2.5",
-    "webpack": "^2.2.0-rc.0",
+    "webpack": "^2.2.1",
     "webpack-merge": "^1.1.1"
   }
 }

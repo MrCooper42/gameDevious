@@ -13,9 +13,10 @@ export class NewsComponent {
   constructor(newsService: NewsService) {
 
     newsService.getPulse()
-      .subscribe((res) => {
-        this.news = res.body;
-        // news => this.news = news,
+      .subscribe((data) => {
+        data = JSON.parse(data.body).filter(pulse => pulse.image != undefined);
+        this.news = data;
+        console.log(data[7].image, "data");
       });
    };
 

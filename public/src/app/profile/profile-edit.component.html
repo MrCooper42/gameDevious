@@ -11,6 +11,15 @@
           </small>
         </small>
       </h1>
+      <div *ngIf="showTitleForm">
+        <form [formGroup]="titleForm" (ngSubmit)="submitTitle()">
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" id="title" class="form-control" placeholder="working title here" formControlName="title">
+            <button class="btn btn-primary" type="submit" [disabled]="!titleForm.valid">Submit</button>
+          </div>
+        </form>
+      </div>
       <h4>
         <h3>
           <u>Education</u>
@@ -20,6 +29,21 @@
             </button>
           </small>
         </h3>
+        <div *ngIf="showEduForm">
+          <form [formGroup]="eduForm" (ngSubmit)="submitEdu()">
+            <div class="form-group">
+              <label for="school">School</label>
+              <input type="text" id="school" class="form-control" placeholder="School" formControlName="school">
+              <label for="study">Area of study</label>
+              <input type="text" id="study" class="form-control" placeholder="What are you studying?" formControlName="study">
+              <label for="degree">Degree/ Cert.</label>
+              <input type="text" id="degree" class="form-control" placeholder="degree recieved or working on" formControlName="degree">
+              <label for="extras">What you did</label>
+              <input id="extras" class="form-control" placeholder="certifications, activities, etc" formControlName="extras">
+              <button class="btn btn-primary" type="submit" [disabled]="!eduForm.valid">Submit</button>
+            </div>
+          </form>
+        </div>
         <hr>
         <div class="educations container" *ngIf="user.profile.education.length > 0">
           <div *ngFor="let edu of user.profile.education">
@@ -41,15 +65,28 @@
       <hr>
       <h4>
         <h3>
-          <u>Experiance:</u>
+          <u>Experience:</u>
           <small>
             <button type="btn btn-sm" (click)="showXp()">
               <span aria-hidden="true" class="glyphicon glyphicon-pencil"></span>
             </button>
           </small>
+          <div *ngIf="showXpForm">
+            <form [formGroup]="xpForm" (ngSubmit)="submitXp()">
+              <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" id="company" class="form-control" placeholder="Company worked for" formControlName="company">
+                <label for="roll">Roll</label>
+                <input type="text" id="roll" class="form-control" placeholder="roll in company" formControlName="roll">
+                <label for="description">What you did</label>
+                <input id="description" class="form-control" placeholder="certifications, activities, etc" formControlName="description">
+                <button class="btn btn-primary" type="submit" [disabled]="!xpForm.valid">Submit</button>
+              </div>
+            </form>
+          </div>
         </h3>
-        <div class="experiances container" *ngIf="user.profile.experiance.length > 0">
-          <div *ngFor="let exp of user.profile.experiance">
+        <div class="experiences container" *ngIf="user.profile.experience.length > 0">
+          <div *ngFor="let exp of user.profile.experience">
             <hr>
             <strong>Company:<small>
                 {{exp.company}}</small>
@@ -67,43 +104,6 @@
           </div>
         </div>
       </h4>
-      <div *ngIf="showEduForm">
-        <form [formGroup]="eduForm" (ngSubmit)="submitEdu()">
-          <div class="form-group">
-            <label for="school">School</label>
-            <input type="text" id="school" class="form-control" placeholder="School" formControlName="school">
-            <label for="study">Area of study</label>
-            <input type="text" id="study" class="form-control" placeholder="What are you studying?" formControlName="study">
-            <label for="degree">Degree/ Cert.</label>
-            <input type="text" id="degree" class="form-control" placeholder="degree recieved or working on" formControlName="degree">
-            <label for="extras">What you did</label>
-            <input id="extras" class="form-control" placeholder="certifications, activities, etc" formControlName="extras">
-            <button class="btn btn-primary" type="submit" [disabled]="!eduForm.valid">Submit</button>
-          </div>
-        </form>
-      </div>
-      <div *ngIf="showXpForm">
-        <form [formGroup]="xpForm" (ngSubmit)="submitXp()">
-          <div class="form-group">
-            <label for="company">Company</label>
-            <input type="text" id="company" class="form-control" placeholder="Company worked for" formControlName="company">
-            <label for="roll">Roll</label>
-            <input type="text" id="roll" class="form-control" placeholder="roll in company" formControlName="roll">
-            <label for="description">What you did</label>
-            <input id="description" class="form-control" placeholder="certifications, activities, etc" formControlName="description">
-            <button class="btn btn-primary" type="submit" [disabled]="!xpForm.valid">Submit</button>
-          </div>
-        </form>
-      </div>
-      <div *ngIf="showTitleForm">
-        <form [formGroup]="titleForm" (ngSubmit)="submitTitle()">
-          <div class="form-group">
-            <label for="title">Title</label>
-            <input type="text" id="title" class="form-control" placeholder="working title here" formControlName="title">
-            <button class="btn btn-primary" type="submit" [disabled]="!titleForm.valid">Submit</button>
-          </div>
-        </form>
-      </div>
     </div>
     <div class="row">
       <div class="col-md-4">
@@ -154,11 +154,12 @@
       </div>
       <p>
         Show your works!
-        <button class="btn btn-sm btn-outline-primary" (click)="showWorkForm()">Add a new work</button>
+        <button class="btn btn-sm btn-outline-primary" (click)="showWorkForm()" [hidden]="!showWork">Add a new work</button>
+        <button class="btn btn-sm btn-outline-primary pull-right" (click)="refreshWorks()" [hidden]="showWork">Close to show work</button>
       </p>
-      <div [hidden]="showWork">
+      <br>
+      <div [hidden]="showWork" class="container">
         <header class="row spacing">
-          <button class="btn btn-sm btn-outline-primary pull-right" (click)="refreshWorks()">Close to show work</button>
           <nav class="col-md-8 col-md-offset-2">
             <ul class="nav nav-tabs">
               <li routerLinkActive="active">
@@ -184,8 +185,11 @@
       <div class="has-works" *ngIf="hasWorks().length > 0">
         <div class="row works col-xs-12 text-center" *ngFor="let work of hasWorks()">
           <div class="container-fluid">
+            <p>
+              {{work.path}}
+            </p>
             <div class="col-xs-3">
-              <img class="img-fluid work-img" [src]="workAvatar(work._id)" alt="" *ngIf="workAvatar(work._id)">
+              <img class="img-fluid work-img" [src]="work.path" alt="" *ngIf="workAvatar(work._id)">
             </div>
             <div class="col-xs-9">
 
@@ -206,12 +210,6 @@
     </div>
     <hr>
     <h3>Link your social accounts!</h3>
-    <!--
-  <a (click)="linkSteam">Steam</a>
-  <a (click)="linkGithub">Github</a>
-  <a (click)="linkLinkedIn">LinkedIn</a>
-  <a (click)="linkGoogle">Google</a>
-  <a (click)="linkTwitter">Twitter</a> -->
     <div>
       <a class="btn btn-sm btn-outline-primary" href="/github" *ngIf="!user.github">Link Github</a>
     </div>

@@ -19,7 +19,7 @@ const schema = new Schema({
     type: String,
     default: ''
   },
-  experiance: [
+  experience: [
     {
       // current: {
       //   type: Boolean,

@@ -11,57 +11,113 @@ import * as import2 from '@angular/common/src/common_module';
 import * as import3 from '@angular/forms/src/directives';
 import * as import4 from '@angular/forms/src/form_providers';
 import * as import5 from 'ng2-file-upload/file-upload/file-upload.module';
-import * as import6 from '../upload/upload.module';
-import * as import7 from '@angular/router/src/router_module';
-import * as import8 from '@angular/common/src/localization';
-import * as import9 from '@angular/forms/src/form_builder';
-import * as import10 from '@angular/forms/src/directives/radio_control_value_accessor';
-import * as import11 from '@angular/core/src/di/injector';
-import * as import12 from './profile-edit.component.ngfactory';
-import * as import13 from './work-details.component.ngfactory';
-import * as import14 from '../upload/upload-works.component.ngfactory';
-import * as import15 from '../upload/upload-works-avatar.component.ngfactory';
-import * as import16 from '@angular/core/src/i18n/tokens';
-import * as import17 from './profile-edit.component';
-import * as import18 from './work-details.component';
-import * as import19 from '../upload/upload-works.component';
-import * as import20 from '../upload/upload-works-avatar.component';
-import * as import21 from '@angular/router/src/router_config_loader';
+import * as import6 from '@ng-bootstrap/ng-bootstrap/accordion/accordion.module';
+import * as import7 from '@ng-bootstrap/ng-bootstrap/alert/alert.module';
+import * as import8 from '@ng-bootstrap/ng-bootstrap/buttons/radio.module';
+import * as import9 from '@ng-bootstrap/ng-bootstrap/carousel/carousel.module';
+import * as import10 from '@ng-bootstrap/ng-bootstrap/collapse/collapse.module';
+import * as import11 from '@ng-bootstrap/ng-bootstrap/datepicker/datepicker.module';
+import * as import12 from '@ng-bootstrap/ng-bootstrap/dropdown/dropdown.module';
+import * as import13 from '@ng-bootstrap/ng-bootstrap/modal/modal.module';
+import * as import14 from '@ng-bootstrap/ng-bootstrap/pagination/pagination.module';
+import * as import15 from '@ng-bootstrap/ng-bootstrap/popover/popover.module';
+import * as import16 from '@ng-bootstrap/ng-bootstrap/progressbar/progressbar.module';
+import * as import17 from '@ng-bootstrap/ng-bootstrap/rating/rating.module';
+import * as import18 from '@ng-bootstrap/ng-bootstrap/tabset/tabset.module';
+import * as import19 from '@ng-bootstrap/ng-bootstrap/timepicker/timepicker.module';
+import * as import20 from '@ng-bootstrap/ng-bootstrap/tooltip/tooltip.module';
+import * as import21 from '@ng-bootstrap/ng-bootstrap/typeahead/typeahead.module';
+import * as import22 from '@ng-bootstrap/ng-bootstrap/index';
+import * as import23 from '../upload/upload.module';
+import * as import24 from '@angular/router/src/router_module';
+import * as import25 from '@angular/common/src/localization';
+import * as import26 from '@angular/forms/src/form_builder';
+import * as import27 from '@angular/forms/src/directives/radio_control_value_accessor';
+import * as import28 from '@ng-bootstrap/ng-bootstrap/modal/modal';
+import * as import29 from '@angular/core/src/di/injector';
+import * as import30 from '../../../../node_modules/@ng-bootstrap/ng-bootstrap/alert/alert.ngfactory';
+import * as import31 from '../../../../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker.ngfactory';
+import * as import32 from '../../../../node_modules/@ng-bootstrap/ng-bootstrap/modal/modal-backdrop.ngfactory';
+import * as import33 from '../../../../node_modules/@ng-bootstrap/ng-bootstrap/modal/modal-window.ngfactory';
+import * as import34 from '../../../../node_modules/@ng-bootstrap/ng-bootstrap/popover/popover.ngfactory';
+import * as import35 from '../../../../node_modules/@ng-bootstrap/ng-bootstrap/tooltip/tooltip.ngfactory';
+import * as import36 from '../../../../node_modules/@ng-bootstrap/ng-bootstrap/typeahead/typeahead-window.ngfactory';
+import * as import37 from './profile-edit.component.ngfactory';
+import * as import38 from './work-details.component.ngfactory';
+import * as import39 from '../upload/upload-works.component.ngfactory';
+import * as import40 from '../upload/upload-works-avatar.component.ngfactory';
+import * as import41 from '@angular/core/src/i18n/tokens';
+import * as import42 from '@ng-bootstrap/ng-bootstrap/modal/modal-stack';
+import * as import43 from './profile-edit.component';
+import * as import44 from './work-details.component';
+import * as import45 from '../upload/upload-works.component';
+import * as import46 from '../upload/upload-works-avatar.component';
+import * as import47 from '@angular/router/src/router_config_loader';
 class ProfileModuleInjector extends import0.NgModuleInjector<import1.ProfileModule> {
   _CommonModule_0:import2.CommonModule;
   _InternalFormsSharedModule_1:import3.InternalFormsSharedModule;
   _ReactiveFormsModule_2:import4.ReactiveFormsModule;
   _FileUploadModule_3:import5.FileUploadModule;
-  _UploadModule_4:import6.UploadModule;
-  _RouterModule_5:import7.RouterModule;
-  _ProfileModule_6:import1.ProfileModule;
-  __NgLocalization_7:import8.NgLocaleLocalization;
-  __FormBuilder_8:import9.FormBuilder;
-  __RadioControlRegistry_9:import10.RadioControlRegistry;
-  __ROUTES_10:any[];
-  constructor(parent:import11.Injector) {
+  _NgbAccordionModule_4:import6.NgbAccordionModule;
+  _NgbAlertModule_5:import7.NgbAlertModule;
+  _NgbButtonsModule_6:import8.NgbButtonsModule;
+  _NgbCarouselModule_7:import9.NgbCarouselModule;
+  _NgbCollapseModule_8:import10.NgbCollapseModule;
+  _FormsModule_9:import4.FormsModule;
+  _NgbDatepickerModule_10:import11.NgbDatepickerModule;
+  _NgbDropdownModule_11:import12.NgbDropdownModule;
+  _NgbModalModule_12:import13.NgbModalModule;
+  _NgbPaginationModule_13:import14.NgbPaginationModule;
+  _NgbPopoverModule_14:import15.NgbPopoverModule;
+  _NgbProgressbarModule_15:import16.NgbProgressbarModule;
+  _NgbRatingModule_16:import17.NgbRatingModule;
+  _NgbTabsetModule_17:import18.NgbTabsetModule;
+  _NgbTimepickerModule_18:import19.NgbTimepickerModule;
+  _NgbTooltipModule_19:import20.NgbTooltipModule;
+  _NgbTypeaheadModule_20:import21.NgbTypeaheadModule;
+  _NgbModule_21:import22.NgbModule;
+  _UploadModule_22:import23.UploadModule;
+  _RouterModule_23:import24.RouterModule;
+  _ProfileModule_24:import1.ProfileModule;
+  __NgLocalization_25:import25.NgLocaleLocalization;
+  __FormBuilder_26:import26.FormBuilder;
+  __RadioControlRegistry_27:import27.RadioControlRegistry;
+  __NgbModal_28:import28.NgbModal;
+  __ROUTES_29:any[];
+  constructor(parent:import29.Injector) {
     super(parent,[
-      import12.ProfileEditComponentNgFactory,
-      import13.WorkDetailsComponentNgFactory,
-      import14.UploadWorksComponentNgFactory,
-      import15.UploadWorksAvatarComponentNgFactory
+      import30.NgbAlertNgFactory,
+      import31.NgbDatepickerNgFactory,
+      import32.NgbModalBackdropNgFactory,
+      import33.NgbModalWindowNgFactory,
+      import34.NgbPopoverWindowNgFactory,
+      import35.NgbTooltipWindowNgFactory,
+      import36.NgbTypeaheadWindowNgFactory,
+      import37.ProfileEditComponentNgFactory,
+      import38.WorkDetailsComponentNgFactory,
+      import39.UploadWorksComponentNgFactory,
+      import40.UploadWorksAvatarComponentNgFactory
     ]
     ,([] as any[]));
   }
-  get _NgLocalization_7():import8.NgLocaleLocalization {
-    if ((this.__NgLocalization_7 == null)) { (this.__NgLocalization_7 = new import8.NgLocaleLocalization(this.parent.get(import16.LOCALE_ID))); }
-    return this.__NgLocalization_7;
+  get _NgLocalization_25():import25.NgLocaleLocalization {
+    if ((this.__NgLocalization_25 == null)) { (this.__NgLocalization_25 = new import25.NgLocaleLocalization(this.parent.get(import41.LOCALE_ID))); }
+    return this.__NgLocalization_25;
   }
-  get _FormBuilder_8():import9.FormBuilder {
-    if ((this.__FormBuilder_8 == null)) { (this.__FormBuilder_8 = new import9.FormBuilder()); }
-    return this.__FormBuilder_8;
+  get _FormBuilder_26():import26.FormBuilder {
+    if ((this.__FormBuilder_26 == null)) { (this.__FormBuilder_26 = new import26.FormBuilder()); }
+    return this.__FormBuilder_26;
   }
-  get _RadioControlRegistry_9():import10.RadioControlRegistry {
-    if ((this.__RadioControlRegistry_9 == null)) { (this.__RadioControlRegistry_9 = new import10.RadioControlRegistry()); }
-    return this.__RadioControlRegistry_9;
+  get _RadioControlRegistry_27():import27.RadioControlRegistry {
+    if ((this.__RadioControlRegistry_27 == null)) { (this.__RadioControlRegistry_27 = new import27.RadioControlRegistry()); }
+    return this.__RadioControlRegistry_27;
   }
-  get _ROUTES_10():any[] {
-      if ((this.__ROUTES_10 == null)) { (this.__ROUTES_10 = [[
+  get _NgbModal_28():import28.NgbModal {
+    if ((this.__NgbModal_28 == null)) { (this.__NgbModal_28 = new import28.NgbModal(this,this,this.parent.get(import42.NgbModalStack))); }
+    return this.__NgbModal_28;
+  }
+  get _ROUTES_29():any[] {
+      if ((this.__ROUTES_29 == null)) { (this.__ROUTES_29 = [[
         {
           path: '',
           redirectTo: '',
@@ -70,21 +126,21 @@ class ProfileModuleInjector extends import0.NgModuleInjector<import1.ProfileModu
         ,
         {
           path: 'profile',
-          component: import17.ProfileEditComponent,
+          component: import43.ProfileEditComponent,
           children: [
             {
               path: 'detials',
-              component: import18.WorkDetailsComponent
+              component: import44.WorkDetailsComponent
             }
             ,
             {
               path: 'work-file',
-              component: import19.UploadWorksComponent
+              component: import45.UploadWorksComponent
             }
             ,
             {
               path: 'work-avatar',
-              component: import20.UploadWorksAvatarComponent
+              component: import46.UploadWorksAvatarComponent
             }
 
           ]
@@ -93,30 +149,67 @@ class ProfileModuleInjector extends import0.NgModuleInjector<import1.ProfileModu
 
       ]
     ]); }
-    return this.__ROUTES_10;
+    return this.__ROUTES_29;
   }
   createInternal():import1.ProfileModule {
     this._CommonModule_0 = new import2.CommonModule();
     this._InternalFormsSharedModule_1 = new import3.InternalFormsSharedModule();
     this._ReactiveFormsModule_2 = new import4.ReactiveFormsModule();
     this._FileUploadModule_3 = new import5.FileUploadModule();
-    this._UploadModule_4 = new import6.UploadModule();
-    this._RouterModule_5 = new import7.RouterModule(this.parent.get(import7.ROUTER_FORROOT_GUARD,(null as any)));
-    this._ProfileModule_6 = new import1.ProfileModule();
-    return this._ProfileModule_6;
+    this._NgbAccordionModule_4 = new import6.NgbAccordionModule();
+    this._NgbAlertModule_5 = new import7.NgbAlertModule();
+    this._NgbButtonsModule_6 = new import8.NgbButtonsModule();
+    this._NgbCarouselModule_7 = new import9.NgbCarouselModule();
+    this._NgbCollapseModule_8 = new import10.NgbCollapseModule();
+    this._FormsModule_9 = new import4.FormsModule();
+    this._NgbDatepickerModule_10 = new import11.NgbDatepickerModule();
+    this._NgbDropdownModule_11 = new import12.NgbDropdownModule();
+    this._NgbModalModule_12 = new import13.NgbModalModule();
+    this._NgbPaginationModule_13 = new import14.NgbPaginationModule();
+    this._NgbPopoverModule_14 = new import15.NgbPopoverModule();
+    this._NgbProgressbarModule_15 = new import16.NgbProgressbarModule();
+    this._NgbRatingModule_16 = new import17.NgbRatingModule();
+    this._NgbTabsetModule_17 = new import18.NgbTabsetModule();
+    this._NgbTimepickerModule_18 = new import19.NgbTimepickerModule();
+    this._NgbTooltipModule_19 = new import20.NgbTooltipModule();
+    this._NgbTypeaheadModule_20 = new import21.NgbTypeaheadModule();
+    this._NgbModule_21 = new import22.NgbModule();
+    this._UploadModule_22 = new import23.UploadModule();
+    this._RouterModule_23 = new import24.RouterModule(this.parent.get(import24.ROUTER_FORROOT_GUARD,(null as any)));
+    this._ProfileModule_24 = new import1.ProfileModule();
+    return this._ProfileModule_24;
   }
   getInternal(token:any,notFoundResult:any):any {
     if ((token === import2.CommonModule)) { return this._CommonModule_0; }
     if ((token === import3.InternalFormsSharedModule)) { return this._InternalFormsSharedModule_1; }
     if ((token === import4.ReactiveFormsModule)) { return this._ReactiveFormsModule_2; }
     if ((token === import5.FileUploadModule)) { return this._FileUploadModule_3; }
-    if ((token === import6.UploadModule)) { return this._UploadModule_4; }
-    if ((token === import7.RouterModule)) { return this._RouterModule_5; }
-    if ((token === import1.ProfileModule)) { return this._ProfileModule_6; }
-    if ((token === import8.NgLocalization)) { return this._NgLocalization_7; }
-    if ((token === import9.FormBuilder)) { return this._FormBuilder_8; }
-    if ((token === import10.RadioControlRegistry)) { return this._RadioControlRegistry_9; }
-    if ((token === import21.ROUTES)) { return this._ROUTES_10; }
+    if ((token === import6.NgbAccordionModule)) { return this._NgbAccordionModule_4; }
+    if ((token === import7.NgbAlertModule)) { return this._NgbAlertModule_5; }
+    if ((token === import8.NgbButtonsModule)) { return this._NgbButtonsModule_6; }
+    if ((token === import9.NgbCarouselModule)) { return this._NgbCarouselModule_7; }
+    if ((token === import10.NgbCollapseModule)) { return this._NgbCollapseModule_8; }
+    if ((token === import4.FormsModule)) { return this._FormsModule_9; }
+    if ((token === import11.NgbDatepickerModule)) { return this._NgbDatepickerModule_10; }
+    if ((token === import12.NgbDropdownModule)) { return this._NgbDropdownModule_11; }
+    if ((token === import13.NgbModalModule)) { return this._NgbModalModule_12; }
+    if ((token === import14.NgbPaginationModule)) { return this._NgbPaginationModule_13; }
+    if ((token === import15.NgbPopoverModule)) { return this._NgbPopoverModule_14; }
+    if ((token === import16.NgbProgressbarModule)) { return this._NgbProgressbarModule_15; }
+    if ((token === import17.NgbRatingModule)) { return this._NgbRatingModule_16; }
+    if ((token === import18.NgbTabsetModule)) { return this._NgbTabsetModule_17; }
+    if ((token === import19.NgbTimepickerModule)) { return this._NgbTimepickerModule_18; }
+    if ((token === import20.NgbTooltipModule)) { return this._NgbTooltipModule_19; }
+    if ((token === import21.NgbTypeaheadModule)) { return this._NgbTypeaheadModule_20; }
+    if ((token === import22.NgbModule)) { return this._NgbModule_21; }
+    if ((token === import23.UploadModule)) { return this._UploadModule_22; }
+    if ((token === import24.RouterModule)) { return this._RouterModule_23; }
+    if ((token === import1.ProfileModule)) { return this._ProfileModule_24; }
+    if ((token === import25.NgLocalization)) { return this._NgLocalization_25; }
+    if ((token === import26.FormBuilder)) { return this._FormBuilder_26; }
+    if ((token === import27.RadioControlRegistry)) { return this._RadioControlRegistry_27; }
+    if ((token === import28.NgbModal)) { return this._NgbModal_28; }
+    if ((token === import47.ROUTES)) { return this._ROUTES_29; }
     return notFoundResult;
   }
   destroyInternal():void {

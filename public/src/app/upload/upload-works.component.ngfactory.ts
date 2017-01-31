@@ -35,6 +35,9 @@ import * as import26 from 'ng2-file-upload/file-upload/file-select.directive';
 import * as import27 from '@angular/common/src/directives/ng_if';
 import * as import28 from '@angular/common/src/directives/ng_for';
 import * as import29 from '@angular/common/src/directives/ng_style';
+import * as import30 from '../../../../node_modules/@ng-bootstrap/ng-bootstrap/dropdown/dropdown.ngfactory';
+import * as import31 from '@ng-bootstrap/ng-bootstrap/dropdown/dropdown-config';
+import * as import32 from '@ng-bootstrap/ng-bootstrap/dropdown/dropdown';
 export class Wrapper_UploadWorksComponent {
   /*private*/ _eventHandler:Function;
   context:import0.UploadWorksComponent;
@@ -520,8 +523,10 @@ class View_UploadWorksComponent1 extends import1.AppView<any> {
   _el_5:any;
   _text_6:any;
   _el_7:any;
+  _NgbDropdown_7_3:import30.Wrapper_NgbDropdown;
   _text_8:any;
   _el_9:any;
+  _NgbDropdownToggle_9_3:import30.Wrapper_NgbDropdownToggle;
   _text_10:any;
   _text_11:any;
   _el_12:any;
@@ -537,12 +542,12 @@ class View_UploadWorksComponent1 extends import1.AppView<any> {
   _text_19:any;
   _text_20:any;
   _text_21:any;
-  /*private*/ _expr_25:any;
-  /*private*/ _expr_26:any;
+  /*private*/ _expr_27:any;
+  /*private*/ _expr_28:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import14.ViewContainer) {
     super(View_UploadWorksComponent1,renderType_UploadWorksComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
-    this._expr_25 = import6.UNINITIALIZED;
-    this._expr_26 = import6.UNINITIALIZED;
+    this._expr_27 = import6.UNINITIALIZED;
+    this._expr_28 = import6.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
     this._el_0 = import3.createRenderElement(this.renderer,(null as any),'div',new import3.InlineArray2(2,'class','row'),(null as any));
@@ -553,8 +558,10 @@ class View_UploadWorksComponent1 extends import1.AppView<any> {
     this._el_5 = import3.createRenderElement(this.renderer,this._el_0,'div',new import3.InlineArray2(2,'class','col-xs-6'),(null as any));
     this._text_6 = this.renderer.createText(this._el_5,'\n            ',(null as any));
     this._el_7 = import3.createRenderElement(this.renderer,this._el_5,'div',new import3.InlineArray4(4,'class','dropdown','ngbDropdown',''),(null as any));
+    this._NgbDropdown_7_3 = new import30.Wrapper_NgbDropdown(this.parentView.parentView.injectorGet(import31.NgbDropdownConfig,this.parentView.parentIndex));
     this._text_8 = this.renderer.createText(this._el_7,'\n              ',(null as any));
-    this._el_9 = import3.createRenderElement(this.renderer,this._el_7,'button',new import3.InlineArray16(14,'aria-expanded','false','aria-haspopup','true','class','btn btn-outline-primary dropdown-toggle','data-toggle','dropdown','id','dropdownMenu1','ngbDropdownToggle','','role','button'),(null as any));
+    this._el_9 = import3.createRenderElement(this.renderer,this._el_7,'button',new import3.InlineArray16(14,'aria-expanded','false','aria-haspopup','true','class','btn btn-outline-primary dropdown-toggle dropdown-toggle','data-toggle','dropdown','id','dropdownMenu1','ngbDropdownToggle','','role','button'),(null as any));
+    this._NgbDropdownToggle_9_3 = new import30.Wrapper_NgbDropdownToggle(this._NgbDropdown_7_3.context,new import21.ElementRef(this._el_9));
     this._text_10 = this.renderer.createText(this._el_9,'',(null as any));
     this._text_11 = this.renderer.createText(this._el_7,'\n              ',(null as any));
     this._el_12 = import3.createRenderElement(this.renderer,this._el_7,'div',new import3.InlineArray4(4,'aria-labelledby','dropdownMenu1','class','dropdown-menu'),(null as any));
@@ -570,6 +577,8 @@ class View_UploadWorksComponent1 extends import1.AppView<any> {
     this._text_19 = this.renderer.createText(this._el_18,'',(null as any));
     this._text_20 = this.renderer.createText(this._el_5,'\n          ',(null as any));
     this._text_21 = this.renderer.createText(this._el_0,'\n        ',(null as any));
+    var disposable_0:Function = import3.subscribeToRenderElement(this,this._el_7,new import3.InlineArray4(4,'keyup.esc',(null as any),'click','document'),this.eventHandler(this.handleEvent_7));
+    var disposable_1:Function = import3.subscribeToRenderElement(this,this._el_9,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_9));
     this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
       this._el_0,
       this._text_1,
@@ -594,32 +603,43 @@ class View_UploadWorksComponent1 extends import1.AppView<any> {
       this._text_20,
       this._text_21
     ]
-    ),(null as any));
+    ),[
+      disposable_0,
+      disposable_1
+    ]
+    );
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
+    if (((token === import32.NgbDropdownToggle) && ((9 <= requestNodeIndex) && (requestNodeIndex <= 10)))) { return this._NgbDropdownToggle_9_3.context; }
     if (((token === import22.TemplateRef) && (14 === requestNodeIndex))) { return this._TemplateRef_14_5; }
     if (((token === import28.NgFor) && (14 === requestNodeIndex))) { return this._NgFor_14_6.context; }
+    if (((token === import32.NgbDropdown) && ((7 <= requestNodeIndex) && (requestNodeIndex <= 16)))) { return this._NgbDropdown_7_3.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
+    this._NgbDropdown_7_3.ngDoCheck(this,this._el_7,throwOnChange);
+    this._NgbDropdownToggle_9_3.ngDoCheck(this,this._el_9,throwOnChange);
     const currVal_14_0_0:any = this.parentView.context.works;
     this._NgFor_14_6.check_ngForOf(currVal_14_0_0,throwOnChange,false);
     this._NgFor_14_6.ngDoCheck(this,this._anchor_14,throwOnChange);
     this._vc_14.detectChangesInNestedViews(throwOnChange);
-    const currVal_25:any = import3.inlineInterpolate(1,'',(this.parentView.context.chosenFile || 'choose a title'),'');
-    if (import3.checkBinding(throwOnChange,this._expr_25,currVal_25)) {
-      this.renderer.setText(this._text_10,currVal_25);
-      this._expr_25 = currVal_25;
+    this._NgbDropdown_7_3.checkHost(this,this,this._el_7,throwOnChange);
+    this._NgbDropdownToggle_9_3.checkHost(this,this,this._el_9,throwOnChange);
+    const currVal_27:any = import3.inlineInterpolate(1,'',(this.parentView.context.chosenFile || 'choose a title'),'');
+    if (import3.checkBinding(throwOnChange,this._expr_27,currVal_27)) {
+      this.renderer.setText(this._text_10,currVal_27);
+      this._expr_27 = currVal_27;
     }
-    const currVal_26:any = import3.inlineInterpolate(1,'',this.parentView.context.chosenFile,'');
-    if (import3.checkBinding(throwOnChange,this._expr_26,currVal_26)) {
-      this.renderer.setText(this._text_19,currVal_26);
-      this._expr_26 = currVal_26;
+    const currVal_28:any = import3.inlineInterpolate(1,'',this.parentView.context.chosenFile,'');
+    if (import3.checkBinding(throwOnChange,this._expr_28,currVal_28)) {
+      this.renderer.setText(this._text_19,currVal_28);
+      this._expr_28 = currVal_28;
     }
   }
   destroyInternal():void {
     this._vc_14.destroyNestedViews();
+    this._NgbDropdown_7_3.ngOnDestroy();
   }
   visitRootNodesInternal(cb:any,ctx:any):void {
     cb(this._el_0,ctx);
@@ -627,6 +647,18 @@ class View_UploadWorksComponent1 extends import1.AppView<any> {
   createEmbeddedViewInternal(nodeIndex:number):import1.AppView<any> {
     if ((nodeIndex == 14)) { return new View_UploadWorksComponent2(this.viewUtils,this,14,this._anchor_14,this._vc_14); }
     return (null as any);
+  }
+  handleEvent_7(eventName:string,$event:any):boolean {
+    this.markPathToRootAsCheckOnce();
+    var result:boolean = true;
+    result = (this._NgbDropdown_7_3.handleEvent(eventName,$event) && result);
+    return result;
+  }
+  handleEvent_9(eventName:string,$event:any):boolean {
+    this.markPathToRootAsCheckOnce();
+    var result:boolean = true;
+    result = (this._NgbDropdownToggle_9_3.handleEvent(eventName,$event) && result);
+    return result;
   }
 }
 class View_UploadWorksComponent2 extends import1.AppView<any> {

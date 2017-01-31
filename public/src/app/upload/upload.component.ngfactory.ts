@@ -207,7 +207,7 @@ export class View_UploadComponent0 extends import1.AppView<import0.UploadCompone
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
     const parentRenderNode:any = this.renderer.createViewRoot(this.parentElement);
-    this._el_0 = import3.createRenderElement(this.renderer,parentRenderNode,'div',new import3.InlineArray4(4,'class','container','ngbModalContainer',''),(null as any));
+    this._el_0 = import3.createRenderElement(this.renderer,parentRenderNode,'div',new import3.InlineArray2(2,'class','container'),(null as any));
     this._text_1 = this.renderer.createText(this._el_0,'\n\n  ',(null as any));
     this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'div',new import3.InlineArray2(2,'class','row modal-size'),(null as any));
     this._text_3 = this.renderer.createText(this._el_2,'\n\n    ',(null as any));

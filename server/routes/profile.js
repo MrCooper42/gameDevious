@@ -131,7 +131,7 @@ router.post("/:id/education", (req, res) => {
   })
 })
 
-router.post("/:id/experiance", (req, res) => {
+router.post("/:id/experience", (req, res) => {
   console.log("hit");
   let token = req.headers.token
   jwt.verify(token, 'secret', this.ignoreExpiration = 'true', (err, decoded) => {
@@ -150,7 +150,7 @@ router.post("/:id/experiance", (req, res) => {
             error: err
           });
         }
-        profile.experiance.push(req.body.body)
+        profile.experience.push(req.body.body)
         profile.save((err, result) => {
           if (err) {
             return res.status(500).json({

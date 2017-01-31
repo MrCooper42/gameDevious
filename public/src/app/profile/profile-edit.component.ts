@@ -4,7 +4,7 @@ import { ProfileService } from './profile.service';
 import { Router } from '@angular/router';
 import { JwtHelper } from 'angular2-jwt/angular2-jwt';
 import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
-import { NgbModal, NgbActiveModal, NgbModalOptions } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModal, NgbModalOptions, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 
 import { UploadComponent } from '../upload/upload.component';
 import { WorkDetailsComponent } from './work-details.component';
@@ -32,7 +32,10 @@ export class ProfileEditComponent implements OnInit {
 
   user: any;
 
-  constructor(private profileService: ProfileService, private router: Router, private modalService: NgbModal) { }
+  constructor(
+    private profileService: ProfileService,
+    private router: Router,
+    private modalService: NgbModal) { }
 
   jwtHelper: JwtHelper = new JwtHelper();
 
@@ -57,9 +60,12 @@ export class ProfileEditComponent implements OnInit {
   }
 
   refreshWorks() {
-    this.returnUser().subscribe(res => this.user = res);
+    this.returnUser().subscribe(res => {
+      console.log(this.user, "refreshWorks")
+      this.user = res
+    });
     this.showWork = !this.showWork;
-    this.router.navigateByUrl('/profile');
+    // this.router.navigateByUrl('/profile');
   }
 
   hasWorks() {
@@ -93,11 +99,11 @@ export class ProfileEditComponent implements OnInit {
   }
 
   submitXp() {
-    let experiance = this.xpForm.value;
-    this.profileService.addExp(this.useJwtHelper()._id, experiance)
+    let experience = this.xpForm.value;
+    this.profileService.addExp(this.useJwtHelper()._id, experience)
       .subscribe(
       data => {
-        this.user.profile.experiance = data.experiance;
+        this.user.profile.experience = data.experience;
         this.router.navigateByUrl('/profile');
       },
       error => console.error(error));
@@ -149,17 +155,16 @@ export class ProfileEditComponent implements OnInit {
 
   workAvatar(id) {
     for (let i = 0; i < this.user.profile.works.length; i++) {
-        if (this.user.profile.works[i]._id = id) {
-          let avatar = this.user.profile.works[i].path
-          if (avatar == undefined) {
-            return false;
-          }
-          console.log(this.user.profile.works[i].path == undefined)
-          avatar = avatar.replace(/[;]/gi,'')
-          return avatar;
-        } else {
+      if (this.user.profile.works[i]._id = id) {
+        let avatar = this.user.profile.works[i].path
+        if (avatar == undefined) {
           return false;
         }
+        avatar = avatar.replace(/[;]/gi, '')
+        return avatar;
+      } else {
+        return false;
+      }
     }
   }
 
@@ -174,6 +179,7 @@ export class ProfileEditComponent implements OnInit {
     let options: NgbModalOptions = {
       size: 'lg'
     };
+    console.log("clicked")
     const modalRef = this.modalService.open(UploadComponent, options)
   }
 
@@ -229,7 +235,7 @@ export class ProfileEditComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.showWork = false;
+    this.showWork = true;
     this.showTitleForm = false;
     this.showXpForm = false;
     this.showEduForm = false;
@@ -248,49 +254,12 @@ export class ProfileEditComponent implements OnInit {
       description: new FormControl('')
     });
     this.eduForm = new FormGroup({
-        school: new FormControl(null, Validators.required),
-        study: new FormControl(null, Validators.required),
-        degree: new FormControl(null, Validators.required),
-        extras: new FormControl(''),
-      });
+      school: new FormControl(null, Validators.required),
+      study: new FormControl(null, Validators.required),
+      degree: new FormControl(null, Validators.required),
+      extras: new FormControl(''),
+    });
     this.returnUser().subscribe(res => this.user = res);
   }
 
 }
-
-
-// will have to get working
-  // linkFacebook() {
-  //   this.profileService.facebook(this.useJwtHelper()._id)
-  //     .subscribe(
-  //     res => {
-  //       console.log(res, "response in controller")
-  //       this.router.navigate(["/"]).then(result => {
-  //         window.location.href = res;
-  //       });
-  //     },
-  //     error => console.log(error)
-  //     )
-  // }
-  //
-  // linkLinkedin() {
-  //   this.profileService.linkedin(this.useJwtHelper()._id)
-  //     .subscribe(
-  //     res => {
-  //       console.log(res, "response in controller")
-  //       this.router.navigate(["/"]).then(result => { window.location.href = res; });
-  //     },
-  //     error => console.log(error)
-  //     )
-  // }
-  //
-  // linkGithub() {
-  //   this.profileService.github(this.useJwtHelper()._id)
-  //     .subscribe(
-  //     res => {
-  //       console.log(res, "response in controller")
-  //       this.router.navigate(["/"]).then(result => { window.location.href = res; });
-  //     },
-  //     error => console.log(error)
-  //     )
-  // }

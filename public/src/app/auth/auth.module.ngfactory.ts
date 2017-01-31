@@ -59,13 +59,13 @@ class AuthModuleInjector extends import0.NgModuleInjector<import1.AuthModule> {
   get _ROUTES_8():any[] {
       if ((this.__ROUTES_8 == null)) { (this.__ROUTES_8 = [[
         {
-          path: '',
-          redirectTo: 'logger',
+          path: 'login',
+          redirectTo: 'login',
           pathMatch: 'full'
         }
         ,
         {
-          path: 'logger',
+          path: 'login',
           component: import15.AuthenticationComponent,
           children: [
             {

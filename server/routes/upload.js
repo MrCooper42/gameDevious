@@ -114,7 +114,7 @@ router.post('/works/:id/file', (req, res, next) => {
       if (err) {
         return res.status(500).json({title: 'Bad things happened', error: err});
       }
-      work.path = `/uploads/${decoded.user._id}/works/${req.params.id}/file/${req.file.filename};`
+      work.path = `/uploads/${decoded.user._id}/works/${req.params.id}/file/${req.file.filename}`
       console.log(work.path, "work path after");
       work.save((err, result) => {
         if (err) {

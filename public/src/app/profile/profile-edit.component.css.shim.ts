@@ -5,4 +5,4 @@
  */
  /* tslint:disable */
 
-export const styles:any[] = ['.works[_ngcontent-%COMP%] {\n  padding-bottom: 15px;\n  border-style: ridge;\n  border-color: grey;\n  border-width: thin;\n}'];
+export const styles:any[] = ['.works[_ngcontent-%COMP%] {\r\n  padding-top: 5px;\r\n  padding-bottom: 5px;\r\n  border-style: ridge;\r\n  border-color: grey;\r\n  border-width: thin;\r\n}'];

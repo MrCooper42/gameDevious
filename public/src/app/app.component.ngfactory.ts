@@ -114,7 +114,6 @@ export class View_AppComponent0 extends import1.AppView<import0.AppComponent> {
   _TemplateRef_11_5:any;
   _NgbModalContainer_11_6:import15.Wrapper_NgbModalContainer;
   _text_12:any;
-  _text_13:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any) {
     super(View_AppComponent0,renderType_AppComponent,import5.ViewType.COMPONENT,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways);
   }
@@ -143,8 +142,7 @@ export class View_AppComponent0 extends import1.AppView<import0.AppComponent> {
     this._vc_11 = new import11.ViewContainer(11,(null as any),this,this._anchor_11);
     this._TemplateRef_11_5 = new import21.TemplateRef_(this,11,this._anchor_11);
     this._NgbModalContainer_11_6 = new import15.Wrapper_NgbModalContainer(this.injector(11),this.renderer,this._vc_11.vcRef,this.parentView.injectorGet(import19.ComponentFactoryResolver,this.parentIndex),this.parentView.injectorGet(import22.NgbModalStack,this.parentIndex));
-    this._text_12 = this.renderer.createText(parentRenderNode,'\n\n\n',(null as any));
-    this._text_13 = this.renderer.createText(parentRenderNode,'\n',(null as any));
+    this._text_12 = this.renderer.createText(parentRenderNode,'\n',(null as any));
     this.init((null as any),((<any>this.renderer).directRenderer? (null as any): [
       this._el_0,
       this._text_1,
@@ -158,8 +156,7 @@ export class View_AppComponent0 extends import1.AppView<import0.AppComponent> {
       this._el_9,
       this._text_10,
       this._anchor_11,
-      this._text_12,
-      this._text_13
+      this._text_12
     ]
     ),(null as any));
     return (null as any);

@@ -7,7 +7,7 @@ if (process.env.NODE_ENV !== `production`) {
 const express = require('express');
 const path = require('path');
 const favicon = require('serve-favicon');
-const logger = require('morgan');
+const login = require('morgan');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const bodyParser = require('body-parser');
@@ -31,7 +31,7 @@ app.set('views', path.join(__dirname, '../public/views'));
 app.set('view engine', 'hbs');
 
 app.use(favicon(path.join(__dirname, '../public/src', 'favicon.ico')));
-app.use(logger('dev'));
+app.use(login('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
 	extended: true

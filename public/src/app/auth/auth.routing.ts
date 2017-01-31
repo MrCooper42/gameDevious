@@ -6,8 +6,8 @@ import { SigninComponent } from './signin.component';
 import { LogoutComponent } from './logout.component';
 
 const AUTH_ROUTES: Routes = [
-    { path: '', redirectTo: 'logger', pathMatch: 'full' },
-    { path: 'logger', component: AuthenticationComponent,
+    { path: 'login', redirectTo: 'login', pathMatch: 'full' },
+    { path: 'login', component: AuthenticationComponent,
   children: [
     { path: 'signup', component: SignupComponent },
     { path: 'signin', component: SigninComponent },

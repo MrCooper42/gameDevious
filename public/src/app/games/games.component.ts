@@ -13,18 +13,24 @@ export class GamesComponent implements OnInit {
 
   searchGameForm: FormGroup;
 
-  games: any;
+  games: Array<any>;
+
+  noGames: Boolean;
 
   constructor(private gamesService: GamesService) { }
 
   seachGame() {
       let game = this.searchGameForm.value.game;
-      console.log(game, 'game comp')
       this.gamesService.getGame(game)
         .subscribe(
         data => {
-          console.log(data.body, 'returned data')
-          this.games = data.body;
+          data = JSON.parse(data.body)
+          this.games = data;
+          if (data.length < 1) {
+            this.noGames = true;
+          } else {
+            this.noGames = false;
+          }
         },
         error => console.error(error));
       this.searchGameForm.reset();
@@ -32,6 +38,7 @@ export class GamesComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.noGames = false;
     this.searchGameForm = new FormGroup({
       game: new FormControl(null, Validators.required),
     });
